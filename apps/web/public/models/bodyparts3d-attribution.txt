@@ -1,0 +1,4 @@
+BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International
+Source: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_BP3D_4.0_obj_99.zip
+License: https://creativecommons.org/licenses/by/4.0/
+Adaptations: curated bones, OBJ to GLB, coordinate and unit conversion, recomputed smooth normals, material assignment, semantic grouping, lossless Meshopt compression. No additional decimation or quantization.

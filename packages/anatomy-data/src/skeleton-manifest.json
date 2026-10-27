@@ -1,0 +1,2378 @@
+{
+  "id": "bodyparts3d-skeleton-v4",
+  "uri": "/models/bodyparts3d-skeleton.glb",
+  "sourceUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_BP3D_4.0_obj_99.zip",
+  "sourceVersion": "4.0, PART-OF, 99% polygon reduction",
+  "licenseId": "CC-BY-4.0",
+  "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International",
+  "checkedAt": "2026-10-27",
+  "sha256": "126268604b056cdd8878c6297f6a8e90ae5cbf4cdce1cc7f952988d13bc68531",
+  "byteLength": 7134628,
+  "gzipByteLength": 6578713,
+  "compression": "EXT_meshopt_compression (lossless)",
+  "rawByteLength": 12988694,
+  "rawGzipByteLength": 7940210,
+  "triangleCount": 513164,
+  "sourceMeshCount": 202,
+  "bounds": {
+    "min": [-0.323914, -0.0704799, -0.018001],
+    "max": [0.32393500000000003, 1.63627, 0.236044]
+  },
+  "structures": [
+    {
+      "id": "skull",
+      "names": {
+        "en": "Skull (without mandible)",
+        "ro": "Craniu (fără mandibulă)"
+      },
+      "latinName": "Cranium",
+      "regionId": "head",
+      "laterality": "midline",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA52734",
+          "name": "frontal bone",
+          "fileIds": ["FJ3200"]
+        },
+        {
+          "conceptId": "FMA52735",
+          "name": "occipital bone",
+          "fileIds": ["FJ3309"]
+        },
+        {
+          "conceptId": "FMA52736",
+          "name": "sphenoid bone",
+          "fileIds": ["FJ3394"]
+        },
+        {
+          "conceptId": "FMA52740",
+          "name": "ethmoid",
+          "fileIds": ["FJ3199"]
+        },
+        {
+          "conceptId": "FMA9710",
+          "name": "vomer",
+          "fileIds": ["FJ3395"]
+        },
+        {
+          "conceptId": "FMA52739",
+          "name": "left temporal bone",
+          "fileIds": ["FJ3281"]
+        },
+        {
+          "conceptId": "FMA52738",
+          "name": "right temporal bone",
+          "fileIds": ["FJ3386"]
+        },
+        {
+          "conceptId": "FMA52789",
+          "name": "left parietal bone",
+          "fileIds": ["FJ3274"]
+        },
+        {
+          "conceptId": "FMA52788",
+          "name": "right parietal bone",
+          "fileIds": ["FJ3380"]
+        },
+        {
+          "conceptId": "FMA52893",
+          "name": "left zygomatic bone",
+          "fileIds": ["FJ3287"]
+        },
+        {
+          "conceptId": "FMA52892",
+          "name": "right zygomatic bone",
+          "fileIds": ["FJ3392"]
+        },
+        {
+          "conceptId": "FMA53646",
+          "name": "left lacrimal bone",
+          "fileIds": ["FJ3265"]
+        },
+        {
+          "conceptId": "FMA53645",
+          "name": "right lacrimal bone",
+          "fileIds": ["FJ3371"]
+        },
+        {
+          "conceptId": "FMA53648",
+          "name": "left nasal bone",
+          "fileIds": ["FJ3272"]
+        },
+        {
+          "conceptId": "FMA53647",
+          "name": "right nasal bone",
+          "fileIds": ["FJ3378"]
+        },
+        {
+          "conceptId": "FMA53656",
+          "name": "left palatine bone",
+          "fileIds": ["FJ3273"]
+        },
+        {
+          "conceptId": "FMA53655",
+          "name": "right palatine bone",
+          "fileIds": ["FJ3379"]
+        },
+        {
+          "conceptId": "FMA53650",
+          "name": "left maxilla",
+          "fileIds": ["FJ3269"]
+        },
+        {
+          "conceptId": "FMA53649",
+          "name": "right maxilla",
+          "fileIds": ["FJ3375"]
+        },
+        {
+          "conceptId": "FMA54738",
+          "name": "left inferior nasal concha",
+          "fileIds": ["FJ3263"]
+        },
+        {
+          "conceptId": "FMA54737",
+          "name": "right inferior nasal concha",
+          "fileIds": ["FJ3369"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3200",
+          "sha256": "9a01d88bd564b462ecadd6ad5bb3bb2274105baa3d211e0f444210d3f499ed64"
+        },
+        {
+          "id": "FJ3309",
+          "sha256": "37172b4706d23d51ebb3ce3839cc59c6e4cb4931039901f395703bc7dff52761"
+        },
+        {
+          "id": "FJ3394",
+          "sha256": "9255a2f02b16d0cf87c68fbfdc7afc4709d1afef94c2e2bb1e035b7f7852aca0"
+        },
+        {
+          "id": "FJ3199",
+          "sha256": "6c0fceb9f44fe469d4db0e41594e8c5ed28a576950de7c43df488628d81105ea"
+        },
+        {
+          "id": "FJ3395",
+          "sha256": "fcbfac8ca1992059a3026b445fbf55c5b5fa5a54786ed468a6ee8259230101d4"
+        },
+        {
+          "id": "FJ3281",
+          "sha256": "47cc46f1480c54fe14a2d22361c3b93fcb964538f23d5b425ac718854cff2673"
+        },
+        {
+          "id": "FJ3386",
+          "sha256": "cae2e4dc5211d50b06e70893eef3bdaf19564ab8ae7923260e800c3498f65f88"
+        },
+        {
+          "id": "FJ3274",
+          "sha256": "df63a28fa604ff67828d8f382c66cfa46f40306b1b4c17a8062029764047d0e3"
+        },
+        {
+          "id": "FJ3380",
+          "sha256": "fb69a19eaa0585509f45ce1ebb5e8d91af0442629e52cfe1cfd190ca8f2f72b0"
+        },
+        {
+          "id": "FJ3287",
+          "sha256": "9cfd8fd359816b5fa5ed9758f26d942c7ada0900aa7f614aff39949fdad3ddee"
+        },
+        {
+          "id": "FJ3392",
+          "sha256": "e2c25d922162e3a76131e40ddf0356709947fa554b46640fa1880c381bb749c7"
+        },
+        {
+          "id": "FJ3265",
+          "sha256": "8ad400f81a74d51e3193ab1dc92ec39df5dc1c104a6ced970d430bca3d0f9c9c"
+        },
+        {
+          "id": "FJ3371",
+          "sha256": "d8160ed34abb66d2539e6f05eadc431bd18774e5d1def1a4cb9bc40e3e4a32c5"
+        },
+        {
+          "id": "FJ3272",
+          "sha256": "cc03a0b61102415dfa66cc55210f65c71ca9466e6e043d350449eac71b414a24"
+        },
+        {
+          "id": "FJ3378",
+          "sha256": "1acb8f803fb2cd9679eccd1634768b1bbee0714ebef7cf2de041d9332da88acf"
+        },
+        {
+          "id": "FJ3273",
+          "sha256": "dacf96918a971758cbf25e3884b15e6c2b0a112a863b773332fb916431676368"
+        },
+        {
+          "id": "FJ3379",
+          "sha256": "629876377eca1ae98eefc496121e950367c49bf215febf17cf58a7f9687845dd"
+        },
+        {
+          "id": "FJ3269",
+          "sha256": "a56eeb3723f4b3cd1d96b113eaba8f253ed49ff76220ba48ac0d1d086b80ff60"
+        },
+        {
+          "id": "FJ3375",
+          "sha256": "a1be9480b632355859507e590be68146a591d343ad671ca85c43d7be50d8b43c"
+        },
+        {
+          "id": "FJ3263",
+          "sha256": "c6477a98607e712a2bdefd4c2732ce22a990b8cd8783b7b7a6453192443961cd"
+        },
+        {
+          "id": "FJ3369",
+          "sha256": "681194f0df836eb03818110633c22976f9e4cb9e4e77bb194cec3f61cdf2a80b"
+        }
+      ],
+      "bounds": {
+        "min": [-0.0761885, 1.46399, -0.018001],
+        "max": [0.07485649999999999, 1.63627, 0.190833]
+      },
+      "triangleCount": 121518
+    },
+    {
+      "id": "mandible",
+      "names": {
+        "en": "Mandible",
+        "ro": "Mandibulă"
+      },
+      "latinName": "Mandibula",
+      "regionId": "head",
+      "laterality": "midline",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA52748",
+          "name": "mandible",
+          "fileIds": ["FJ3289"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3289",
+          "sha256": "6ae0d7fde4221302f1c74d9e9933e2e05c36efef273bb27a78326d108d140ce8"
+        }
+      ],
+      "bounds": {
+        "min": [-0.0538459, 1.4216300000000002, 0.08985370000000001],
+        "max": [0.0525541, 1.5061, 0.173832]
+      },
+      "triangleCount": 5576
+    },
+    {
+      "id": "hyoid",
+      "names": {
+        "en": "Hyoid bone",
+        "ro": "Os hioid"
+      },
+      "latinName": "Os hyoideum",
+      "regionId": "neck",
+      "laterality": "midline",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA52749",
+          "name": "hyoid bone",
+          "fileIds": ["FJ2772", "FJ3201"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2772",
+          "sha256": "429d56a742a23c27c3423519191c89ae29c34faa027ee0037ad86fbcf5eda11f"
+        },
+        {
+          "id": "FJ3201",
+          "sha256": "27e9e3f1146ff10c489c683b89f78c60c187eed578f52ec1bfdd1694d0684b44"
+        }
+      ],
+      "bounds": {
+        "min": [-0.019524200000000002, 1.42237, 0.0944187],
+        "max": [0.0182825, 1.4408599999999998, 0.129]
+      },
+      "triangleCount": 2392
+    },
+    {
+      "id": "vertebral-column",
+      "names": {
+        "en": "Vertebral column (C1–L5)",
+        "ro": "Coloană vertebrală (C1–L5)"
+      },
+      "latinName": "Columna vertebralis",
+      "regionId": "back",
+      "laterality": "midline",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA12519",
+          "name": "atlas",
+          "fileIds": ["FJ3176"]
+        },
+        {
+          "conceptId": "FMA12520",
+          "name": "axis",
+          "fileIds": ["FJ3177"]
+        },
+        {
+          "conceptId": "FMA12521",
+          "name": "third cervical vertebra",
+          "fileIds": ["FJ3161"]
+        },
+        {
+          "conceptId": "FMA12522",
+          "name": "fourth cervical vertebra",
+          "fileIds": ["FJ3164"]
+        },
+        {
+          "conceptId": "FMA12523",
+          "name": "fifth cervical vertebra",
+          "fileIds": ["FJ3167"]
+        },
+        {
+          "conceptId": "FMA12524",
+          "name": "sixth cervical vertebra",
+          "fileIds": ["FJ3170"]
+        },
+        {
+          "conceptId": "FMA12525",
+          "name": "seventh cervical vertebra",
+          "fileIds": ["FJ3172"]
+        },
+        {
+          "conceptId": "FMA9165",
+          "name": "first thoracic vertebra",
+          "fileIds": ["FJ3158"]
+        },
+        {
+          "conceptId": "FMA9187",
+          "name": "second thoracic vertebra",
+          "fileIds": ["FJ3160"]
+        },
+        {
+          "conceptId": "FMA9209",
+          "name": "third thoracic vertebra",
+          "fileIds": ["FJ3163"]
+        },
+        {
+          "conceptId": "FMA9248",
+          "name": "fourth thoracic vertebra",
+          "fileIds": ["FJ3166"]
+        },
+        {
+          "conceptId": "FMA9922",
+          "name": "fifth thoracic vertebra",
+          "fileIds": ["FJ3169"]
+        },
+        {
+          "conceptId": "FMA9945",
+          "name": "sixth thoracic vertebra",
+          "fileIds": ["FJ3171"]
+        },
+        {
+          "conceptId": "FMA9968",
+          "name": "seventh thoracic vertebra",
+          "fileIds": ["FJ3173"]
+        },
+        {
+          "conceptId": "FMA9991",
+          "name": "eighth thoracic vertebra",
+          "fileIds": ["FJ3174"]
+        },
+        {
+          "conceptId": "FMA10014",
+          "name": "ninth thoracic vertebra",
+          "fileIds": ["FJ3175"]
+        },
+        {
+          "conceptId": "FMA10037",
+          "name": "tenth thoracic vertebra",
+          "fileIds": ["FJ3154"]
+        },
+        {
+          "conceptId": "FMA10059",
+          "name": "eleventh thoracic vertebra",
+          "fileIds": ["FJ3155"]
+        },
+        {
+          "conceptId": "FMA10081",
+          "name": "twelfth thoracic vertebra",
+          "fileIds": ["FJ3156"]
+        },
+        {
+          "conceptId": "FMA13072",
+          "name": "first lumbar vertebra",
+          "fileIds": ["FJ3157"]
+        },
+        {
+          "conceptId": "FMA13073",
+          "name": "second lumbar vertebra",
+          "fileIds": ["FJ3159"]
+        },
+        {
+          "conceptId": "FMA13074",
+          "name": "third lumbar vertebra",
+          "fileIds": ["FJ3162"]
+        },
+        {
+          "conceptId": "FMA13075",
+          "name": "fourth lumbar vertebra",
+          "fileIds": ["FJ3165"]
+        },
+        {
+          "conceptId": "FMA13076",
+          "name": "fifth lumbar vertebra",
+          "fileIds": ["FJ3168"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3176",
+          "sha256": "594ac8b2b09280022e2b73142f873fd4d622ba7a1bca590c3fdcb0231e4fb461"
+        },
+        {
+          "id": "FJ3177",
+          "sha256": "d76f052f56dda3dc6f4d453c33f062ff56207ff3aea90f9678b5d295f0c916f1"
+        },
+        {
+          "id": "FJ3161",
+          "sha256": "7717781b7cb53eaa24eff097e6da5f8dfd1e58a3f23aa169ec05c58eb93de2dc"
+        },
+        {
+          "id": "FJ3164",
+          "sha256": "ac0dc9fe871acf68fc8fffa41666f4d7fae35626055e18c104135db80bbd8a65"
+        },
+        {
+          "id": "FJ3167",
+          "sha256": "15c66e24dcef4af7b1e4c7e948d3048c87b2d772a2f182f814ae7df8059af3f5"
+        },
+        {
+          "id": "FJ3170",
+          "sha256": "e9cda58b8a69602513d067ee47468c3984c223cdc501975468379b65149c7d19"
+        },
+        {
+          "id": "FJ3172",
+          "sha256": "7454480761dbf6c98c04f1a59788aeba1dcdecde7a673553ec19b2da172c2916"
+        },
+        {
+          "id": "FJ3158",
+          "sha256": "57a9cd9f62fc902f2d10f32c83237bba5bee4a24ae323a2b2405d9df68fd585b"
+        },
+        {
+          "id": "FJ3160",
+          "sha256": "f04ca280dc74fdc79afb14e5da1515a1e77762960bb38fab869be0e617348eac"
+        },
+        {
+          "id": "FJ3163",
+          "sha256": "968ed4928160fd54c444aa8c4a2c318fa56368c55c715afcdeaa48445382d3f6"
+        },
+        {
+          "id": "FJ3166",
+          "sha256": "cd744d75a90dc4d2b38f3b25928656ae2f9b873ea3113d01f91a102290eda5bd"
+        },
+        {
+          "id": "FJ3169",
+          "sha256": "7eb98fe2886168196d8a7ee37d1c7a6e7decbc1c09cdf2d4295c13ed7ba3df0c"
+        },
+        {
+          "id": "FJ3171",
+          "sha256": "7c9c326269edd09bdf02aca90333c61debe4f39c777fbef887751826a54adb9e"
+        },
+        {
+          "id": "FJ3173",
+          "sha256": "1bcf85e649234f976236f81077019ae66971c69c0943992a7ec0072939d42245"
+        },
+        {
+          "id": "FJ3174",
+          "sha256": "f5928470229deb2c7579804b883ffeaae611127dac1454caed3b3df93fe8dad6"
+        },
+        {
+          "id": "FJ3175",
+          "sha256": "f1ce32fedb9f84ac37b800b2a182f6701f972fbd8cc01be7732ab3ca3864603e"
+        },
+        {
+          "id": "FJ3154",
+          "sha256": "55fd0b1ec25bc207c5a58cb2aa3d5f2880df6593719ec803c83ac898d3bda358"
+        },
+        {
+          "id": "FJ3155",
+          "sha256": "7ce892808f37a9c96c74f298334be195cb50bfdbe64bcfa62072141ed38df0a2"
+        },
+        {
+          "id": "FJ3156",
+          "sha256": "d78f0563a0c0b5be89284a6d73434998a05dc9dbddb471b49e398c9ef96f07ae"
+        },
+        {
+          "id": "FJ3157",
+          "sha256": "2e252a2558f0f64430efa35d79a4fe8677b6cbb0ab6e93afda94b8d4239479fd"
+        },
+        {
+          "id": "FJ3159",
+          "sha256": "1e63e0abb22ccf6255f1fb910699b2bade07cace17ffc12b43bb185228dd3696"
+        },
+        {
+          "id": "FJ3162",
+          "sha256": "07fdac1c69d14c68241176f055da667eec8c2976c3a579df235d90e66fca91b0"
+        },
+        {
+          "id": "FJ3165",
+          "sha256": "e30bc2a914a50d097dc5824cacbe54be10fc68c9f43cd9ef023519bc146cab61"
+        },
+        {
+          "id": "FJ3168",
+          "sha256": "884ef6993f9578f86a6441ca7016f647f22778a9ab850189e1863d5f4112001d"
+        }
+      ],
+      "bounds": {
+        "min": [-0.0510007, 0.904595, -0.0000185499],
+        "max": [0.0495736, 1.48143, 0.115353]
+      },
+      "triangleCount": 60164
+    },
+    {
+      "id": "rib-cage",
+      "names": {
+        "en": "Ribs and sternum",
+        "ro": "Coaste și stern"
+      },
+      "latinName": "Costae et sternum",
+      "regionId": "thorax",
+      "laterality": "midline",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7485",
+          "name": "sternum",
+          "fileIds": ["FJ3153", "FJ3178", "FJ3290"]
+        },
+        {
+          "conceptId": "FMA7987",
+          "name": "left first rib",
+          "fileIds": ["FJ3228"]
+        },
+        {
+          "conceptId": "FMA8012",
+          "name": "left second rib",
+          "fileIds": ["FJ3229"]
+        },
+        {
+          "conceptId": "FMA8039",
+          "name": "left third rib",
+          "fileIds": ["FJ3230"]
+        },
+        {
+          "conceptId": "FMA8148",
+          "name": "left fourth rib",
+          "fileIds": ["FJ3231"]
+        },
+        {
+          "conceptId": "FMA8093",
+          "name": "left fifth rib",
+          "fileIds": ["FJ3232"]
+        },
+        {
+          "conceptId": "FMA8202",
+          "name": "left sixth rib",
+          "fileIds": ["FJ3233"]
+        },
+        {
+          "conceptId": "FMA8256",
+          "name": "left seventh rib",
+          "fileIds": ["FJ3234"]
+        },
+        {
+          "conceptId": "FMA8310",
+          "name": "left eighth rib",
+          "fileIds": ["FJ3235"]
+        },
+        {
+          "conceptId": "FMA8391",
+          "name": "left ninth rib",
+          "fileIds": ["FJ3236"]
+        },
+        {
+          "conceptId": "FMA8472",
+          "name": "left tenth rib",
+          "fileIds": ["FJ3225"]
+        },
+        {
+          "conceptId": "FMA8532",
+          "name": "left eleventh rib",
+          "fileIds": ["FJ3226"]
+        },
+        {
+          "conceptId": "FMA8534",
+          "name": "left twelfth rib",
+          "fileIds": ["FJ3227"]
+        },
+        {
+          "conceptId": "FMA7857",
+          "name": "right first rib",
+          "fileIds": ["FJ3334"]
+        },
+        {
+          "conceptId": "FMA7882",
+          "name": "right second rib",
+          "fileIds": ["FJ3336"]
+        },
+        {
+          "conceptId": "FMA7909",
+          "name": "right third rib",
+          "fileIds": ["FJ3338"]
+        },
+        {
+          "conceptId": "FMA7957",
+          "name": "right fourth rib",
+          "fileIds": ["FJ3340"]
+        },
+        {
+          "conceptId": "FMA8066",
+          "name": "right fifth rib",
+          "fileIds": ["FJ3342"]
+        },
+        {
+          "conceptId": "FMA8175",
+          "name": "right sixth rib",
+          "fileIds": ["FJ3344"]
+        },
+        {
+          "conceptId": "FMA8229",
+          "name": "right seventh rib",
+          "fileIds": ["FJ3346"]
+        },
+        {
+          "conceptId": "FMA8283",
+          "name": "right eighth rib",
+          "fileIds": ["FJ3347"]
+        },
+        {
+          "conceptId": "FMA8364",
+          "name": "right ninth rib",
+          "fileIds": ["FJ3348"]
+        },
+        {
+          "conceptId": "FMA8445",
+          "name": "right tenth rib",
+          "fileIds": ["FJ3330"]
+        },
+        {
+          "conceptId": "FMA8531",
+          "name": "right eleventh rib",
+          "fileIds": ["FJ3331"]
+        },
+        {
+          "conceptId": "FMA8533",
+          "name": "right twelfth rib",
+          "fileIds": ["FJ3332"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3153",
+          "sha256": "d17057ed1dad252a6fa6a3e8d92bc13310cebe0b584df147af0cc4a646f98f3e"
+        },
+        {
+          "id": "FJ3178",
+          "sha256": "32a06946d8eadbe1a847a373abe7499381c0182c72b7c94e3e2a0c3ba7c867e3"
+        },
+        {
+          "id": "FJ3290",
+          "sha256": "b847e67db475197cc4510744fef76bafd8e75c50797ca85eb8cd56dd853d61d6"
+        },
+        {
+          "id": "FJ3228",
+          "sha256": "eb534d19462226e26b91234544f99abe118878a25c125f2a8839341e6769252b"
+        },
+        {
+          "id": "FJ3229",
+          "sha256": "b752f038ceba8430f3872897ce69495d7dd74ed8e19c21d3f75d0bc0b156d84f"
+        },
+        {
+          "id": "FJ3230",
+          "sha256": "8b42d241c711fe9765b1239be33fcab6b865ab4619b5d05fa98ea245b6075d5c"
+        },
+        {
+          "id": "FJ3231",
+          "sha256": "28b852d4813703c5654d0405168e22bf0032632d47b9667b4b16e60ed89a425b"
+        },
+        {
+          "id": "FJ3232",
+          "sha256": "6fa730aea273685148d3e9d3f52fe450acec4c13d6e3b1b6865e0e9532283abb"
+        },
+        {
+          "id": "FJ3233",
+          "sha256": "2a0f1e32b8410b6396bea7ae342a16ae1ac1b77042e70d7e98cabeb7dcf3dfb9"
+        },
+        {
+          "id": "FJ3234",
+          "sha256": "638a766f20b64d02095efa845b5ea316624a376acb44c7e4a6d533d4da6ef4db"
+        },
+        {
+          "id": "FJ3235",
+          "sha256": "81a7215ef6ed923bbad6f07208bbc0ee26ddbaae3b1423f624cae465012d9144"
+        },
+        {
+          "id": "FJ3236",
+          "sha256": "3dc292292b9f2bd5e226ac100d3a8db76cba8eb1d9d09533a6e5e871f023e2a8"
+        },
+        {
+          "id": "FJ3225",
+          "sha256": "daa25aba7fba3ff691d61cd239f8d49debc84ff871a351051c1d57a192b91dfd"
+        },
+        {
+          "id": "FJ3226",
+          "sha256": "4bb9d52fdb2c15cb459c2bd08fd58082cdb39d15903cde675313762ea2287fc8"
+        },
+        {
+          "id": "FJ3227",
+          "sha256": "83e04b8b6f91e4de57e7b380a2f2c7d6f0bbf284ce76710ca89aa82fb376bd4e"
+        },
+        {
+          "id": "FJ3334",
+          "sha256": "ecef0080744a8422b72b4f52229bd68945692cdef7d6fe2a57043b2155c49d17"
+        },
+        {
+          "id": "FJ3336",
+          "sha256": "e9f527453bb2a48764ac7243d0b9b23e37fb2a85e92cee445972a1a770a5eaa4"
+        },
+        {
+          "id": "FJ3338",
+          "sha256": "69dbbcfc72d592aa862621612e7ad1151ada3fa06c5ce51e24731015561ad7ac"
+        },
+        {
+          "id": "FJ3340",
+          "sha256": "b9bc6bbb160fd579ed246c3eb145b39f82866dc2dfeebe798f0dba5a2e352597"
+        },
+        {
+          "id": "FJ3342",
+          "sha256": "11d403618e4114a5edcd8f2fa4e90ef4e6427b04f4cd3962c59462694b55c443"
+        },
+        {
+          "id": "FJ3344",
+          "sha256": "67f1f42fea1c289adaf4929716534bad7dfdd136ca0057f05de83d6e20c8f0a8"
+        },
+        {
+          "id": "FJ3346",
+          "sha256": "91aa56e034fbe6f413c0f15b76d725a1f8efd115aa2900beda6edf43a3ab0c43"
+        },
+        {
+          "id": "FJ3347",
+          "sha256": "43a1591cf1e123ca01f64297a7ce008d679a5f5f26421cc5b69e2232da89d743"
+        },
+        {
+          "id": "FJ3348",
+          "sha256": "7d3a969b778da18eb38b1a64d92e2b90e1730fcb0d7b2bfacd125ff4826876d0"
+        },
+        {
+          "id": "FJ3330",
+          "sha256": "0f688dd4e0d20a8328b4763c0acc7582a9beac8fe5c7ce58586db99c6e366945"
+        },
+        {
+          "id": "FJ3331",
+          "sha256": "761d6d8713c31d4b9f795c4875da9fc750c913907386489568fdebea15af49c3"
+        },
+        {
+          "id": "FJ3332",
+          "sha256": "ece92488a9293cde2d8a8275cee8232326b377811afba888f6147d7217e04e07"
+        }
+      ],
+      "bounds": {
+        "min": [-0.137085, 1.00806, 0.00364141],
+        "max": [0.13577799999999998, 1.37048, 0.213832]
+      },
+      "triangleCount": 178876
+    },
+    {
+      "id": "pelvic-girdle",
+      "names": {
+        "en": "Hip bones",
+        "ro": "Oase coxale"
+      },
+      "latinName": "Ossa coxae",
+      "regionId": "pelvis",
+      "laterality": "bilateral",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA16587",
+          "name": "left hip bone",
+          "fileIds": ["FJ3288"]
+        },
+        {
+          "conceptId": "FMA16586",
+          "name": "right hip bone",
+          "fileIds": ["FJ3152"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3288",
+          "sha256": "981411a910d502c80e454cc95128a9812a1284202295d1ebc7ab5020a08d83aa"
+        },
+        {
+          "id": "FJ3152",
+          "sha256": "708e42cba3d1817230c98410c80742875d56bb5b3e688a566f62509c7a63e424"
+        }
+      ],
+      "bounds": {
+        "min": [-0.144872, 0.751951, 0.0011187800000000002],
+        "max": [0.144754, 0.95809, 0.139095]
+      },
+      "triangleCount": 4706
+    },
+    {
+      "id": "sacrum",
+      "names": {
+        "en": "Sacrum",
+        "ro": "Sacru"
+      },
+      "latinName": "Os sacrum",
+      "regionId": "pelvis",
+      "laterality": "midline",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA16202",
+          "name": "sacrum",
+          "fileIds": ["FJ3393"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3393",
+          "sha256": "fd95a0b26f450e4939858c9effb7b14e589874c9210edfdb92e8f4552dd484de"
+        }
+      ],
+      "bounds": {
+        "min": [-0.059591200000000004, 0.782837, -0.00725375],
+        "max": [0.0582029, 0.9272, 0.0813964]
+      },
+      "triangleCount": 9922
+    },
+    {
+      "id": "clavicle-left",
+      "names": {
+        "en": "Left clavicle",
+        "ro": "Claviculă stângă"
+      },
+      "latinName": "Clavicula sinistra",
+      "regionId": "upper-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA13323",
+          "name": "left clavicle",
+          "fileIds": ["FJ3237"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3237",
+          "sha256": "ae2dc115516cd51b56047c8c0188a0b62c3fe627deed4d1b83e79e09b4b5c0d8"
+        }
+      ],
+      "bounds": {
+        "min": [0.00837873, 1.30853, 0.054387500000000005],
+        "max": [0.14394200000000001, 1.35518, 0.14707800000000001]
+      },
+      "triangleCount": 1176
+    },
+    {
+      "id": "scapula-left",
+      "names": {
+        "en": "Left scapula",
+        "ro": "Scapulă stângă"
+      },
+      "latinName": "Scapula sinistra",
+      "regionId": "upper-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA13396",
+          "name": "left scapula",
+          "fileIds": ["FJ3279"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3279",
+          "sha256": "a52cf573f15b7c7c5cf096ae3ee81d8062a955edffdf82447e745afeccd0e554"
+        }
+      ],
+      "bounds": {
+        "min": [0.0570614, 1.18395, -0.0050764],
+        "max": [0.166464, 1.3498599999999998, 0.10284499999999999]
+      },
+      "triangleCount": 28106
+    },
+    {
+      "id": "humerus-left",
+      "names": {
+        "en": "Left humerus",
+        "ro": "Humerus stâng"
+      },
+      "latinName": "Humerus sinister",
+      "regionId": "upper-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA23131",
+          "name": "left humerus",
+          "fileIds": ["FJ3262"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3262",
+          "sha256": "58b4f0f36723f27726009cdf4b77172dc694303f4e03f51b29c1663507480194"
+        }
+      ],
+      "bounds": {
+        "min": [0.140073, 1.02921, 0.0510559],
+        "max": [0.24076, 1.33652, 0.100229]
+      },
+      "triangleCount": 3844
+    },
+    {
+      "id": "radius-left",
+      "names": {
+        "en": "Left radius",
+        "ro": "Radius stâng"
+      },
+      "latinName": "Radius sinister",
+      "regionId": "upper-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA23465",
+          "name": "left radius",
+          "fileIds": ["FJ3277"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3277",
+          "sha256": "cce317e77ca297f93c0676815e22e8a2b6cc09029b74f1678193b17a9c0d5583"
+        }
+      ],
+      "bounds": {
+        "min": [0.219836, 0.806163, 0.0614693],
+        "max": [0.279143, 1.03501, 0.127252]
+      },
+      "triangleCount": 632
+    },
+    {
+      "id": "ulna-left",
+      "names": {
+        "en": "Left ulna",
+        "ro": "Ulnă stângă"
+      },
+      "latinName": "Ulna sinistra",
+      "regionId": "upper-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA23468",
+          "name": "left ulna",
+          "fileIds": ["FJ3286"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3286",
+          "sha256": "32838a464599fa017717090afe9d355c03c0afb48cd8c5aa7e6f825156b594a5"
+        }
+      ],
+      "bounds": {
+        "min": [0.19689199999999998, 0.805016, 0.0445523],
+        "max": [0.24712, 1.05247, 0.123279]
+      },
+      "triangleCount": 824
+    },
+    {
+      "id": "hand-bones-left",
+      "names": {
+        "en": "Left hand bones",
+        "ro": "Oasele mâinii stângi"
+      },
+      "latinName": "Ossa manus",
+      "regionId": "upper-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24436",
+          "name": "left scaphoid",
+          "fileIds": ["FJ3278"]
+        },
+        {
+          "conceptId": "FMA24438",
+          "name": "left lunate",
+          "fileIds": ["FJ3268"]
+        },
+        {
+          "conceptId": "FMA24440",
+          "name": "left triquetral",
+          "fileIds": ["FJ3285"]
+        },
+        {
+          "conceptId": "FMA24442",
+          "name": "left pisiform",
+          "fileIds": ["FJ3276"]
+        },
+        {
+          "conceptId": "FMA24444",
+          "name": "left trapezium",
+          "fileIds": ["FJ3283"]
+        },
+        {
+          "conceptId": "FMA24445",
+          "name": "left trapezoid",
+          "fileIds": ["FJ3284"]
+        },
+        {
+          "conceptId": "FMA24447",
+          "name": "left capitate",
+          "fileIds": ["FJ3257"]
+        },
+        {
+          "conceptId": "FMA24449",
+          "name": "left hamate",
+          "fileIds": ["FJ3261"]
+        },
+        {
+          "conceptId": "FMA24465",
+          "name": "left first metacarpal bone",
+          "fileIds": ["FJ3240"]
+        },
+        {
+          "conceptId": "FMA24467",
+          "name": "left second metacarpal bone",
+          "fileIds": ["FJ3243"]
+        },
+        {
+          "conceptId": "FMA24469",
+          "name": "left third metacarpal bone",
+          "fileIds": ["FJ3246"]
+        },
+        {
+          "conceptId": "FMA24471",
+          "name": "left fourth metacarpal bone",
+          "fileIds": ["FJ3249"]
+        },
+        {
+          "conceptId": "FMA24473",
+          "name": "left fifth metacarpal bone",
+          "fileIds": ["FJ3252"]
+        },
+        {
+          "conceptId": "FMA65470",
+          "name": "proximal phalanx of left thumb",
+          "fileIds": ["FJ3318"]
+        },
+        {
+          "conceptId": "FMA71915",
+          "name": "proximal phalanx of left index finger",
+          "fileIds": ["FJ3313"]
+        },
+        {
+          "conceptId": "FMA71908",
+          "name": "proximal phalanx of left middle finger",
+          "fileIds": ["FJ3316"]
+        },
+        {
+          "conceptId": "FMA71916",
+          "name": "proximal phalanx of left ring finger",
+          "fileIds": ["FJ3317"]
+        },
+        {
+          "conceptId": "FMA66791",
+          "name": "proximal phalanx of left little finger",
+          "fileIds": ["FJ3314"]
+        },
+        {
+          "conceptId": "FMA23938",
+          "name": "middle phalanx of left index finger",
+          "fileIds": ["FJ3296"]
+        },
+        {
+          "conceptId": "FMA23940",
+          "name": "middle phalanx of left middle finger",
+          "fileIds": ["FJ3299"]
+        },
+        {
+          "conceptId": "FMA23942",
+          "name": "middle phalanx of left ring finger",
+          "fileIds": ["FJ3291"]
+        },
+        {
+          "conceptId": "FMA23944",
+          "name": "middle phalanx of left little finger",
+          "fileIds": ["FJ3297"]
+        },
+        {
+          "conceptId": "FMA23951",
+          "name": "distal phalanx of left thumb",
+          "fileIds": ["FJ3188"]
+        },
+        {
+          "conceptId": "FMA23953",
+          "name": "distal phalanx of left index finger",
+          "fileIds": ["FJ3183"]
+        },
+        {
+          "conceptId": "FMA23955",
+          "name": "distal phalanx of left middle finger",
+          "fileIds": ["FJ3186"]
+        },
+        {
+          "conceptId": "FMA23957",
+          "name": "distal phalanx of left ring finger",
+          "fileIds": ["FJ3187"]
+        },
+        {
+          "conceptId": "FMA23959",
+          "name": "distal phalanx of left little finger",
+          "fileIds": ["FJ3184"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3278",
+          "sha256": "4311e5b791fb93c11376a4643d6bee38b134614dba22e94004d9fb3de1fe2a3f"
+        },
+        {
+          "id": "FJ3268",
+          "sha256": "8be07938751172946412e4e5eedf72831d7ec7b42110884d423982e5b8406333"
+        },
+        {
+          "id": "FJ3285",
+          "sha256": "fe25c63027de612508d7d92ac6ea08beafe48b0f9d0c8a2a7471b5ce85882576"
+        },
+        {
+          "id": "FJ3276",
+          "sha256": "fde947e4adb1373a5fe74820141804efb7875a6a507ff53938c2727392d6828b"
+        },
+        {
+          "id": "FJ3283",
+          "sha256": "b3126c2751ac29968622e802011d4461c528057f9fd2db950f0704acaa8763cb"
+        },
+        {
+          "id": "FJ3284",
+          "sha256": "cea6f3c52bdeb7d261f52a296e00686acf042d87ed004bf453fd39cdfb8f1379"
+        },
+        {
+          "id": "FJ3257",
+          "sha256": "43e59c2c85a9d76c49d338c1b42b6ddff82173b8ebd76fbb2d54d86930d23508"
+        },
+        {
+          "id": "FJ3261",
+          "sha256": "bc8ce15358c4b60be971675493d38a4bc11046bbb2e93281fdb39d3a3049b375"
+        },
+        {
+          "id": "FJ3240",
+          "sha256": "0c8bf4436d320036d10a7fa3747ef34f0ce4ecd01bbee373225d1588efa38c70"
+        },
+        {
+          "id": "FJ3243",
+          "sha256": "8fda448450b00ade9b520798111fce1c90a3f27832d0c5112daafb2dabf8c2e9"
+        },
+        {
+          "id": "FJ3246",
+          "sha256": "c0c426e3140f3dc2457ddeb2e83d1db6efdadb3e77ccd939a2f15cbd7e186ecd"
+        },
+        {
+          "id": "FJ3249",
+          "sha256": "f6b5c38ee246def1b4c59bbb878ad52b9d06b37af4e55f634c84beb757afff5d"
+        },
+        {
+          "id": "FJ3252",
+          "sha256": "ffe5b98ae80aabd879732ae03f8c56e3f4f84ed6442bf5a00565d274f2816b50"
+        },
+        {
+          "id": "FJ3318",
+          "sha256": "0f62e4d042979264f6f3d4dd0a90044b89a3ad4b66c141cebc2aa515bd3255c8"
+        },
+        {
+          "id": "FJ3313",
+          "sha256": "8ff94391d57f8758f86e7a8ac9a82f62c9175067ffbbadab5693221ba204ecbe"
+        },
+        {
+          "id": "FJ3316",
+          "sha256": "411ec81747038f797c4a2a7c33ac87cdbf49047aedc43a6487d45cc373f697a8"
+        },
+        {
+          "id": "FJ3317",
+          "sha256": "851e0b459c672fef4cd2a32583991b22c30576f467eb50c5ffcb22fd13ea7de8"
+        },
+        {
+          "id": "FJ3314",
+          "sha256": "a970bf6fea2d1ad51cad704a488417aaaaacca40be6f10c9ec713f358760efb8"
+        },
+        {
+          "id": "FJ3296",
+          "sha256": "3784ab9d38876602abdda3ef45b45a11f907f5412abf458915a5ffe92cdd82ac"
+        },
+        {
+          "id": "FJ3299",
+          "sha256": "7d67270dabfb72710d6adf29b6ccc901a459fa49d2315517a392ca62cf2e0878"
+        },
+        {
+          "id": "FJ3291",
+          "sha256": "8c31a1d782b726629680cd5e0514b4988e8c0b9d388d600b5c76f0a89dcd9275"
+        },
+        {
+          "id": "FJ3297",
+          "sha256": "876fc444322b51eebcc12622aefff29266c16b8dadbe9c7b97588013b2e6a120"
+        },
+        {
+          "id": "FJ3188",
+          "sha256": "6a0cae057769e3f67a86304be10f7f4b6cafc631092c764a82aef7e7ee9d2119"
+        },
+        {
+          "id": "FJ3183",
+          "sha256": "4b21956aa21986a4e709fe73291d0a21a74b202375ce6623dfc7ef6b26ebf9b8"
+        },
+        {
+          "id": "FJ3186",
+          "sha256": "c5dcbe81e721420508a2cb40228e45471925d4b507f0c738a7446a2ee835cd7c"
+        },
+        {
+          "id": "FJ3187",
+          "sha256": "49dd966dbef49394d802a781a5ee80b98eec168352d190e6a57ba35ff4ca3bd6"
+        },
+        {
+          "id": "FJ3184",
+          "sha256": "11479ce0bbe0c20515066d4b98dd11c35f7f23580f10e2a388ccb816a8dad20e"
+        }
+      ],
+      "bounds": {
+        "min": [0.218894, 0.6533669999999999, 0.11057299999999999],
+        "max": [0.32393500000000003, 0.811682, 0.195089]
+      },
+      "triangleCount": 10226
+    },
+    {
+      "id": "femur-left",
+      "names": {
+        "en": "Left femur",
+        "ro": "Femur stâng"
+      },
+      "latinName": "Femur sinistrum",
+      "regionId": "lower-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24475",
+          "name": "left femur",
+          "fileIds": ["FJ3259"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3259",
+          "sha256": "4b919097be4820784d199838c69b1fe10afba703f0d6680a3ecab58460fb6549"
+        }
+      ],
+      "bounds": {
+        "min": [0.0319662, 0.368056, 0.0494822],
+        "max": [0.15023699999999998, 0.8342390000000001, 0.112276]
+      },
+      "triangleCount": 3204
+    },
+    {
+      "id": "patella-left",
+      "names": {
+        "en": "Left patella",
+        "ro": "Patelă stângă"
+      },
+      "latinName": "Patella sinistra",
+      "regionId": "lower-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24487",
+          "name": "left patella",
+          "fileIds": ["FJ3275"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3275",
+          "sha256": "8a0776c1efe4ed2e3fff3c14b6fdb814dab4c077f8f3cf866866e8d9312a33e3"
+        }
+      ],
+      "bounds": {
+        "min": [0.0605925, 0.361497, 0.10090099999999999],
+        "max": [0.10222400000000001, 0.400763, 0.122751]
+      },
+      "triangleCount": 310
+    },
+    {
+      "id": "tibia-left",
+      "names": {
+        "en": "Left tibia",
+        "ro": "Tibie stângă"
+      },
+      "latinName": "Tibia sinistra",
+      "regionId": "lower-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24478",
+          "name": "left tibia",
+          "fileIds": ["FJ3282"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3282",
+          "sha256": "80add76b87c7b9e1396406de48f691e5fd3dde9e5cec49a0b15c6963d78542c6"
+        }
+      ],
+      "bounds": {
+        "min": [0.0350342, -0.0060953299999999995, 0.0519821],
+        "max": [0.109455, 0.373862, 0.114515]
+      },
+      "triangleCount": 1692
+    },
+    {
+      "id": "fibula-left",
+      "names": {
+        "en": "Left fibula",
+        "ro": "Fibulă stângă"
+      },
+      "latinName": "Fibula sinistra",
+      "regionId": "lower-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24481",
+          "name": "left fibula",
+          "fileIds": ["FJ3260"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3260",
+          "sha256": "34d29e9d6b2bf032147bcbe8da1e9fb65739ca2115baf577987ff1b780fabb73"
+        }
+      ],
+      "bounds": {
+        "min": [0.08452899999999999, -0.0251906, 0.048534],
+        "max": [0.120108, 0.359131, 0.078119]
+      },
+      "triangleCount": 1124
+    },
+    {
+      "id": "foot-bones-left",
+      "names": {
+        "en": "Left foot bones",
+        "ro": "Oasele piciorului stâng"
+      },
+      "latinName": "Ossa pedis",
+      "regionId": "lower-limb-left",
+      "laterality": "left",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24483",
+          "name": "left talus",
+          "fileIds": ["FJ3280"]
+        },
+        {
+          "conceptId": "FMA24498",
+          "name": "left calcaneus",
+          "fileIds": ["FJ3256"]
+        },
+        {
+          "conceptId": "FMA24522",
+          "name": "left medial cuneiform bone",
+          "fileIds": ["FJ3271"]
+        },
+        {
+          "conceptId": "FMA24524",
+          "name": "left intermediate cuneiform bone",
+          "fileIds": ["FJ3264"]
+        },
+        {
+          "conceptId": "FMA24526",
+          "name": "left lateral cuneiform bone",
+          "fileIds": ["FJ3267"]
+        },
+        {
+          "conceptId": "FMA24529",
+          "name": "left cuboid bone",
+          "fileIds": ["FJ3258"]
+        },
+        {
+          "conceptId": "FMA24501",
+          "name": "navicular bone of left foot",
+          "fileIds": ["FJ3307"]
+        },
+        {
+          "conceptId": "FMA24508",
+          "name": "left first metatarsal bone",
+          "fileIds": ["FJ3241"]
+        },
+        {
+          "conceptId": "FMA24510",
+          "name": "left second metatarsal bone",
+          "fileIds": ["FJ3244"]
+        },
+        {
+          "conceptId": "FMA24512",
+          "name": "left third metatarsal bone",
+          "fileIds": ["FJ3247"]
+        },
+        {
+          "conceptId": "FMA24514",
+          "name": "left fourth metatarsal bone",
+          "fileIds": ["FJ3250"]
+        },
+        {
+          "conceptId": "FMA24516",
+          "name": "left fifth metatarsal bone",
+          "fileIds": ["FJ3253"]
+        },
+        {
+          "conceptId": "FMA43254",
+          "name": "proximal phalanx of left big toe",
+          "fileIds": ["FJ3329"]
+        },
+        {
+          "conceptId": "FMA32635",
+          "name": "proximal phalanx of left second toe",
+          "fileIds": ["FJ3328"]
+        },
+        {
+          "conceptId": "FMA32637",
+          "name": "proximal phalanx of left third toe",
+          "fileIds": ["FJ3311"]
+        },
+        {
+          "conceptId": "FMA32639",
+          "name": "proximal phalanx of left fourth toe",
+          "fileIds": ["FJ3312"]
+        },
+        {
+          "conceptId": "FMA32641",
+          "name": "proximal phalanx of left little toe",
+          "fileIds": ["FJ3315"]
+        },
+        {
+          "conceptId": "FMA32643",
+          "name": "middle phalanx of left second toe",
+          "fileIds": ["FJ3293"]
+        },
+        {
+          "conceptId": "FMA32645",
+          "name": "middle phalanx of left third toe",
+          "fileIds": ["FJ3294"]
+        },
+        {
+          "conceptId": "FMA32647",
+          "name": "middle phalanx of left fourth toe",
+          "fileIds": ["FJ3295"]
+        },
+        {
+          "conceptId": "FMA230988",
+          "name": "middle phalanx of left little toe",
+          "fileIds": ["FJ3298"]
+        },
+        {
+          "conceptId": "FMA32651",
+          "name": "distal phalanx of left big toe",
+          "fileIds": ["FJ3182"]
+        },
+        {
+          "conceptId": "FMA32653",
+          "name": "distal phalanx of left second toe",
+          "fileIds": ["FJ3179"]
+        },
+        {
+          "conceptId": "FMA32655",
+          "name": "distal phalanx of left third toe",
+          "fileIds": ["FJ3180"]
+        },
+        {
+          "conceptId": "FMA32657",
+          "name": "distal phalanx of left fourth toe",
+          "fileIds": ["FJ3181"]
+        },
+        {
+          "conceptId": "FMA32659",
+          "name": "distal phalanx of left little toe",
+          "fileIds": ["FJ3185"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3280",
+          "sha256": "0f9b04d6f7e7f82572e9bca7fe3e08e92e4a7917d9cc60f9a8038e4c3a7c7bb7"
+        },
+        {
+          "id": "FJ3256",
+          "sha256": "f39b699100eea69a951440f617a7d2ab692a7dc1c80e5bbb064603d7ba2dd4a4"
+        },
+        {
+          "id": "FJ3271",
+          "sha256": "6bd6c95a27d545d8984a2582f36f3881e04e1550ae2fb3f068d3bee80bf833b2"
+        },
+        {
+          "id": "FJ3264",
+          "sha256": "6d6675dfb04a553a305369368392e91c1a2fd49783a81f7ac35773a5407e13f1"
+        },
+        {
+          "id": "FJ3267",
+          "sha256": "1e59930bb6ff4556d250b38ae71fc1e46148b6a87c7355148bac05ea52da0b27"
+        },
+        {
+          "id": "FJ3258",
+          "sha256": "f1ed3539cbb89954b3aadd8a435a174dd26d31e8de39e9480f1c9bd38b4ee3c6"
+        },
+        {
+          "id": "FJ3307",
+          "sha256": "f3acad5a0995ac64585b22079fed851a20af96fc09e1e781fbb8853145a5df2d"
+        },
+        {
+          "id": "FJ3241",
+          "sha256": "81a87d611584dc38c5da832051623450d5e798e0461f5595c53b926bce8e1205"
+        },
+        {
+          "id": "FJ3244",
+          "sha256": "dfccfdd4e15f9c5fc2d3ff5aec2c192e655b33796b7936a091f4fbbf0e846a47"
+        },
+        {
+          "id": "FJ3247",
+          "sha256": "ba30e72831383f90a10502c5d511ebaa1edb77ba2a345b3030d95e3483769535"
+        },
+        {
+          "id": "FJ3250",
+          "sha256": "60e27563f64f948d6de395fb136af962c07d01d83bfa6ac057a263a6f5afcec0"
+        },
+        {
+          "id": "FJ3253",
+          "sha256": "bb7bfc77f5c770e1ad0042802b74ab028bd131c631bbdbf3636bcabe522e680b"
+        },
+        {
+          "id": "FJ3329",
+          "sha256": "7b351faa1a13618f21c5072c00e97248334306b623c78a8eb102c62b298245c5"
+        },
+        {
+          "id": "FJ3328",
+          "sha256": "33964822dfcd4833af09cef2c3909d210ba13a6c96fc9f3c2d457f4f2d1805f8"
+        },
+        {
+          "id": "FJ3311",
+          "sha256": "deac4abe55e492efe84c7dd5bef101690ea3c6c5f4a9df552c370b8a2a324aa6"
+        },
+        {
+          "id": "FJ3312",
+          "sha256": "663bd9469b96679753e7f64c5f072c8cfe245dbb4b37b685079b4e7b890c4937"
+        },
+        {
+          "id": "FJ3315",
+          "sha256": "0bdbbd0619f4765da9fa25918a1e79db22b156eb4de1ba8574bec67369bfdd6d"
+        },
+        {
+          "id": "FJ3293",
+          "sha256": "706e5f280c437ae9c01d08e021d82640ec3dfa50d1d2e0a2ee48eafc821ed104"
+        },
+        {
+          "id": "FJ3294",
+          "sha256": "c7b9a13197ef69b530146cfdcfca046bcba053bcc6bc6895c63cf2fc9fd3781f"
+        },
+        {
+          "id": "FJ3295",
+          "sha256": "d854f4059f59201871761d7a891f626c7ad8d74a77e7aea64f7b99c8c2b55f9b"
+        },
+        {
+          "id": "FJ3298",
+          "sha256": "68eb411cca65a47677026461b807534ee0640dcb7355031d6ab1fef901050e81"
+        },
+        {
+          "id": "FJ3182",
+          "sha256": "dad7cb9b6e4eb0619d725a2e2697997a2e8b869ed5d67965c91746b2e6faaa88"
+        },
+        {
+          "id": "FJ3179",
+          "sha256": "aa2903a8f53a7fe7383a9f27dc4920f411a4d8f181afaf7412799dd87e589aac"
+        },
+        {
+          "id": "FJ3180",
+          "sha256": "f0887b9a26088762fbd89b1dc34a033ce8d59c2f41a8bf239e822e99c042a8c2"
+        },
+        {
+          "id": "FJ3181",
+          "sha256": "eea79d87f0a3b799e705dc7e6cfcba699aa46f1ba4ebc78f27392b069e6849dc"
+        },
+        {
+          "id": "FJ3185",
+          "sha256": "4e4c610814cfdf5cb49d890f5ba5b6c0049bda34d031a439c9b3812d161936fa"
+        }
+      ],
+      "bounds": {
+        "min": [0.04501, -0.0704799, 0.0242068],
+        "max": [0.169358, 0.0030981100000000003, 0.23591900000000002]
+      },
+      "triangleCount": 15406
+    },
+    {
+      "id": "clavicle-right",
+      "names": {
+        "en": "Right clavicle",
+        "ro": "Claviculă dreaptă"
+      },
+      "latinName": "Clavicula dextra",
+      "regionId": "upper-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA13322",
+          "name": "right clavicle",
+          "fileIds": ["FJ3362"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3362",
+          "sha256": "1435b8f365652b215180e398b894a5bdfbf9cb13d00ccf06d07038b962e957b9"
+        }
+      ],
+      "bounds": {
+        "min": [-0.145277, 1.30862, 0.0544125],
+        "max": [-0.009661649999999999, 1.35544, 0.146948]
+      },
+      "triangleCount": 1146
+    },
+    {
+      "id": "scapula-right",
+      "names": {
+        "en": "Right scapula",
+        "ro": "Scapulă dreaptă"
+      },
+      "latinName": "Scapula dextra",
+      "regionId": "upper-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA13395",
+          "name": "right scapula",
+          "fileIds": ["FJ3384"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3384",
+          "sha256": "cb68b2e01a22989f20e602d5036a3f1fb28448fe647f599b9bbd61edfbff2320"
+        }
+      ],
+      "bounds": {
+        "min": [-0.166464, 1.1839600000000001, -0.00508275],
+        "max": [-0.0570538, 1.3498599999999998, 0.10285599999999999]
+      },
+      "triangleCount": 26172
+    },
+    {
+      "id": "humerus-right",
+      "names": {
+        "en": "Right humerus",
+        "ro": "Humerus drept"
+      },
+      "latinName": "Humerus dexter",
+      "regionId": "upper-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA23130",
+          "name": "right humerus",
+          "fileIds": ["FJ3368"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3368",
+          "sha256": "159fbdeb854044e7b0ebd0d48cfe332afb44a691d09b89ff644a851826d08268"
+        }
+      ],
+      "bounds": {
+        "min": [-0.240841, 1.0292000000000001, 0.0510391],
+        "max": [-0.14009, 1.33654, 0.10021899999999999]
+      },
+      "triangleCount": 3784
+    },
+    {
+      "id": "radius-right",
+      "names": {
+        "en": "Right radius",
+        "ro": "Radius drept"
+      },
+      "latinName": "Radius dexter",
+      "regionId": "upper-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA23464",
+          "name": "right radius",
+          "fileIds": ["FJ3349"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3349",
+          "sha256": "be1ebc9c5285cc934c625763b3363fc3133efab9eafdf1edf0b36de3b7ee06a9"
+        }
+      ],
+      "bounds": {
+        "min": [-0.27953500000000003, 0.8058350000000001, 0.0611026],
+        "max": [-0.219833, 1.03505, 0.126908]
+      },
+      "triangleCount": 672
+    },
+    {
+      "id": "ulna-right",
+      "names": {
+        "en": "Right ulna",
+        "ro": "Ulnă dreaptă"
+      },
+      "latinName": "Ulna dextra",
+      "regionId": "upper-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA23467",
+          "name": "right ulna",
+          "fileIds": ["FJ3391"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3391",
+          "sha256": "c84d953caa7613d6640593003ead91449eb1aaedc74cb2b27ae103e2177d3871"
+        }
+      ],
+      "bounds": {
+        "min": [-0.247179, 0.805173, 0.0447992],
+        "max": [-0.196881, 1.05245, 0.123494]
+      },
+      "triangleCount": 834
+    },
+    {
+      "id": "hand-bones-right",
+      "names": {
+        "en": "Right hand bones",
+        "ro": "Oasele mâinii drepte"
+      },
+      "latinName": "Ossa manus",
+      "regionId": "upper-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24435",
+          "name": "right scaphoid",
+          "fileIds": ["FJ3383"]
+        },
+        {
+          "conceptId": "FMA24437",
+          "name": "right lunate",
+          "fileIds": ["FJ3374"]
+        },
+        {
+          "conceptId": "FMA24439",
+          "name": "right triquetral",
+          "fileIds": ["FJ3390"]
+        },
+        {
+          "conceptId": "FMA24441",
+          "name": "right pisiform",
+          "fileIds": ["FJ3382"]
+        },
+        {
+          "conceptId": "FMA24443",
+          "name": "right trapezium",
+          "fileIds": ["FJ3388"]
+        },
+        {
+          "conceptId": "FMA23725",
+          "name": "right trapezoid",
+          "fileIds": ["FJ3389"]
+        },
+        {
+          "conceptId": "FMA24446",
+          "name": "right capitate",
+          "fileIds": ["FJ3361"]
+        },
+        {
+          "conceptId": "FMA24448",
+          "name": "right hamate",
+          "fileIds": ["FJ3367"]
+        },
+        {
+          "conceptId": "FMA24464",
+          "name": "right first metacarpal bone",
+          "fileIds": ["FJ3350"]
+        },
+        {
+          "conceptId": "FMA24466",
+          "name": "right second metacarpal bone",
+          "fileIds": ["FJ3352"]
+        },
+        {
+          "conceptId": "FMA24468",
+          "name": "right third metacarpal bone",
+          "fileIds": ["FJ3354"]
+        },
+        {
+          "conceptId": "FMA24470",
+          "name": "right fourth metacarpal bone",
+          "fileIds": ["FJ3356"]
+        },
+        {
+          "conceptId": "FMA24472",
+          "name": "right fifth metacarpal bone",
+          "fileIds": ["FJ3358"]
+        },
+        {
+          "conceptId": "FMA24450",
+          "name": "proximal phalanx of right thumb",
+          "fileIds": ["FJ3327"]
+        },
+        {
+          "conceptId": "FMA24451",
+          "name": "proximal phalanx of right index finger",
+          "fileIds": ["FJ3322"]
+        },
+        {
+          "conceptId": "FMA24452",
+          "name": "proximal phalanx of right middle finger",
+          "fileIds": ["FJ3325"]
+        },
+        {
+          "conceptId": "FMA24453",
+          "name": "proximal phalanx of right ring finger",
+          "fileIds": ["FJ3326"]
+        },
+        {
+          "conceptId": "FMA24454",
+          "name": "proximal phalanx of right little finger",
+          "fileIds": ["FJ3323"]
+        },
+        {
+          "conceptId": "FMA24455",
+          "name": "middle phalanx of right index finger",
+          "fileIds": ["FJ3303"]
+        },
+        {
+          "conceptId": "FMA24456",
+          "name": "middle phalanx of right middle finger",
+          "fileIds": ["FJ3306"]
+        },
+        {
+          "conceptId": "FMA24457",
+          "name": "middle phalanx of right ring finger",
+          "fileIds": ["FJ3292"]
+        },
+        {
+          "conceptId": "FMA24458",
+          "name": "middle phalanx of right little finger",
+          "fileIds": ["FJ3304"]
+        },
+        {
+          "conceptId": "FMA24459",
+          "name": "distal phalanx of right thumb",
+          "fileIds": ["FJ3198"]
+        },
+        {
+          "conceptId": "FMA24460",
+          "name": "distal phalanx of right index finger",
+          "fileIds": ["FJ3193"]
+        },
+        {
+          "conceptId": "FMA24461",
+          "name": "distal phalanx of right middle finger",
+          "fileIds": ["FJ3196"]
+        },
+        {
+          "conceptId": "FMA24462",
+          "name": "distal phalanx of right ring finger",
+          "fileIds": ["FJ3197"]
+        },
+        {
+          "conceptId": "FMA24463",
+          "name": "distal phalanx of right little finger",
+          "fileIds": ["FJ3194"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3383",
+          "sha256": "1d657f0402994d7854cf5a2038ccf085cffb69ff349fcbe88b04b7d26c1491f1"
+        },
+        {
+          "id": "FJ3374",
+          "sha256": "7b607f05b221c86aa6b3f93fc9d37d860281941ed293c4afc1affdb1ef379fc4"
+        },
+        {
+          "id": "FJ3390",
+          "sha256": "701c3417f0a8d3df769781449e7f5a5797ed30808849aebca261a6fea3dd4ce9"
+        },
+        {
+          "id": "FJ3382",
+          "sha256": "c02fffdeada2334cb5cc8281cf3068043c194930f42d6253292416fbb8af50a2"
+        },
+        {
+          "id": "FJ3388",
+          "sha256": "def87e2a86ad17a4b537abfeb0a5b83fac8117fd658cff7ee29a1f79afa59c1a"
+        },
+        {
+          "id": "FJ3389",
+          "sha256": "6361a214c7008b247b5ac0dd7bd80be5593bf8882a45add63c9036485d4bcee6"
+        },
+        {
+          "id": "FJ3361",
+          "sha256": "25066d1353fd200871374beffaaed8c6c5ef694148385f3fd33fd5b63bd017ce"
+        },
+        {
+          "id": "FJ3367",
+          "sha256": "0591d076d4c7a0fc5fe653f80f03801b543075b72544f46e562b21412c743d12"
+        },
+        {
+          "id": "FJ3350",
+          "sha256": "73267d7a1a33294ed2856e147f3d7658c14878cd01906ec8ffb64a4b9b68318b"
+        },
+        {
+          "id": "FJ3352",
+          "sha256": "3c67c77a4312c40f3ca98e1600eb930c6210ac83773efe4f594bf6ca3ca02fce"
+        },
+        {
+          "id": "FJ3354",
+          "sha256": "ce10ec6c9f5c3428593ae8ba0a8be016df7905f39e7d3d7ca930d60da76d0d90"
+        },
+        {
+          "id": "FJ3356",
+          "sha256": "beb659c0409fc079dbb9bb950c5a409cb31f0177273d231fda65af930e991f72"
+        },
+        {
+          "id": "FJ3358",
+          "sha256": "dca9d2526d8970358c4c2802e840687561cf24d4fb382b3a16f0f423b717283f"
+        },
+        {
+          "id": "FJ3327",
+          "sha256": "14f0aa99ab3dbcc34f8c9460fb240bb7ba0b43c2188feaa79aa58ae8a476cae8"
+        },
+        {
+          "id": "FJ3322",
+          "sha256": "7f260208904ef78c88790201e64b02cb9bb3e2b3e0feafa4108630d9a2d8c7a9"
+        },
+        {
+          "id": "FJ3325",
+          "sha256": "0ed85cade9e2a4c6d0c3353cbfcd996ab65f9c908ac6a2d41b0cffada814bd0d"
+        },
+        {
+          "id": "FJ3326",
+          "sha256": "8464ab995a48d5642198901885fafc5b101fd8982530f533f04e2be8aef26b59"
+        },
+        {
+          "id": "FJ3323",
+          "sha256": "dede96cf0c9d5ccb093673a9ec2dc2ef2970578cde1438276120fdf9aff096d2"
+        },
+        {
+          "id": "FJ3303",
+          "sha256": "0dce3e3ab43a1c3c8030e5bd97c40035f84e1ca272ea08e57c6523fecca7337c"
+        },
+        {
+          "id": "FJ3306",
+          "sha256": "8795bec6ecf458cbb1a4e361113da509a49dfafdaf8ca4610cb0a90e3bdd6233"
+        },
+        {
+          "id": "FJ3292",
+          "sha256": "48586a1489d539eecb8f37520e9683c014fc32bc6666bba42ca264b35af5c7a7"
+        },
+        {
+          "id": "FJ3304",
+          "sha256": "3289a2bb712569479a65872d56778a962cca787409326252fd05734cc5f9dd36"
+        },
+        {
+          "id": "FJ3198",
+          "sha256": "b95a645681d4548ad0d6bf4d79645f5c2e3b7c044c834ed8d52315c9e3a14f4e"
+        },
+        {
+          "id": "FJ3193",
+          "sha256": "22fb13bf483f413a93306da7e3805569ec78cf91222920a23e31d1f8f8be8ca7"
+        },
+        {
+          "id": "FJ3196",
+          "sha256": "9aa0ed0579e703009b4f5e16c7a650d5127a9fcf6f91b6e20e5b8317b7e7651e"
+        },
+        {
+          "id": "FJ3197",
+          "sha256": "a8e025b484c28f564f12d7e98b32dad1196050a957f879b639aac2cadc5a300d"
+        },
+        {
+          "id": "FJ3194",
+          "sha256": "1a77bb45ca5da49a3f46f0773d8f544f8171fa7650da31040fc15524d541eac0"
+        }
+      ],
+      "bounds": {
+        "min": [-0.323914, 0.653067, 0.11053400000000001],
+        "max": [-0.218895, 0.81179, 0.195428]
+      },
+      "triangleCount": 9722
+    },
+    {
+      "id": "femur-right",
+      "names": {
+        "en": "Right femur",
+        "ro": "Femur drept"
+      },
+      "latinName": "Femur dextrum",
+      "regionId": "lower-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24474",
+          "name": "right femur",
+          "fileIds": ["FJ3365"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3365",
+          "sha256": "02fffe2e1b0f8e038d8b7b48e47cbc4925a749446240e676e910bff34d5348de"
+        }
+      ],
+      "bounds": {
+        "min": [-0.150134, 0.36815, 0.0495302],
+        "max": [-0.0318943, 0.834252, 0.11219199999999999]
+      },
+      "triangleCount": 3102
+    },
+    {
+      "id": "patella-right",
+      "names": {
+        "en": "Right patella",
+        "ro": "Patelă dreaptă"
+      },
+      "latinName": "Patella dextra",
+      "regionId": "lower-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24486",
+          "name": "right patella",
+          "fileIds": ["FJ3381"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3381",
+          "sha256": "3f53300560b903d8fbc4165af3cdafab8d4f1d0a941ca59c7ef5169d0b838b8a"
+        }
+      ],
+      "bounds": {
+        "min": [-0.10228799999999999, 0.361486, 0.100992],
+        "max": [-0.0606208, 0.400796, 0.122727]
+      },
+      "triangleCount": 306
+    },
+    {
+      "id": "tibia-right",
+      "names": {
+        "en": "Right tibia",
+        "ro": "Tibie dreaptă"
+      },
+      "latinName": "Tibia dextra",
+      "regionId": "lower-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24477",
+          "name": "right tibia",
+          "fileIds": ["FJ3387"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3387",
+          "sha256": "a658d28799577c26cdf8318aef799dbe90564355a28b5098d8707eee907f9c7d"
+        }
+      ],
+      "bounds": {
+        "min": [-0.10935299999999999, -0.00603716, 0.0520729],
+        "max": [-0.035216000000000004, 0.37392000000000003, 0.11483499999999999]
+      },
+      "triangleCount": 1664
+    },
+    {
+      "id": "fibula-right",
+      "names": {
+        "en": "Right fibula",
+        "ro": "Fibulă dreaptă"
+      },
+      "latinName": "Fibula dextra",
+      "regionId": "lower-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24480",
+          "name": "right fibula",
+          "fileIds": ["FJ3366"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3366",
+          "sha256": "05bf4de7604e2fd5099b3a5337d243d2d40f2b8f80daf1694b3aba394aa93942"
+        }
+      ],
+      "bounds": {
+        "min": [-0.12016500000000001, -0.0252799, 0.0484874],
+        "max": [-0.0843445, 0.35914999999999997, 0.07816880000000001]
+      },
+      "triangleCount": 1142
+    },
+    {
+      "id": "foot-bones-right",
+      "names": {
+        "en": "Right foot bones",
+        "ro": "Oasele piciorului drept"
+      },
+      "latinName": "Ossa pedis",
+      "regionId": "lower-limb-right",
+      "laterality": "right",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA24482",
+          "name": "right talus",
+          "fileIds": ["FJ3385"]
+        },
+        {
+          "conceptId": "FMA24497",
+          "name": "right calcaneus",
+          "fileIds": ["FJ3360"]
+        },
+        {
+          "conceptId": "FMA24521",
+          "name": "right medial cuneiform bone",
+          "fileIds": ["FJ3377"]
+        },
+        {
+          "conceptId": "FMA24523",
+          "name": "right intermediate cuneiform bone",
+          "fileIds": ["FJ3370"]
+        },
+        {
+          "conceptId": "FMA24525",
+          "name": "right lateral cuneiform bone",
+          "fileIds": ["FJ3373"]
+        },
+        {
+          "conceptId": "FMA24528",
+          "name": "right cuboid bone",
+          "fileIds": ["FJ3364"]
+        },
+        {
+          "conceptId": "FMA24500",
+          "name": "navicular bone of right foot",
+          "fileIds": ["FJ3308"]
+        },
+        {
+          "conceptId": "FMA24507",
+          "name": "right first metatarsal bone",
+          "fileIds": ["FJ3351"]
+        },
+        {
+          "conceptId": "FMA24509",
+          "name": "right second metatarsal bone",
+          "fileIds": ["FJ3353"]
+        },
+        {
+          "conceptId": "FMA24511",
+          "name": "right third metatarsal bone",
+          "fileIds": ["FJ3355"]
+        },
+        {
+          "conceptId": "FMA24513",
+          "name": "right fourth metatarsal bone",
+          "fileIds": ["FJ3357"]
+        },
+        {
+          "conceptId": "FMA24515",
+          "name": "right fifth metatarsal bone",
+          "fileIds": ["FJ3359"]
+        },
+        {
+          "conceptId": "FMA43253",
+          "name": "proximal phalanx of right big toe",
+          "fileIds": ["FJ3310"]
+        },
+        {
+          "conceptId": "FMA32634",
+          "name": "proximal phalanx of right second toe",
+          "fileIds": ["FJ3319"]
+        },
+        {
+          "conceptId": "FMA32636",
+          "name": "proximal phalanx of right third toe",
+          "fileIds": ["FJ3320"]
+        },
+        {
+          "conceptId": "FMA32638",
+          "name": "proximal phalanx of right fourth toe",
+          "fileIds": ["FJ3321"]
+        },
+        {
+          "conceptId": "FMA32640",
+          "name": "proximal phalanx of right little toe",
+          "fileIds": ["FJ3324"]
+        },
+        {
+          "conceptId": "FMA32642",
+          "name": "middle phalanx of right second toe",
+          "fileIds": ["FJ3300"]
+        },
+        {
+          "conceptId": "FMA32644",
+          "name": "middle phalanx of right third toe",
+          "fileIds": ["FJ3301"]
+        },
+        {
+          "conceptId": "FMA32646",
+          "name": "middle phalanx of right fourth toe",
+          "fileIds": ["FJ3302"]
+        },
+        {
+          "conceptId": "FMA230986",
+          "name": "middle phalanx of right little toe",
+          "fileIds": ["FJ3305"]
+        },
+        {
+          "conceptId": "FMA32650",
+          "name": "distal phalanx of right big toe",
+          "fileIds": ["FJ3192"]
+        },
+        {
+          "conceptId": "FMA32652",
+          "name": "distal phalanx of right second toe",
+          "fileIds": ["FJ3189"]
+        },
+        {
+          "conceptId": "FMA32654",
+          "name": "distal phalanx of right third toe",
+          "fileIds": ["FJ3190"]
+        },
+        {
+          "conceptId": "FMA32656",
+          "name": "distal phalanx of right fourth toe",
+          "fileIds": ["FJ3191"]
+        },
+        {
+          "conceptId": "FMA32658",
+          "name": "distal phalanx of right little toe",
+          "fileIds": ["FJ3195"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3385",
+          "sha256": "2332712fbc270403f10f8a99259493758831a6c68c9f54e59ee8d7c3d7281811"
+        },
+        {
+          "id": "FJ3360",
+          "sha256": "c278cca7a72dc6fc4eee55a348b0020522d99f72209eafe60f35ba4f7258682b"
+        },
+        {
+          "id": "FJ3377",
+          "sha256": "cf2bcfee0c5f1bb6f27589044043eb5964b1f35b9fe38624fe31b17cdd8a52aa"
+        },
+        {
+          "id": "FJ3370",
+          "sha256": "0f849f1f865d7f206cdef48047ccd111cb8f434f0f97b0ed28246a9ba7707679"
+        },
+        {
+          "id": "FJ3373",
+          "sha256": "fd23e4ff9032ac103773b75b0dfba0b5502979db882c92dd7d724766672da23a"
+        },
+        {
+          "id": "FJ3364",
+          "sha256": "92673fcdd37a297b135725f05848155705c04a4bdada1c5088cb3d5d8deef010"
+        },
+        {
+          "id": "FJ3308",
+          "sha256": "8156683b53dbe285d9c5bd939969b0ae85bc4f989f0d2bca5d7a72a28ed22518"
+        },
+        {
+          "id": "FJ3351",
+          "sha256": "36f03bdaf6be4385c83cc297b13bf6089504e5ddd12a6d6894a4e655b01cfb02"
+        },
+        {
+          "id": "FJ3353",
+          "sha256": "3f813ff69332df5a67dbce693af5558f4b5db2d48bf12ba39fff3e48e44e99d6"
+        },
+        {
+          "id": "FJ3355",
+          "sha256": "27fc6985c6e4b902188075caae096aaf7c8c13360d41446f6a85a5bf34003750"
+        },
+        {
+          "id": "FJ3357",
+          "sha256": "ca70d269f39c11fed91263c4b4bce78cf682acff928ec656130e997e1b07a20b"
+        },
+        {
+          "id": "FJ3359",
+          "sha256": "56164dbe40a84f339817445368bebc440d1cb9cfa8246b2d91f8084a538ea745"
+        },
+        {
+          "id": "FJ3310",
+          "sha256": "c325627d966076f87101492f298d0e71ba877ce796463fd10e4fa6697b5e42fd"
+        },
+        {
+          "id": "FJ3319",
+          "sha256": "1d2f11bb623181a344f0b9d68b16ffb3e31946d3f5f571e92cd35f0e66c1101c"
+        },
+        {
+          "id": "FJ3320",
+          "sha256": "54e8381fbba8e81960afa51c153d5e06143c85f1808e083f2bd591115fce3c02"
+        },
+        {
+          "id": "FJ3321",
+          "sha256": "37b1195ac0a13fc425bab0d0151ada733b4d1c107a61a70ae42eeb3ee3c33dfa"
+        },
+        {
+          "id": "FJ3324",
+          "sha256": "0f783ee739f14fd2ca5c9db076d989795880ac9e436ce15062e397e7c6586225"
+        },
+        {
+          "id": "FJ3300",
+          "sha256": "d23b2c500c208c3c3c3f482f8429b75a08d8d852f2d5529bb18aad4716bd17e9"
+        },
+        {
+          "id": "FJ3301",
+          "sha256": "41a7cc5bda4605754c7db7bbc561e78fea9e59824a311d16efee7c00d9e931ae"
+        },
+        {
+          "id": "FJ3302",
+          "sha256": "6454fbcd2ba8d7fc45c9d9d9d4b56cd9e7831143038ee4510a7bbd407984bad1"
+        },
+        {
+          "id": "FJ3305",
+          "sha256": "e6a389b572fb34e9a2e483dcbec2446d1b6a94a02e4ae25079513e571e452b49"
+        },
+        {
+          "id": "FJ3192",
+          "sha256": "ecb7a162be315a96591180a3b997efffa827d06849e8c85cfea72fe0d57e9ab8"
+        },
+        {
+          "id": "FJ3189",
+          "sha256": "e9375bc30ba9c2aa2c69cbe3f7e1b1f581d0d1a674c41d31f6b9c27a8f174715"
+        },
+        {
+          "id": "FJ3190",
+          "sha256": "153722e3a39bc9f4cf3444cefd9336e5adb6b2236c6d6b8c2d1ba4a54c8754af"
+        },
+        {
+          "id": "FJ3191",
+          "sha256": "35ca50bcad4f559dcc6a0885abb9fe3c06965925791ff5567a38301623d46beb"
+        },
+        {
+          "id": "FJ3195",
+          "sha256": "5402b29f019e8c13be850809be79cd262eab0276094322203e46a103145276ff"
+        }
+      ],
+      "bounds": {
+        "min": [-0.169327, -0.0703923, 0.024005099999999998],
+        "max": [-0.0448758, 0.00311093, 0.236044]
+      },
+      "triangleCount": 14922
+    }
+  ]
+}

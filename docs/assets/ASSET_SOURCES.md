@@ -1,0 +1,15 @@
+# Asset sources
+
+## Included runtime geometry
+
+`bodyparts3d-skeleton-v4` is adapted directly from the official [BodyParts3D 4.0 PART-OF archive](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_BP3D_4.0_obj_99.zip). The source is the publisher's 99% polygon-reduction release, not full-resolution clinical geometry. Source concepts and element-file mappings come from the accompanying [PART-OF names table](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_parts_list_e.txt) and [element table](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_element_parts.txt).
+
+The original dataset describes an adult male whole-body model. We selected only curated named bone concepts, because the upstream broad skeleton group includes some non-bone tissues and omits limb bones. The import contains 202 element meshes, mapped to 29 selectable bones/groups. This is a mesh count, not a claim of 202 distinct anatomical bones or a complete 206-bone inventory. Auditory ossicles, coccyx, and separate teeth are not supplied in this view. No soft tissue, third-party kidney model, texture, or unrelated Z-Anatomy asset was imported.
+
+The generated `packages/anatomy-data/src/skeleton-manifest.json` records every FMA source concept, FJ element ID, original OBJ SHA-256, output checksum, exact bounds, and triangle count. `tools/anatomy-assets/skeleton-definition.mjs` is the reviewed inclusion list. `import-skeleton.mjs` retrieves only those ZIP entries, converts millimetres/Z-up to metres/Y-up/+Z-anterior, recomputes smooth normals, groups source elements by canonical ID, assigns bone material, and compresses losslessly with Meshopt. No extra simplification, geometry reshaping, or quantization is applied.
+
+License verified on 2026-10-27 against the [official asset archive license](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html), updated 2025-02-27, and the [accompanying archive README](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html). Both specify CC BY 4.0. Some OBJ headers retain the historical CC BY-SA 2.1 Japan notice; the current distribution license is documented separately rather than inferred from a mirror. Attribution and links are visible in the viewer and distributed beside the GLB.
+
+## Candidate evaluation before import
+
+Z-Anatomy and Open Anatomy Project remain candidates for later systems. Before importing any additional asset, audit its exact file/version and included subassets. This audit only covers the official BodyParts3D bone subset above. Independent medical review of the app's grouping, translations, and model suitability is pending.

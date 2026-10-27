@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "@anatomy/core": ["packages/anatomy-core/src/index.ts"],
+      "@anatomy/data": ["packages/anatomy-data/src/index.ts"]
+    }
+  },
+  "include": ["apps/web/src", "packages/*/src", "tools/**/*.ts", "*.ts"]
+}

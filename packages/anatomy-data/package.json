@@ -1,0 +1,13 @@
+{
+  "name": "@anatomy/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@anatomy/core": "workspace:*",
+    "zod": "4.6.7"
+  }
+}

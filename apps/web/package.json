@@ -1,0 +1,26 @@
+{
+  "name": "@anatomy/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@anatomy/core": "workspace:*",
+    "@anatomy/data": "workspace:*",
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "i18next": "26.5.11",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-i18next": "17.1.9",
+    "three": "0.186.1",
+    "zod": "4.6.7",
+    "zustand": "5.0.16"
+  },
+  "devDependencies": {
+    "@types/three": "0.186.0"
+  }
+}
