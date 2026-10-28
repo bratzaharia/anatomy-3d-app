@@ -4,6 +4,7 @@ import {
   SKELETON_ASSET,
   REGIONS,
   SYSTEMS,
+  ANATOMY_CATALOG,
 } from "@anatomy/data";
 import { validateHierarchy } from "@anatomy/core";
 import { readFile } from "node:fs/promises";
@@ -11,9 +12,9 @@ import { createHash } from "node:crypto";
 import { MeshoptDecoder } from "meshoptimizer";
 import { z } from "zod";
 
-const errors = [...validateHierarchy(STRUCTURES)];
+const errors = [...validateHierarchy(ANATOMY_CATALOG)];
 const ids = new Set<string>();
-for (const structure of STRUCTURES) {
+for (const structure of ANATOMY_CATALOG) {
   if (ids.has(structure.id))
     errors.push(`Duplicate structure ID: ${structure.id}`);
   ids.add(structure.id);
@@ -164,7 +165,7 @@ for (const node of gltf.nodes) {
       errors.push(`Bounds mismatch: ${id}`);
   triangleCount += indices.length / 3;
 }
-if (mappedIds.size !== ids.size)
+if (mappedIds.size !== STRUCTURES.length)
   errors.push("Not every catalog structure maps to geometry");
 if (triangleCount !== SKELETON_ASSET.triangleCount)
   errors.push("Triangle count differs from manifest");

@@ -1,4 +1,9 @@
-import { REGIONS, STRUCTURES, SYSTEMS, GROUPS } from "@anatomy/data";
+import {
+  REGIONS,
+  ANATOMY_CATALOG as STRUCTURES,
+  SYSTEMS,
+  GROUPS,
+} from "@anatomy/data";
 import { resources } from "../../apps/web/src/localization/i18n";
 
 const errors: string[] = [];

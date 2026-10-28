@@ -10,14 +10,15 @@ describe("layer filters", () => {
     useViewerStore.getState().replaceSystems(AVAILABLE_SYSTEM_IDS),
   );
 
-  it("enables real skeletal geometry and marks unsourced layers planned", () => {
+  it("keeps sourced bones and muscles independent and unsourced layers planned", () => {
     render(<LeftPanel />);
     const skeletal = screen.getByLabelText("Sistem osos");
     const muscular = screen.getByLabelText(/Sistem muscular/);
     fireEvent.click(skeletal);
     expect(skeletal).not.toBeChecked();
-    expect(muscular).toBeDisabled();
-    expect(muscular).not.toBeChecked();
+    expect(muscular).toBeEnabled();
+    expect(muscular).toBeChecked();
+    expect(screen.getByLabelText(/Sistem nervos/)).toBeDisabled();
   });
 
   it("clears all filters from the derived All control", () => {

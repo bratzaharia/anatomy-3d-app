@@ -10,6 +10,7 @@ import {
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
+import { MuscleExplorer } from "./MuscleExplorer";
 
 export function LeftPanel() {
   const { t, i18n } = useTranslation();
@@ -23,7 +24,7 @@ export function LeftPanel() {
   const [query, setQuery] = useState("");
   const [showResults, setShowResults] = useState(false);
   const results = useMemo(
-    () => searchStructures(query, locale).slice(0, 8),
+    () => searchStructures(query, locale),
     [query, locale],
   );
   const allChecked = isAllSelected(AVAILABLE_SYSTEM_IDS, activeSystemIds);
@@ -61,6 +62,9 @@ export function LeftPanel() {
                   >
                     {getLocalizedName(item, locale)}
                     <small>{item.latinName}</small>
+                    {item.status !== "available" && (
+                      <small>{t("groups.noGeometry")}</small>
+                    )}
                   </button>
                 ))
               ) : (
@@ -137,6 +141,7 @@ export function LeftPanel() {
           </div>
         </section>
 
+        <MuscleExplorer />
         <section className="panel-section presets">
           <h2>{t("filters.presets")}</h2>
           <div className="preset-grid">

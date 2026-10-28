@@ -3,8 +3,10 @@ import { Grid, OrbitControls } from "@react-three/drei";
 import { Suspense, useEffect, useRef, type ComponentRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Box3, PerspectiveCamera, Sphere, Vector3 } from "three";
-import { SKELETON_ASSET } from "@anatomy/data";
+import { SKELETON_ASSET, MUSCLE_ASSET } from "@anatomy/data";
 import { SkeletonModel } from "./SkeletonModel";
+import { MuscleLayer } from "./MuscleLayer";
+import { SceneDiagnostics } from "./SceneDiagnostics";
 import { useViewerStore } from "../store/viewerStore";
 
 function boundsBox(bounds: {
@@ -29,11 +31,19 @@ function CameraController() {
     const state = useViewerStore.getState();
     let bounds = bodyBounds.clone();
     if (command.view === "focus") {
-      const selected = SKELETON_ASSET.structures.find(
+      const focusStructures = [
+        ...SKELETON_ASSET.structures,
+        ...MUSCLE_ASSET.structures,
+      ];
+      const selected = focusStructures.find(
         (item) => item.id === state.selectedId,
       );
-      const regionStructures = SKELETON_ASSET.structures.filter(
-        (item) => item.regionId === state.activeRegionId,
+      const regionStructures = focusStructures.filter(
+        (item) =>
+          item.regionId === state.activeRegionId &&
+          (item.id.startsWith("muscle-")
+            ? state.activeSystemIds.has("muscular")
+            : state.activeSystemIds.has("skeletal")),
       );
       if (selected) bounds = boundsBox(selected.bounds);
       else if (regionStructures.length)
@@ -116,10 +126,13 @@ function CameraController() {
 
 export function AnatomyCanvas() {
   const { t } = useTranslation();
+  const muscular = useViewerStore((state) =>
+    state.activeSystemIds.has("muscular"),
+  );
   return (
     <Canvas
       role="img"
-      aria-label={t("viewer.label")}
+      aria-label={t(muscular ? "muscles.viewerLabel" : "viewer.label")}
       frameloop="demand"
       dpr={[1, 1.75]}
       camera={{
@@ -143,6 +156,7 @@ export function AnatomyCanvas() {
       <Suspense fallback={null}>
         <SkeletonModel />
       </Suspense>
+      <MuscleLayer />
       <Grid
         position={[0, SKELETON_ASSET.bounds.min[1] - 0.008, 0]}
         args={[5, 5]}
@@ -157,6 +171,7 @@ export function AnatomyCanvas() {
         infiniteGrid
       />
       <CameraController />
+      <SceneDiagnostics />
     </Canvas>
   );
 }

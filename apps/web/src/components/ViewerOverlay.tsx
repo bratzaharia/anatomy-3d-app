@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next";
 import type { Locale } from "@anatomy/core";
 import { getLocalizedName } from "@anatomy/core";
-import { regionById, structureById, SKELETON_ASSET } from "@anatomy/data";
+import {
+  regionById,
+  structureById,
+  SKELETON_ASSET,
+  MUSCLE_ASSET,
+} from "@anatomy/data";
 import { useViewerStore, type CameraView } from "../store/viewerStore";
 import { Icon } from "./Icon";
 
@@ -17,6 +22,13 @@ export function ViewerOverlay({
   const activeCount = useViewerStore((state) => state.activeSystemIds.size);
   const setCameraView = useViewerStore((state) => state.setCameraView);
   const assetStatus = useViewerStore((state) => state.assetStatus);
+  const muscleStatus = useViewerStore((state) => state.muscleStatus);
+  const muscular = useViewerStore((state) =>
+    state.activeSystemIds.has("muscular"),
+  );
+  const skeletal = useViewerStore((state) =>
+    state.activeSystemIds.has("skeletal"),
+  );
   const hovered = hoveredId ? structureById.get(hoveredId) : undefined;
   const views: readonly CameraView[] = ["front", "back", "left", "right"];
   return (
@@ -50,10 +62,40 @@ export function ViewerOverlay({
           <p>{t("viewer.loading")}</p>
         </div>
       )}
+      {supported && muscular && muscleStatus === "loading" && (
+        <div className="muscle-load-status" role="status">
+          {t("muscles.loading")}
+        </div>
+      )}
+      {supported && muscular && muscleStatus === "error" && (
+        <div className="muscle-load-status" role="alert">
+          <p>{t("muscles.error")}</p>
+          <button
+            onClick={() => {
+              useViewerStore.getState().retryMuscles();
+            }}
+          >
+            {t("error.retry")}
+          </button>
+        </div>
+      )}
+      {muscular && muscleStatus === "ready" && (
+        <div className="muscle-load-status coverage-warning">
+          {t("muscles.incomplete")}
+        </div>
+      )}
       <div className="model-summary">
-        {t("viewer.sourceMeshes", { count: SKELETON_ASSET.sourceMeshCount })}
+        {t("viewer.sourceMeshes", {
+          count:
+            (skeletal ? SKELETON_ASSET.sourceMeshCount : 0) +
+            (muscular ? MUSCLE_ASSET.sourceMeshCount : 0),
+        })}
         <span>·</span>
-        {t("viewer.selectable", { count: SKELETON_ASSET.structures.length })}
+        {t("viewer.selectable", {
+          count:
+            (skeletal ? SKELETON_ASSET.structures.length : 0) +
+            (muscular ? MUSCLE_ASSET.structures.length : 0),
+        })}
       </div>
       <div
         className="view-controls"

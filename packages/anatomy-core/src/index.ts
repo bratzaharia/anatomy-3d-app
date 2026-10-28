@@ -55,6 +55,7 @@ export interface AnatomyGroup {
   readonly names: LocalizedText;
   readonly memberIds: readonly string[];
   readonly description?: LocalizedText;
+  readonly parentId?: string;
 }
 
 export interface VisibilityOverrides {

@@ -2,7 +2,7 @@
 
 ## Context
 
-This repository is the foundation for a bilingual, medically responsible 3D anatomy education platform. The current viewer uses BodyParts3D 4.0 skeletal geometry: 202 source meshes mapped to 29 selectable structures/groups. Other systems are planned. Medical correctness, deterministic behavior, performance, and maintainability are the priorities, in that order.
+This repository is the foundation for a bilingual, medically responsible 3D anatomy education platform. The fixed BodyParts3D 4.0 skeleton has 202 source meshes mapped to 29 selectable structures/groups. An independent, incomplete muscular layer adds 355 selectable entities; gaps and review status are explicit in its inventory. Other systems are planned. Medical correctness, deterministic behavior, performance, and maintainability are the priorities, in that order.
 
 ## Repository map
 
@@ -12,6 +12,7 @@ This repository is the foundation for a bilingual, medically responsible 3D anat
 - `apps/web/src/components`: localized web UI.
 - `tools/anatomy-assets`: catalog and asset validation tools.
 - `tools/anatomy-assets/skeleton-definition.mjs`: curated source bone concepts and translations; rebuild the GLB and manifest after changes.
+- `tools/anatomy-assets/muscle-definition.mjs`: versioned muscular inventory and mappings; use the independent muscular importer. Never rebuild or edit the skeletal module to fit muscles. `STRUCTURES` remains skeletal-only; shared consumers use `ANATOMY_CATALOG`.
 - `docs/assets`: provenance, licenses, and attribution.
 
 ## Commands

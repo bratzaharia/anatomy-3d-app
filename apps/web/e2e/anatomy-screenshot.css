@@ -1,0 +1,8 @@
+.viewport-status,
+.model-credit,
+.model-summary,
+.view-controls,
+.muscle-load-status,
+.hover-label {
+  visibility: hidden !important;
+}

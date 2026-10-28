@@ -10,6 +10,10 @@ The generated `packages/anatomy-data/src/skeleton-manifest.json` records every F
 
 License verified on 2026-10-27 against the [official asset archive license](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html), updated 2025-02-27, and the [accompanying archive README](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html). Both specify CC BY 4.0. Some OBJ headers retain the historical CC BY-SA 2.1 Japan notice; the current distribution license is documented separately rather than inferred from a mirror. Attribution and links are visible in the viewer and distributed beside the GLB.
 
+## Muscular geometry
+
+The additive muscular asset uses the official [IS-A OBJ 99 archive](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip), [names](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_parts_list_e.txt) and [element mappings](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt). It shares the fixed skeleton's source coordinate frame and unit conversion; identical geometry hashes for 29 reference meshes are recorded in `muscle-alignment.json`. It does not invoke or modify the skeletal importer. See [muscular audit](MUSCLE_AUDIT.md) and [computed coverage](MUSCLE_COVERAGE.md).
+
 ## Candidate evaluation before import
 
-Z-Anatomy and Open Anatomy Project remain candidates for later systems. Before importing any additional asset, audit its exact file/version and included subassets. This audit only covers the official BodyParts3D bone subset above. Independent medical review of the app's grouping, translations, and model suitability is pending.
+Z-Anatomy's publisher-provided muscular FBX was evaluated as a gap closer but not accepted into runtime because registration to the fixed skeleton has not been validated; its source-specific license and 18 reference comparisons are documented in the muscular audit. Open Anatomy Project remains an unevaluated candidate. Before importing additional assets, audit exact versions and included subassets. Independent medical review of grouping, translations and source suitability remains pending.

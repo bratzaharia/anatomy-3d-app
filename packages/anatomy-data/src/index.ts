@@ -7,6 +7,8 @@ import type {
   Locale,
 } from "@anatomy/core";
 import skeletonManifest from "./skeleton-manifest.json";
+import { MUSCLE_ASSET, MUSCLE_STRUCTURES, MUSCLE_GROUPS } from "./muscles";
+export * from "./muscles";
 
 const boundsSchema = z.object({
   min: z.tuple([z.number(), z.number(), z.number()]),
@@ -66,8 +68,14 @@ export const SYSTEMS: readonly AnatomySystem[] = [
     available: true,
     primary: true,
   },
+  {
+    id: "muscular",
+    names: { en: "Muscular system", ro: "Sistem muscular" },
+    color: "#d97378",
+    available: true,
+    primary: true,
+  },
   ...[
-    ["muscular", "Muscular system", "Sistem muscular", "#d97378"],
     ["nervous", "Nervous system", "Sistem nervos", "#f4ca64"],
     ["arterial", "Arterial system", "Sistem arterial", "#ef4444"],
     ["venous", "Venous system", "Sistem venos", "#4777d9"],
@@ -118,7 +126,7 @@ export const REGIONS: readonly AnatomyRegion[] = [
     id: "abdomen",
     names: { en: "Abdomen", ro: "Abdomen" },
     parentId: "whole-body",
-    status: "planned",
+    status: "available",
   },
   {
     id: "pelvis",
@@ -180,6 +188,12 @@ export const STRUCTURES: readonly AnatomicalStructure[] =
     ],
   }));
 
+// STRUCTURES is deliberately the immutable skeletal compatibility boundary.
+// Shared consumers use ANATOMY_CATALOG; SkeletonModel remains byte-for-byte intact.
+export const ANATOMY_CATALOG: readonly AnatomicalStructure[] = [
+  ...STRUCTURES,
+  ...MUSCLE_STRUCTURES,
+];
 export const GROUPS: readonly AnatomyGroup[] = [
   {
     id: "bodyparts3d-skeletal-set",
@@ -190,6 +204,7 @@ export const GROUPS: readonly AnatomyGroup[] = [
       ro: "Toate structurile selectabile din această vedere BodyParts3D. Craniul, vertebrele, coastele, mâinile și picioarele se selectează ca grupuri.",
     },
   },
+  ...MUSCLE_GROUPS,
 ];
 
 export const assetManifestSchema = z.object({
@@ -214,11 +229,18 @@ export const ASSET_MANIFEST = assetManifestSchema.parse({
       structureIds: STRUCTURES.map((item) => item.id),
       licenseId: SKELETON_ASSET.licenseId,
     },
+    {
+      id: MUSCLE_ASSET.id,
+      kind: "anatomical-model",
+      uri: MUSCLE_ASSET.uri,
+      structureIds: MUSCLE_ASSET.structures.map((item) => item.id),
+      licenseId: MUSCLE_ASSET.licenseId,
+    },
   ],
 });
 
 export const structureById = new Map(
-  STRUCTURES.map((structure) => [structure.id, structure]),
+  ANATOMY_CATALOG.map((structure) => [structure.id, structure]),
 );
 export const systemById = new Map(SYSTEMS.map((system) => [system.id, system]));
 export const regionById = new Map(REGIONS.map((region) => [region.id, region]));
@@ -227,8 +249,8 @@ export function searchStructures(
   locale: Locale,
 ): readonly AnatomicalStructure[] {
   const normalized = query.trim().toLocaleLowerCase(locale);
-  if (!normalized) return STRUCTURES;
-  return STRUCTURES.filter((structure) =>
+  if (!normalized) return ANATOMY_CATALOG;
+  return ANATOMY_CATALOG.filter((structure) =>
     [
       structure.names.en,
       structure.names.ro,

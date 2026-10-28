@@ -4,10 +4,13 @@ import { getLocalizedName, resolveGroupMembers } from "@anatomy/core";
 import {
   GROUPS,
   regionById,
-  STRUCTURES,
+  ANATOMY_CATALOG,
   structureById,
   systemById,
   SKELETON_ASSET,
+  MUSCLE_ASSET,
+  muscleMetadataById,
+  MUSCLE_STRUCTURES,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -24,9 +27,12 @@ export function Inspector() {
   const isolatedIds = useViewerStore((state) => state.isolatedIds);
   const hiddenIds = useViewerStore((state) => state.hiddenIds);
   const structure = selectedId ? structureById.get(selectedId) : undefined;
-  const assetStructure = SKELETON_ASSET.structures.find(
-    (item) => item.id === selectedId,
-  );
+  const muscle = selectedId ? muscleMetadataById.get(selectedId) : undefined;
+  const setHidden = useViewerStore((state) => state.setStructuresHidden);
+  const assetStructure = [
+    ...SKELETON_ASSET.structures,
+    ...MUSCLE_ASSET.structures,
+  ].find((item) => item.id === selectedId);
   const activeSystemIds = useViewerStore((state) => state.activeSystemIds);
   const isHidden =
     structure &&
@@ -79,7 +85,16 @@ export function Inspector() {
             </div>
             <p className="latin-name">{structure.latinName}</p>
             <span className="review-badge">
-              ● {t(isHidden ? "inspector.hidden" : "inspector.available")}
+              ●{" "}
+              {t(
+                structure.status !== "available"
+                  ? muscle?.mappingStatus === "grouped-only"
+                    ? "muscles.groupedOnly"
+                    : "groups.noGeometry"
+                  : isHidden
+                    ? "inspector.hidden"
+                    : "inspector.available",
+              )}
             </span>
             {assetStructure && (
               <p className="structure-source-detail">
@@ -116,23 +131,67 @@ export function Inspector() {
               </dd>
             </div>
           </dl>
+          {muscle && (
+            <>
+              <dl className="metadata-grid">
+                <div>
+                  <dt>{t("muscles.side")}</dt>
+                  <dd>{t("muscles.side." + muscle.side)}</dd>
+                </div>
+                <div>
+                  <dt>{t("muscles.depth")}</dt>
+                  <dd>{t("muscles.depth." + muscle.depth)}</dd>
+                </div>
+              </dl>
+              <p className="coverage-warning">{t("muscles.review")}</p>
+              <p className="structure-source-detail">
+                {t("muscles.detailsPending")}
+              </p>
+              {muscle.mappingStatus === "grouped" && (
+                <p className="coverage-warning">{t("muscles.sourceSet")}</p>
+              )}
+              {muscle.groupedIn && (
+                <button
+                  className="restore-button"
+                  onClick={() => select(muscle.groupedIn)}
+                >
+                  {t("muscles.selectSourceSet")}
+                </button>
+              )}
+            </>
+          )}
           <div className="inspector-actions">
             <button
               className="primary-action"
+              disabled={structure.status !== "available"}
               onClick={() => setCameraView("focus")}
             >
               <Icon name="target" />
               {t("viewer.focus")}
             </button>
-            <button onClick={isolateSelected}>
+            <button
+              disabled={structure.status !== "available"}
+              onClick={isolateSelected}
+            >
               <Icon name="eye" />
               {t("inspector.isolate")}
             </button>
-            <button onClick={hideSelected}>
+            <button
+              disabled={structure.status !== "available"}
+              onClick={hideSelected}
+            >
               <Icon name="eye" />
               {t("inspector.hide")}
             </button>
           </div>
+          {muscle && hiddenIds.has(structure.id) && (
+            <button
+              className="restore-button"
+              onClick={() => setHidden([structure.id], false)}
+            >
+              {t("muscles.showSelected")}
+            </button>
+          )}
           {(isolatedIds.size > 0 || hiddenIds.size > 0) && (
             <button className="restore-button" onClick={restoreVisibility}>
               <Icon name="reset" />
@@ -142,7 +201,7 @@ export function Inspector() {
           {structure.groupIds?.map((groupId) => {
             const group = GROUPS.find((item) => item.id === groupId);
             if (!group) return null;
-            const members = resolveGroupMembers(group, STRUCTURES);
+            const members = resolveGroupMembers(group, ANATOMY_CATALOG);
             return (
               <section className="group-card" key={group.id}>
                 <div className="group-title">
@@ -154,6 +213,30 @@ export function Inspector() {
                     {members.length} {t("groups.members")}
                   </span>
                 </div>
+                {muscle && (
+                  <div className="group-actions">
+                    <button onClick={() => setHidden(group.memberIds, true)}>
+                      {t("muscles.hideGroup")}
+                    </button>
+                    <button onClick={() => setHidden(group.memberIds, false)}>
+                      {t("muscles.showGroup")}
+                    </button>
+                    <button
+                      title={t("muscles.revealHint")}
+                      onClick={() => {
+                        setHidden(
+                          MUSCLE_STRUCTURES.map((item) => item.id).filter(
+                            (id) => !group.memberIds.includes(id),
+                          ),
+                          true,
+                        );
+                        setHidden(group.memberIds, false);
+                      }}
+                    >
+                      {t("muscles.revealGroup")}
+                    </button>
+                  </div>
+                )}
                 <div className="member-list">
                   {members.map((member, index) => (
                     <button
@@ -167,6 +250,9 @@ export function Inspector() {
                       <span>
                         {getLocalizedName(member, locale)}
                         <small>{member.latinName}</small>
+                        {member.status !== "available" && (
+                          <small>{t("groups.noGeometry")}</small>
+                        )}
                       </span>
                     </button>
                   ))}
@@ -187,6 +273,18 @@ export function Inspector() {
                 CC BY 4.0
               </a>{" "}
               · {t("inspector.sourceNote")}
+              {muscle && (
+                <>
+                  <br />
+                  <a
+                    href={muscle.medicalSource}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    FIPAT TA2 · {t("muscles.inventorySource")}
+                  </a>
+                </>
+              )}
             </p>
           </div>
         </div>

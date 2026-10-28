@@ -61,6 +61,43 @@ const resources = {
       "error.model":
         "Scheletul 3D nu a putut fi încărcat. Reîncarcă pagina pentru a încerca din nou.",
       "error.retry": "Reîncearcă",
+      "muscles.explorer": "Explorator muscular",
+      "muscles.viewerLabel":
+        "Anatomie 3D interactivă — strat muscular BodyParts3D",
+      "muscles.incomplete": "Acoperire musculară incompletă · inventar v1.0.0",
+      "muscles.coverage":
+        "{{independent}} mapări individuale · {{sets}} grupuri sursă · {{groupedOnly}} doar în grup · {{missing}} fără geometrie",
+      "muscles.opacity": "Opacitatea mușchilor",
+      "muscles.depth": "Plan anatomic contextual",
+      "muscles.depth.all": "Toate planurile",
+      "muscles.depth.superficial": "Superficial",
+      "muscles.depth.intermediate": "Intermediar",
+      "muscles.depth.deep": "Profund",
+      "muscles.depth.mixed": "Planuri mixte",
+      "muscles.side": "Lateralitate",
+      "muscles.side.left": "Stânga",
+      "muscles.side.right": "Dreapta",
+      "muscles.side.midline": "Median",
+      "muscles.side.bilateral": "Bilateral",
+      "muscles.side.none": "Fără lateralitate",
+      "muscles.groupedOnly": "Doar în grupul sursă; fără selecție individuală",
+      "muscles.review":
+        "Revizuirea medicală și terminologia RO sunt în așteptare.",
+      "muscles.detailsPending":
+        "Originea, inserția, funcția, inervația și vascularizația nu sunt încă verificate și nu sunt afișate.",
+      "muscles.sourceSet":
+        "Set sursă: membrii nu pot fi identificați individual în această geometrie.",
+      "muscles.selectSourceSet": "Inspectează grupul sursă",
+      "muscles.showSelected": "Arată mușchiul selectat",
+      "muscles.hideGroup": "Ascunde grupul",
+      "muscles.showGroup": "Arată grupul",
+      "muscles.revealGroup": "Expune acest grup",
+      "muscles.revealHint":
+        "Ascunde ceilalți mușchi și arată acest grup; filtrul osos rămâne neschimbat.",
+      "muscles.inventorySource": "Sursa inventarului",
+      "muscles.loading": "Se încarcă stratul muscular…",
+      "muscles.error":
+        "Stratul muscular nu a putut fi încărcat. Scheletul rămâne disponibil.",
     },
   },
   en: {
@@ -122,6 +159,43 @@ const resources = {
       "error.model":
         "The 3D skeleton could not be loaded. Reload the page to try again.",
       "error.retry": "Try again",
+      "muscles.explorer": "Muscle explorer",
+      "muscles.viewerLabel":
+        "Interactive 3D anatomy — BodyParts3D muscular layer",
+      "muscles.incomplete": "Muscular coverage incomplete · inventory v1.0.0",
+      "muscles.coverage":
+        "{{independent}} individual mappings · {{sets}} source sets · {{groupedOnly}} grouped only · {{missing}} without geometry",
+      "muscles.opacity": "Muscle opacity",
+      "muscles.depth": "Contextual anatomical depth",
+      "muscles.depth.all": "All depths",
+      "muscles.depth.superficial": "Superficial",
+      "muscles.depth.intermediate": "Intermediate",
+      "muscles.depth.deep": "Deep",
+      "muscles.depth.mixed": "Mixed depths",
+      "muscles.side": "Laterality",
+      "muscles.side.left": "Left",
+      "muscles.side.right": "Right",
+      "muscles.side.midline": "Midline",
+      "muscles.side.bilateral": "Bilateral",
+      "muscles.side.none": "None",
+      "muscles.groupedOnly": "Source set only; no independent selection",
+      "muscles.review":
+        "Independent medical and Romanian terminology review pending.",
+      "muscles.detailsPending":
+        "Origin, insertion, function, innervation and blood supply have not yet been verified and are not displayed.",
+      "muscles.sourceSet":
+        "Source set: its members cannot be individually identified in this geometry.",
+      "muscles.selectSourceSet": "Inspect source set",
+      "muscles.showSelected": "Show selected muscle",
+      "muscles.hideGroup": "Hide group",
+      "muscles.showGroup": "Show group",
+      "muscles.revealGroup": "Reveal this group",
+      "muscles.revealHint":
+        "Hides other muscles and shows this group; bone filters remain unchanged.",
+      "muscles.inventorySource": "Inventory source",
+      "muscles.loading": "Loading the muscular layer…",
+      "muscles.error":
+        "The muscular layer could not be loaded. The skeleton remains available.",
     },
   },
 } as const;

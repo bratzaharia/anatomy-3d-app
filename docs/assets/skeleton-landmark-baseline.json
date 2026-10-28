@@ -1,0 +1,238 @@
+{
+  "recordedAt": "2026-10-27",
+  "method": "Vertex/face lines from the immutable skeletal sources; SHA-256 excludes archive-specific comment headers.",
+  "landmarks": [
+    {
+      "id": "skull",
+      "sourceFile": {
+        "id": "FJ3200",
+        "sha256": "9a01d88bd564b462ecadd6ad5bb3bb2274105baa3d211e0f444210d3f499ed64"
+      },
+      "geometryHash": "6fbddf02f4b6ff71c6ef517dbed17e6dd1e57776b487888a04bdab4528e0b98d"
+    },
+    {
+      "id": "mandible",
+      "sourceFile": {
+        "id": "FJ3289",
+        "sha256": "6ae0d7fde4221302f1c74d9e9933e2e05c36efef273bb27a78326d108d140ce8"
+      },
+      "geometryHash": "a5eccd9cf4bea60feb8520790fa2c259a03fa0b7e501220673659eee00001487"
+    },
+    {
+      "id": "hyoid",
+      "sourceFile": {
+        "id": "FJ2772",
+        "sha256": "429d56a742a23c27c3423519191c89ae29c34faa027ee0037ad86fbcf5eda11f"
+      },
+      "geometryHash": "4944322d682ebc0ab9a425c3d36cc49935bcf37d9d606b84bb2f809a88ba6243"
+    },
+    {
+      "id": "vertebral-column",
+      "sourceFile": {
+        "id": "FJ3176",
+        "sha256": "594ac8b2b09280022e2b73142f873fd4d622ba7a1bca590c3fdcb0231e4fb461"
+      },
+      "geometryHash": "bd570cd111edb8c298e2c3762d003db2e39e38104a496503ba494d666cfcbf97"
+    },
+    {
+      "id": "rib-cage",
+      "sourceFile": {
+        "id": "FJ3153",
+        "sha256": "d17057ed1dad252a6fa6a3e8d92bc13310cebe0b584df147af0cc4a646f98f3e"
+      },
+      "geometryHash": "e7f161aa0b779e7760d1446eb719503d6ee05424bf5f4fac835c78f00d44c732"
+    },
+    {
+      "id": "pelvic-girdle",
+      "sourceFile": {
+        "id": "FJ3288",
+        "sha256": "981411a910d502c80e454cc95128a9812a1284202295d1ebc7ab5020a08d83aa"
+      },
+      "geometryHash": "521582fb3ccf47d9297fc27a1b03bd806022f0c3aadb73ef15c5ba14263b1024"
+    },
+    {
+      "id": "sacrum",
+      "sourceFile": {
+        "id": "FJ3393",
+        "sha256": "fd95a0b26f450e4939858c9effb7b14e589874c9210edfdb92e8f4552dd484de"
+      },
+      "geometryHash": "ff926c310f18aaecf531d3057fbed96c5b076dc08bf4e1b6446759ef53575ed9"
+    },
+    {
+      "id": "clavicle-left",
+      "sourceFile": {
+        "id": "FJ3237",
+        "sha256": "ae2dc115516cd51b56047c8c0188a0b62c3fe627deed4d1b83e79e09b4b5c0d8"
+      },
+      "geometryHash": "634384e37460ca84d0c4121d4c84eb1d5e687fede84eb22ea849ae72ab5a6995"
+    },
+    {
+      "id": "scapula-left",
+      "sourceFile": {
+        "id": "FJ3279",
+        "sha256": "a52cf573f15b7c7c5cf096ae3ee81d8062a955edffdf82447e745afeccd0e554"
+      },
+      "geometryHash": "d25f3ce8f26bda857c018a4e8cfe52a0539f17a6f7d6d06ee08cff5fcbd54ef8"
+    },
+    {
+      "id": "humerus-left",
+      "sourceFile": {
+        "id": "FJ3262",
+        "sha256": "58b4f0f36723f27726009cdf4b77172dc694303f4e03f51b29c1663507480194"
+      },
+      "geometryHash": "9be197b8d87ca40fbae9a9877de2a193795d94f08137b152d14b1e1dc64ec38b"
+    },
+    {
+      "id": "radius-left",
+      "sourceFile": {
+        "id": "FJ3277",
+        "sha256": "cce317e77ca297f93c0676815e22e8a2b6cc09029b74f1678193b17a9c0d5583"
+      },
+      "geometryHash": "c3f3f72ce74e8de9f16c0cb4e279d753c573c77df846bca4dc7a250dfcd507eb"
+    },
+    {
+      "id": "ulna-left",
+      "sourceFile": {
+        "id": "FJ3286",
+        "sha256": "32838a464599fa017717090afe9d355c03c0afb48cd8c5aa7e6f825156b594a5"
+      },
+      "geometryHash": "c0aa150a2b8cb4f2f2cc4b9fb9f750d61b23dc9f146d4f219837e9313706817e"
+    },
+    {
+      "id": "hand-bones-left",
+      "sourceFile": {
+        "id": "FJ3278",
+        "sha256": "4311e5b791fb93c11376a4643d6bee38b134614dba22e94004d9fb3de1fe2a3f"
+      },
+      "geometryHash": "630c4a79a7fe1c9873108cde3c603ffd0715ae9d320d2a76dae30f09525d582b"
+    },
+    {
+      "id": "femur-left",
+      "sourceFile": {
+        "id": "FJ3259",
+        "sha256": "4b919097be4820784d199838c69b1fe10afba703f0d6680a3ecab58460fb6549"
+      },
+      "geometryHash": "25a3b87d94468b2b0d66cf61b55a63bee9eaf8f61b189a17bc12dc7bce65b6b1"
+    },
+    {
+      "id": "patella-left",
+      "sourceFile": {
+        "id": "FJ3275",
+        "sha256": "8a0776c1efe4ed2e3fff3c14b6fdb814dab4c077f8f3cf866866e8d9312a33e3"
+      },
+      "geometryHash": "419f34dc3e4d3a94a641bfc02e88845ddeb17f07217df9856f082f7dfd122457"
+    },
+    {
+      "id": "tibia-left",
+      "sourceFile": {
+        "id": "FJ3282",
+        "sha256": "80add76b87c7b9e1396406de48f691e5fd3dde9e5cec49a0b15c6963d78542c6"
+      },
+      "geometryHash": "705bc0c6353dc15fd14486480663fb8f2410ed2e085ed084dd57d30de91542c0"
+    },
+    {
+      "id": "fibula-left",
+      "sourceFile": {
+        "id": "FJ3260",
+        "sha256": "34d29e9d6b2bf032147bcbe8da1e9fb65739ca2115baf577987ff1b780fabb73"
+      },
+      "geometryHash": "48617582235b96d1698d8fa047a240760d2867e32a78d3ae29508dbfe047911b"
+    },
+    {
+      "id": "foot-bones-left",
+      "sourceFile": {
+        "id": "FJ3280",
+        "sha256": "0f9b04d6f7e7f82572e9bca7fe3e08e92e4a7917d9cc60f9a8038e4c3a7c7bb7"
+      },
+      "geometryHash": "e990e2c7b490ee4cbe101dfd5e14a273f88ad109220950c9a8503985aad2333f"
+    },
+    {
+      "id": "clavicle-right",
+      "sourceFile": {
+        "id": "FJ3362",
+        "sha256": "1435b8f365652b215180e398b894a5bdfbf9cb13d00ccf06d07038b962e957b9"
+      },
+      "geometryHash": "fb293599f9df2b9e9e2015d19f63cfec066b90ebbffb2d9d2f5013fa09897cb8"
+    },
+    {
+      "id": "scapula-right",
+      "sourceFile": {
+        "id": "FJ3384",
+        "sha256": "cb68b2e01a22989f20e602d5036a3f1fb28448fe647f599b9bbd61edfbff2320"
+      },
+      "geometryHash": "077b9972a91ff2ecbc3f107fda49c48686b00fb40a3e1516d4ad5e94a59ed420"
+    },
+    {
+      "id": "humerus-right",
+      "sourceFile": {
+        "id": "FJ3368",
+        "sha256": "159fbdeb854044e7b0ebd0d48cfe332afb44a691d09b89ff644a851826d08268"
+      },
+      "geometryHash": "df85c5dce5e7052a7331670914bf281a573f28c05a39f75af7ef5752afb21908"
+    },
+    {
+      "id": "radius-right",
+      "sourceFile": {
+        "id": "FJ3349",
+        "sha256": "be1ebc9c5285cc934c625763b3363fc3133efab9eafdf1edf0b36de3b7ee06a9"
+      },
+      "geometryHash": "2d88fc303556aeb75e71a125f8a821830f7221f2ddfeec45c372c5f1f72a67be"
+    },
+    {
+      "id": "ulna-right",
+      "sourceFile": {
+        "id": "FJ3391",
+        "sha256": "c84d953caa7613d6640593003ead91449eb1aaedc74cb2b27ae103e2177d3871"
+      },
+      "geometryHash": "28b7a78a03d844f9ba1eb136ad203bcb382457e7fae215a62f36e8e89deb4507"
+    },
+    {
+      "id": "hand-bones-right",
+      "sourceFile": {
+        "id": "FJ3383",
+        "sha256": "1d657f0402994d7854cf5a2038ccf085cffb69ff349fcbe88b04b7d26c1491f1"
+      },
+      "geometryHash": "22de40d05233bd2743f0716e1d023f0579c75a595c4714c7d32649bf404a101e"
+    },
+    {
+      "id": "femur-right",
+      "sourceFile": {
+        "id": "FJ3365",
+        "sha256": "02fffe2e1b0f8e038d8b7b48e47cbc4925a749446240e676e910bff34d5348de"
+      },
+      "geometryHash": "073b0a92c494775e075045fcbb66a7ff6c16577ba4ed4359a2415173b12ce46b"
+    },
+    {
+      "id": "patella-right",
+      "sourceFile": {
+        "id": "FJ3381",
+        "sha256": "3f53300560b903d8fbc4165af3cdafab8d4f1d0a941ca59c7ef5169d0b838b8a"
+      },
+      "geometryHash": "05094b288acef82004b8dc3a8ec7b4f596641ff8684f7f83d123070adfb8ceea"
+    },
+    {
+      "id": "tibia-right",
+      "sourceFile": {
+        "id": "FJ3387",
+        "sha256": "a658d28799577c26cdf8318aef799dbe90564355a28b5098d8707eee907f9c7d"
+      },
+      "geometryHash": "509b1a365909f3f48b8942c4e65b56806abe96c288c9e176aa164a9228f11ee9"
+    },
+    {
+      "id": "fibula-right",
+      "sourceFile": {
+        "id": "FJ3366",
+        "sha256": "05bf4de7604e2fd5099b3a5337d243d2d40f2b8f80daf1694b3aba394aa93942"
+      },
+      "geometryHash": "5571dca3cd8362c7c9745eb3c947deca296d34a01b6947e35dcfccc61a36fbac"
+    },
+    {
+      "id": "foot-bones-right",
+      "sourceFile": {
+        "id": "FJ3385",
+        "sha256": "2332712fbc270403f10f8a99259493758831a6c68c9f54e59ee8d7c3d7281811"
+      },
+      "geometryHash": "f023e5f29426f63346c82c355f4d22d618aee4c20095a3157504bbee07330edf"
+    }
+  ]
+}

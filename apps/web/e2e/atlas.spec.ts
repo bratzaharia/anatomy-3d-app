@@ -19,7 +19,7 @@ test("sourced skeleton selection, filters, focus, and language preserve the cach
   await expect(
     page.getByRole("link", { name: "BodyParts3D 4.0 CC BY 4.0" }),
   ).toBeVisible();
-  await expect(page.getByLabel(/Sistem muscular/)).toBeDisabled();
+  await expect(page.getByLabel(/Sistem muscular/)).toBeEnabled();
 
   // A real raycast on the front-view skull verifies geometry-to-catalog mapping.
   const canvas = page.locator("canvas");
@@ -40,7 +40,7 @@ test("sourced skeleton selection, filters, focus, and language preserve the cach
     }),
   ).toBeVisible();
   await expect(page.getByLabel("Skeletal system")).toBeChecked();
-  await page.getByText("All layers", { exact: true }).click();
+  await page.getByLabel("Skeletal system", { exact: true }).uncheck();
   await expect(
     page.getByText("Hidden by current filters", { exact: false }),
   ).toBeVisible();
@@ -55,7 +55,7 @@ test("sourced skeleton selection, filters, focus, and language preserve the cach
   await expect(
     page.getByText("Choose at least one anatomical layer"),
   ).toBeVisible();
-  await page.getByText("All layers", { exact: true }).click();
+  await page.getByLabel("Skeletal system", { exact: true }).check();
 
   await page.getByPlaceholder("E.g. humerus, skull…").fill("left humerus");
   await page.getByRole("button", { name: /^Left humerus/ }).click();
