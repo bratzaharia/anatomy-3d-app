@@ -9,7 +9,11 @@ import {
   type WebGLRenderer,
 } from "three";
 import { SKELETON_ASSET } from "@anatomy/data";
-import { configureSkullSurface, SKULL_SURFACE } from "./skullSurface";
+import {
+  configureSkullSurface,
+  SKULL_SURFACE,
+  SKULL_SIMPLE_SURFACE,
+} from "./skullSurface";
 import {
   SKULL_KEY_POSITION,
   SKULL_SHADOW_SIZE,
@@ -107,5 +111,36 @@ describe("skull-only studio shading and cached shadows", () => {
     expect(renderer.shadowMap.needsUpdate).toBe(true);
     expect(renderer.shadowMap.autoUpdate).toBe(false);
     geometry.dispose();
+  });
+  it("scopes the finer ivory finish and tighter existing contacts to Simple only", () => {
+    const compile = (natural: boolean) => {
+      const material = new MeshStandardMaterial();
+      configureSkullSurface(material, true, true, natural);
+      const shader = {
+        uniforms: {},
+        vertexShader: ShaderLib.standard.vertexShader,
+        fragmentShader: ShaderLib.standard.fragmentShader,
+      } as Parameters<MeshStandardMaterial["onBeforeCompile"]>[0];
+      material.onBeforeCompile(shader, {} as WebGLRenderer);
+      const cacheKey = material.customProgramCacheKey();
+      material.dispose();
+      return { ...shader, cacheKey };
+    };
+    const simple = compile(true),
+      colored = compile(false);
+    expect(simple.fragmentShader).toContain("* 0.000025 * skullGrainFade");
+    expect(simple.fragmentShader).toContain("indirectDiffuse *= 0.20;");
+    expect(simple.fragmentShader).toContain("vec3 skullLuma");
+    expect(simple.vertexShader).toContain(
+      "(directionalLightShadows[ i ].shadowNormalBias * 0.55)",
+    );
+    expect(simple.vertexShader).not.toContain("transformed +=");
+    expect(simple.fragmentShader).toContain("gl_FragColor.rgb *= 0.75;");
+    expect(simple.cacheKey).not.toBe(colored.cacheKey);
+    expect(SKULL_SIMPLE_SURFACE.grainHeightMeters).toBeLessThan(
+      SKULL_SURFACE.grainHeightMeters,
+    );
+    expect(colored.fragmentShader).not.toContain("skullLuma");
+    expect(colored.vertexShader).toContain("#include <shadowmap_vertex>");
   });
 });

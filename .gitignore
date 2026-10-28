@@ -5,5 +5,9 @@ playwright-report
 test-results
 .DS_Store
 *.local
+.env
+.env.*
+!.env.example
+.vercel/
 tools/anatomy-assets/.cache/
 .pnpm-store/

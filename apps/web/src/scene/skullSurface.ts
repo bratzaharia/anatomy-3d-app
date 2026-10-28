@@ -1,4 +1,4 @@
-import type { MeshStandardMaterial } from "three";
+import { ShaderChunk, type MeshStandardMaterial } from "three";
 
 // Decorative material micrograin, not scanned anatomy or reconstructed pores.
 // Object-space coordinates keep it attached to bone while orbiting. No UV,
@@ -28,11 +28,21 @@ export const SKULL_SURFACE = {
   hoverBrightness: 0.75,
 } as const;
 
+// Simple-only finish. This is optical shading, not new anatomical detail.
+export const SKULL_SIMPLE_SURFACE = {
+  indirectLightGain: 0.2,
+  grainFrequency: 1600,
+  grainHeightMeters: 0.000025,
+  shadowNormalBiasScale: 0.55,
+} as const;
+
 export function configureSkullSurface(
   material: MeshStandardMaterial,
   surface: boolean,
   hovered: boolean,
+  natural = false,
 ): void {
+  const finish = natural ? SKULL_SIMPLE_SURFACE : SKULL_SURFACE;
   material.onBeforeCompile = (shader) => {
     if (surface) {
       shader.vertexShader = shader.vertexShader
@@ -44,17 +54,31 @@ export function configureSkullSurface(
           "#include <begin_vertex>",
           "#include <begin_vertex>\nvSkullSurfacePosition = position;",
         );
+      if (natural) {
+        // Tighten existing mesh-to-mesh contacts without moving vertices,
+        // changing the shared shadow target, or touching the Colored mode.
+        const bias = "directionalLightShadows[ i ].shadowNormalBias";
+        if (!ShaderChunk.shadowmap_vertex.includes(bias))
+          throw new Error("Natural skull shadow shader hook is unavailable");
+        shader.vertexShader = shader.vertexShader.replace(
+          "#include <shadowmap_vertex>",
+          ShaderChunk.shadowmap_vertex.replace(
+            bias,
+            `(${bias} * ${SKULL_SIMPLE_SURFACE.shadowNormalBiasScale.toFixed(2)})`,
+          ),
+        );
+      }
       shader.fragmentShader = shader.fragmentShader
         .replace("#include <common>", "#include <common>\n" + surfaceFunctions)
         .replace(
           "#include <roughnessmap_fragment>",
           `#include <roughnessmap_fragment>
-float skullGrainFade = 1.0 - smoothstep(0.5, 2.5, length(fwidth(vSkullSurfacePosition)) * ${SKULL_SURFACE.grainFrequency.toFixed(1)});
-float skullGrain = skullNoise(vSkullSurfacePosition * ${SKULL_SURFACE.grainFrequency.toFixed(1)});
+float skullGrainFade = 1.0 - smoothstep(0.5, 2.5, length(fwidth(vSkullSurfacePosition)) * ${finish.grainFrequency.toFixed(1)});
+float skullGrain = skullNoise(vSkullSurfacePosition * ${finish.grainFrequency.toFixed(1)});
 float skullCoarse = skullNoise(vSkullSurfacePosition * 450.0);
-float skullHeight = (0.7 * skullGrain + 0.3 * skullCoarse) * ${SKULL_SURFACE.grainHeightMeters.toFixed(6)} * skullGrainFade;
+float skullHeight = (0.7 * skullGrain + 0.3 * skullCoarse) * ${finish.grainHeightMeters.toFixed(6)} * skullGrainFade;
 roughnessFactor = clamp(roughnessFactor + (skullGrain - 0.5) * 0.08 * skullGrainFade, 0.45, 0.85);
-diffuseColor.rgb *= 1.0 + (skullGrain - 0.5) * 0.035 * skullGrainFade;`,
+diffuseColor.rgb *= 1.0 + (skullGrain - 0.5) * ${natural ? "0.018" : "0.035"} * skullGrainFade;`,
         )
         .replace(
           "#include <normal_fragment_maps>",
@@ -68,7 +92,15 @@ if (dot(skullPerturbed, skullPerturbed) > 1e-24) normal = normalize(skullPerturb
         .replace(
           "#include <lights_fragment_end>",
           `#include <lights_fragment_end>
-reflectedLight.indirectDiffuse *= ${SKULL_SURFACE.indirectLightGain.toFixed(2)};`,
+reflectedLight.indirectDiffuse *= ${finish.indirectLightGain.toFixed(2)};${
+            natural
+              ? `
+// Keep the studio's light/shadow modelling, soften its yellow/blue color cast.
+vec3 skullLuma = vec3(0.2126, 0.7152, 0.0722);
+reflectedLight.directDiffuse = mix(reflectedLight.directDiffuse, vec3(dot(reflectedLight.directDiffuse, skullLuma)), 0.35);
+reflectedLight.indirectDiffuse = mix(reflectedLight.indirectDiffuse, vec3(dot(reflectedLight.indirectDiffuse, skullLuma)), 0.50);`
+              : ""
+          }`,
         );
     }
     if (hovered) {
@@ -83,5 +115,7 @@ reflectedLight.indirectDiffuse *= ${SKULL_SURFACE.indirectLightGain.toFixed(2)};
   };
   // All bone colors/selection uniforms share programs; X-ray skips surface work.
   material.customProgramCacheKey = () =>
-    `skull-studio-v2:surface=${Number(surface)}:hover=${Number(hovered)}:${JSON.stringify(SKULL_SURFACE)}`;
+    natural
+      ? `skull-natural-v1:surface=${Number(surface)}:hover=${Number(hovered)}:${JSON.stringify(SKULL_SIMPLE_SURFACE)}`
+      : `skull-studio-v2:surface=${Number(surface)}:hover=${Number(hovered)}:${JSON.stringify(SKULL_SURFACE)}`;
 }

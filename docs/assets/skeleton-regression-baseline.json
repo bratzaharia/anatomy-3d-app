@@ -1,7 +1,7 @@
 {
   "recordedAt": "2026-10-28",
   "previousRendererSha256": "950d3d94138b61da4ba1f360b7dbaf2c6bec0953477ae59ebe3abb0ea38fea45",
-  "authorizedRendererChange": "User-requested reference-matched Simple/Colored skull rendering: neutral bone, bright anatomical reference palette, skull-only light washout reduction, procedural surface grain and cached self-shadows. Simple/Colored/X-ray mode logic and 25% display-space hover retained. Original GLBs, source manifest, spatial attributes, IDs, mappings, transforms, perspective camera behavior, global light energy, non-skull materials and muscular layer preserved.",
+  "authorizedRendererChange": "User-requested reference-matched Simple/Colored skull rendering, followed by a Simple-only lighter ivory finish: finer optical grain, reduced yellow/blue light cast and tighter shadow receiver contacts. Colored/X-ray settings remain unchanged by the follow-up. Simple/Colored/X-ray mode logic and 25% display-space hover retained. Original GLBs, source manifest, spatial attributes, IDs, mappings, transforms, perspective camera behavior, global light energy, non-skull materials and muscular layer preserved.",
   "files": {
     "apps/web/public/models/bodyparts3d-skeleton.glb": "126268604b056cdd8878c6297f6a8e90ae5cbf4cdce1cc7f952988d13bc68531",
     "packages/anatomy-data/src/skeleton-manifest.json": "cd1be45dcbf22e7bb091951213129c1bce92f65e41c442f18b0e49f5344aa8f4",

@@ -55,13 +55,13 @@ export function createSkullBoneMaterials(
       appearance === "anatomical"
         ? skullDisplayColor(conceptId)
         : appearance === "neutral"
-          ? "#c7c3ba"
+          ? "#e5e1d8"
           : "#b7d7e7",
     roughness:
       appearance === "radiographic"
         ? 0.7
         : appearance === "neutral"
-          ? 0.54
+          ? 0.5
           : 0.62,
     metalness: 0,
   });
@@ -98,6 +98,7 @@ export function createSkullBoneMaterials(
       material,
       appearance !== "radiographic",
       state === "hovered" || state === "selectedHovered",
+      appearance === "neutral",
     );
   return states;
 }

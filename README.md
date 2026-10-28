@@ -13,6 +13,24 @@ pnpm dev
 
 Open the printed local URL. Use `pnpm build`, `pnpm typecheck`, `pnpm lint`, `pnpm test`, `pnpm validate:anatomy`, and `pnpm validate:i18n` before review. `pnpm test:e2e` requires Playwright Chromium (`pnpm exec playwright install chromium`).
 
+## Deploy to Vercel
+
+Import this GitHub repository into Vercel. Keep **Root Directory** at the repository
+root (`.`), not `apps/web`: the application imports the sibling workspace packages.
+The root `vercel.json` specifies the Vite preset, frozen pnpm installation,
+`pnpm build`, and output directory `apps/web/dist`. Use Node.js 22.x.
+No environment variables or external anatomy API keys are needed.
+
+The skeletal and muscular GLBs are deployed as static files under `/models/`;
+the muscular layer downloads on first enable (approximately 41 MB). Keep the
+BodyParts3D attribution and license notices. Source caches, local credentials,
+environment files and `.vercel/` account bindings must not be committed.
+
+After deployment, verify the skull modes, RO/EN switch, muscle loading and
+selection on the live URL. A successful local build does not confirm a live deploy.
+Vercel can deploy subsequent pushes automatically once its GitHub integration
+has been authorized for this repository.
+
 ## Architecture
 
 `@anatomy/core` owns renderer-independent types, visibility, hierarchy, groups, and localization lookup. `@anatomy/data` owns versioned catalogs, source references, and the asset manifest. `apps/web` owns React UI, Zustand state, and the React Three Fiber renderer. A mesh resolves to one canonical anatomy ID through `userData.anatomyId`; display names never identify geometry.

@@ -276,8 +276,8 @@ describe("skull-only anatomical materials", () => {
       const simple = styles.modes.simple.get(id)!,
         colored = styles.modes.colored.get(id)!,
         xray = styles.modes.xray.get(id)!;
-      expect(simple.base.color.getHexString()).toBe("c7c3ba");
-      expect(simple.base.roughness).toBe(0.54);
+      expect(simple.base.color.getHexString()).toBe("e5e1d8");
+      expect(simple.base.roughness).toBe(0.5);
       expect(simple.base.transparent).toBe(false);
       expect(colored.base.transparent).toBe(false);
       expect(xray.base.transparent).toBe(true);
