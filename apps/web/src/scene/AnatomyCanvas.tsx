@@ -3,7 +3,11 @@ import { Grid, OrbitControls } from "@react-three/drei";
 import { Suspense, useEffect, useRef, type ComponentRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Box3, PerspectiveCamera, Sphere, Vector3 } from "three";
-import { SKELETON_ASSET, MUSCLE_ASSET } from "@anatomy/data";
+import {
+  SKELETON_ASSET,
+  MUSCLE_ASSET,
+  SKULL_BONE_MAPPINGS,
+} from "@anatomy/data";
 import { SkeletonModel } from "./SkeletonModel";
 import { MuscleLayer } from "./MuscleLayer";
 import { SceneDiagnostics } from "./SceneDiagnostics";
@@ -33,6 +37,7 @@ function CameraController() {
     if (command.view === "focus") {
       const focusStructures = [
         ...SKELETON_ASSET.structures,
+        ...SKULL_BONE_MAPPINGS,
         ...MUSCLE_ASSET.structures,
       ];
       const selected = focusStructures.find(

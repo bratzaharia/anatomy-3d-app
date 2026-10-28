@@ -6,6 +6,7 @@ import {
   structureById,
   SKELETON_ASSET,
   MUSCLE_ASSET,
+  SKELETAL_STRUCTURES,
 } from "@anatomy/data";
 import { useViewerStore, type CameraView } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -93,7 +94,7 @@ export function ViewerOverlay({
         <span>·</span>
         {t("viewer.selectable", {
           count:
-            (skeletal ? SKELETON_ASSET.structures.length : 0) +
+            (skeletal ? SKELETAL_STRUCTURES.length : 0) +
             (muscular ? MUSCLE_ASSET.structures.length : 0),
         })}
       </div>

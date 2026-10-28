@@ -72,6 +72,7 @@ input:focus-visible {
 
 .topbar {
   grid-column: 1 / -1;
+  grid-row: 1;
   z-index: 30;
   display: flex;
   align-items: center;
@@ -189,9 +190,13 @@ input:focus-visible {
   overflow: hidden;
 }
 .left-panel {
+  grid-column: 1;
+  grid-row: 2;
   border-right: 1px solid var(--line);
 }
 .inspector {
+  grid-column: 3;
+  grid-row: 2;
   border-left: 1px solid var(--line);
 }
 .panel-scroll {
@@ -444,6 +449,8 @@ input:focus-visible {
 }
 
 .viewport {
+  grid-column: 2;
+  grid-row: 2;
   position: relative;
   min-width: 0;
   overflow: hidden;

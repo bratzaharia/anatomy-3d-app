@@ -8,7 +8,9 @@ import type {
 } from "@anatomy/core";
 import skeletonManifest from "./skeleton-manifest.json";
 import { MUSCLE_ASSET, MUSCLE_STRUCTURES, MUSCLE_GROUPS } from "./muscles";
+import { SKULL_BONE_STRUCTURES, SKULL_GROUP } from "./skull";
 export * from "./muscles";
+export * from "./skull";
 
 const boundsSchema = z.object({
   min: z.tuple([z.number(), z.number(), z.number()]),
@@ -175,7 +177,13 @@ export const STRUCTURES: readonly AnatomicalStructure[] =
     structureType: item.sourceConcepts.length > 1 ? "bone-group" : "bone",
     regionIds: [item.regionId],
     laterality: item.laterality,
-    groupIds: ["bodyparts3d-skeletal-set"],
+    groupIds:
+      item.id === "skull" || item.id === "mandible"
+        ? ["skull-bones", "bodyparts3d-skeletal-set"]
+        : ["bodyparts3d-skeletal-set"],
+    ...(item.id === "skull"
+      ? { childIds: SKULL_BONE_STRUCTURES.map((bone) => bone.id) }
+      : {}),
     assetIds: [SKELETON_ASSET.id],
     status: "available",
     provenance: [
@@ -189,9 +197,10 @@ export const STRUCTURES: readonly AnatomicalStructure[] =
   }));
 
 // STRUCTURES is deliberately the immutable skeletal compatibility boundary.
-// Shared consumers use ANATOMY_CATALOG; SkeletonModel remains byte-for-byte intact.
+// Source manifest stays intact; skull children use audited source-index ranges.
+export const SKELETAL_STRUCTURES = [...STRUCTURES, ...SKULL_BONE_STRUCTURES];
 export const ANATOMY_CATALOG: readonly AnatomicalStructure[] = [
-  ...STRUCTURES,
+  ...SKELETAL_STRUCTURES,
   ...MUSCLE_STRUCTURES,
 ];
 export const GROUPS: readonly AnatomyGroup[] = [
@@ -200,10 +209,11 @@ export const GROUPS: readonly AnatomyGroup[] = [
     names: { en: "Skeletal structures", ro: "Structuri osoase" },
     memberIds: STRUCTURES.map((item) => item.id),
     description: {
-      en: "All selectable structures in this BodyParts3D skeletal view. Skull, vertebrae, ribs, hands, and feet are selected as groups.",
-      ro: "Toate structurile selectabile din această vedere BodyParts3D. Craniul, vertebrele, coastele, mâinile și picioarele se selectează ca grupuri.",
+      en: "Skeletal structures in this BodyParts3D view. Skull bones can also be selected individually; vertebrae, ribs, hands, and feet remain grouped.",
+      ro: "Structuri osoase din această vedere BodyParts3D. Oasele craniului se pot selecta și individual; vertebrele, coastele, mâinile și picioarele rămân grupate.",
     },
   },
+  SKULL_GROUP,
   ...MUSCLE_GROUPS,
 ];
 
@@ -226,7 +236,7 @@ export const ASSET_MANIFEST = assetManifestSchema.parse({
       id: SKELETON_ASSET.id,
       kind: "anatomical-model",
       uri: SKELETON_ASSET.uri,
-      structureIds: STRUCTURES.map((item) => item.id),
+      structureIds: SKELETAL_STRUCTURES.map((item) => item.id),
       licenseId: SKELETON_ASSET.licenseId,
     },
     {

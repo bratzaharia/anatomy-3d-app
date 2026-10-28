@@ -1,6 +1,10 @@
 import { useTranslation } from "react-i18next";
 import type { Locale } from "@anatomy/core";
-import { getLocalizedName, resolveGroupMembers } from "@anatomy/core";
+import {
+  getLocalizedName,
+  resolveGroupMembers,
+  resolveVisibleStructureIds,
+} from "@anatomy/core";
 import {
   GROUPS,
   regionById,
@@ -11,6 +15,7 @@ import {
   MUSCLE_ASSET,
   muscleMetadataById,
   MUSCLE_STRUCTURES,
+  SKULL_BONE_MAPPINGS,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -31,14 +36,16 @@ export function Inspector() {
   const setHidden = useViewerStore((state) => state.setStructuresHidden);
   const assetStructure = [
     ...SKELETON_ASSET.structures,
+    ...SKULL_BONE_MAPPINGS,
     ...MUSCLE_ASSET.structures,
   ].find((item) => item.id === selectedId);
   const activeSystemIds = useViewerStore((state) => state.activeSystemIds);
   const isHidden =
     structure &&
-    (!structure.systemIds.some((id) => activeSystemIds.has(id)) ||
-      hiddenIds.has(structure.id) ||
-      (isolatedIds.size > 0 && !isolatedIds.has(structure.id)));
+    !resolveVisibleStructureIds(ANATOMY_CATALOG, activeSystemIds, {
+      hiddenIds,
+      isolatedIds,
+    }).has(structure.id);
 
   return (
     <aside className="side-panel inspector" aria-label={t("inspector.title")}>

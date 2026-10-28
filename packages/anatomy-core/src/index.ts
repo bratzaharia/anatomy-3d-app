@@ -74,13 +74,22 @@ export function resolveVisibleStructureIds(
   overrides: VisibilityOverrides = EMPTY_OVERRIDES,
 ): ReadonlySet<string> {
   const visible = new Set<string>();
+  const byId = new Map(
+    structures.map((structure) => [structure.id, structure]),
+  );
   for (const structure of structures) {
     if (structure.status !== "available" || structure.assetIds.length === 0)
       continue;
-    if (overrides.hiddenIds.has(structure.id)) continue;
+    const family = new Set([structure.id]);
+    let parentId = structure.parentId;
+    while (parentId && !family.has(parentId)) {
+      family.add(parentId);
+      parentId = byId.get(parentId)?.parentId;
+    }
+    if ([...family].some((id) => overrides.hiddenIds.has(id))) continue;
     if (
       overrides.isolatedIds.size > 0 &&
-      !overrides.isolatedIds.has(structure.id)
+      ![...family].some((id) => overrides.isolatedIds.has(id))
     )
       continue;
     if (structure.systemIds.some((systemId) => activeSystemIds.has(systemId)))

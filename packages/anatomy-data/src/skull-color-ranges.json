@@ -1,0 +1,291 @@
+{
+  "assetSha256": "126268604b056cdd8878c6297f6a8e90ae5cbf4cdce1cc7f952988d13bc68531",
+  "vertexCount": 72676,
+  "indexCount": 364554,
+  "normalSha256": "e3ca41c291e69a95ffc7de768013a97a302d0ed030b348654d35d31ed1be1794",
+  "ranges": [
+    {
+      "conceptId": "FMA52734",
+      "bounds": {
+        "min": [-0.06330250203609467, 1.5208899974822998, 0.10663899779319763],
+        "max": [0.0619921013712883, 1.6299400329589844, 0.17738500237464905]
+      },
+      "vertexStart": 0,
+      "vertexCount": 8472,
+      "indexStart": 0,
+      "indexCount": 43530,
+      "positionSha256": "a2fea9d48b748de1512083488027cbdbe0551b8b7f5aa3e07966e634b10a33e1",
+      "indexSha256": "7ded5385b95f0f9b690d8496463217cc354ffcb0a421e3555bd483593cb99412"
+    },
+    {
+      "conceptId": "FMA52735",
+      "bounds": {
+        "min": [
+          -0.06196120008826256, 1.4777699708938599, -0.018000999465584755
+        ],
+        "max": [0.06070530042052269, 1.5845099687576294, 0.10095900297164917]
+      },
+      "vertexStart": 8472,
+      "vertexCount": 6995,
+      "indexStart": 43530,
+      "indexCount": 37350,
+      "positionSha256": "78aa12f5f9425df224ceb54f4d1701ab6716f72d17b8bc32ae11e255e0012b9b",
+      "indexSha256": "1c99db6fbc223f8b9f11e0af37819fa5ded3c09ee780a6b3c967b5656f1db752"
+    },
+    {
+      "conceptId": "FMA52736",
+      "bounds": {
+        "min": [-0.05631979927420616, 1.478909969329834, 0.0904126986861229],
+        "max": [0.05503290146589279, 1.5484600067138672, 0.14501899480819702]
+      },
+      "vertexStart": 15467,
+      "vertexCount": 4957,
+      "indexStart": 80880,
+      "indexCount": 24462,
+      "positionSha256": "ca1a9355d93c27560d7dbce5f8c6e98bc9404b6c6baa13e230db52d7263df59a",
+      "indexSha256": "3561e053b297a575b7146d240c6775c5ba1afb1b78fab5cd452708d9e8e16a34"
+    },
+    {
+      "conceptId": "FMA52740",
+      "bounds": {
+        "min": [-0.02150990068912506, 1.4972800016403198, 0.11981599777936935],
+        "max": [0.02020139992237091, 1.5323400497436523, 0.1671999990940094]
+      },
+      "vertexStart": 20424,
+      "vertexCount": 12484,
+      "indexStart": 105342,
+      "indexCount": 66828,
+      "positionSha256": "6ec140c2ce03535f314123fd46cd4a95a1e6ed171c9a59f50e6230a1bc366a0e",
+      "indexSha256": "50f595af6ecbda5dcd0ae6697b17ef24492314b03c6a851f5a5df583838c5b5c"
+    },
+    {
+      "conceptId": "FMA9710",
+      "bounds": {
+        "min": [
+          -0.0061112199909985065, 1.4745899438858032, 0.11074700206518173
+        ],
+        "max": [0.004811040125787258, 1.5181100368499756, 0.16580699384212494]
+      },
+      "vertexStart": 32908,
+      "vertexCount": 3660,
+      "indexStart": 172170,
+      "indexCount": 21654,
+      "positionSha256": "2ac7125d76927cbdd7dfffd20f203aa7014df1f31cfab0abab0d0e0ac7997a59",
+      "indexSha256": "8b3085fcd2a79583b428f1ba8d216aeb9f47c91a1c97eff79872b6ea8b82aad1"
+    },
+    {
+      "conceptId": "FMA52739",
+      "bounds": {
+        "min": [0.011624200269579887, 1.4754799604415894, 0.035070400685071945],
+        "max": [0.07258529961109161, 1.5514600276947021, 0.13356700539588928]
+      },
+      "vertexStart": 36568,
+      "vertexCount": 3013,
+      "indexStart": 193824,
+      "indexCount": 14808,
+      "positionSha256": "932768773b6bac496cb2798b97f1e3c1b7c00f90cea355414f986d7067e7b14a",
+      "indexSha256": "d24c87d2408d1b9db32a442696ae2e45476275743a0b6ccf73b18639f14293c8"
+    },
+    {
+      "conceptId": "FMA52738",
+      "bounds": {
+        "min": [-0.0739893987774849, 1.4755699634552002, 0.03501259908080101],
+        "max": [-0.012695100158452988, 1.5515300035476685, 0.1337359994649887]
+      },
+      "vertexStart": 39581,
+      "vertexCount": 3102,
+      "indexStart": 208632,
+      "indexCount": 14784,
+      "positionSha256": "6a692bd09c5fcdc41fb76dda21c9f3893d9c32363ce86dbfd2538d7f3222bbb6",
+      "indexSha256": "95af97761557fa15ea02a7186e6a9d1e6d52af6a6b4a05fa1de281df3fecc691"
+    },
+    {
+      "conceptId": "FMA52789",
+      "bounds": {
+        "min": [
+          -0.007867739535868168, 1.517799973487854, -0.014952200464904308
+        ],
+        "max": [0.07485649734735489, 1.6362700462341309, 0.1316860020160675]
+      },
+      "vertexStart": 42683,
+      "vertexCount": 8367,
+      "indexStart": 223416,
+      "indexCount": 39630,
+      "positionSha256": "d6576aba6c18096d1031a67182a144fb976878a5523bf8d94101a3cdcb438ded",
+      "indexSha256": "0107ad245bd426178c9d4748834d2795aa368bda936e14a885f38a490cc5e131"
+    },
+    {
+      "conceptId": "FMA52788",
+      "bounds": {
+        "min": [-0.07618849724531174, 1.5178799629211426, -0.01483139954507351],
+        "max": [0.005002439953386784, 1.6362700462341309, 0.12788599729537964]
+      },
+      "vertexStart": 51050,
+      "vertexCount": 8028,
+      "indexStart": 263046,
+      "indexCount": 39006,
+      "positionSha256": "7824c84eab498fd447ff53d8d53db5a4521e90ca75644538d4fe2f5640959e10",
+      "indexSha256": "9489e268d977d66e0f5375be67c3049fd76464326f77c86218e616785d52f570"
+    },
+    {
+      "conceptId": "FMA52893",
+      "bounds": {
+        "min": [0.031893301755189896, 1.48062002658844, 0.12174300104379654],
+        "max": [0.06324440240859985, 1.5367399454116821, 0.16143199801445007]
+      },
+      "vertexStart": 59078,
+      "vertexCount": 929,
+      "indexStart": 302052,
+      "indexCount": 4302,
+      "positionSha256": "0b50e624103a262a80195af7ae4828745ae642e004233e3660cb201003682f00",
+      "indexSha256": "012c7ebbac177b0e824c4e9bce38933d5a2a4ff4d49dbf4aa768fda789b9917c"
+    },
+    {
+      "conceptId": "FMA52892",
+      "bounds": {
+        "min": [-0.06457789987325668, 1.4806400537490845, 0.12177400290966034],
+        "max": [-0.033234599977731705, 1.5366400480270386, 0.1614529937505722]
+      },
+      "vertexStart": 60007,
+      "vertexCount": 934,
+      "indexStart": 306354,
+      "indexCount": 4668,
+      "positionSha256": "71f409267685ab04f6489335c96e1db5b0cef7ee082365c7cd63dce01765a7f2",
+      "indexSha256": "e0903ffb9250bd5137519c39f36bf0f9b13a02601307de371ec6a0822a5e14c3"
+    },
+    {
+      "conceptId": "FMA53646",
+      "bounds": {
+        "min": [0.007319440133869648, 1.4978699684143066, 0.15076400339603424],
+        "max": [0.017931099981069565, 1.5268800258636475, 0.16473199427127838]
+      },
+      "vertexStart": 60941,
+      "vertexCount": 366,
+      "indexStart": 311022,
+      "indexCount": 1920,
+      "positionSha256": "164123c1730d9f4c0b234c0fe6800e89aba712d5591ffa85128fd4e57c78fa2a",
+      "indexSha256": "1a978e041f71d18d6def1ed69651e7d30b22734e5c6c4a58bfab11fbaefc3c09"
+    },
+    {
+      "conceptId": "FMA53645",
+      "bounds": {
+        "min": [-0.01804189942777157, 1.5018800497055054, 0.15094700455665588],
+        "max": [-0.00748647004365921, 1.5273499488830566, 0.16550999879837036]
+      },
+      "vertexStart": 61307,
+      "vertexCount": 401,
+      "indexStart": 312942,
+      "indexCount": 2106,
+      "positionSha256": "a70de9ec205c93a0559cd3d2326f192372d0b0e14a412df7073d8d498d6f189d",
+      "indexSha256": "066cbab63de53caf2e0bf889685d381a06c67dfaea6b89481147c6b12b2c6558"
+    },
+    {
+      "conceptId": "FMA53648",
+      "bounds": {
+        "min": [
+          -0.0025224199052900076, 1.5018500089645386, 0.16929000616073608
+        ],
+        "max": [0.007199930027127266, 1.5334899425506592, 0.18946699798107147]
+      },
+      "vertexStart": 61708,
+      "vertexCount": 263,
+      "indexStart": 315048,
+      "indexCount": 1314,
+      "positionSha256": "3816ddb346778e6a693fab3a0c1836a426e6397a268ebdc8d772eacf631a1a8e",
+      "indexSha256": "569cd88e38d4ffb9e7f7d7bab9e7e6f4770635f9aae55bc35c174d0b1fc531a1"
+    },
+    {
+      "conceptId": "FMA53647",
+      "bounds": {
+        "min": [-0.009148710407316685, 1.501170039176941, 0.16958500444889069],
+        "max": [-0.0007414110004901886, 1.5331900119781494, 0.19083300232887268]
+      },
+      "vertexStart": 61971,
+      "vertexCount": 265,
+      "indexStart": 316362,
+      "indexCount": 1248,
+      "positionSha256": "2f278ef9f53f128e4807b64978bf50f805906f3e3aa85e53cbcbe885e3aa7da8",
+      "indexSha256": "0a5405e74f1d570fd2f6c8a76bc66abe7aeef7f0937051d8f809c7282d2c7ae8"
+    },
+    {
+      "conceptId": "FMA53656",
+      "bounds": {
+        "min": [
+          -0.0015432400396093726, 1.4701600074768066, 0.10332199931144714
+        ],
+        "max": [0.027458399534225464, 1.5133999586105347, 0.14996199309825897]
+      },
+      "vertexStart": 62236,
+      "vertexCount": 1164,
+      "indexStart": 317610,
+      "indexCount": 5814,
+      "positionSha256": "21cb7d7debed8bbe4a86620337bffefaadc21767870f7fe3deab55f80c8eabaa",
+      "indexSha256": "6d3c9bc67a242326c6b7f824a28e40a9d90814323ee469173a283b6e4923d7cc"
+    },
+    {
+      "conceptId": "FMA53655",
+      "bounds": {
+        "min": [-0.028810400515794754, 1.4704500436782837, 0.10331299901008606],
+        "max": [0.00014722099876962602, 1.5133399963378906, 0.14990699291229248]
+      },
+      "vertexStart": 63400,
+      "vertexCount": 1132,
+      "indexStart": 323424,
+      "indexCount": 5208,
+      "positionSha256": "f2e9020df3c61c8dc0df9b2dabf96133f5058191ad5028486d3c45528843fc67",
+      "indexSha256": "4701220473300d6ed292825d597ce437e34ba229ce3ce9e850e4c447f9ec1069"
+    },
+    {
+      "conceptId": "FMA53650",
+      "bounds": {
+        "min": [-0.003067929996177554, 1.4639899730682373, 0.12681399285793304],
+        "max": [0.045795198529958725, 1.5332900285720825, 0.1828799992799759]
+      },
+      "vertexStart": 64532,
+      "vertexCount": 3577,
+      "indexStart": 328632,
+      "indexCount": 15594,
+      "positionSha256": "28574dc0bd5804c08d946d96b65dda9427207cbfdede1e0c4658c23e10b65624",
+      "indexSha256": "fc54ac519155914af57322db74c3b259ece4cddc3c96decd2ed212202b3e34dd"
+    },
+    {
+      "conceptId": "FMA53649",
+      "bounds": {
+        "min": [-0.047610700130462646, 1.4639899730682373, 0.12937399744987488],
+        "max": [-0.00025105400709435344, 1.5333499908447266, 0.1840289980173111]
+      },
+      "vertexStart": 68109,
+      "vertexCount": 3513,
+      "indexStart": 344226,
+      "indexCount": 15972,
+      "positionSha256": "ef661575887cfb4afd45982191dcb5748905dc7ae22b3060eeb20db6c07f6d47",
+      "indexSha256": "eb0371dfc8ffd644f147473b10ac4bf060ed285546d33a4ed8057dc64e4f0653"
+    },
+    {
+      "conceptId": "FMA54738",
+      "bounds": {
+        "min": [0.004591209813952446, 1.4826600551605225, 0.13395099341869354],
+        "max": [0.015939900651574135, 1.4980499744415283, 0.16947999596595764]
+      },
+      "vertexStart": 71622,
+      "vertexCount": 482,
+      "indexStart": 360198,
+      "indexCount": 2214,
+      "positionSha256": "e0a1095baedc45a5a2e41eea97c0dfa591bca8492cae645bd5390ebb6b57d3f5",
+      "indexSha256": "0aa65c08b95298052f3bf352c04ca846f65cff7fd070252ea6b4e5f11762bf69"
+    },
+    {
+      "conceptId": "FMA54737",
+      "bounds": {
+        "min": [-0.01653210073709488, 1.4785200357437134, 0.12996099889278412],
+        "max": [-0.00668817013502121, 1.498479962348938, 0.16632699966430664]
+      },
+      "vertexStart": 72104,
+      "vertexCount": 572,
+      "indexStart": 362412,
+      "indexCount": 2142,
+      "positionSha256": "237688ba17072448b3b363b0cf87435ff15ac0ff2e6160afdd650bce8aee2cc2",
+      "indexSha256": "c7fe2c6b197493a2ebdd73f607142a6bc5a2fc453848c1bbf0d9eb5a557376fe"
+    }
+  ]
+}

@@ -28,14 +28,14 @@ test("sourced skeleton selection, filters, focus, and language preserve the cach
   const skullPoint = { x: size.width * 0.5, y: size.height * 0.15 };
   await canvas.click({ position: skullPoint });
   await expect(
-    page.getByRole("heading", { name: "Craniu (fără mandibulă)", exact: true }),
+    page.getByRole("heading", { name: "Os frontal", exact: true }),
   ).toBeVisible();
-  await expect(page.locator(".member-list button")).toHaveCount(29);
+  await expect(page.locator(".member-list button")).toHaveCount(22);
 
   await page.getByRole("button", { name: "EN", exact: true }).click();
   await expect(
     page.getByRole("heading", {
-      name: "Skull (without mandible)",
+      name: "Frontal bone",
       exact: true,
     }),
   ).toBeVisible();
@@ -48,7 +48,7 @@ test("sourced skeleton selection, filters, focus, and language preserve the cach
   await canvas.click({ position: skullPoint });
   await expect(
     page.getByRole("heading", {
-      name: "Skull (without mandible)",
+      name: "Frontal bone",
       exact: true,
     }),
   ).toHaveCount(0);

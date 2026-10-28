@@ -2,7 +2,7 @@
 
 Status: functional whole-body **partial coverage**, not an anatomically complete or independently medically reviewed milestone. See [computed coverage](../assets/MUSCLE_COVERAGE.md) and [asset audit](../assets/MUSCLE_AUDIT.md).
 
-The skeleton GLB, skeletal manifest and `SkeletonModel.tsx` remain byte-identical to the recorded SHA-256 baseline. Bone identities, materials, transforms and renderer are untouched. The initial bones-only view is preserved. `STRUCTURES` remains the skeletal compatibility export; shared search, inspection and validation use `ANATOMY_CATALOG` (bones plus all muscular inventory entries, including unavailable entries).
+The muscular integration preserved the original skeletal GLB, manifest and renderer. Subsequent user-authorized skull coloring and individual picking are documented in `docs/assets/SKULL_COLORING.md`; the skeletal GLB/source manifest, spatial attributes, original bone identities, transforms and all non-skull materials remain unchanged. The renderer baseline explicitly records the skull interaction change and 21 additional source-FMA child IDs. `STRUCTURES` remains the 29-entry skeletal source compatibility export; shared search, inspection and validation use `ANATOMY_CATALOG` (including skull children and all muscular inventory entries, including unavailable entries).
 
 `SYSTEMS` drives independent checkboxes and derived All behavior. Available systems currently are skeletal and muscular; future registrations extend the same list. An empty selection is valid. A disabled category cannot be activated through the store. Filters never issue camera commands. Locale changes affect labels only.
 

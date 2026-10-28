@@ -42,9 +42,9 @@ test("records muscular demand-rendering, cache and frame metrics", async ({
     orbitFrames = (await read()).frames - frameStart;
   const warmStart = Date.now();
   await page.getByLabel("Sistem muscular", { exact: true }).uncheck();
-  await expect.poll(async () => (await read()).calls).toBe(30);
+  await expect.poll(async () => (await read()).calls).toBe(50);
   await page.getByLabel("Sistem muscular", { exact: true }).check();
-  await expect.poll(async () => (await read()).calls).toBe(385);
+  await expect.poll(async () => (await read()).calls).toBe(405);
   const warmToggleMs = Date.now() - warmStart;
   const after = await read();
   expect(after.geometries).toBe(combinedMetrics.geometries);
