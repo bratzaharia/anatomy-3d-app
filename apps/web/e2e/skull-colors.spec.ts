@@ -23,6 +23,9 @@ test("individual skull colors, hover, selection, focus, hide, isolation and loca
   await expect.poll(async () => (await metrics()).calls).toBe(50);
   await expect.poll(async () => (await metrics()).triangles).toBe(513166);
   await page.getByRole("button", { name: "Cap", exact: true }).click();
+  await page
+    .getByRole("radio", { name: "Colorat", exact: true })
+    .press("Space");
   const bounds = await canvas.boundingBox();
   if (!bounds) throw new Error("Missing canvas");
   const forehead = { x: bounds.width * 0.5, y: bounds.height * 0.36 };

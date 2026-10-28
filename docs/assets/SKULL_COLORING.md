@@ -2,11 +2,18 @@
 
 ## Scope and provenance
 
-User requested the supplied reference-image palette with 30% less saturation,
-20% darker bone-local hover, and individual skull-bone selection. The images are
-used only as color references; they are not imported textures or anatomical data.
-Colors are educational labels, not physiological pigmentation. Paired bones use
-the same family color; the mandible, absent from the images, stays muted ivory.
+Latest request: reference-directed natural bone and saturated segmentation colors
+with self-shadows. This supersedes the preceding pastel values. Current rendering,
+costs and fidelity limitations are documented in `SKULL_RENDERING.md`; the source
+boundary audit and interaction contracts below remain valid.
+
+The preceding pastel milestone superseded the earlier saturated reference-image palette:
+22 unique, harmonious muted ivory, beige, sand, sage, dusty blue-gray and pale
+terracotta tones now live in `skullBoneColors.ts`, keyed by unchanged FMA IDs.
+Paired bones use tiny tonal differences. Colored is optional; Simple is the
+neutral default. No reference image is imported as a texture or anatomical data.
+Colors are educational labels, not physiological pigmentation. See
+`docs/architecture/SKULL_VIEW_MODES.md` for the additive three-mode selector.
 
 Identity and source ownership come from the existing [BodyParts3D 4.0 release](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/),
 under its existing CC BY 4.0 provenance/attribution. No new geometry or third-party
@@ -39,11 +46,15 @@ transform, re-registration, new surface, or guessed boundary is used.
   to its children; individual overrides affect only that source bone. Hidden
   geometry uses the existing non-raycasting handler. Indexed draw-range raycasts
   cannot select a triangle belonging to another source bone.
-- HSV saturation is multiplied by 0.7 in sRGB. Hover RGB is multiplied by 0.8
-  in sRGB before conversion to the renderer's linear working space. Rounding
-  to an 8-bit palette and Three's transfer-function approximations are covered
-  with an appropriate numerical tolerance. Opacity stays 1, roughness 0.7 and
-  metalness 0. Selection retains the bone's own hue with a subtle persistent cue.
+- The centralized palette uses low-saturation, light bone-inspired sRGB colors.
+  Hover multiplies final display
+  RGB by 0.75 **after** tone mapping, output colorspace and dithering, so lighting
+  cannot wash out the intended 25% visible darkening. Both normal and selected
+  bones have their own hover variant; selected-hovered takes priority over
+  selected. Moving away restores the previous base/selected material. Selection
+  keeps its prior hue and persistent cue. Simple/Colored opacity stays 1,
+  roughness 0.7 and metalness 0. The optional radiographic style uses separate
+  translucent materials. Non-skull material priority is unchanged.
 - All non-skull materials, muscular assets/renderer, lighting and whole-body
   camera framing remain unchanged. Camera focus additionally recognizes the
   audited individual bone bounds.
@@ -55,6 +66,9 @@ whole-body skeletal calls increase from 30 to 50 (including the shared grid),
 combined calls from 385 to 405. Triangle counts remain 513,166 skeletal / 2,900,690
 combined including the grid. Geometry wrappers share original GPU buffers;
 materials are allocated once per mounted viewer and disposed on unmount.
+The hover correction adds one selected-hovered material per skull bone (22),
+not a mesh, draw call, texture, postprocessing pass or frame loop. Both hover
+variants use the same deterministic shader-program cache key.
 There is no new frame loop, network model request, texture or geometry payload.
 The performance test checks idle demand-rendering and repeated-toggle stability;
 software-renderer results are not a real-device FPS guarantee.
@@ -77,8 +91,17 @@ GLB/manifest baseline used by muscular alignment validation.
 
 ## Executed verification
 
-28 unit/component tests and all 9 Chromium browser tests passed. Lint,
-formatting, TypeScript, production build, anatomy and RO/EN validators passed.
+The initial palette milestone passed 28 unit/component and 9 Chromium browser
+tests. The selected-hover correction adds a state-priority/shader unit test and
+a screenshot-pixel browser regression. Before correction, frontal hover ratios
+were `[0.9324, 0.9328, 0.7648]` (RGB); on a selected frontal they were `[1, 1, 1]`.
+After correction, unselected ratios were `[0.7502, 0.7511, 0.7498]`, selected
+`[0.7489, 0.7496, 0.7500]`: approximately 25% darker in every displayed channel.
+Another bone's sampled pixels remain unchanged, hover-out restores the previous
+pixels exactly, and rendering stops while idle. No asset or spatial data changed.
+
+After the correction, all 29 unit/component and 10 Chromium browser tests passed,
+as did lint, formatting, TypeScript, production build, anatomy and RO/EN validators.
 The build retains its existing large-chunk warning. Desktop panel collapse and
 the user's 696 × 853 drawer scenario both preserve a visible, rendered model.
 
@@ -93,3 +116,4 @@ are fetched once in the layer/cache regression test. The muscular GLB remains
 Manual atlas verification confirmed the softened palette, individual frontal
 selection and inspector, focus, and visibility with navigation collapsed. See
 `skull-colored-preview.png` for the captured result.
+The corrected selected-bone hover is captured in `skull-hover-preview.png`.

@@ -47,3 +47,28 @@ describe("independent muscular state", () => {
     expect(useViewerStore.getState().isolatedIds.size).toBe(0);
   });
 });
+
+describe("independent skull display state", () => {
+  it("defaults to simple and validates mode IDs without touching other viewer state", () => {
+    useViewerStore.getState().setSkullViewMode("simple");
+    const before = useViewerStore.getState();
+    expect(before.skullViewMode).toBe("simple");
+    for (const mode of ["colored", "xray", "simple"] as const) {
+      before.setSkullViewMode(mode);
+      const after = useViewerStore.getState();
+      expect(after.skullViewMode).toBe(mode);
+      for (const key of [
+        "selectedId",
+        "cameraCommand",
+        "hiddenIds",
+        "isolatedIds",
+        "activeSystemIds",
+        "muscleOpacity",
+        "muscleRequested",
+      ] as const)
+        expect(after[key]).toBe(before[key]);
+    }
+    before.setSkullViewMode("unimplemented" as "simple");
+    expect(useViewerStore.getState().skullViewMode).toBe("simple");
+  });
+});

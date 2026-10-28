@@ -8,10 +8,12 @@ import {
   Float32BufferAttribute,
   Uint32BufferAttribute,
   MeshStandardMaterial,
-  Color,
   Mesh,
   Raycaster,
   Vector3,
+  ShaderLib,
+  type WebGLRenderer,
+  FrontSide,
 } from "three";
 import {
   SKELETON_ASSET,
@@ -21,16 +23,14 @@ import {
 } from "@anatomy/data";
 import { resolveVisibleStructureIds } from "@anatomy/core";
 import layout from "../../../../packages/anatomy-data/src/skull-color-ranges.json";
-import {
-  skullBoneColors,
-  skullReferenceColors,
-  softenReference,
-  skullDisplayColor,
-} from "./skullBoneColors";
+import { skullBoneColors, skullDisplayColor } from "./skullBoneColors";
 import {
   createSkullBoneMaterials,
   createSkullGeometryViews,
   validateSkullColorLayout,
+  resolveBoneMaterial,
+  SKULL_HOVER_BRIGHTNESS,
+  createSkullVisualizationMaterials,
 } from "./skullMaterials";
 
 const hash = (bytes: Uint8Array) =>
@@ -170,31 +170,71 @@ describe("skull-only anatomical materials", () => {
     expect(geometry.groups).toHaveLength(0);
     geometry.dispose();
   });
-  it("reduces reference saturation 30%, darkens only the hovered/selected bone 20%, and stays opaque", () => {
-    for (const [id, hex] of Object.entries(skullReferenceColors)) {
-      const reference = new Color(hex).convertLinearToSRGB();
-      const softened = softenReference(hex).convertLinearToSRGB();
-      const saturation = (c: Color) =>
-        (Math.max(c.r, c.g, c.b) - Math.min(c.r, c.g, c.b)) /
-        Math.max(c.r, c.g, c.b);
-      expect(saturation(softened)).toBeCloseTo(saturation(reference) * 0.7, 4);
+  it("retains the palette and selection colors, with a separate 25% display-space hover", () => {
+    expect(new Set(Object.values(skullBoneColors)).size).toBe(22);
+    expect(skullBoneColors.FMA52734).toBe("#ffff00");
+    expect(skullBoneColors.FMA52736).toBe("#00aee9");
+    expect(skullBoneColors.FMA52893).toBe("#00d5d7");
+    for (const id of Object.keys(skullBoneColors)) {
       const base = skullDisplayColor(id).convertLinearToSRGB();
-      const hover = skullDisplayColor(id, true).convertLinearToSRGB();
+      const selection = skullDisplayColor(id, true).convertLinearToSRGB();
       for (const axis of ["r", "g", "b"] as const)
-        expect(hover[axis]).toBeCloseTo(base[axis] * 0.8, 4);
+        expect(selection[axis]).toBeCloseTo(base[axis] * 0.8, 4);
       const materials = createSkullBoneMaterials(id);
       expect(materials.base.color.getHexString()).toBe(
         skullBoneColors[id]!.slice(1),
       );
-      expect(materials.base.color.equals(materials.hovered.color)).toBe(false);
+      expect(materials.base.color.equals(materials.hovered.color)).toBe(true);
+      expect(
+        materials.selected.color.equals(materials.selectedHovered.color),
+      ).toBe(true);
       for (const material of Object.values(materials)) {
-        expect(material.roughness).toBe(0.7);
+        expect(material.roughness).toBe(0.62);
         expect(material.metalness).toBe(0);
         expect(material.transparent).toBe(false);
         expect(material.opacity).toBe(1);
         material.dispose();
       }
     }
+  });
+  it("gives skull hover priority over selection without changing other bones", () => {
+    const materials = createSkullBoneMaterials("FMA52734");
+    expect(resolveBoneMaterial(materials, false, false)).toBe(materials.base);
+    expect(resolveBoneMaterial(materials, false, true)).toBe(materials.hovered);
+    expect(resolveBoneMaterial(materials, true, false)).toBe(
+      materials.selected,
+    );
+    expect(resolveBoneMaterial(materials, true, true)).toBe(
+      materials.selectedHovered,
+    );
+    const legacy = {
+      base: materials.base,
+      selected: materials.selected,
+      hovered: materials.hovered,
+    };
+    expect(resolveBoneMaterial(legacy, true, true)).toBe(legacy.selected);
+    for (const material of [materials.hovered, materials.selectedHovered]) {
+      const shader = {
+        uniforms: {},
+        vertexShader: ShaderLib.standard.vertexShader,
+        fragmentShader: ShaderLib.standard.fragmentShader,
+      } as Parameters<MeshStandardMaterial["onBeforeCompile"]>[0];
+      material.onBeforeCompile(shader, {} as WebGLRenderer);
+      expect(SKULL_HOVER_BRIGHTNESS).toBe(0.75);
+      expect(shader.fragmentShader).toContain(
+        "#include <dithering_fragment>\ngl_FragColor.rgb *= 0.75;",
+      );
+      expect(
+        shader.fragmentShader.indexOf("gl_FragColor.rgb *= 0.75;"),
+      ).toBeGreaterThan(
+        shader.fragmentShader.indexOf("#include <colorspace_fragment>"),
+      );
+      expect(shader.fragmentShader).not.toContain("gl_FragColor.a *=");
+      expect(material.customProgramCacheKey()).toContain(
+        "skull-studio-v2:surface=1:hover=1:",
+      );
+    }
+    Object.values(materials).forEach((material) => material.dispose());
   });
   it("supports individual and parent skull hiding/isolation without exposing hidden children", () => {
     const id = SKULL_BONE_STRUCTURES[0]!.id;
@@ -213,5 +253,49 @@ describe("skull-only anatomical materials", () => {
       resolveVisibleStructureIds(SKELETAL_STRUCTURES, new Set(["muscular"]))
         .size,
     ).toBe(0);
+  });
+  it("reuses neutral/xray materials, colors every bone, and disposes each resource once", () => {
+    const styles = createSkullVisualizationMaterials();
+    const ids = [...SKULL_BONE_STRUCTURES.map((bone) => bone.id), "mandible"];
+    expect(Object.keys(styles.modes)).toEqual(["simple", "colored", "xray"]);
+    for (const mode of Object.values(styles.modes))
+      expect([...mode.keys()]).toEqual(
+        SKULL_BONE_MAPPINGS.map((bone) => bone.id).concat("mandible"),
+      );
+    const unique = new Set(
+      Object.values(styles.modes).flatMap((mode) => [...mode.values()]),
+    );
+    expect(unique.size).toBe(24); // 22 colored + one shared neutral + one shared X-ray
+    const disposed = new Map<MeshStandardMaterial, number>();
+    for (const set of unique)
+      for (const material of Object.values(set))
+        material.addEventListener("dispose", () =>
+          disposed.set(material, (disposed.get(material) ?? 0) + 1),
+        );
+    for (const id of ids) {
+      const simple = styles.modes.simple.get(id)!,
+        colored = styles.modes.colored.get(id)!,
+        xray = styles.modes.xray.get(id)!;
+      expect(simple.base.color.getHexString()).toBe("c7c3ba");
+      expect(simple.base.roughness).toBe(0.54);
+      expect(simple.base.transparent).toBe(false);
+      expect(colored.base.transparent).toBe(false);
+      expect(xray.base.transparent).toBe(true);
+      expect(xray.base.opacity).toBe(0.28);
+      expect(xray.base.depthWrite).toBe(false);
+      expect(xray.base.side).toBe(FrontSide);
+      expect(xray.selected.opacity).toBeGreaterThan(xray.base.opacity);
+      expect(resolveBoneMaterial(xray, true, true)).toBe(xray.selectedHovered);
+    }
+    expect(
+      new Set(
+        [...styles.modes.colored.values()].map((set) =>
+          set.base.color.getHexString(),
+        ),
+      ).size,
+    ).toBe(22);
+    styles.dispose();
+    expect(disposed.size).toBe(96);
+    expect([...disposed.values()].every((count) => count === 1)).toBe(true);
   });
 });

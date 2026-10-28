@@ -35,6 +35,13 @@ const resources = {
       "search.placeholder": "Ex. humerus, craniu…",
       "search.noResults": "Nicio structură găsită",
       "inspector.title": "Inspector anatomic",
+      "skullModes.bones": "Oase",
+      "skullModes.title": "Moduri de vizualizare pentru craniu",
+      "skullModes.hint":
+        "Un singur mod activ. Camera și selecția se păstrează.",
+      "skullModes.preview": "Previzualizare stilizată",
+      "skullModes.xrayNote":
+        "Simulare educațională de stil radiografic, nu radiografie clinică sau instrument de diagnostic.",
       "inspector.empty": "Selectează o structură din model sau din listă.",
       "inspector.region": "Regiune",
       "inspector.system": "Sistem",
@@ -133,6 +140,12 @@ const resources = {
       "search.placeholder": "E.g. humerus, skull…",
       "search.noResults": "No structures found",
       "inspector.title": "Anatomy inspector",
+      "skullModes.bones": "Bones",
+      "skullModes.title": "Skull Visualization Modes",
+      "skullModes.hint": "One active mode. Camera and selection are preserved.",
+      "skullModes.preview": "Stylized preview",
+      "skullModes.xrayNote":
+        "Educational radiographic-style simulation, not a clinical X-ray or diagnostic tool.",
       "inspector.empty": "Select a structure in the model or from the list.",
       "inspector.region": "Region",
       "inspector.system": "System",

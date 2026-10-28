@@ -19,11 +19,13 @@ import {
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
+import { SkullVisualizationModes } from "./SkullVisualizationModes";
 
 export function Inspector() {
   const { t, i18n } = useTranslation();
   const locale = i18n.language as Locale;
   const selectedId = useViewerStore((state) => state.selectedId);
+  const activeRegionId = useViewerStore((state) => state.activeRegionId);
   const select = useViewerStore((state) => state.select);
   const hideSelected = useViewerStore((state) => state.hideSelected);
   const isolateSelected = useViewerStore((state) => state.isolateSelected);
@@ -33,6 +35,11 @@ export function Inspector() {
   const hiddenIds = useViewerStore((state) => state.hiddenIds);
   const structure = selectedId ? structureById.get(selectedId) : undefined;
   const muscle = selectedId ? muscleMetadataById.get(selectedId) : undefined;
+  const skullContext =
+    selectedId === "skull" ||
+    selectedId === "mandible" ||
+    structure?.parentId === "skull" ||
+    (!selectedId && activeRegionId === "head");
   const setHidden = useViewerStore((state) => state.setStructuresHidden);
   const assetStructure = [
     ...SKELETON_ASSET.structures,
@@ -52,7 +59,13 @@ export function Inspector() {
       <div className="inspector-header">
         <div>
           <span className="eyebrow">{t("inspector.title")}</span>
-          <h2>{structure ? getLocalizedName(structure, locale) : "—"}</h2>
+          <h2>
+            {structure
+              ? getLocalizedName(structure, locale)
+              : skullContext
+                ? t("skullModes.bones")
+                : "—"}
+          </h2>
         </div>
         {structure && (
           <button
@@ -64,7 +77,11 @@ export function Inspector() {
           </button>
         )}
       </div>
-      {!structure ? (
+      {!structure && skullContext ? (
+        <div className="inspector-content">
+          <SkullVisualizationModes />
+        </div>
+      ) : !structure ? (
         <div className="inspector-empty">
           <div className="empty-orbit">
             <Icon name="target" size={27} />
@@ -205,6 +222,7 @@ export function Inspector() {
               {t("inspector.restore")}
             </button>
           )}
+          {skullContext && <SkullVisualizationModes />}
           {structure.groupIds?.map((groupId) => {
             const group = GROUPS.find((item) => item.id === groupId);
             if (!group) return null;

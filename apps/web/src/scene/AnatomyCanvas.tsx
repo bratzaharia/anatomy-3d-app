@@ -2,7 +2,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Grid, OrbitControls } from "@react-three/drei";
 import { Suspense, useEffect, useRef, type ComponentRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Box3, PerspectiveCamera, Sphere, Vector3 } from "three";
+import { Box3, PerspectiveCamera, Sphere, Vector3, PCFShadowMap } from "three";
 import {
   SKELETON_ASSET,
   MUSCLE_ASSET,
@@ -12,6 +12,11 @@ import { SkeletonModel } from "./SkeletonModel";
 import { MuscleLayer } from "./MuscleLayer";
 import { SceneDiagnostics } from "./SceneDiagnostics";
 import { useViewerStore } from "../store/viewerStore";
+import {
+  SKULL_KEY_POSITION,
+  SKULL_SHADOW_FRUSTUM,
+  SKULL_SHADOW_SIZE,
+} from "./skullShadow";
 
 function boundsBox(bounds: {
   min: readonly number[];
@@ -139,6 +144,7 @@ export function AnatomyCanvas() {
       role="img"
       aria-label={t(muscular ? "muscles.viewerLabel" : "viewer.label")}
       frameloop="demand"
+      shadows={{ type: PCFShadowMap, autoUpdate: false }}
       dpr={[1, 1.75]}
       camera={{
         position: [bodyCenter.x, bodyCenter.y, 3.8],
@@ -152,7 +158,22 @@ export function AnatomyCanvas() {
       <color attach="background" args={["#07111d"]} />
       <ambientLight intensity={1.15} />
       <hemisphereLight args={["#e2f3ff", "#6b6459", 1.6]} />
-      <directionalLight position={[2, 3, 4]} intensity={2.2} color="#fff5dc" />
+      <directionalLight
+        position={SKULL_KEY_POSITION}
+        intensity={2.2}
+        color="#fff5dc"
+        castShadow
+        shadow-mapSize={[SKULL_SHADOW_SIZE, SKULL_SHADOW_SIZE]}
+        shadow-camera-left={SKULL_SHADOW_FRUSTUM.left}
+        shadow-camera-right={SKULL_SHADOW_FRUSTUM.right}
+        shadow-camera-top={SKULL_SHADOW_FRUSTUM.top}
+        shadow-camera-bottom={SKULL_SHADOW_FRUSTUM.bottom}
+        shadow-camera-near={SKULL_SHADOW_FRUSTUM.near}
+        shadow-camera-far={SKULL_SHADOW_FRUSTUM.far}
+        shadow-normalBias={0.00015}
+        shadow-bias={-0.00002}
+        shadow-radius={2}
+      />
       <directionalLight
         position={[-2, 1.5, -2]}
         intensity={1.2}

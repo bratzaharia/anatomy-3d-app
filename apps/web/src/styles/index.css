@@ -631,6 +631,108 @@ input:focus-visible {
 .hover-label strong {
   font-size: 11px;
 }
+
+.skull-modes {
+  container-type: inline-size;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+.skull-modes h3 {
+  margin: 7px 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.skull-mode-hint,
+.skull-xray-note {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+  margin: 0 0 14px;
+}
+.skull-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+.skull-mode-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+  aspect-ratio: 1;
+  min-width: 0;
+  min-height: 0;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: linear-gradient(150deg, #102532, #0a1824);
+  box-shadow: 0 4px 10px #00000020;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+.skull-mode-card:hover {
+  border-color: #82b6bc;
+  background: #132d3a;
+}
+.skull-mode-card.is-selected {
+  border-color: var(--teal);
+  box-shadow:
+    0 0 0 1px #70d9cf25,
+    0 5px 15px #00000028;
+}
+.skull-mode-card:focus-within {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+.skull-mode-card strong {
+  width: 100%;
+  font-size: 9px;
+  line-height: 12px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.skull-mode-thumbnail {
+  display: block;
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  flex: none;
+  align-self: center;
+  border-radius: 7px;
+}
+.skull-mode-check {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: grid;
+  place-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  border: 1px solid #72959c;
+  background: #0a1b29d9;
+  color: #052729;
+  font-size: 8px;
+}
+.is-selected .skull-mode-check {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+.skull-xray-note {
+  margin: 12px 0 0;
+  padding: 10px;
+  border: 1px solid #51798a55;
+  border-radius: 8px;
+  color: #9dbbca;
+}
 .hover-label small {
   color: var(--muted);
   font-style: italic;

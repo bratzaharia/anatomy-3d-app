@@ -2,37 +2,64 @@ import { memo, useEffect, useMemo } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import { Mesh, MeshStandardMaterial, type BufferGeometry } from "three";
-import {
-  SKELETON_ASSET,
-  STRUCTURES,
-  SKELETAL_STRUCTURES,
-  SKULL_BONE_MAPPINGS,
-} from "@anatomy/data";
+import { SKELETON_ASSET, STRUCTURES, SKELETAL_STRUCTURES } from "@anatomy/data";
 import { resolveVisibleStructureIds } from "@anatomy/core";
 import { useViewerStore } from "../store/viewerStore";
+import { recordSkullShadowDraw, requestSkullShadowUpdate } from "./skullShadow";
 import {
-  createSkullBoneMaterials,
+  createSkullVisualizationMaterials,
   createSkullGeometryViews,
   validateSkullColorLayout,
+  resolveBoneMaterial,
+  type BoneMaterialSet,
 } from "./skullMaterials";
 
 const noRaycast: Mesh["raycast"] = () => undefined;
-interface BoneMaterials {
-  base: MeshStandardMaterial;
-  selected: MeshStandardMaterial;
-  hovered: MeshStandardMaterial;
-}
+
+const SkullBones = memo(function SkullBones({
+  views,
+  materials,
+  visible,
+}: {
+  readonly views: readonly { id: string; geometry: BufferGeometry }[];
+  readonly materials: ReturnType<typeof createSkullVisualizationMaterials>;
+  readonly visible: ReadonlySet<string>;
+}) {
+  const mode = useViewerStore((state) => state.skullViewMode);
+  const gl = useThree((state) => state.gl);
+  const invalidate = useThree((state) => state.invalidate);
+  useEffect(() => {
+    requestSkullShadowUpdate(gl);
+    invalidate();
+  }, [gl, invalidate, mode, visible]);
+  return (
+    <>
+      {views.map(({ id, geometry }) => (
+        <Bone
+          key={id}
+          id={id}
+          geometry={geometry}
+          visible={visible.has(id)}
+          materials={materials.modes[mode].get(id)!}
+          shadowed={mode !== "xray"}
+        />
+      ))}
+    </>
+  );
+});
 
 const Bone = memo(function Bone({
   id,
   geometry,
   visible,
   materials,
+  shadowed = false,
 }: {
   readonly id: string;
   readonly geometry: BufferGeometry;
   readonly visible: boolean;
-  readonly materials: BoneMaterials;
+  readonly materials: BoneMaterialSet;
+  readonly shadowed?: boolean;
 }) {
   const selected = useViewerStore(
     (state) =>
@@ -45,13 +72,10 @@ const Bone = memo(function Bone({
       name={id}
       geometry={geometry}
       visible={visible}
-      material={
-        selected
-          ? materials.selected
-          : hovered
-            ? materials.hovered
-            : materials.base
-      }
+      castShadow={shadowed}
+      receiveShadow={shadowed}
+      onAfterShadow={shadowed ? recordSkullShadowDraw : undefined}
+      material={resolveBoneMaterial(materials, selected, hovered)}
       userData={{ anatomyId: id }}
       raycast={visible ? Mesh.prototype.raycast : noRaycast}
       onPointerOver={(event) => {
@@ -100,20 +124,13 @@ export function SkeletonModel() {
     return registry;
   }, [scene]);
   const skullViews = useMemo(
-    () => createSkullGeometryViews(geometries.get("skull")!),
+    () => [
+      ...createSkullGeometryViews(geometries.get("skull")!),
+      { id: "mandible", geometry: geometries.get("mandible")! },
+    ],
     [geometries],
   );
-  const skullMaterials = useMemo(
-    () =>
-      new Map([
-        ...SKULL_BONE_MAPPINGS.map(
-          (bone) =>
-            [bone.id, createSkullBoneMaterials(bone.conceptId)] as const,
-        ),
-        ["mandible", createSkullBoneMaterials("FMA52748")] as const,
-      ]),
-    [],
-  );
+  const skullMaterials = useMemo(() => createSkullVisualizationMaterials(), []);
   const materials = useMemo(
     () => ({
       base: new MeshStandardMaterial({
@@ -143,10 +160,10 @@ export function SkeletonModel() {
     invalidate();
     return () => {
       Object.values(materials).forEach((material) => material.dispose());
-      skullMaterials.forEach((set) =>
-        Object.values(set).forEach((material) => material.dispose()),
-      );
-      skullViews.forEach(({ geometry }) => geometry.dispose());
+      skullMaterials.dispose();
+      skullViews
+        .filter(({ id }) => id !== "mandible")
+        .forEach(({ geometry }) => geometry.dispose());
     };
   }, [invalidate, materials, skullMaterials, skullViews]);
   useEffect(() => {
@@ -160,18 +177,22 @@ export function SkeletonModel() {
   // materials; changing filters/locale never decodes the GLB again.
   return (
     <group dispose={null}>
-      {[
-        ...[...geometries].filter(([id]) => id !== "skull"),
-        ...skullViews.map(({ id, geometry }) => [id, geometry] as const),
-      ].map(([id, geometry]) => (
-        <Bone
-          key={id}
-          id={id}
-          geometry={geometry}
-          visible={visible.has(id)}
-          materials={skullMaterials.get(id) ?? materials}
-        />
-      ))}
+      {[...geometries]
+        .filter(([id]) => id !== "skull" && id !== "mandible")
+        .map(([id, geometry]) => (
+          <Bone
+            key={id}
+            id={id}
+            geometry={geometry}
+            visible={visible.has(id)}
+            materials={materials}
+          />
+        ))}
+      <SkullBones
+        views={skullViews}
+        materials={skullMaterials}
+        visible={visible}
+      />
     </group>
   );
 }

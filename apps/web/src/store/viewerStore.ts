@@ -1,9 +1,15 @@
 import { create } from "zustand";
-import { AVAILABLE_SYSTEM_IDS } from "@anatomy/data";
+import {
+  AVAILABLE_SYSTEM_IDS,
+  SKULL_VISUALIZATION_MODES,
+  type SkullViewMode,
+} from "@anatomy/data";
 
 export type CameraView = "front" | "back" | "left" | "right" | "fit" | "focus";
 
 interface ViewerState {
+  skullViewMode: SkullViewMode;
+  setSkullViewMode: (mode: SkullViewMode) => void;
   activeSystemIds: ReadonlySet<string>;
   selectedId: string | null;
   hoveredId: string | null;
@@ -35,6 +41,16 @@ interface ViewerState {
 }
 
 export const useViewerStore = create<ViewerState>((set, get) => ({
+  skullViewMode: "simple",
+  setSkullViewMode: (mode) => {
+    if (
+      !SKULL_VISUALIZATION_MODES.some(
+        (item) => item.id === mode && item.implemented,
+      )
+    )
+      return;
+    set({ skullViewMode: mode, hoveredId: null });
+  },
   activeSystemIds: new Set(["skeletal"]),
   selectedId: null,
   hoveredId: null,

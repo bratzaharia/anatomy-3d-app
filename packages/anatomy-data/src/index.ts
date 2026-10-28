@@ -11,6 +11,7 @@ import { MUSCLE_ASSET, MUSCLE_STRUCTURES, MUSCLE_GROUPS } from "./muscles";
 import { SKULL_BONE_STRUCTURES, SKULL_GROUP } from "./skull";
 export * from "./muscles";
 export * from "./skull";
+export * from "./skullVisualizationModes";
 
 const boundsSchema = z.object({
   min: z.tuple([z.number(), z.number(), z.number()]),
