@@ -1,0 +1,2263 @@
+{
+  "source": "https://discover.pennsieve.io/datasets/307",
+  "sourceVersion": 8,
+  "sourceSha256": "5bcb4f5a6558e9963137b530a2e54a906e41ec7db4883510873b63bfcbf8730d",
+  "file": "primary/mapclient_workflow/Organs/spinal_nerves.exf",
+  "license": "CC-BY-4.0",
+  "sourceClassification": "Publisher-described research scaffold with estimated nerve fiducials; not subject-specific anatomical nerve surface ground truth.",
+  "parsedRepresentation": "Named EXF nodes and 3D volume membership only. c.HermiteSerendipity coordinates are not flattened into invented linear triangles or polylines.",
+  "decision": "RESEARCH_SOURCE_ONLY_NOT_RUNTIME_GEOMETRY",
+  "runtimeImported": false,
+  "pairCount": 31,
+  "sidedEntries": 62,
+  "sourceVolumes": 16120,
+  "verifiedAnatomicalCoverageAdded": 0,
+  "catalogAvailabilityChanged": false,
+  "partsMembershipMayOverlap": true,
+  "parts": [
+    "dorsal root of spinal cord",
+    "ventral root of spinal cord",
+    "dorsal root ganglion",
+    "spinal nerve"
+  ],
+  "remainingGates": [
+    "Preserve the source Hermite basis in any future surface reconstruction",
+    "Validate coordinate units/orientation and registration against the fixed atlas",
+    "Review root exits, ganglia, rami and nerve courses independently",
+    "Keep research-estimated geometry visually separate and outside verified coverage"
+  ],
+  "pairs": [
+    {
+      "canonicalId": "nervous-spinal-nerve-c1-left",
+      "level": "C1",
+      "side": "left",
+      "sourceGroup": "C1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "261..520",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "360..718",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "341..360,441..520"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "321..340,361..440"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "441..500"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "261..320"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c1-right",
+      "level": "C1",
+      "side": "right",
+      "sourceGroup": "C1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "1..260",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "1..359",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "81..100,181..260"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "61..80,101..180"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "181..240"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1..60"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c2-left",
+      "level": "C2",
+      "side": "left",
+      "sourceGroup": "C2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "781..1040",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "1078..1436",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "861..880,961..1040"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "841..860,881..960"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "961..1020"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "781..840"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c2-right",
+      "level": "C2",
+      "side": "right",
+      "sourceGroup": "C2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "521..780",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "719..1077",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "601..620,701..780"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "581..600,621..700"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "701..760"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "521..580"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c3-left",
+      "level": "C3",
+      "side": "left",
+      "sourceGroup": "C3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "1301..1560",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "1796..2154",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1381..1400,1481..1560"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1361..1380,1401..1480"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1481..1540"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1301..1360"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c3-right",
+      "level": "C3",
+      "side": "right",
+      "sourceGroup": "C3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "1041..1300",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "1437..1795",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1121..1140,1221..1300"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1101..1120,1141..1220"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1221..1280"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1041..1100"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c4-left",
+      "level": "C4",
+      "side": "left",
+      "sourceGroup": "C4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "1821..2080",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "2514..2872",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1901..1920,2001..2080"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1881..1900,1921..2000"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2001..2060"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1821..1880"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c4-right",
+      "level": "C4",
+      "side": "right",
+      "sourceGroup": "C4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "1561..1820",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "2155..2513",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1641..1660,1741..1820"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "1621..1640,1661..1740"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1741..1800"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "1561..1620"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c5-left",
+      "level": "C5",
+      "side": "left",
+      "sourceGroup": "C5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "2341..2600",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "3232..3590",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2421..2440,2521..2600"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2401..2420,2441..2520"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2521..2580"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2341..2400"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c5-right",
+      "level": "C5",
+      "side": "right",
+      "sourceGroup": "C5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "2081..2340",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "2873..3231",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2161..2180,2261..2340"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2141..2160,2181..2260"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2261..2320"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2081..2140"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c6-left",
+      "level": "C6",
+      "side": "left",
+      "sourceGroup": "C6 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "2861..3120",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "3950..4308",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2941..2960,3041..3120"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2921..2940,2961..3040"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3041..3100"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2861..2920"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c6-right",
+      "level": "C6",
+      "side": "right",
+      "sourceGroup": "C6 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "2601..2860",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "3591..3949",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2681..2700,2781..2860"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "2661..2680,2701..2780"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2781..2840"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "2601..2660"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c7-left",
+      "level": "C7",
+      "side": "left",
+      "sourceGroup": "C7 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "3381..3640",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "4668..5026",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3461..3480,3561..3640"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3441..3460,3481..3560"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3561..3620"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3381..3440"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c7-right",
+      "level": "C7",
+      "side": "right",
+      "sourceGroup": "C7 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "3121..3380",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "4309..4667",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3201..3220,3301..3380"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3181..3200,3221..3300"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3301..3360"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3121..3180"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c8-left",
+      "level": "C8",
+      "side": "left",
+      "sourceGroup": "C8 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "3901..4160",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "5386..5744",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3981..4000,4081..4160"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3961..3980,4001..4080"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4081..4140"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3901..3960"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-c8-right",
+      "level": "C8",
+      "side": "right",
+      "sourceGroup": "C8 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "3641..3900",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "5027..5385",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3721..3740,3821..3900"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "3701..3720,3741..3820"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3821..3880"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "3641..3700"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t1-left",
+      "level": "T1",
+      "side": "left",
+      "sourceGroup": "T1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "4421..4680",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "6104..6462",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "4501..4520,4601..4680"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "4481..4500,4521..4600"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4601..4660"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4421..4480"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t1-right",
+      "level": "T1",
+      "side": "right",
+      "sourceGroup": "T1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "4161..4420",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "5745..6103",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "4241..4260,4341..4420"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "4221..4240,4261..4340"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4341..4400"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4161..4220"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t2-left",
+      "level": "T2",
+      "side": "left",
+      "sourceGroup": "T2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "4941..5200",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "6822..7180",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5021..5040,5121..5200"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5001..5020,5041..5120"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5121..5180"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4941..5000"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t2-right",
+      "level": "T2",
+      "side": "right",
+      "sourceGroup": "T2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "4681..4940",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "6463..6821",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "4761..4780,4861..4940"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "4741..4760,4781..4860"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4861..4920"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "4681..4740"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t3-left",
+      "level": "T3",
+      "side": "left",
+      "sourceGroup": "T3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "5461..5720",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "7540..7898",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5541..5560,5641..5720"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5521..5540,5561..5640"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5641..5700"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5461..5520"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t3-right",
+      "level": "T3",
+      "side": "right",
+      "sourceGroup": "T3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "5201..5460",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "7181..7539",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5281..5300,5381..5460"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5261..5280,5301..5380"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5381..5440"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5201..5260"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t4-left",
+      "level": "T4",
+      "side": "left",
+      "sourceGroup": "T4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "5981..6240",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "8258..8616",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6061..6080,6161..6240"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6041..6060,6081..6160"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "6161..6220"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5981..6040"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t4-right",
+      "level": "T4",
+      "side": "right",
+      "sourceGroup": "T4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "5721..5980",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "7899..8257",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5801..5820,5901..5980"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "5781..5800,5821..5900"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5901..5960"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "5721..5780"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t5-left",
+      "level": "T5",
+      "side": "left",
+      "sourceGroup": "T5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "6501..6760",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "8976..9334",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6581..6600,6681..6760"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6561..6580,6601..6680"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "6681..6740"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "6501..6560"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t5-right",
+      "level": "T5",
+      "side": "right",
+      "sourceGroup": "T5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "6241..6500",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "8617..8975",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6321..6340,6421..6500"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6301..6320,6341..6420"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "6421..6480"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "6241..6300"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t6-left",
+      "level": "T6",
+      "side": "left",
+      "sourceGroup": "T6 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "7021..7280",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "9694..10052",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7101..7120,7201..7280"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7081..7100,7121..7200"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7201..7260"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7021..7080"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t6-right",
+      "level": "T6",
+      "side": "right",
+      "sourceGroup": "T6 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "6761..7020",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "9335..9693",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6841..6860,6941..7020"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "6821..6840,6861..6940"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "6941..7000"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "6761..6820"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t7-left",
+      "level": "T7",
+      "side": "left",
+      "sourceGroup": "T7 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "7541..7800",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "10412..10770",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7621..7640,7721..7800"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7601..7620,7641..7720"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7721..7780"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7541..7600"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t7-right",
+      "level": "T7",
+      "side": "right",
+      "sourceGroup": "T7 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "7281..7540",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "10053..10411",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7361..7380,7461..7540"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7341..7360,7381..7460"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7461..7520"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7281..7340"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t8-left",
+      "level": "T8",
+      "side": "left",
+      "sourceGroup": "T8 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "8061..8320",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "11130..11488",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8141..8160,8241..8320"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8121..8140,8161..8240"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "8241..8300"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "8061..8120"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t8-right",
+      "level": "T8",
+      "side": "right",
+      "sourceGroup": "T8 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "7801..8060",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "10771..11129",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7881..7900,7981..8060"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "7861..7880,7901..7980"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7981..8040"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "7801..7860"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t9-left",
+      "level": "T9",
+      "side": "left",
+      "sourceGroup": "T9 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "8581..8840",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "11848..12206",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8661..8680,8761..8840"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8641..8660,8681..8760"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "8761..8820"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "8581..8640"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t9-right",
+      "level": "T9",
+      "side": "right",
+      "sourceGroup": "T9 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "8321..8580",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "11489..11847",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8401..8420,8501..8580"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8381..8400,8421..8500"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "8501..8560"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "8321..8380"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t10-left",
+      "level": "T10",
+      "side": "left",
+      "sourceGroup": "T10 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "9101..9360",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "12566..12924",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9181..9200,9281..9360"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9161..9180,9201..9280"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9281..9340"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9101..9160"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t10-right",
+      "level": "T10",
+      "side": "right",
+      "sourceGroup": "T10 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "8841..9100",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "12207..12565",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8921..8940,9021..9100"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "8901..8920,8941..9020"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9021..9080"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "8841..8900"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t11-left",
+      "level": "T11",
+      "side": "left",
+      "sourceGroup": "T11 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "9621..9880",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "13284..13642",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9701..9720,9801..9880"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9681..9700,9721..9800"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9801..9860"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9621..9680"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t11-right",
+      "level": "T11",
+      "side": "right",
+      "sourceGroup": "T11 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "9361..9620",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "12925..13283",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9441..9460,9541..9620"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9421..9440,9461..9540"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9541..9600"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9361..9420"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t12-left",
+      "level": "T12",
+      "side": "left",
+      "sourceGroup": "T12 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "10141..10400",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "14002..14360",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "10221..10240,10321..10400"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "10201..10220,10241..10320"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10321..10380"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10141..10200"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-t12-right",
+      "level": "T12",
+      "side": "right",
+      "sourceGroup": "T12 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "9881..10140",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "13643..14001",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9961..9980,10061..10140"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "9941..9960,9981..10060"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10061..10120"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "9881..9940"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l1-left",
+      "level": "L1",
+      "side": "left",
+      "sourceGroup": "L1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "10661..10920",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "14720..15078",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "10741..10760,10841..10920"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "10721..10740,10761..10840"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10841..10900"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10661..10720"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l1-right",
+      "level": "L1",
+      "side": "right",
+      "sourceGroup": "L1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "10401..10660",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "14361..14719",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "10481..10500,10581..10660"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "10461..10480,10501..10580"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10581..10640"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10401..10460"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l2-left",
+      "level": "L2",
+      "side": "left",
+      "sourceGroup": "L2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "11181..11440",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "15438..15796",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "11261..11280,11361..11440"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "11241..11260,11281..11360"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11361..11420"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11181..11240"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l2-right",
+      "level": "L2",
+      "side": "right",
+      "sourceGroup": "L2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "10921..11180",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "15079..15437",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "11001..11020,11101..11180"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "10981..11000,11021..11100"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11101..11160"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "10921..10980"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l3-left",
+      "level": "L3",
+      "side": "left",
+      "sourceGroup": "L3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "11701..11960",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "16156..16514",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "11781..11800,11881..11960"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "11761..11780,11801..11880"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11881..11940"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11701..11760"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l3-right",
+      "level": "L3",
+      "side": "right",
+      "sourceGroup": "L3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "11441..11700",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "15797..16155",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "11521..11540,11621..11700"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "11501..11520,11541..11620"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11621..11680"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11441..11500"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l4-left",
+      "level": "L4",
+      "side": "left",
+      "sourceGroup": "L4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "12221..12480",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "16874..17232",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12301..12320,12401..12480"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12281..12300,12321..12400"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "12401..12460"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "12221..12280"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l4-right",
+      "level": "L4",
+      "side": "right",
+      "sourceGroup": "L4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "11961..12220",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "16515..16873",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12041..12060,12141..12220"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12021..12040,12061..12140"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "12141..12200"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "11961..12020"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l5-left",
+      "level": "L5",
+      "side": "left",
+      "sourceGroup": "L5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "12741..13000",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "17592..17950",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12821..12840,12921..13000"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12801..12820,12841..12920"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "12921..12980"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "12741..12800"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-l5-right",
+      "level": "L5",
+      "side": "right",
+      "sourceGroup": "L5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "12481..12740",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "17233..17591",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12561..12580,12661..12740"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "12541..12560,12581..12660"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "12661..12720"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "12481..12540"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s1-left",
+      "level": "S1",
+      "side": "left",
+      "sourceGroup": "S1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "13261..13520",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "18310..18668",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13341..13360,13441..13520"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13321..13340,13361..13440"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13441..13500"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13261..13320"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s1-right",
+      "level": "S1",
+      "side": "right",
+      "sourceGroup": "S1 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "13001..13260",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "17951..18309",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13081..13100,13181..13260"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13061..13080,13101..13180"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13181..13240"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13001..13060"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s2-left",
+      "level": "S2",
+      "side": "left",
+      "sourceGroup": "S2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "13781..14040",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "19028..19386",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13861..13880,13961..14040"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13841..13860,13881..13960"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13961..14020"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13781..13840"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s2-right",
+      "level": "S2",
+      "side": "right",
+      "sourceGroup": "S2 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "13521..13780",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "18669..19027",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13601..13620,13701..13780"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "13581..13600,13621..13700"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13701..13760"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "13521..13580"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s3-left",
+      "level": "S3",
+      "side": "left",
+      "sourceGroup": "S3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "14301..14560",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "19746..20104",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14381..14400,14481..14560"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14361..14380,14401..14480"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "14481..14540"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "14301..14360"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s3-right",
+      "level": "S3",
+      "side": "right",
+      "sourceGroup": "S3 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "14041..14300",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "19387..19745",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14121..14140,14221..14300"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14101..14120,14141..14220"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "14221..14280"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "14041..14100"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s4-left",
+      "level": "S4",
+      "side": "left",
+      "sourceGroup": "S4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "14821..15080",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "20464..20822",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14901..14920,15001..15080"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14881..14900,14921..15000"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15001..15060"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "14821..14880"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s4-right",
+      "level": "S4",
+      "side": "right",
+      "sourceGroup": "S4 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "14561..14820",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "20105..20463",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14641..14660,14741..14820"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "14621..14640,14661..14740"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "14741..14800"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "14561..14620"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s5-left",
+      "level": "S5",
+      "side": "left",
+      "sourceGroup": "S5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "15341..15600",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "21182..21540",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15421..15440,15521..15600"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15401..15420,15441..15520"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15521..15580"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15341..15400"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-s5-right",
+      "level": "S5",
+      "side": "right",
+      "sourceGroup": "S5 spinal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "15081..15340",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "20823..21181",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15161..15180,15261..15340"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15141..15160,15181..15260"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15261..15320"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15081..15140"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-co1-left",
+      "level": "Co1",
+      "side": "left",
+      "sourceGroup": "coccygeal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "15861..16120",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "21900..22258",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15941..15960,16041..16120"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15921..15940,15961..16040"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "16041..16100"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15861..15920"
+        }
+      ]
+    },
+    {
+      "canonicalId": "nervous-spinal-nerve-co1-right",
+      "level": "Co1",
+      "side": "right",
+      "sourceGroup": "coccygeal nerve",
+      "representation": "source_estimated_finite_element_volume",
+      "runtimeImported": false,
+      "alignmentVerified": false,
+      "medicallyVerified": false,
+      "sourceVolumeCount": 260,
+      "sourceVolumeRanges": "15601..15860",
+      "sourceNodeCount": 359,
+      "sourceNodeRanges": "21541..21899",
+      "parts": [
+        {
+          "sourceGroup": "dorsal root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15681..15700,15781..15860"
+        },
+        {
+          "sourceGroup": "ventral root of spinal cord",
+          "sourceVolumeCount": 100,
+          "sourceVolumeRanges": "15661..15680,15701..15780"
+        },
+        {
+          "sourceGroup": "dorsal root ganglion",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15781..15840"
+        },
+        {
+          "sourceGroup": "spinal nerve",
+          "sourceVolumeCount": 60,
+          "sourceVolumeRanges": "15601..15660"
+        }
+      ]
+    }
+  ]
+}

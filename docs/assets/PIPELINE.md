@@ -1,5 +1,9 @@
 # Anatomical asset pipeline
 
+For the follow-up HRA cord registration and 31-pair source inventory, see the
+[quarantined spinal stage](HRA_SPINAL_REGISTRATION.md). Its candidate is a
+review artifact outside the runtime asset manifest, not approved viewer anatomy.
+
 The runtime format is GLB. Do not place a source asset in `public/models` until its audit is accepted.
 
 1. Preserve the original download, checksum, source page, exact version, and asset-specific license outside the runtime bundle.
