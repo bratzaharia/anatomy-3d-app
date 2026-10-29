@@ -12,7 +12,8 @@
     "test:e2e": "playwright test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "validate:anatomy": "node --import tsx tools/anatomy-assets/validate-anatomy.ts && node --import tsx tools/anatomy-assets/validate-muscles.ts && node --import tsx tools/anatomy-assets/validate-nervous.ts && node --import tsx tools/anatomy-assets/validate-nervous-coverage.ts",
+    "validate:anatomy": "node --import tsx tools/anatomy-assets/validate-anatomy.ts && node --import tsx tools/anatomy-assets/validate-muscles.ts && node --import tsx tools/anatomy-assets/validate-nervous.ts && node --import tsx tools/anatomy-assets/validate-nervous-coverage.ts && pnpm validate:spinal-candidates",
+    "validate:spinal-candidates": "node --import tsx tools/anatomy-assets/validate-spinal-candidates.ts",
     "validate:i18n": "node --import tsx tools/anatomy-assets/validate-i18n.ts"
   },
   "devDependencies": {
