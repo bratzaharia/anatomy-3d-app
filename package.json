@@ -5,6 +5,8 @@
   "packageManager": "pnpm@10.12.1",
   "scripts": {
     "dev": "pnpm --filter @anatomy/web dev",
+    "dev:asset-preview": "pnpm --filter @anatomy/web exec vite --host 127.0.0.1 --port 5180 --strictPort",
+    "verify:asset-preview": "node tools/anatomy-assets/verify-isolated-preview.mjs",
     "build": "pnpm typecheck && pnpm --filter @anatomy/web build",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit -p tsconfig.json",
