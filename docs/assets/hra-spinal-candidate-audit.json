@@ -1,0 +1,344 @@
+{
+  "decision": "QUARANTINE_PENDING_CANAL_REGISTRATION",
+  "source": "https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Male/v1.2",
+  "nihEntry": "https://3d.nih.gov/entries/3DPX-021018?version=1",
+  "license": "CC-BY-4.0",
+  "files": [
+    {
+      "filename": "hra-spinal-cord.glb",
+      "bytes": 489992,
+      "sha256": "a7858d88c2237aa7d559c4c1d638923d213d2a9f46c575dea03d6ba67a9975c0",
+      "sourceMeshes": 30,
+      "triangles": 16358
+    },
+    {
+      "filename": "hra-vertebrae.glb",
+      "bytes": 12578172,
+      "sha256": "981041904438bd74c14d671af8f87b3f407b675294bbf297af673c8df7144451",
+      "sourceMeshes": 24,
+      "triangles": 320442
+    },
+    {
+      "filename": "hra-spinal-landmarks.glb",
+      "bytes": 13687004,
+      "sha256": "fdc72dd5d52e018862e86f5ff3c1d9b47f7a1f284e6bbc7871a671feda453f42",
+      "sourceMeshes": 3,
+      "triangles": 320442
+    }
+  ],
+  "sourceCordSegments": [
+    {
+      "name": "VH_M_C1_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006469"
+    },
+    {
+      "name": "VH_M_C2_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006489"
+    },
+    {
+      "name": "VH_M_C3_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006488"
+    },
+    {
+      "name": "VH_M_C4_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006490"
+    },
+    {
+      "name": "VH_M_C5_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006491"
+    },
+    {
+      "name": "VH_M_C6_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006492"
+    },
+    {
+      "name": "VH_M_C7_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006493"
+    },
+    {
+      "name": "VH_M_C8_segment_of_cervical_spinal_cord",
+      "ontology": "UBERON:0006470"
+    },
+    {
+      "name": "VH_M_first_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006457"
+    },
+    {
+      "name": "VH_M_second_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006458"
+    },
+    {
+      "name": "VH_M_third_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006459"
+    },
+    {
+      "name": "VH_M_fourth_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006452"
+    },
+    {
+      "name": "VH_M_fifth_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006453"
+    },
+    {
+      "name": "VH_M_sixth_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006454"
+    },
+    {
+      "name": "VH_M_seventh_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006455"
+    },
+    {
+      "name": "VH_M_eighth_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006456"
+    },
+    {
+      "name": "VH_M_ninth_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006465"
+    },
+    {
+      "name": "VH_M_tenth_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006466"
+    },
+    {
+      "name": "VH_M_eleventh_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006467"
+    },
+    {
+      "name": "VH_M_twelfth_thoracic_spinal_cord_segment",
+      "ontology": "UBERON:0006468"
+    },
+    {
+      "name": "VH_M_first_lumbar_spinal_cord_segment",
+      "ontology": "UBERON:0006448"
+    },
+    {
+      "name": "VH_M_second_lumbar_spinal_cord_segment",
+      "ontology": "UBERON:0006450"
+    },
+    {
+      "name": "VH_M_third_lumbar_spinal_cord_segment",
+      "ontology": "UBERON:0006449"
+    },
+    {
+      "name": "VH_M_fourth_lumbar_spinal_cord_segment",
+      "ontology": "UBERON:0006451"
+    },
+    {
+      "name": "VH_M_fifth_lumbar_spinal_cord_segment",
+      "ontology": "UBERON:0006447"
+    },
+    {
+      "name": "VH_M_first_sacral_spinal_cord_segment",
+      "ontology": "UBERON:0006460"
+    },
+    {
+      "name": "VH_M_second_sacral_spinal_cord_segment",
+      "ontology": "UBERON:0006461"
+    },
+    {
+      "name": "VH_M_third_sacral_spinal_cord_segment",
+      "ontology": "UBERON:0006462"
+    },
+    {
+      "name": "VH_M_fourth_sacral_spinal_cord_segment",
+      "ontology": "UBERON:0006463"
+    },
+    {
+      "name": "VH_M_fifth_sacral_spinal_cord_segment",
+      "ontology": "UBERON:0006464"
+    }
+  ],
+  "method": "24 exact-name vertebral bounding-box center proxies; best sagittal similarity. Not clinical canal landmarks or anatomical approval.",
+  "scale": 0.9496365090741279,
+  "rotationXRadians": -0.07447040748835344,
+  "sourceCenter": [
+    -0.0028781884708333314, 0.4994118305416668, -0.04488113751729166
+  ],
+  "targetCenter": [
+    -0.0006551833333333333, 1.2327096458333335, 0.053699315314583336
+  ],
+  "rmsResidualMm": 14.645767900036475,
+  "maxResidualMm": 35.94876091533668,
+  "measurements": [
+    {
+      "sourceName": "VH_M_cervical_vertebra_1",
+      "targetConcept": "FMA12519",
+      "source": [-0.001985093549999997, 0.7496004235, -0.005459222],
+      "target": [-0.0005669500000000001, 1.4718200000000001, 0.06412],
+      "residualMm": 9.286021773691502
+    },
+    {
+      "sourceName": "VH_M_cervical_vertebra_2",
+      "targetConcept": "FMA12520",
+      "source": [-0.0022275736499999983, 0.73721345, -0.008276687],
+      "target": [-0.0006937000000000002, 1.45576, 0.06160500000000001],
+      "residualMm": 11.0452169148573
+    },
+    {
+      "sourceName": "VH_M_cervical_vertebra_3",
+      "targetConcept": "FMA12521",
+      "source": [-0.0022743800499999984, 0.7116835195, -0.0077827542],
+      "target": [-0.0006517499999999996, 1.43137, 0.06297314999999999],
+      "residualMm": 11.96274690222294
+    },
+    {
+      "sourceName": "VH_M_cervical_vertebra_4",
+      "targetConcept": "FMA12522",
+      "source": [-0.0013020802500000005, 0.6948259999999999, -0.00973323825],
+      "target": [-0.0006879499999999979, 1.41837, 0.06490085],
+      "residualMm": 8.624572769055558
+    },
+    {
+      "sourceName": "VH_M_cervical_vertebra_5",
+      "targetConcept": "FMA12523",
+      "source": [0.0003993417999999995, 0.676628022, -0.01482817565],
+      "target": [-0.0006822999999999985, 1.40588, 0.06342755],
+      "residualMm": 7.669219299908751
+    },
+    {
+      "sourceName": "VH_M_cervical_vertebra_6",
+      "targetConcept": "FMA12524",
+      "source": [-0.0007133390999999982, 0.6603527665, -0.020811423500000002],
+      "target": [-0.0006587499999999996, 1.393165, 0.0604252],
+      "residualMm": 8.15697020728763
+    },
+    {
+      "sourceName": "VH_M_cervical_vertebra_7",
+      "targetConcept": "FMA12525",
+      "source": [-0.0035981089000000008, 0.64243885, -0.029805589],
+      "target": [-0.0006488500000000029, 1.378275, 0.05564915],
+      "residualMm": 9.347005641671036
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_1",
+      "targetConcept": "FMA9165",
+      "source": [-0.007388354999999999, 0.62406395, -0.04006033811],
+      "target": [-0.0007333999999999986, 1.36206, 0.0519793],
+      "residualMm": 12.010058482751491
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_2",
+      "targetConcept": "FMA9187",
+      "source": [-0.0098081014, 0.60673375, -0.04975253345],
+      "target": [-0.0006718499999999981, 1.3434749999999998, 0.04739815],
+      "residualMm": 12.946728600383642
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_3",
+      "targetConcept": "FMA9209",
+      "source": [-0.011521205599999999, 0.5863274725000001, -0.05853456],
+      "target": [
+        -0.0005625999999999999, 1.3220399999999999, 0.039048204999999996
+      ],
+      "residualMm": 12.336843677764072
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_4",
+      "targetConcept": "FMA9248",
+      "source": [-0.012017783800000001, 0.5633091, -0.06624955415],
+      "target": [-0.0005898500000000029, 1.299575, 0.034901398],
+      "residualMm": 13.181335917851856
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_5",
+      "targetConcept": "FMA9922",
+      "source": [-0.012372015, 0.5397420525000001, -0.0724130555],
+      "target": [-0.0006309000000000002, 1.26852, 0.03299522505],
+      "residualMm": 12.22506396665383
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_6",
+      "targetConcept": "FMA9945",
+      "source": [-0.012176189549999999, 0.5092415, -0.0764761717],
+      "target": [-0.0006944000000000013, 1.23923, 0.033206664999999996],
+      "residualMm": 13.418164409610275
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_7",
+      "targetConcept": "FMA9968",
+      "source": [-0.0110129453, 0.48197655, -0.0782930365],
+      "target": [-0.00045285000000000117, 1.21055, 0.0338253465],
+      "residualMm": 13.588460862362782
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_8",
+      "targetConcept": "FMA9991",
+      "source": [-0.008328141999999998, 0.4530744195, -0.07581462345],
+      "target": [-0.0007533499999999964, 1.1834, 0.036479698000000005],
+      "residualMm": 10.664991077627047
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_9",
+      "targetConcept": "FMA10014",
+      "source": [-0.005966138099999999, 0.42842188449999996, -0.0727560259],
+      "target": [-0.0006983999999999983, 1.155735, 0.04190448],
+      "residualMm": 12.678584727784392
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_10",
+      "targetConcept": "FMA10037",
+      "source": [-0.003485716449999999, 0.403966259, -0.06856141985],
+      "target": [-0.0007057999999999995, 1.12845, 0.04594015],
+      "residualMm": 14.555492527610621
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_11",
+      "targetConcept": "FMA10059",
+      "source": [
+        -0.0017157163999999992, 0.37947176400000004, -0.06365864895000001
+      ],
+      "target": [-0.00060085, 1.102495, 0.05277065],
+      "residualMm": 17.47951431010531
+    },
+    {
+      "sourceName": "VH_M_thoracic_vertebra_12",
+      "targetConcept": "FMA10081",
+      "source": [-0.00013601270000000026, 0.346409902, -0.057647373950000004],
+      "target": [-0.0006657999999999994, 1.075775, 0.06197295],
+      "residualMm": 14.905632111384497
+    },
+    {
+      "sourceName": "VH_M_lumbar_vertebra_1",
+      "targetConcept": "FMA13072",
+      "source": [0.0033409699999999987, 0.30830009300000005, -0.0507811975],
+      "target": [-0.0006592000000000021, 1.04359, 0.0693512],
+      "residualMm": 12.424318842540599
+    },
+    {
+      "sourceName": "VH_M_lumbar_vertebra_2",
+      "targetConcept": "FMA13073",
+      "source": [0.004911175, 0.2736835225, -0.046750150605],
+      "target": [-0.0006450500000000012, 1.016038, 0.0745344],
+      "residualMm": 10.323174456134012
+    },
+    {
+      "sourceName": "VH_M_lumbar_vertebra_3",
+      "targetConcept": "FMA13074",
+      "source": [0.00884946, 0.2382567375, -0.0411781975],
+      "target": [-0.0006809499999999996, 0.9887115, 0.0724335],
+      "residualMm": 12.014079577873687
+    },
+    {
+      "sourceName": "VH_M_lumbar_vertebra_4",
+      "targetConcept": "FMA13075",
+      "source": [0.010918971150000002, 0.20035062850000002, -0.0317263687],
+      "target": [-0.0006753500000000016, 0.961033, 0.0682806],
+      "residualMm": 25.41518590099612
+    },
+    {
+      "sourceName": "VH_M_lumbar_vertebra_5",
+      "targetConcept": "FMA13076",
+      "source": [0.01053245555, 0.169811316, -0.029796955000000003],
+      "target": [-0.0007135500000000003, 0.9297139999999999, 0.05866075],
+      "residualMm": 35.94876091533668
+    }
+  ],
+  "blockers": [
+    "Visible Human male is a different subject and spinal curvature from the fixed BodyParts3D skeleton.",
+    "The supplied Extraction Sites landmark GLB is three merged vertebral surfaces, not independent spinal canal, brainstem junction or conus annotations.",
+    "A bounding-box fit alone does not establish that the cord lies within the vertebral canal or joins the existing medulla.",
+    "30 source cord segments (C1-C8, T1-T12, L1-L5, S1-S5) are not the 31 paired spinal nerves and must not be relabeled as such.",
+    "Needs independent canal landmark correspondence, source-only deformable transfer, intersection/entry checks and medical review before mounting."
+  ],
+  "runtimeImported": false
+}

@@ -7,9 +7,12 @@ import {
   SKELETON_ASSET,
   MUSCLE_ASSET,
   SKULL_BONE_MAPPINGS,
+  NERVOUS_FOCUS_TARGETS,
+  NERVOUS_REGION_BOUNDS,
 } from "@anatomy/data";
 import { SkeletonModel } from "./SkeletonModel";
 import { MuscleLayer } from "./MuscleLayer";
+import { NervousLayer } from "./NervousLayer";
 import { SceneDiagnostics } from "./SceneDiagnostics";
 import { useViewerStore } from "../store/viewerStore";
 import {
@@ -44,6 +47,7 @@ function CameraController() {
         ...SKELETON_ASSET.structures,
         ...SKULL_BONE_MAPPINGS,
         ...MUSCLE_ASSET.structures,
+        ...NERVOUS_FOCUS_TARGETS,
       ];
       const selected = focusStructures.find(
         (item) => item.id === state.selectedId,
@@ -51,14 +55,19 @@ function CameraController() {
       const regionStructures = focusStructures.filter(
         (item) =>
           item.regionId === state.activeRegionId &&
-          (item.id.startsWith("muscle-")
-            ? state.activeSystemIds.has("muscular")
-            : state.activeSystemIds.has("skeletal")),
+          (item.id.startsWith("nervous-")
+            ? state.activeSystemIds.has("nervous")
+            : item.id.startsWith("muscle-")
+              ? state.activeSystemIds.has("muscular")
+              : state.activeSystemIds.has("skeletal")),
       );
       if (selected) bounds = boundsBox(selected.bounds);
       else if (regionStructures.length)
         bounds = regionStructures.reduce(
-          (box, item) => box.union(boundsBox(item.bounds)),
+          (box, item) =>
+            box.union(
+              boundsBox(NERVOUS_REGION_BOUNDS.get(item.id) ?? item.bounds),
+            ),
           new Box3(),
         );
     }
@@ -139,10 +148,19 @@ export function AnatomyCanvas() {
   const muscular = useViewerStore((state) =>
     state.activeSystemIds.has("muscular"),
   );
+  const nervous = useViewerStore((state) =>
+    state.activeSystemIds.has("nervous"),
+  );
   return (
     <Canvas
       role="img"
-      aria-label={t(muscular ? "muscles.viewerLabel" : "viewer.label")}
+      aria-label={t(
+        nervous
+          ? "nervous.viewerLabel"
+          : muscular
+            ? "muscles.viewerLabel"
+            : "viewer.label",
+      )}
       frameloop="demand"
       shadows={{ type: PCFShadowMap, autoUpdate: false }}
       dpr={[1, 1.75]}
@@ -183,6 +201,7 @@ export function AnatomyCanvas() {
         <SkeletonModel />
       </Suspense>
       <MuscleLayer />
+      <NervousLayer />
       <Grid
         position={[0, SKELETON_ASSET.bounds.min[1] - 0.008, 0]}
         args={[5, 5]}

@@ -4,6 +4,7 @@ import {
   getLocalizedName,
   resolveGroupMembers,
   resolveVisibleStructureIds,
+  resolveNervousStructureIds,
 } from "@anatomy/core";
 import {
   GROUPS,
@@ -16,10 +17,14 @@ import {
   muscleMetadataById,
   MUSCLE_STRUCTURES,
   SKULL_BONE_MAPPINGS,
+  NERVOUS_GEOMETRY,
+  NERVOUS_STRUCTURES,
+  nervousMetadataById,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
 import { SkullVisualizationModes } from "./SkullVisualizationModes";
+import { NervousDetails } from "./NervousDetails";
 
 export function Inspector() {
   const { t, i18n } = useTranslation();
@@ -45,14 +50,35 @@ export function Inspector() {
     ...SKELETON_ASSET.structures,
     ...SKULL_BONE_MAPPINGS,
     ...MUSCLE_ASSET.structures,
+    ...NERVOUS_GEOMETRY,
   ].find((item) => item.id === selectedId);
   const activeSystemIds = useViewerStore((state) => state.activeSystemIds);
+  const nervousDivisions = useViewerStore((state) => state.nervousDivisions);
+  const nervousFunctions = useViewerStore((state) => state.nervousFunctions);
+  const nervousRegions = useViewerStore((state) => state.nervousRegions);
+  const nervous = structure?.systemIds.includes("nervous");
+  const registeredNeuralSource =
+    selectedId &&
+    nervousMetadataById.get(selectedId)?.sourceDataset === "Z-Anatomy";
   const isHidden =
     structure &&
-    !resolveVisibleStructureIds(ANATOMY_CATALOG, activeSystemIds, {
-      hiddenIds,
-      isolatedIds,
-    }).has(structure.id);
+    !(
+      nervous
+        ? resolveNervousStructureIds(
+            NERVOUS_STRUCTURES,
+            activeSystemIds,
+            { hiddenIds, isolatedIds },
+            {
+              divisions: nervousDivisions,
+              functions: nervousFunctions,
+              regions: nervousRegions,
+            },
+          )
+        : resolveVisibleStructureIds(ANATOMY_CATALOG, activeSystemIds, {
+            hiddenIds,
+            isolatedIds,
+          })
+    ).has(structure.id);
 
   return (
     <aside className="side-panel inspector" aria-label={t("inspector.title")}>
@@ -184,6 +210,7 @@ export function Inspector() {
               )}
             </>
           )}
+          {nervous && <NervousDetails id={structure.id} />}
           <div className="inspector-actions">
             <button
               className="primary-action"
@@ -288,14 +315,20 @@ export function Inspector() {
           <div className="source-note">
             <Icon name="info" />
             <p>
-              BodyParts3D, © The Database Center for Life Science
+              {registeredNeuralSource
+                ? "Z-Anatomy — Gauthier Kervyn / Lluís Vinent Juanico; BodyParts3D © DBCLS; Dundee CAHID"
+                : "BodyParts3D, © The Database Center for Life Science"}
               <br />
               <a
-                href="https://creativecommons.org/licenses/by/4.0/"
+                href={
+                  registeredNeuralSource
+                    ? "https://creativecommons.org/licenses/by-sa/4.0/"
+                    : "https://creativecommons.org/licenses/by/4.0/"
+                }
                 target="_blank"
                 rel="noreferrer"
               >
-                CC BY 4.0
+                {registeredNeuralSource ? "CC BY-SA 4.0" : "CC BY 4.0"}
               </a>{" "}
               · {t("inspector.sourceNote")}
               {muscle && (

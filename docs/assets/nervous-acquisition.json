@@ -1,0 +1,142 @@
+[
+  {
+    "filename": "z-nervous.fbx",
+    "url": "https://raw.githubusercontent.com/LluisV/Z-Anatomy/4ef7d59f4a2cc002f65ebd2bbb395ae4df3a5faf/Resources/Models/FBX/NervousSystem100.fbx",
+    "bytes": 53887724,
+    "sha256": "3ea1aad64956cad27348a27b8fb50494b7cc307c6bc77bee0810ec2a67dff2b1",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "z-neural-license.txt",
+    "url": "https://raw.githubusercontent.com/LluisV/Z-Anatomy/4ef7d59f4a2cc002f65ebd2bbb395ae4df3a5faf/Resources/Models/License.txt",
+    "bytes": 1514,
+    "sha256": "af62c06f620b9da20138e4c22a3f56565482dd058266540994ace97a4e24b693",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "z-reference-skeleton.fbx",
+    "url": "https://raw.githubusercontent.com/LluisV/Z-Anatomy/4ef7d59f4a2cc002f65ebd2bbb395ae4df3a5faf/Resources/Models/FBX/SkeletalSystem100.fbx",
+    "bytes": 41339660,
+    "sha256": "294a649765cd060a62a4095da52b9c8ef2d97769aa447e196448aa5f7d596dea",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-307-list.xml",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/?list-type=2&prefix=307/&max-keys=1000",
+    "bytes": 144405,
+    "sha256": "a452905f5814e4e262492f6564891133ab84c3b3e1b31618ec3eed96ecc69868",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "hra-license.txt",
+    "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/LICENSE",
+    "bytes": 18657,
+    "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "hra-readme.md",
+    "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/README.md",
+    "bytes": 761,
+    "sha256": "57519f4cfbb2b12b8bf75654231b28b44802b611e85092b1044701fa640179f6",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "hra-spinal-cord.glb",
+    "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Male/v1.2/VH_M_Spinal_Cord.glb",
+    "bytes": 489992,
+    "sha256": "a7858d88c2237aa7d559c4c1d638923d213d2a9f46c575dea03d6ba67a9975c0",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "hra-vertebrae.glb",
+    "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Male/v1.2/VH_M_Vertebrae.glb",
+    "bytes": 12578172,
+    "sha256": "981041904438bd74c14d671af8f87b3f407b675294bbf297af673c8df7144451",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "hra-spinal-landmarks.glb",
+    "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Male/v1.2/Extraction%20Sites/VH_M_Spinal_Cord_Landmarks.glb",
+    "bytes": 13687004,
+    "sha256": "fdc72dd5d52e018862e86f5ff3c1d9b47f7a1f284e6bbc7871a671feda453f42",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-nervesWithVagus_annotations.json",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/docs/nervesWithVagus_annotations.json",
+    "bytes": 132758,
+    "sha256": "577cde996b4ec050192870340262b441c13b68cd5fed82fc9531c7282783c7b5",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-spinal_nerves_annotations.json",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/docs/spinal_nerves_annotations.json",
+    "bytes": 7807,
+    "sha256": "e9564d1f894c69e774c63883906d2d9ee95ccf734ecc20de4def54adb03ffd73",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-human_body_provenance.json",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/human_body_provenance.json",
+    "bytes": 18531,
+    "sha256": "1bf1267ac7812a018c5b7bd04cd0de1f0a9a30bd12e54963b30cdc4b6684a2d0",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-Geometry_Fitter_Wholebody.exf",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/mapclient_workflow/Organs/Geometry_Fitter_Wholebody.exf",
+    "bytes": 1740247,
+    "sha256": "a01b0c36cbfa0361e2b7dfd0978e43ad4631575291b5ff692b5bb9248abd9d5a",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-cervical_nerve.exf",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/mapclient_workflow/Organs/cervical_nerve.exf",
+    "bytes": 13611914,
+    "sha256": "5bcb4f5a6558e9963137b530a2e54a906e41ec7db4883510873b63bfcbf8730d",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-lumbar_nerve.exf",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/mapclient_workflow/Organs/lumbar_nerve.exf",
+    "bytes": 13611914,
+    "sha256": "5bcb4f5a6558e9963137b530a2e54a906e41ec7db4883510873b63bfcbf8730d",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-nervesWithVagus.exf",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/mapclient_workflow/Organs/nervesWithVagus.exf",
+    "bytes": 797853,
+    "sha256": "248b2da5638bbd684894d6ba8a175b1ee6454fc3dfc7b921bc5af2721e5b5b19",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-sacral_nerve.exf",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/mapclient_workflow/Organs/sacral_nerve.exf",
+    "bytes": 13611914,
+    "sha256": "5bcb4f5a6558e9963137b530a2e54a906e41ec7db4883510873b63bfcbf8730d",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-spinal_nerves.exf",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/mapclient_workflow/Organs/spinal_nerves.exf",
+    "bytes": 13611914,
+    "sha256": "5bcb4f5a6558e9963137b530a2e54a906e41ec7db4883510873b63bfcbf8730d",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-thoracic_nerve.exf",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/files/primary/mapclient_workflow/Organs/thoracic_nerve.exf",
+    "bytes": 13611914,
+    "sha256": "5bcb4f5a6558e9963137b530a2e54a906e41ec7db4883510873b63bfcbf8730d",
+    "approval": "candidate-only"
+  },
+  {
+    "filename": "sparc-readme.md",
+    "url": "https://sparc-prod-aod-discover-publish50-use1.s3.amazonaws.com/307/readme.md",
+    "bytes": 1877,
+    "sha256": "72096ab9a47d4a7cf0af435b9b949a1ff003b6f50df279c2a3b39a6a99fc0eef",
+    "approval": "candidate-only"
+  }
+]

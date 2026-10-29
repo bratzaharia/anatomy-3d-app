@@ -10,3 +10,11 @@
 | FIPAT TA2 terminology                           | FIPAT Terminologia Anatomica, 2nd ed.                                               | Individual anatomical terms public domain; publication has separate terms               | Editorial inventory only; RO is not an official FIPAT translation.                                                                                                                                          |
 
 Authority: [official BodyParts3D license](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html), [archive README](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html), and [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). Checked 2026-10-27. Historical OBJ notices are documented in ASSET_SOURCES.md. The model license applies to the distributed asset and derived data, not independent software.
+
+The additive `bodyparts3d-nervous.glb` and its source mappings use **CC BY 4.0**
+under the same official BodyParts3D 4.0 IS-A distribution terms, rechecked
+2026-10-28. Credit, source/license links and adaptation notices are retained; the
+code license remains independent. FIPAT publications are linked as terminology
+references, not copied or modified. See [nervous audit](NERVOUS_AUDIT.md).
+
+The four additive `z-nervous-*.glb` files and source-derived mappings use **CC BY-SA 4.0** under the pinned Z-Anatomy model license, with historic BodyParts3D BY-SA 2.1 Japan and University of Dundee CAHID cranial source BY 4.0 credits. Attribution, license links and source-only pose-transfer/conversion notices are distributed. Excluded Washington brain/white matter and NC inner-ear/kidney content are not included. The complete candidate FBX is not distributed. HRA (CC BY 4.0) and SPARC dataset 307 (CC BY 4.0) were acquired for audit but not mounted or counted as approved runtime anatomy. See the exact sources, hashes and exclusions in the [audit](NERVOUS_AUDIT.md).

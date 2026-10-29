@@ -1,0 +1,83 @@
+# Additive nervous layer — HA3DA-1
+
+The existing skeleton and muscles remain immutable references. Only shared
+registration points are extended: the catalog/asset registry, global checkbox
+store, scene mount, focus bounds, overlay and existing inspector. There is one
+canvas, shared camera, shared coordinate space and canonical-ID selection store.
+Protected source/material files are listed in `assets/nervous-regression-baseline.json`.
+
+## Catalog versus geometry
+
+The versioned nervous inventory is intentionally incomplete. It includes CNS
+surfaces, twelve paired cranial nerve entries, 31 paired spinal nerve entries,
+major plexus/peripheral/autonomic entries and associated structures. Every entry
+has explicit source references, laterality, classification, review and geometry
+status. Missing entries are searchable and inspectable but cannot be focused as
+if geometry existed. The brain parent selects existing child surfaces, not a
+duplicated whole-brain mesh. Display counts distinguish catalog entries from
+independent 3D mappings. Serial nerves and bilateral rows are not percentages.
+
+Navigation groups are not connectivity. `NervousConnection` stores separately
+cited branch relationships, including metadata-only entities; it never creates
+rendered paths or claims synaptic connections. No inferred muscle innervation is
+added. New nerve root/tract/nucleus datasets can extend structure types without
+changing bone or muscle identities.
+
+## Filters and isolation
+
+Global All is derived from all three available systems. All eight combinations,
+including empty, use the original central visibility resolver. Per-nerve hidden
+and isolated IDs compose with canonical parent visibility.
+
+Nervous facets are OR within structural/function/region categories and AND across
+categories. An empty structural set means no nervous geometry. Empty function or
+region sets mean unrestricted. Only asserted functional memberships match a
+restricted functional facet; unknown classifications are not guessed. CNS optic
+nerves are not incorrectly forced into PNS. Associated cavities/coverings are
+not neural tissue and currently have no independent meshes.
+
+Nervous filters never change other global systems. Nervous isolation snapshots
+existing hide/isolate overrides; restore returns those exact overrides, while
+global system checkboxes remain untouched. The original bone/muscle isolation
+semantics otherwise remain unchanged. Language switching preserves all stores.
+
+Opaque bones/muscles can occlude the imported head structures. The viewport's
+explicit **Show nervous layer** action reveals all mapped nervous entities,
+fits the whole body, and temporarily resets nervous-only facets. It
+snapshots the prior hide/isolate overrides and nervous facets; **Restore previous
+layers** restores those exact values. No global checkbox, bone opacity, muscle
+opacity, skull mode, mesh or light is changed. Activation alone never hides
+other systems automatically.
+
+## Rendering and loading
+
+`NervousLayer` mounts only on its first request, keeps the loader-owned cache and
+geometry, and owns/disposes its four shared materials. CNS and PNS receive muted
+educational colors under the unchanged lights. Hover/click use actual source
+triangles, no arbitrary enlargement, no forced foreground rendering. Global
+filters, facets and hide/isolate update visibility and exclude hidden raycasts.
+Error/retry uses a separate boundary, so a missing nervous GLB does not replace
+the skeleton or muscular layer.
+
+The retained CNS archive and four audited regional Z-Anatomy peripheral chunks
+load in parallel on first activation. Runtime ownership chooses 55 retained
+BodyParts3D and 247 Z identities, never duplicate source variants. The complete
+original 83-entity BodyParts3D GLB remains unchanged. Loading/cache reset uses
+the complete array key. Regional chunking is not high/low-detail LOD streaming;
+that work remains open after the measured software-rendering cost. There is no
+unmeasured BVH dependency. Hosting remains Vercel; the configurable static asset
+origin stays separate from anatomy-domain logic.
+
+`NERVOUS_REGION_BOUNDS` supplies fixed skeletal envelopes for regional camera
+navigation only. Complete source bounds are retained for individual nerve focus
+and rendering; geometry is not clipped or repositioned by camera navigation.
+
+## Remaining milestone work
+
+The complete full-body milestone is **not achieved**. It still requires reviewed,
+licensed, correctly registered spinal cord, individually numbered roots/spinal
+nerves, complete cranial branches and autonomic surfaces. Real brachial and
+lower-limb peripheral surfaces, hand/foot digital sets, aggregate roots/cauda,
+and sympathetic source sets now exist but are not verified complete. Branch-level plexus
+root/trunk/division/cord relationships and additional CNS/meningeal/ventricular
+detail need further sourced inventories; no graph is fabricated to fill gaps.

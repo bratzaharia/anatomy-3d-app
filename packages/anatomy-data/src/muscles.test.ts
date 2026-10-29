@@ -39,7 +39,7 @@ describe("additive muscular catalog", () => {
       expect(visible.has("muscle-deltoid-left")).toBe(active.has("muscular"));
       expect(visible.has("muscle-rectus-abdominis-left")).toBe(false);
       expect(toggleAllSystems(AVAILABLE_SYSTEM_IDS, active).size).toBe(
-        systems.length === 2 ? 0 : 2,
+        AVAILABLE_SYSTEM_IDS.length,
       );
     },
   );

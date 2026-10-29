@@ -1,0 +1,621 @@
+[
+  {
+    "label": "01-body-anterior",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 5,
+      "frameIntervalMs": 466.7000000476837,
+      "calls": 303,
+      "triangles": 1492110,
+      "totalCalls": 303,
+      "totalTriangles": 1492110,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [
+        0.000010500000000024379, 0.7828950500000001, 3.4665381826228883
+      ],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "02-body-posterior",
+    "back": true,
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 7,
+      "frameIntervalMs": 403.60000002384186,
+      "calls": 303,
+      "triangles": 1492110,
+      "totalCalls": 303,
+      "totalTriangles": 1492110,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [
+        0.000010500000000435556, 0.7828950500000001, -3.2484951826228885
+      ],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "03-cranial",
+    "region": "Head",
+    "note": "Source-mapped cranial surfaces; nerve VIII withheld; not a complete facial branch inventory.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 9,
+      "frameIntervalMs": 410.59999990463257,
+      "calls": 170,
+      "triangles": 1102158,
+      "totalCalls": 170,
+      "totalTriangles": 1102158,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [-0.0006660000000000069, 1.52895, 0.7710085884298342],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "04-spinal-roots",
+    "source": "Posterior root of spinal nerve — left",
+    "note": "Aggregate root set, not 31 independently numbered roots.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 12,
+      "frameIntervalMs": 444.10000002384186,
+      "calls": 197,
+      "triangles": 1150444,
+      "totalCalls": 197,
+      "totalTriangles": 1150444,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.008125920886264439, 1.2361004078113145, 0.9777537524038601],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "05-cervical-plexus-missing",
+    "source": "Left phrenic nerve",
+    "missing": true,
+    "status": "MISSING_GEOMETRY",
+    "metrics": {
+      "frames": 14,
+      "frameIntervalMs": 458.39999997615814,
+      "calls": 303,
+      "triangles": 1492110,
+      "totalCalls": 303,
+      "totalTriangles": 1492110,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [
+        0.000010500000000024379, 0.7828950500000001, 3.4665381826228883
+      ],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "06-brachial-plexus",
+    "source": "Roots of brachial plexus — left",
+    "note": "Source roots plus surrounding trunks/divisions/cords; source correspondence needs medical review.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 17,
+      "frameIntervalMs": 446.89999997615814,
+      "calls": 62,
+      "triangles": 668094,
+      "totalCalls": 62,
+      "totalTriangles": 668094,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.03230148093901871, 1.393720605263109, 0.2546561384941499],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "07-upper-limb-right",
+    "region": "Right upper limb",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 20,
+      "frameIntervalMs": 446.6999999284744,
+      "calls": 262,
+      "triangles": 1361044,
+      "totalCalls": 262,
+      "totalTriangles": 1361044,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [-0.166787825, 1.0042535, 1.718176932041975],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "08-upper-limb-left",
+    "region": "Left upper limb",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 22,
+      "frameIntervalMs": 402.7000000476837,
+      "calls": 262,
+      "triangles": 1361044,
+      "totalCalls": 262,
+      "totalTriangles": 1361044,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.16615686500000001, 1.0042735, 1.717877768660234],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "09-hand-right",
+    "source": "Proper palmar digital branches of median nerve — right",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 25,
+      "frameIntervalMs": 432.2000000476837,
+      "calls": 33,
+      "triangles": 120386,
+      "totalCalls": 33,
+      "totalTriangles": 120386,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [-0.28600317326299685, 0.717271708321596, 0.47317300438393084],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "10-hand-left",
+    "source": "Proper palmar digital branches of median nerve — left",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 29,
+      "frameIntervalMs": 431.7999999523163,
+      "calls": 32,
+      "triangles": 116066,
+      "totalCalls": 32,
+      "totalTriangles": 116066,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.28610708289833864, 0.7172831488035941, 0.4732670695168486],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "11-thoracic",
+    "source": "Intercostal nerves — left",
+    "note": "Source intercostal set; numbered 1–12 individual identities remain missing.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 33,
+      "frameIntervalMs": 432.2000000476837,
+      "calls": 172,
+      "triangles": 941978,
+      "totalCalls": 172,
+      "totalTriangles": 941978,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.07074208755322745, 1.145560917862103, 1.0919532014069768],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "12-abdominal",
+    "source": "Left iliohypogastric nerve",
+    "note": "Partial somatic course; not complete visceral/enteric innervation.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 37,
+      "frameIntervalMs": 449.7999999523163,
+      "calls": 69,
+      "triangles": 494498,
+      "totalCalls": 69,
+      "totalTriangles": 494498,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.06275773634456025, 1.0119396282504756, 0.41479314399402456],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "13-lumbar",
+    "source": "Left genitofemoral nerve",
+    "note": "Partial named lumbar branches; plexus completeness not verified.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 41,
+      "frameIntervalMs": 449.2000000476837,
+      "calls": 49,
+      "triangles": 399746,
+      "totalCalls": 49,
+      "totalTriangles": 399746,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.027090466031189912, 0.9991475544513565, 0.2715372180966934],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "14-pelvic",
+    "source": "Left pudendal nerve",
+    "note": "Partial source course; full hypogastric/splanchnic/perineal branching missing.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 45,
+      "frameIntervalMs": 448.6999999284744,
+      "calls": 48,
+      "triangles": 252578,
+      "totalCalls": 48,
+      "totalTriangles": 252578,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.01921746344375845, 0.8125394677196722, 0.36614637983600956],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "15-sacral",
+    "source": "Cauda equina",
+    "note": "Aggregate cauda source set with nearby sacral origins; not independently labeled sacral roots.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 49,
+      "frameIntervalMs": 413.8000000715256,
+      "calls": 93,
+      "triangles": 546914,
+      "totalCalls": 93,
+      "totalTriangles": 546914,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [
+        -0.0005359066070723568, 0.9449361553952567, 0.6394095510104891
+      ],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "16-lower-limb-right",
+    "region": "Right lower limb",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 52,
+      "frameIntervalMs": 432.7000000476837,
+      "calls": 142,
+      "triangles": 535586,
+      "totalCalls": 142,
+      "totalTriangles": 535586,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [-0.10061065, 0.3819298500000001, 2.0471625258881],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "17-lower-limb-left",
+    "region": "Left lower limb",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 54,
+      "frameIntervalMs": 402.60000002384186,
+      "calls": 142,
+      "triangles": 535586,
+      "totalCalls": 142,
+      "totalTriangles": 535586,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.1006621, 0.3818795500000001, 2.0471849024034676],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "18-foot-right",
+    "source": "Proper plantar digital branches of medial plantar nerve — right",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 57,
+      "frameIntervalMs": 448.6999999284744,
+      "calls": 22,
+      "triangles": 79778,
+      "totalCalls": 22,
+      "totalTriangles": 79778,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [
+        -0.11178784736309227, -0.06603352046553444, 0.3819443883633809
+      ],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "19-foot-left",
+    "source": "Proper plantar digital branches of medial plantar nerve — left",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 61,
+      "frameIntervalMs": 447.5,
+      "calls": 22,
+      "triangles": 79778,
+      "totalCalls": 22,
+      "totalTriangles": 79778,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.11178163746297681, -0.06602312912122842, 0.3816969609027591],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  },
+  {
+    "label": "20-autonomic",
+    "source": "Left sympathetic trunk",
+    "note": "Sympathetic trunk/source ganglion sets and partial vagal course; not complete autonomic coverage.",
+    "status": "PARTIAL_SOURCE_GEOMETRY_CAPTURED",
+    "metrics": {
+      "frames": 65,
+      "frameIntervalMs": 449.60000002384186,
+      "calls": 145,
+      "triangles": 910926,
+      "totalCalls": 145,
+      "totalTriangles": 910926,
+      "geometries": 303,
+      "textures": 3,
+      "shadows": {
+        "enabled": true,
+        "autoUpdate": false,
+        "draws": 0,
+        "triangles": 0,
+        "frameDraws": 0,
+        "frameTriangles": 0
+      },
+      "camera": [0.013271382145636194, 1.2506093181178657, 0.8072235637942432],
+      "projection": "PerspectiveCamera",
+      "programs": 2,
+      "dpr": 1,
+      "musclePicking": { "calls": 0, "totalMs": 0, "maxMs": 0 },
+      "nervousPicking": { "calls": 0, "totalMs": 0, "maxMs": 0 }
+    },
+    "medicalReview": "pending"
+  }
+]

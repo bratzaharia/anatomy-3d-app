@@ -7,6 +7,7 @@ import {
   SKELETON_ASSET,
   MUSCLE_ASSET,
   SKELETAL_STRUCTURES,
+  NERVOUS_GEOMETRY,
 } from "@anatomy/data";
 import { useViewerStore, type CameraView } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -31,6 +32,13 @@ export function ViewerOverlay({
     state.activeSystemIds.has("skeletal"),
   );
   const hovered = hoveredId ? structureById.get(hoveredId) : undefined;
+  const nervous = useViewerStore((state) =>
+    state.activeSystemIds.has("nervous"),
+  );
+  const nervousStatus = useViewerStore((state) => state.nervousStatus);
+  const nervousInspection = useViewerStore(
+    (state) => state.nervousIsolationSnapshot !== null,
+  );
   const views: readonly CameraView[] = ["front", "back", "left", "right"];
   return (
     <>
@@ -85,17 +93,62 @@ export function ViewerOverlay({
           {t("muscles.incomplete")}
         </div>
       )}
+      {supported && nervous && nervousStatus === "loading" && (
+        <div className="nervous-load-status" role="status">
+          {t("nervous.loading")}
+        </div>
+      )}
+      {supported && nervous && nervousStatus === "error" && (
+        <div className="nervous-load-status" role="alert">
+          <p>{t("nervous.error")}</p>
+          <button onClick={() => useViewerStore.getState().retryNervous()}>
+            {t("error.retry")}
+          </button>
+        </div>
+      )}
+      {nervous && nervousStatus === "ready" && (
+        <div className="nervous-load-status coverage-warning">
+          <span>{t("nervous.incomplete")}</span>
+          <p>{t("nervous.visibilityHint")}</p>
+          <button
+            onClick={() => {
+              const state = useViewerStore.getState();
+              if (nervousInspection) state.restoreVisibility();
+              else state.inspectNervousSystem();
+            }}
+          >
+            {t(nervousInspection ? "nervous.restoreContext" : "nervous.show")}
+          </button>
+        </div>
+      )}
+      {nervous && (
+        <a
+          className="nervous-source-credit"
+          href="https://github.com/Z-Anatomy/Models-of-human-anatomy"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Z-Anatomy · CC BY-SA 4.0 · BodyParts3D / Dundee
+        </a>
+      )}
       <div className="model-summary">
         {t("viewer.sourceMeshes", {
           count:
             (skeletal ? SKELETON_ASSET.sourceMeshCount : 0) +
-            (muscular ? MUSCLE_ASSET.sourceMeshCount : 0),
+            (muscular ? MUSCLE_ASSET.sourceMeshCount : 0) +
+            (nervous
+              ? NERVOUS_GEOMETRY.reduce(
+                  (count, item) => count + item.sourceFiles.length,
+                  0,
+                )
+              : 0),
         })}
         <span>·</span>
         {t("viewer.selectable", {
           count:
             (skeletal ? SKELETAL_STRUCTURES.length : 0) +
-            (muscular ? MUSCLE_ASSET.structures.length : 0),
+            (muscular ? MUSCLE_ASSET.structures.length : 0) +
+            (nervous ? NERVOUS_GEOMETRY.length : 0),
         })}
       </div>
       <div

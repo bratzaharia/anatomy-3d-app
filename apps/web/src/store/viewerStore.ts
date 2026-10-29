@@ -1,6 +1,8 @@
 import { create } from "zustand";
+import type { NervousDivision, NervousFunction } from "@anatomy/core";
 import {
   AVAILABLE_SYSTEM_IDS,
+  NERVOUS_GEOMETRY,
   SKULL_VISUALIZATION_MODES,
   type SkullViewMode,
 } from "@anatomy/data";
@@ -8,6 +10,25 @@ import {
 export type CameraView = "front" | "back" | "left" | "right" | "fit" | "focus";
 
 interface ViewerState {
+  nervousStatus: "idle" | "loading" | "ready" | "error";
+  nervousRequested: boolean;
+  nervousRetry: number;
+  nervousIsolationSnapshot: {
+    hiddenIds: ReadonlySet<string>;
+    isolatedIds: ReadonlySet<string>;
+    nervousDivisions: ReadonlySet<NervousDivision>;
+    nervousFunctions: ReadonlySet<NervousFunction>;
+    nervousRegions: ReadonlySet<string>;
+  } | null;
+  inspectNervousSystem: () => void;
+  retryNervous: () => void;
+  nervousDivisions: ReadonlySet<NervousDivision>;
+  nervousFunctions: ReadonlySet<NervousFunction>;
+  nervousRegions: ReadonlySet<string>;
+  toggleNervousDivision: (id: NervousDivision) => void;
+  toggleNervousFunction: (id: NervousFunction) => void;
+  toggleNervousRegion: (id: string) => void;
+  resetNervousFilters: () => void;
   skullViewMode: SkullViewMode;
   setSkullViewMode: (mode: SkullViewMode) => void;
   activeSystemIds: ReadonlySet<string>;
@@ -41,6 +62,71 @@ interface ViewerState {
 }
 
 export const useViewerStore = create<ViewerState>((set, get) => ({
+  nervousStatus: "idle",
+  nervousRequested: false,
+  nervousRetry: 0,
+  nervousIsolationSnapshot: null,
+  inspectNervousSystem: () =>
+    set((state) => {
+      if (!state.activeSystemIds.has("nervous")) return {};
+      return {
+        nervousIsolationSnapshot: state.nervousIsolationSnapshot ?? {
+          hiddenIds: state.hiddenIds,
+          isolatedIds: state.isolatedIds,
+          nervousDivisions: state.nervousDivisions,
+          nervousFunctions: state.nervousFunctions,
+          nervousRegions: state.nervousRegions,
+        },
+        hiddenIds: new Set(
+          [...state.hiddenIds].filter((id) => !id.startsWith("nervous-")),
+        ),
+        isolatedIds: new Set([
+          "nervous-brain",
+          ...NERVOUS_GEOMETRY.map((item) => item.id),
+        ]),
+        nervousDivisions: new Set<NervousDivision>([
+          "cns",
+          "pns",
+          "associated",
+        ]),
+        nervousFunctions: new Set<NervousFunction>(),
+        nervousRegions: new Set<string>(),
+        selectedId: null,
+        hoveredId: null,
+        rightPanelOpen: true,
+        cameraCommand: { view: "fit", nonce: state.cameraCommand.nonce + 1 },
+      };
+    }),
+  retryNervous: () =>
+    set((state) => ({
+      nervousRetry: state.nervousRetry + 1,
+      nervousStatus: "loading",
+    })),
+  nervousDivisions: new Set(["cns", "pns", "associated"]),
+  nervousFunctions: new Set(),
+  nervousRegions: new Set(),
+  toggleNervousDivision: (id) =>
+    set((state) => ({
+      nervousDivisions: toggled(state.nervousDivisions, id),
+      hoveredId: null,
+    })),
+  toggleNervousFunction: (id) =>
+    set((state) => ({
+      nervousFunctions: toggled(state.nervousFunctions, id),
+      hoveredId: null,
+    })),
+  toggleNervousRegion: (id) =>
+    set((state) => ({
+      nervousRegions: toggled(state.nervousRegions, id),
+      hoveredId: null,
+    })),
+  resetNervousFilters: () =>
+    set({
+      nervousDivisions: new Set(["cns", "pns", "associated"]),
+      nervousFunctions: new Set(),
+      nervousRegions: new Set(),
+      hoveredId: null,
+    }),
   skullViewMode: "simple",
   setSkullViewMode: (mode) => {
     if (
@@ -91,6 +177,11 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
         activeSystemIds: next,
         hoveredId: null,
         muscleRequested: state.muscleRequested || next.has("muscular"),
+        nervousRequested: state.nervousRequested || next.has("nervous"),
+        nervousStatus:
+          !state.nervousRequested && next.has("nervous")
+            ? "loading"
+            : state.nervousStatus,
         muscleStatus:
           !state.muscleRequested && next.has("muscular")
             ? "loading"
@@ -104,6 +195,11 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
       ),
       hoveredId: null,
       muscleRequested: state.muscleRequested || ids.includes("muscular"),
+      nervousRequested: state.nervousRequested || ids.includes("nervous"),
+      nervousStatus:
+        !state.nervousRequested && ids.includes("nervous")
+          ? "loading"
+          : state.nervousStatus,
       muscleStatus:
         !state.muscleRequested && ids.includes("muscular")
           ? "loading"
@@ -135,10 +231,33 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
     ),
   isolateSelected: () =>
     set((state) =>
-      state.selectedId ? { isolatedIds: new Set([state.selectedId]) } : {},
+      state.selectedId
+        ? {
+            isolatedIds: new Set([state.selectedId]),
+            ...(state.selectedId.startsWith("nervous-") &&
+            !state.nervousIsolationSnapshot
+              ? {
+                  nervousIsolationSnapshot: {
+                    hiddenIds: state.hiddenIds,
+                    isolatedIds: state.isolatedIds,
+                    nervousDivisions: state.nervousDivisions,
+                    nervousFunctions: state.nervousFunctions,
+                    nervousRegions: state.nervousRegions,
+                  },
+                }
+              : {}),
+            ...(!state.selectedId.startsWith("nervous-")
+              ? { nervousIsolationSnapshot: null }
+              : {}),
+          }
+        : {},
     ),
   restoreVisibility: () =>
-    set({ hiddenIds: new Set(), isolatedIds: new Set() }),
+    set((state) =>
+      state.nervousIsolationSnapshot
+        ? { ...state.nervousIsolationSnapshot, nervousIsolationSnapshot: null }
+        : { hiddenIds: new Set(), isolatedIds: new Set() },
+    ),
   setCameraView: (view) =>
     set((state) => ({
       cameraCommand: { view, nonce: state.cameraCommand.nonce + 1 },
@@ -148,3 +267,10 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
   toggleRightPanel: () =>
     set((state) => ({ rightPanelOpen: !state.rightPanelOpen })),
 }));
+
+function toggled<T>(values: ReadonlySet<T>, id: T): ReadonlySet<T> {
+  const next = new Set(values);
+  if (next.has(id)) next.delete(id);
+  else next.add(id);
+  return next;
+}

@@ -11,6 +11,7 @@ import {
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
 import { MuscleExplorer } from "./MuscleExplorer";
+import { NervousExplorer } from "./NervousExplorer";
 
 export function LeftPanel() {
   const { t, i18n } = useTranslation();
@@ -141,6 +142,7 @@ export function LeftPanel() {
           </div>
         </section>
 
+        <NervousExplorer />
         <MuscleExplorer />
         <section className="panel-section presets">
           <h2>{t("filters.presets")}</h2>

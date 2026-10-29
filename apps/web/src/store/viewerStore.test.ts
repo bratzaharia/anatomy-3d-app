@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { useViewerStore } from "./viewerStore";
+import { NERVOUS_GEOMETRY } from "@anatomy/data";
 describe("independent muscular state", () => {
   beforeEach(() =>
     useViewerStore.setState({
@@ -70,5 +71,95 @@ describe("independent skull display state", () => {
     }
     before.setSkullViewMode("unimplemented" as "simple");
     expect(useViewerStore.getState().skullViewMode).toBe("simple");
+  });
+});
+
+describe("independent nervous state and reversible inspection", () => {
+  beforeEach(() => {
+    useViewerStore.setState({
+      activeSystemIds: new Set(["skeletal", "muscular"]),
+      selectedId: null,
+      nervousRequested: false,
+      nervousStatus: "idle",
+      nervousIsolationSnapshot: null,
+      hiddenIds: new Set(["skull"]),
+      isolatedIds: new Set(),
+    });
+    useViewerStore.getState().resetNervousFilters();
+  });
+  it("loads on first activation only and preserves other layers and camera", () => {
+    const before = useViewerStore.getState();
+    before.toggleSystem("nervous");
+    const active = useViewerStore.getState();
+    expect(active.nervousRequested).toBe(true);
+    expect(active.nervousStatus).toBe("loading");
+    expect(
+      active.activeSystemIds.has("skeletal") &&
+        active.activeSystemIds.has("muscular"),
+    ).toBe(true);
+    expect(active.cameraCommand).toBe(before.cameraCommand);
+    active.toggleSystem("nervous");
+    expect(useViewerStore.getState().nervousRequested).toBe(true);
+    expect(useViewerStore.getState().muscleOpacity).toBe(before.muscleOpacity);
+  });
+  it("restores the exact pre-isolation overrides without changing global filters", () => {
+    const before = useViewerStore.getState();
+    before.select("nervous-pons");
+    before.isolateSelected();
+    expect([...useViewerStore.getState().isolatedIds]).toEqual([
+      "nervous-pons",
+    ]);
+    useViewerStore.getState().restoreVisibility();
+    expect(useViewerStore.getState().hiddenIds).toBe(before.hiddenIds);
+    expect(useViewerStore.getState().isolatedIds).toBe(before.isolatedIds);
+    expect(useViewerStore.getState().activeSystemIds).toBe(
+      before.activeSystemIds,
+    );
+    expect(useViewerStore.getState().nervousIsolationSnapshot).toBeNull();
+  });
+  it("limits nervous facets to their own state and resets them independently", () => {
+    const before = useViewerStore.getState();
+    before.toggleNervousDivision("pns");
+    before.toggleNervousFunction("parasympathetic");
+    before.toggleNervousRegion("head");
+    const after = useViewerStore.getState();
+    expect(after.activeSystemIds).toBe(before.activeSystemIds);
+    expect(after.hiddenIds).toBe(before.hiddenIds);
+    expect(after.cameraCommand).toBe(before.cameraCommand);
+    before.resetNervousFilters();
+    expect(useViewerStore.getState().nervousDivisions.size).toBe(3);
+    expect(useViewerStore.getState().nervousFunctions.size).toBe(0);
+  });
+  it("reveals full-body source geometry without toggling other layers and restores prior overrides and facets", () => {
+    useViewerStore.getState().toggleSystem("nervous");
+    useViewerStore.setState({
+      hiddenIds: new Set(["skull", "nervous-brain", "nervous-pons"]),
+      isolatedIds: new Set(["skull"]),
+      nervousDivisions: new Set(["pns"]),
+      nervousFunctions: new Set(["motor"]),
+      nervousRegions: new Set(["pelvis"]),
+    });
+    const before = useViewerStore.getState();
+    before.inspectNervousSystem();
+    const shown = useViewerStore.getState();
+    expect(shown.activeSystemIds).toBe(before.activeSystemIds);
+    expect(shown.hiddenIds).toEqual(new Set(["skull"]));
+    expect(shown.isolatedIds.size).toBe(NERVOUS_GEOMETRY.length + 1);
+    expect(shown.selectedId).toBeNull();
+    expect(shown.cameraCommand.view).toBe("fit");
+    expect(shown.nervousDivisions.size).toBe(3);
+    expect(shown.nervousFunctions.size).toBe(0);
+    expect(shown.nervousRegions.size).toBe(0);
+    shown.inspectNervousSystem();
+    shown.restoreVisibility();
+    const restored = useViewerStore.getState();
+    for (const key of [
+      "hiddenIds",
+      "isolatedIds",
+      "nervousDivisions",
+      "nervousFunctions",
+      "nervousRegions",
+    ] as const)
+      expect(restored[key]).toBe(before[key]);
   });
 });

@@ -14,6 +14,10 @@ License verified on 2026-10-27 against the [official asset archive license](http
 
 The additive muscular asset uses the official [IS-A OBJ 99 archive](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip), [names](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_parts_list_e.txt) and [element mappings](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt). It shares the fixed skeleton's source coordinate frame and unit conversion; identical geometry hashes for 29 reference meshes are recorded in `muscle-alignment.json`. It does not invoke or modify the skeletal importer. See [muscular audit](MUSCLE_AUDIT.md) and [computed coverage](MUSCLE_COVERAGE.md).
 
+## Nervous whole-body extension
+
+The additive nervous extension retains the original BodyParts3D CNS source and adds an audited peripheral subset from pinned Z-Anatomy FBX source, including distal hand/foot surfaces. Its source-only registration, BY-SA derivative obligations, excluded third-party content, acquired SPARC research scaffolds and quarantined HRA cord are documented in [the nervous audit](NERVOUS_AUDIT.md). Effective coverage comes from [decoded GLBs](NERVOUS_GEOMETRY_COVERAGE.md), not metadata counts. These neural decisions do not approve the separate muscular candidate below.
+
 ## Candidate evaluation before import
 
 Z-Anatomy's publisher-provided muscular FBX was evaluated as a gap closer but not accepted into runtime because registration to the fixed skeleton has not been validated; its source-specific license and 18 reference comparisons are documented in the muscular audit. Open Anatomy Project remains an unevaluated candidate. Before importing additional assets, audit exact versions and included subassets. Independent medical review of grouping, translations and source suitability remains pending.

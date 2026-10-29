@@ -18,7 +18,10 @@ describe("layer filters", () => {
     expect(skeletal).not.toBeChecked();
     expect(muscular).toBeEnabled();
     expect(muscular).toBeChecked();
-    expect(screen.getByLabelText(/Sistem nervos/)).toBeDisabled();
+    expect(
+      screen.getByLabelText("Sistem nervos", { exact: true }),
+    ).toBeEnabled();
+    expect(screen.getByLabelText(/Sistem arterial/)).toBeDisabled();
   });
 
   it("clears all filters from the derived All control", () => {

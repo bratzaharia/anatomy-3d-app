@@ -44,7 +44,8 @@ test("all four layer states, muscle identification, visibility, opacity and cach
   const all = page.getByLabel("All layers", { exact: true });
   await muscles.check();
   await ready(page);
-  await expect(all).toBeChecked();
+  // All now includes the independent nervous layer, which stays off here.
+  await expect(all).not.toBeChecked();
   expect((await metrics(page)).camera).toEqual(baseline.camera);
   await expect(canvas).toHaveScreenshot("combined-layers.png", {
     maxDiffPixelRatio: 0.002,
@@ -117,12 +118,16 @@ test("all four layer states, muscle identification, visibility, opacity and cach
     maxDiffPixels: 0,
   });
   await page.getByLabel("Muscle opacity", { exact: true }).fill("100");
-  await all.uncheck();
+  // Keep this regression restricted to the two existing layers. All now also
+  // includes nerves, whose complete All behavior is tested in nervous.spec.ts.
+  await bones.uncheck();
+  await muscles.uncheck();
   await expect(
     page.getByText("Choose at least one anatomical layer"),
   ).toBeVisible();
   await expect.poll(async () => (await metrics(page)).calls).toBe(1);
-  await all.check();
+  await bones.check();
+  await muscles.check();
   await ready(page);
   for (let i = 0; i < 3; i++) {
     await muscles.uncheck();

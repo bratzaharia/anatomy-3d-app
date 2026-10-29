@@ -10,7 +10,7 @@ import { resolveVisibleStructureIds, resolveGroupMembers } from "@anatomy/core";
 
 describe("sourced skeleton catalog", () => {
   it("maps every available entity to the audited skeletal asset", () => {
-    expect(AVAILABLE_SYSTEM_IDS).toEqual(["skeletal", "muscular"]);
+    expect(AVAILABLE_SYSTEM_IDS).toEqual(["skeletal", "muscular", "nervous"]);
     for (const structure of STRUCTURES) {
       expect(structure.assetIds).toEqual([SKELETON_ASSET.id]);
       expect(structure.provenance[0]?.license).toBe("CC-BY-4.0");
