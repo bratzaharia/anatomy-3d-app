@@ -1,0 +1,4512 @@
+{
+  "scope": "Defined catalogs only, not medically certified exhaustive human anatomy. Bones use a conventional adult scope, excluding teeth and accessory/variable bones. Muscle and nerve catalogs are editorial and include source sets. No clinical validation is implied by counts.",
+  "clinicallyReviewed": false,
+  "addedGeometry": false,
+  "existingBoneIdentitiesMadeIndividuallySelectable": 157,
+  "systems": [
+    {
+      "system": "skeletal",
+      "total": 206,
+      "individual": 199,
+      "sets": 0,
+      "groupedOnly": 0,
+      "missing": 7,
+      "regions": [
+        {
+          "region": "head",
+          "total": 28,
+          "individual": 22,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 6
+        },
+        {
+          "region": "neck",
+          "total": 1,
+          "individual": 1,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "thorax",
+          "total": 25,
+          "individual": 25,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "abdomen",
+          "total": 0,
+          "individual": 0,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "pelvis",
+          "total": 4,
+          "individual": 3,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 1
+        },
+        {
+          "region": "back",
+          "total": 24,
+          "individual": 24,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "upper-limb-left",
+          "total": 32,
+          "individual": 32,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "upper-limb-right",
+          "total": 32,
+          "individual": 32,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "lower-limb-left",
+          "total": 30,
+          "individual": 30,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "lower-limb-right",
+          "total": 30,
+          "individual": 30,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "system": "muscular",
+      "total": 520,
+      "individual": 329,
+      "sets": 26,
+      "groupedOnly": 22,
+      "missing": 143,
+      "regions": [
+        {
+          "region": "head",
+          "total": 103,
+          "individual": 23,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 80
+        },
+        {
+          "region": "neck",
+          "total": 61,
+          "individual": 58,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 3
+        },
+        {
+          "region": "thorax",
+          "total": 14,
+          "individual": 11,
+          "sets": 3,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "abdomen",
+          "total": 16,
+          "individual": 4,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 12
+        },
+        {
+          "region": "pelvis",
+          "total": 49,
+          "individual": 29,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 20
+        },
+        {
+          "region": "back",
+          "total": 73,
+          "individual": 44,
+          "sets": 17,
+          "groupedOnly": 0,
+          "missing": 12
+        },
+        {
+          "region": "upper-limb-left",
+          "total": 52,
+          "individual": 36,
+          "sets": 3,
+          "groupedOnly": 11,
+          "missing": 2
+        },
+        {
+          "region": "upper-limb-right",
+          "total": 52,
+          "individual": 36,
+          "sets": 3,
+          "groupedOnly": 11,
+          "missing": 2
+        },
+        {
+          "region": "lower-limb-left",
+          "total": 50,
+          "individual": 44,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 6
+        },
+        {
+          "region": "lower-limb-right",
+          "total": 50,
+          "individual": 44,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 6
+        }
+      ]
+    },
+    {
+      "system": "nervous",
+      "total": 465,
+      "individual": 249,
+      "sets": 53,
+      "groupedOnly": 0,
+      "missing": 163,
+      "regions": [
+        {
+          "region": "head",
+          "total": 136,
+          "individual": 101,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 35
+        },
+        {
+          "region": "neck",
+          "total": 83,
+          "individual": 42,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 41
+        },
+        {
+          "region": "thorax",
+          "total": 56,
+          "individual": 2,
+          "sets": 2,
+          "groupedOnly": 0,
+          "missing": 52
+        },
+        {
+          "region": "abdomen",
+          "total": 30,
+          "individual": 14,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 16
+        },
+        {
+          "region": "pelvis",
+          "total": 41,
+          "individual": 20,
+          "sets": 0,
+          "groupedOnly": 0,
+          "missing": 21
+        },
+        {
+          "region": "back",
+          "total": 15,
+          "individual": 2,
+          "sets": 11,
+          "groupedOnly": 0,
+          "missing": 2
+        },
+        {
+          "region": "upper-limb-left",
+          "total": 49,
+          "individual": 38,
+          "sets": 11,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "upper-limb-right",
+          "total": 49,
+          "individual": 38,
+          "sets": 11,
+          "groupedOnly": 0,
+          "missing": 0
+        },
+        {
+          "region": "lower-limb-left",
+          "total": 41,
+          "individual": 31,
+          "sets": 9,
+          "groupedOnly": 0,
+          "missing": 1
+        },
+        {
+          "region": "lower-limb-right",
+          "total": 41,
+          "individual": 31,
+          "sets": 9,
+          "groupedOnly": 0,
+          "missing": 1
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "bone-coccyx",
+      "system": "skeletal",
+      "names": { "en": "Coccyx", "ro": "Coccis" },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "bone-malleus-left",
+      "system": "skeletal",
+      "names": { "en": "Left malleus", "ro": "Ciocan — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "bone-incus-left",
+      "system": "skeletal",
+      "names": { "en": "Left incus", "ro": "Nicovală — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "bone-stapes-left",
+      "system": "skeletal",
+      "names": { "en": "Left stapes", "ro": "Scăriță — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "bone-malleus-right",
+      "system": "skeletal",
+      "names": { "en": "Right malleus", "ro": "Ciocan — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "bone-incus-right",
+      "system": "skeletal",
+      "names": { "en": "Right incus", "ro": "Nicovală — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "bone-stapes-right",
+      "system": "skeletal",
+      "names": { "en": "Right stapes", "ro": "Scăriță — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-frontalis-left",
+      "system": "muscular",
+      "names": { "en": "Left frontalis", "ro": "Mușchiul frontal — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-frontalis-right",
+      "system": "muscular",
+      "names": { "en": "Right frontalis", "ro": "Mușchiul frontal — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-occipitalis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left occipitalis",
+        "ro": "Mușchiul occipital — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-occipitalis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right occipitalis",
+        "ro": "Mușchiul occipital — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-temporoparietalis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left temporoparietalis",
+        "ro": "Mușchiul temporoparietal — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-temporoparietalis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right temporoparietalis",
+        "ro": "Mușchiul temporoparietal — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-procerus-midline",
+      "system": "muscular",
+      "names": { "en": "procerus", "ro": "Mușchiul procerus" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-nasalis-left",
+      "system": "muscular",
+      "names": { "en": "Left nasalis", "ro": "Mușchiul nazal — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-nasalis-right",
+      "system": "muscular",
+      "names": { "en": "Right nasalis", "ro": "Mușchiul nazal — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-septi-nasi-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left depressor septi nasi",
+        "ro": "Mușchiul coborâtor al septului nazal — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-septi-nasi-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right depressor septi nasi",
+        "ro": "Mușchiul coborâtor al septului nazal — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-orbicularis-oculi-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left orbicularis oculi",
+        "ro": "Mușchiul orbicular al ochiului — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-orbicularis-oculi-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right orbicularis oculi",
+        "ro": "Mușchiul orbicular al ochiului — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-corrugator-supercilii-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left corrugator supercilii",
+        "ro": "Mușchiul corugator al sprâncenei — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-corrugator-supercilii-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right corrugator supercilii",
+        "ro": "Mușchiul corugator al sprâncenei — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-supercilii-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left depressor supercilii",
+        "ro": "Mușchiul coborâtor al sprâncenei — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-supercilii-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right depressor supercilii",
+        "ro": "Mușchiul coborâtor al sprâncenei — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-orbicularis-oris-midline",
+      "system": "muscular",
+      "names": {
+        "en": "orbicularis oris",
+        "ro": "Mușchiul orbicular al gurii"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-anguli-oris-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left depressor anguli oris",
+        "ro": "Mușchiul coborâtor al unghiului gurii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-anguli-oris-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right depressor anguli oris",
+        "ro": "Mușchiul coborâtor al unghiului gurii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-risorius-left",
+      "system": "muscular",
+      "names": { "en": "Left risorius", "ro": "Mușchiul rizorius — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-risorius-right",
+      "system": "muscular",
+      "names": { "en": "Right risorius", "ro": "Mușchiul rizorius — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-zygomaticus-major-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left zygomaticus major",
+        "ro": "Mușchiul zigomatic mare — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-zygomaticus-major-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right zygomaticus major",
+        "ro": "Mușchiul zigomatic mare — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-zygomaticus-minor-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left zygomaticus minor",
+        "ro": "Mușchiul zigomatic mic — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-zygomaticus-minor-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right zygomaticus minor",
+        "ro": "Mușchiul zigomatic mic — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-levator-labii-superioris-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left levator labii superioris",
+        "ro": "Mușchiul ridicător al buzei superioare — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-levator-labii-superioris-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right levator labii superioris",
+        "ro": "Mușchiul ridicător al buzei superioare — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-levator-labii-superioris-alaeque-nasi-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left levator labii superioris alaeque nasi",
+        "ro": "Mușchiul ridicător al buzei superioare și aripii nasului — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-levator-labii-superioris-alaeque-nasi-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right levator labii superioris alaeque nasi",
+        "ro": "Mușchiul ridicător al buzei superioare și aripii nasului — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-labii-inferioris-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left depressor labii inferioris",
+        "ro": "Mușchiul coborâtor al buzei inferioare — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-depressor-labii-inferioris-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right depressor labii inferioris",
+        "ro": "Mușchiul coborâtor al buzei inferioare — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-levator-anguli-oris-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left levator anguli oris",
+        "ro": "Mușchiul ridicător al unghiului gurii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-levator-anguli-oris-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right levator anguli oris",
+        "ro": "Mușchiul ridicător al unghiului gurii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-buccinator-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left buccinator",
+        "ro": "Mușchiul buccinator — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-buccinator-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right buccinator",
+        "ro": "Mușchiul buccinator — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-mentalis-left",
+      "system": "muscular",
+      "names": { "en": "Left mentalis", "ro": "Mușchiul mentonier — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-mentalis-right",
+      "system": "muscular",
+      "names": { "en": "Right mentalis", "ro": "Mușchiul mentonier — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-auricularis-anterior-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left auricularis anterior",
+        "ro": "Mușchiul auricular anterior — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-auricularis-anterior-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right auricularis anterior",
+        "ro": "Mușchiul auricular anterior — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-auricularis-superior-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left auricularis superior",
+        "ro": "Mușchiul auricular superior — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-auricularis-superior-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right auricularis superior",
+        "ro": "Mușchiul auricular superior — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-auricularis-posterior-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left auricularis posterior",
+        "ro": "Mușchiul auricular posterior — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-auricularis-posterior-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right auricularis posterior",
+        "ro": "Mușchiul auricular posterior — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-masseter-left",
+      "system": "muscular",
+      "names": { "en": "Left masseter", "ro": "Mușchiul maseter — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-masseter-right",
+      "system": "muscular",
+      "names": { "en": "Right masseter", "ro": "Mușchiul maseter — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-temporalis-left",
+      "system": "muscular",
+      "names": { "en": "Left temporalis", "ro": "Mușchiul temporal — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-temporalis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right temporalis",
+        "ro": "Mușchiul temporal — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pterygoideus-medialis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left pterygoideus medialis",
+        "ro": "Mușchiul pterigoidian medial — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pterygoideus-medialis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right pterygoideus medialis",
+        "ro": "Mușchiul pterigoidian medial — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pterygoideus-lateralis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left pterygoideus lateralis",
+        "ro": "Mușchiul pterigoidian lateral — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pterygoideus-lateralis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right pterygoideus lateralis",
+        "ro": "Mușchiul pterigoidian lateral — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-styloglossus-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left styloglossus",
+        "ro": "Mușchiul stiloglos — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-styloglossus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right styloglossus",
+        "ro": "Mușchiul stiloglos — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-palatoglossus-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left palatoglossus",
+        "ro": "Mușchiul palatoglos — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-palatoglossus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right palatoglossus",
+        "ro": "Mușchiul palatoglos — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-superior-longitudinal-muscle-of-tongue-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left superior longitudinal muscle of tongue",
+        "ro": "Mușchiul longitudinal superior al limbii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-superior-longitudinal-muscle-of-tongue-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right superior longitudinal muscle of tongue",
+        "ro": "Mușchiul longitudinal superior al limbii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-inferior-longitudinal-muscle-of-tongue-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left inferior longitudinal muscle of tongue",
+        "ro": "Mușchiul longitudinal inferior al limbii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-inferior-longitudinal-muscle-of-tongue-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right inferior longitudinal muscle of tongue",
+        "ro": "Mușchiul longitudinal inferior al limbii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-transverse-muscle-of-tongue-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left transverse muscle of tongue",
+        "ro": "Mușchiul transvers al limbii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-transverse-muscle-of-tongue-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right transverse muscle of tongue",
+        "ro": "Mușchiul transvers al limbii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-vertical-muscle-of-tongue-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left vertical muscle of tongue",
+        "ro": "Mușchiul vertical al limbii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-vertical-muscle-of-tongue-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right vertical muscle of tongue",
+        "ro": "Mușchiul vertical al limbii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-longus-colli-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right longus colli",
+        "ro": "Mușchiul lung al gâtului — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-middle-pharyngeal-constrictor-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left middle pharyngeal constrictor",
+        "ro": "Mușchiul constrictor mijlociu al faringelui — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "side-conflict",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-middle-pharyngeal-constrictor-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right middle pharyngeal constrictor",
+        "ro": "Mușchiul constrictor mijlociu al faringelui — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "side-conflict",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-latissimus-dorsi-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left latissimus dorsi",
+        "ro": "Mușchiul mare dorsal — stânga"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-latissimus-dorsi-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right latissimus dorsi",
+        "ro": "Mușchiul mare dorsal — dreapta"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-spinalis-cervicis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left spinalis cervicis",
+        "ro": "Mușchiul spinal cervical — stânga"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-spinalis-cervicis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right spinalis cervicis",
+        "ro": "Mușchiul spinal cervical — dreapta"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-spinalis-capitis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left spinalis capitis",
+        "ro": "Mușchiul spinal al capului — stânga"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-spinalis-capitis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right spinalis capitis",
+        "ro": "Mușchiul spinal al capului — dreapta"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-multifidus-lumborum-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left multifidus lumborum",
+        "ro": "Mușchiul multifid lombar — stânga"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-multifidus-lumborum-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right multifidus lumborum",
+        "ro": "Mușchiul multifid lombar — dreapta"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-multifidus-thoracis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left multifidus thoracis",
+        "ro": "Mușchiul multifid toracic — stânga"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-multifidus-thoracis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right multifidus thoracis",
+        "ro": "Mușchiul multifid toracic — dreapta"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-multifidus-cervicis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left multifidus cervicis",
+        "ro": "Mușchiul multifid cervical — stânga"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-multifidus-cervicis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right multifidus cervicis",
+        "ro": "Mușchiul multifid cervical — dreapta"
+      },
+      "regions": ["back"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-rectus-abdominis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left rectus abdominis",
+        "ro": "Mușchiul drept abdominal — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-rectus-abdominis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right rectus abdominis",
+        "ro": "Mușchiul drept abdominal — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-internal-oblique-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left internal oblique",
+        "ro": "Mușchiul oblic intern al abdomenului — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-internal-oblique-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right internal oblique",
+        "ro": "Mușchiul oblic intern al abdomenului — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-transversus-abdominis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left transversus abdominis",
+        "ro": "Mușchiul transvers abdominal — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-transversus-abdominis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right transversus abdominis",
+        "ro": "Mușchiul transvers abdominal — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pyramidalis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left pyramidalis",
+        "ro": "Mușchiul piramidal — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pyramidalis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right pyramidalis",
+        "ro": "Mușchiul piramidal — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-quadratus-lumborum-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left quadratus lumborum",
+        "ro": "Mușchiul pătrat lombar — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-quadratus-lumborum-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right quadratus lumborum",
+        "ro": "Mușchiul pătrat lombar — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-psoas-minor-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left psoas minor",
+        "ro": "Mușchiul psoas mic — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-psoas-minor-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right psoas minor",
+        "ro": "Mușchiul psoas mic — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-ischiocavernosus-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left ischiocavernosus",
+        "ro": "Mușchiul ischiocavernos — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-ischiocavernosus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right ischiocavernosus",
+        "ro": "Mușchiul ischiocavernos — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-bulbospongiosus-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left bulbospongiosus",
+        "ro": "Mușchiul bulbospongios — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-bulbospongiosus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right bulbospongiosus",
+        "ro": "Mușchiul bulbospongios — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-superficial-transverse-perineal-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left superficial transverse perineal",
+        "ro": "Mușchiul transvers superficial al perineului — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-superficial-transverse-perineal-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right superficial transverse perineal",
+        "ro": "Mușchiul transvers superficial al perineului — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-deep-transverse-perineal-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left deep transverse perineal",
+        "ro": "Mușchiul transvers profund al perineului — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-deep-transverse-perineal-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right deep transverse perineal",
+        "ro": "Mușchiul transvers profund al perineului — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-external-urethral-sphincter-midline",
+      "system": "muscular",
+      "names": {
+        "en": "external urethral sphincter",
+        "ro": "Mușchiul sfincter extern al uretrei"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-flexor-pollicis-brevis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left flexor pollicis brevis",
+        "ro": "Mușchiul flexor scurt al policelui — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "missing",
+      "reason": "side-conflict",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-flexor-pollicis-brevis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right flexor pollicis brevis",
+        "ro": "Mușchiul flexor scurt al policelui — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "missing",
+      "reason": "side-conflict",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-palmaris-brevis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left palmaris brevis",
+        "ro": "Mușchiul palmar scurt — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-palmaris-brevis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right palmaris brevis",
+        "ro": "Mușchiul palmar scurt — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-articularis-genus-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left articularis genus",
+        "ro": "Mușchiul articular al genunchiului — stânga"
+      },
+      "regions": ["lower-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-articularis-genus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right articularis genus",
+        "ro": "Mușchiul articular al genunchiului — dreapta"
+      },
+      "regions": ["lower-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-extensor-digitorum-brevis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left extensor digitorum brevis",
+        "ro": "Mușchiul extensor scurt al degetelor piciorului — stânga"
+      },
+      "regions": ["lower-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-extensor-digitorum-brevis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right extensor digitorum brevis",
+        "ro": "Mușchiul extensor scurt al degetelor piciorului — dreapta"
+      },
+      "regions": ["lower-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-stapedius-left",
+      "system": "muscular",
+      "names": { "en": "Left stapedius", "ro": "Mușchiul scăriței — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-stapedius-right",
+      "system": "muscular",
+      "names": { "en": "Right stapedius", "ro": "Mușchiul scăriței — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-tensor-tympani-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left tensor tympani",
+        "ro": "Mușchiul tensor al timpanului — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-tensor-tympani-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right tensor tympani",
+        "ro": "Mușchiul tensor al timpanului — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-helicis-major-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left helicis major",
+        "ro": "Mușchiul mare al helixului — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-helicis-major-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right helicis major",
+        "ro": "Mușchiul mare al helixului — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-helicis-minor-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left helicis minor",
+        "ro": "Mușchiul mic al helixului — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-helicis-minor-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right helicis minor",
+        "ro": "Mușchiul mic al helixului — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-tragicus-left",
+      "system": "muscular",
+      "names": { "en": "Left tragicus", "ro": "Mușchiul tragusului — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-tragicus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right tragicus",
+        "ro": "Mușchiul tragusului — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-antitragicus-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left antitragicus",
+        "ro": "Mușchiul antitragusului — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-antitragicus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right antitragicus",
+        "ro": "Mușchiul antitragusului — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-transversus-auriculae-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left transversus auriculae",
+        "ro": "Mușchiul transvers al pavilionului urechii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-transversus-auriculae-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right transversus auriculae",
+        "ro": "Mușchiul transvers al pavilionului urechii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-obliquus-auriculae-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left obliquus auriculae",
+        "ro": "Mușchiul oblic al pavilionului urechii — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-obliquus-auriculae-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right obliquus auriculae",
+        "ro": "Mușchiul oblic al pavilionului urechii — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-puboperinealis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left puboperinealis",
+        "ro": "Mușchiul puboperineal — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-puboperinealis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right puboperinealis",
+        "ro": "Mușchiul puboperineal — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-puboprostaticus-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left puboprostaticus",
+        "ro": "Mușchiul puboprostatic — anatomie masculină — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-puboprostaticus-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right puboprostaticus",
+        "ro": "Mușchiul puboprostatic — anatomie masculină — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pubovaginalis-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left pubovaginalis",
+        "ro": "Mușchiul pubovaginal — anatomie feminină — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-pubovaginalis-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right pubovaginalis",
+        "ro": "Mușchiul pubovaginal — anatomie feminină — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-compressor-urethrae-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left compressor urethrae",
+        "ro": "Mușchiul compresor al uretrei — anatomie feminină — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-compressor-urethrae-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right compressor urethrae",
+        "ro": "Mușchiul compresor al uretrei — anatomie feminină — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-sphincter-urethrovaginalis-midline",
+      "system": "muscular",
+      "names": {
+        "en": "sphincter urethrovaginalis",
+        "ro": "Mușchiul sfincter uretrovaginal — anatomie feminină"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-cremaster-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left cremaster",
+        "ro": "Mușchiul cremaster — anatomie masculină — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-cremaster-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right cremaster",
+        "ro": "Mușchiul cremaster — anatomie masculină — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-lumbrical-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left first lumbrical of hand",
+        "ro": "Mușchiul lombrical 1 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-lumbrical-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right first lumbrical of hand",
+        "ro": "Mușchiul lombrical 1 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-lumbrical-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left second lumbrical of hand",
+        "ro": "Mușchiul lombrical 2 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-lumbrical-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right second lumbrical of hand",
+        "ro": "Mușchiul lombrical 2 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-lumbrical-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left third lumbrical of hand",
+        "ro": "Mușchiul lombrical 3 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-lumbrical-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right third lumbrical of hand",
+        "ro": "Mușchiul lombrical 3 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-fourth-lumbrical-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left fourth lumbrical of hand",
+        "ro": "Mușchiul lombrical 4 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-fourth-lumbrical-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right fourth lumbrical of hand",
+        "ro": "Mușchiul lombrical 4 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-dorsal-interosseous-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left first dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 1 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-dorsal-interosseous-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right first dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 1 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-dorsal-interosseous-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left second dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 2 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-dorsal-interosseous-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right second dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 2 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-dorsal-interosseous-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left third dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 3 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-dorsal-interosseous-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right third dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 3 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-fourth-dorsal-interosseous-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left fourth dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 4 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-fourth-dorsal-interosseous-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right fourth dorsal interosseous of hand",
+        "ro": "Mușchiul interosos dorsal 4 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-palmar-interosseous-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left first palmar interosseous of hand",
+        "ro": "Mușchiul interosos palmar 1 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-palmar-interosseous-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right first palmar interosseous of hand",
+        "ro": "Mușchiul interosos palmar 1 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-palmar-interosseous-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left second palmar interosseous of hand",
+        "ro": "Mușchiul interosos palmar 2 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-palmar-interosseous-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right second palmar interosseous of hand",
+        "ro": "Mușchiul interosos palmar 2 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-palmar-interosseous-of-hand-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left third palmar interosseous of hand",
+        "ro": "Mușchiul interosos palmar 3 al mâinii — stânga"
+      },
+      "regions": ["upper-limb-left"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-palmar-interosseous-of-hand-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right third palmar interosseous of hand",
+        "ro": "Mușchiul interosos palmar 3 al mâinii — dreapta"
+      },
+      "regions": ["upper-limb-right"],
+      "status": "grouped-only",
+      "reason": "grouped-only",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-dorsal-interosseous-of-foot-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left first dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 1 al piciorului — stânga"
+      },
+      "regions": ["lower-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-first-dorsal-interosseous-of-foot-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right first dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 1 al piciorului — dreapta"
+      },
+      "regions": ["lower-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-dorsal-interosseous-of-foot-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left second dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 2 al piciorului — stânga"
+      },
+      "regions": ["lower-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-second-dorsal-interosseous-of-foot-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right second dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 2 al piciorului — dreapta"
+      },
+      "regions": ["lower-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-dorsal-interosseous-of-foot-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left third dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 3 al piciorului — stânga"
+      },
+      "regions": ["lower-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-third-dorsal-interosseous-of-foot-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right third dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 3 al piciorului — dreapta"
+      },
+      "regions": ["lower-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-fourth-dorsal-interosseous-of-foot-left",
+      "system": "muscular",
+      "names": {
+        "en": "Left fourth dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 4 al piciorului — stânga"
+      },
+      "regions": ["lower-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "muscle-fourth-dorsal-interosseous-of-foot-right",
+      "system": "muscular",
+      "names": {
+        "en": "Right fourth dorsal interosseous of foot",
+        "ro": "Mușchiul interosos dorsal 4 al piciorului — dreapta"
+      },
+      "regions": ["lower-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-cord",
+      "system": "nervous",
+      "names": { "en": "spinal cord", "ro": "Măduvă spinală" },
+      "regions": ["neck", "back"],
+      "status": "missing",
+      "reason": "spinal-quarantine",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-vestibulocochlear-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left vestibulocochlear nerve",
+        "ro": "Nerv vestibulocohlear — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-vestibulocochlear-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right vestibulocochlear nerve",
+        "ro": "Nerv vestibulocohlear — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lacrimal-nerve-left",
+      "system": "nervous",
+      "names": { "en": "Left lacrimal nerve", "ro": "Nerv lacrimal — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lacrimal-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right lacrimal nerve",
+        "ro": "Nerv lacrimal — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-frontal-nerve-left",
+      "system": "nervous",
+      "names": { "en": "Left frontal nerve", "ro": "Nerv frontal — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-frontal-nerve-right",
+      "system": "nervous",
+      "names": { "en": "Right frontal nerve", "ro": "Nerv frontal — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-supratrochlear-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left supratrochlear nerve",
+        "ro": "Nerv supratrohlear — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-supratrochlear-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right supratrochlear nerve",
+        "ro": "Nerv supratrohlear — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-supra-orbital-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left supra-orbital nerve",
+        "ro": "Nerv supraorbital — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-supra-orbital-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right supra-orbital nerve",
+        "ro": "Nerv supraorbital — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-nasociliary-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left nasociliary nerve",
+        "ro": "Nerv nazociliar — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-nasociliary-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right nasociliary nerve",
+        "ro": "Nerv nazociliar — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-anterior-ethmoidal-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left anterior ethmoidal nerve",
+        "ro": "Nerv etmoidal anterior — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-anterior-ethmoidal-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right anterior ethmoidal nerve",
+        "ro": "Nerv etmoidal anterior — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-posterior-ethmoidal-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left posterior ethmoidal nerve",
+        "ro": "Nerv etmoidal posterior — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-posterior-ethmoidal-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right posterior ethmoidal nerve",
+        "ro": "Nerv etmoidal posterior — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-infratrochlear-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left infratrochlear nerve",
+        "ro": "Nerv infratrohlear — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-infratrochlear-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right infratrochlear nerve",
+        "ro": "Nerv infratrohlear — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-long-ciliary-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left long ciliary nerve",
+        "ro": "Nerv ciliar lung — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-long-ciliary-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right long ciliary nerve",
+        "ro": "Nerv ciliar lung — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-mandibular-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left mandibular nerve",
+        "ro": "Nerv mandibular (V3) — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-mandibular-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right mandibular nerve",
+        "ro": "Nerv mandibular (V3) — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-superior-branch-of-oculomotor-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left superior branch of oculomotor nerve",
+        "ro": "Ramură superioară a nervului oculomotor — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-superior-branch-of-oculomotor-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right superior branch of oculomotor nerve",
+        "ro": "Ramură superioară a nervului oculomotor — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-inferior-branch-of-oculomotor-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left inferior branch of oculomotor nerve",
+        "ro": "Ramură inferioară a nervului oculomotor — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-inferior-branch-of-oculomotor-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right inferior branch of oculomotor nerve",
+        "ro": "Ramură inferioară a nervului oculomotor — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-policy",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c1-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C1",
+        "ro": "Nerv spinal cervical C1 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c1-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C1",
+        "ro": "Nerv spinal cervical C1 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c2-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C2",
+        "ro": "Nerv spinal cervical C2 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c2-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C2",
+        "ro": "Nerv spinal cervical C2 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c3-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C3",
+        "ro": "Nerv spinal cervical C3 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c3-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C3",
+        "ro": "Nerv spinal cervical C3 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c4-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C4",
+        "ro": "Nerv spinal cervical C4 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c4-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C4",
+        "ro": "Nerv spinal cervical C4 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c5-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C5",
+        "ro": "Nerv spinal cervical C5 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c5-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C5",
+        "ro": "Nerv spinal cervical C5 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c6-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C6",
+        "ro": "Nerv spinal cervical C6 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c6-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C6",
+        "ro": "Nerv spinal cervical C6 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c7-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C7",
+        "ro": "Nerv spinal cervical C7 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c7-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C7",
+        "ro": "Nerv spinal cervical C7 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c8-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve C8",
+        "ro": "Nerv spinal cervical C8 — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-c8-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve C8",
+        "ro": "Nerv spinal cervical C8 — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t1-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T1",
+        "ro": "Nerv spinal toracic T1 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t1-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T1",
+        "ro": "Nerv spinal toracic T1 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t2-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T2",
+        "ro": "Nerv spinal toracic T2 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t2-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T2",
+        "ro": "Nerv spinal toracic T2 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t3-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T3",
+        "ro": "Nerv spinal toracic T3 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t3-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T3",
+        "ro": "Nerv spinal toracic T3 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t4-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T4",
+        "ro": "Nerv spinal toracic T4 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t4-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T4",
+        "ro": "Nerv spinal toracic T4 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t5-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T5",
+        "ro": "Nerv spinal toracic T5 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t5-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T5",
+        "ro": "Nerv spinal toracic T5 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t6-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T6",
+        "ro": "Nerv spinal toracic T6 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t6-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T6",
+        "ro": "Nerv spinal toracic T6 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t7-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T7",
+        "ro": "Nerv spinal toracic T7 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t7-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T7",
+        "ro": "Nerv spinal toracic T7 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t8-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T8",
+        "ro": "Nerv spinal toracic T8 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t8-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T8",
+        "ro": "Nerv spinal toracic T8 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t9-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T9",
+        "ro": "Nerv spinal toracic T9 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t9-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T9",
+        "ro": "Nerv spinal toracic T9 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t10-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T10",
+        "ro": "Nerv spinal toracic T10 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t10-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T10",
+        "ro": "Nerv spinal toracic T10 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t11-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T11",
+        "ro": "Nerv spinal toracic T11 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t11-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T11",
+        "ro": "Nerv spinal toracic T11 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t12-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve T12",
+        "ro": "Nerv spinal toracic T12 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-t12-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve T12",
+        "ro": "Nerv spinal toracic T12 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l1-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve L1",
+        "ro": "Nerv spinal lombar L1 — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l1-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve L1",
+        "ro": "Nerv spinal lombar L1 — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l2-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve L2",
+        "ro": "Nerv spinal lombar L2 — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l2-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve L2",
+        "ro": "Nerv spinal lombar L2 — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l3-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve L3",
+        "ro": "Nerv spinal lombar L3 — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l3-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve L3",
+        "ro": "Nerv spinal lombar L3 — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l4-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve L4",
+        "ro": "Nerv spinal lombar L4 — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l4-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve L4",
+        "ro": "Nerv spinal lombar L4 — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l5-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve L5",
+        "ro": "Nerv spinal lombar L5 — stânga"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-l5-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve L5",
+        "ro": "Nerv spinal lombar L5 — dreapta"
+      },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s1-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve S1",
+        "ro": "Nerv spinal sacral S1 — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s1-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve S1",
+        "ro": "Nerv spinal sacral S1 — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s2-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve S2",
+        "ro": "Nerv spinal sacral S2 — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s2-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve S2",
+        "ro": "Nerv spinal sacral S2 — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s3-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve S3",
+        "ro": "Nerv spinal sacral S3 — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s3-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve S3",
+        "ro": "Nerv spinal sacral S3 — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s4-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve S4",
+        "ro": "Nerv spinal sacral S4 — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s4-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve S4",
+        "ro": "Nerv spinal sacral S4 — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s5-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve S5",
+        "ro": "Nerv spinal sacral S5 — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-s5-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve S5",
+        "ro": "Nerv spinal sacral S5 — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-co1-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left spinal nerve Co1",
+        "ro": "Nerv spinal coccigian Co1 — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-spinal-nerve-co1-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right spinal nerve Co1",
+        "ro": "Nerv spinal coccigian Co1 — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lesser-occipital-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left lesser occipital nerve",
+        "ro": "Nerv occipital mic — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lesser-occipital-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right lesser occipital nerve",
+        "ro": "Nerv occipital mic — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-great-auricular-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left great auricular nerve",
+        "ro": "Nerv auricular mare — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-great-auricular-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right great auricular nerve",
+        "ro": "Nerv auricular mare — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-transverse-cervical-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left transverse cervical nerve",
+        "ro": "Nerv transvers al gâtului — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-transverse-cervical-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right transverse cervical nerve",
+        "ro": "Nerv transvers al gâtului — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-supraclavicular-nerves-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left supraclavicular nerves",
+        "ro": "Nervi supraclaviculari — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-supraclavicular-nerves-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right supraclavicular nerves",
+        "ro": "Nervi supraclaviculari — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-phrenic-nerve-left",
+      "system": "nervous",
+      "names": { "en": "Left phrenic nerve", "ro": "Nerv frenic — stânga" },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-phrenic-nerve-right",
+      "system": "nervous",
+      "names": { "en": "Right phrenic nerve", "ro": "Nerv frenic — dreapta" },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-inferior-gluteal-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left inferior gluteal nerve",
+        "ro": "Nerv gluteal inferior — stânga"
+      },
+      "regions": ["pelvis", "lower-limb-left"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-inferior-gluteal-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right inferior gluteal nerve",
+        "ro": "Nerv gluteal inferior — dreapta"
+      },
+      "regions": ["pelvis", "lower-limb-right"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t1-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T1",
+        "ro": "Nerv intercostal T1 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t1-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T1",
+        "ro": "Nerv intercostal T1 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t2-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T2",
+        "ro": "Nerv intercostal T2 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t2-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T2",
+        "ro": "Nerv intercostal T2 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t3-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T3",
+        "ro": "Nerv intercostal T3 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t3-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T3",
+        "ro": "Nerv intercostal T3 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t4-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T4",
+        "ro": "Nerv intercostal T4 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t4-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T4",
+        "ro": "Nerv intercostal T4 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t5-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T5",
+        "ro": "Nerv intercostal T5 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t5-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T5",
+        "ro": "Nerv intercostal T5 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t6-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T6",
+        "ro": "Nerv intercostal T6 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t6-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T6",
+        "ro": "Nerv intercostal T6 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t7-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T7",
+        "ro": "Nerv intercostal T7 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t7-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T7",
+        "ro": "Nerv intercostal T7 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t8-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T8",
+        "ro": "Nerv intercostal T8 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t8-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T8",
+        "ro": "Nerv intercostal T8 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t9-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T9",
+        "ro": "Nerv intercostal T9 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t9-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T9",
+        "ro": "Nerv intercostal T9 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t10-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T10",
+        "ro": "Nerv intercostal T10 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t10-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T10",
+        "ro": "Nerv intercostal T10 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t11-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left intercostal nerve T11",
+        "ro": "Nerv intercostal T11 — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-intercostal-nerve-t11-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right intercostal nerve T11",
+        "ro": "Nerv intercostal T11 — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-subcostal-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left subcostal nerve",
+        "ro": "Nerv subcostal — stânga"
+      },
+      "regions": ["thorax", "abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-subcostal-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right subcostal nerve",
+        "ro": "Nerv subcostal — dreapta"
+      },
+      "regions": ["thorax", "abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-superior-cervical-ganglion-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left superior cervical ganglion",
+        "ro": "Ganglion cervical superior — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-superior-cervical-ganglion-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right superior cervical ganglion",
+        "ro": "Ganglion cervical superior — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-middle-cervical-ganglion-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left middle cervical ganglion",
+        "ro": "Ganglion cervical mijlociu — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-middle-cervical-ganglion-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right middle cervical ganglion",
+        "ro": "Ganglion cervical mijlociu — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-cervicothoracic-ganglion-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left cervicothoracic ganglion",
+        "ro": "Ganglion cervicotoracic — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-cervicothoracic-ganglion-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right cervicothoracic ganglion",
+        "ro": "Ganglion cervicotoracic — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-greater-splanchnic-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left greater splanchnic nerve",
+        "ro": "Nerv splanhnic mare — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-greater-splanchnic-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right greater splanchnic nerve",
+        "ro": "Nerv splanhnic mare — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lesser-splanchnic-nerve-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left lesser splanchnic nerve",
+        "ro": "Nerv splanhnic mic — stânga"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lesser-splanchnic-nerve-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right lesser splanchnic nerve",
+        "ro": "Nerv splanhnic mic — dreapta"
+      },
+      "regions": ["thorax"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-pelvic-splanchnic-nerves-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left pelvic splanchnic nerves",
+        "ro": "Nervi splanhnici pelvini — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-pelvic-splanchnic-nerves-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right pelvic splanchnic nerves",
+        "ro": "Nervi splanhnici pelvini — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-sacral-splanchnic-nerves-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left sacral splanchnic nerves",
+        "ro": "Nervi splanhnici sacrali — stânga"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-sacral-splanchnic-nerves-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right sacral splanchnic nerves",
+        "ro": "Nervi splanhnici sacrali — dreapta"
+      },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-pterygopalatine-ganglion-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left pterygopalatine ganglion",
+        "ro": "Ganglion pterigopalatin — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-pterygopalatine-ganglion-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right pterygopalatine ganglion",
+        "ro": "Ganglion pterigopalatin — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-submandibular-ganglion-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left submandibular ganglion",
+        "ro": "Ganglion submandibular — stânga"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-submandibular-ganglion-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right submandibular ganglion",
+        "ro": "Ganglion submandibular — dreapta"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-otic-ganglion-left",
+      "system": "nervous",
+      "names": { "en": "Left otic ganglion", "ro": "Ganglion otic — stânga" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-otic-ganglion-right",
+      "system": "nervous",
+      "names": { "en": "Right otic ganglion", "ro": "Ganglion otic — dreapta" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-myenteric-plexus",
+      "system": "nervous",
+      "names": { "en": "myenteric plexus", "ro": "Plex mienteric" },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-submucosal-plexus",
+      "system": "nervous",
+      "names": { "en": "submucosal plexus", "ro": "Plex submucos" },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lateral-ventricles",
+      "system": "nervous",
+      "names": {
+        "en": "lateral ventricles",
+        "ro": "Ventriculi laterali (pereche)"
+      },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://openstax.org/books/anatomy-and-physiology/pages/13-3-circulation-and-the-central-nervous-system",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-third-ventricle",
+      "system": "nervous",
+      "names": { "en": "third ventricle", "ro": "Ventricul al treilea" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://openstax.org/books/anatomy-and-physiology/pages/13-3-circulation-and-the-central-nervous-system",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-fourth-ventricle",
+      "system": "nervous",
+      "names": { "en": "fourth ventricle", "ro": "Ventricul al patrulea" },
+      "regions": ["head"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://openstax.org/books/anatomy-and-physiology/pages/13-3-circulation-and-the-central-nervous-system",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-filum-terminale",
+      "system": "nervous",
+      "names": { "en": "filum terminale", "ro": "Filum terminale" },
+      "regions": ["back", "pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://openstax.org/books/anatomy-and-physiology/pages/13-3-circulation-and-the-central-nervous-system",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-cervical-plexus-left",
+      "system": "nervous",
+      "names": { "en": "Left cervical plexus", "ro": "Plex cervical — stânga" },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-cervical-plexus-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right cervical plexus",
+        "ro": "Plex cervical — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-brachial-plexus-left",
+      "system": "nervous",
+      "names": { "en": "Left brachial plexus", "ro": "Plex brahial — stânga" },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-brachial-plexus-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right brachial plexus",
+        "ro": "Plex brahial — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lumbar-plexus-left",
+      "system": "nervous",
+      "names": { "en": "Left lumbar plexus", "ro": "Plex lombar — stânga" },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lumbar-plexus-right",
+      "system": "nervous",
+      "names": { "en": "Right lumbar plexus", "ro": "Plex lombar — dreapta" },
+      "regions": ["abdomen"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-sacral-plexus-left",
+      "system": "nervous",
+      "names": { "en": "Left sacral plexus", "ro": "Plex sacral — stânga" },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-sacral-plexus-right",
+      "system": "nervous",
+      "names": { "en": "Right sacral plexus", "ro": "Plex sacral — dreapta" },
+      "regions": ["pelvis"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lateral-cord-of-brachial-plexus-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left lateral cord of brachial plexus",
+        "ro": "Fascicul lateral al plexului brahial — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-lateral-cord-of-brachial-plexus-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right lateral cord of brachial plexus",
+        "ro": "Fascicul lateral al plexului brahial — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-medial-cord-of-brachial-plexus-left",
+      "system": "nervous",
+      "names": {
+        "en": "Left medial cord of brachial plexus",
+        "ro": "Fascicul medial al plexului brahial — stânga"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    },
+    {
+      "id": "nervous-medial-cord-of-brachial-plexus-right",
+      "system": "nervous",
+      "names": {
+        "en": "Right medial cord of brachial plexus",
+        "ro": "Fascicul medial al plexului brahial — dreapta"
+      },
+      "regions": ["neck"],
+      "status": "missing",
+      "reason": "source-gap",
+      "source": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "assetIds": []
+    }
+  ]
+}

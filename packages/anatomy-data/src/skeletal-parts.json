@@ -1,0 +1,3505 @@
+{
+  "assetSha256": "126268604b056cdd8878c6297f6a8e90ae5cbf4cdce1cc7f952988d13bc68531",
+  "parents": [
+    {
+      "id": "vertebral-column",
+      "vertexCount": 35996,
+      "indexCount": 180492,
+      "normalSha256": "71dc4346adb69673c089e295cc3cefc136e964e0a43788aa038d80409577b727",
+      "parts": [
+        {
+          "id": "bone-fma12519",
+          "conceptId": "FMA12519",
+          "names": { "en": "Atlas", "ro": "Atlas (C1)" },
+          "latinName": "Atlas",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.04136459901928902, 1.4622100591659546, 0.040595799684524536
+            ],
+            "max": [
+              0.04023069888353348, 1.4814300537109375, 0.08764419704675674
+            ]
+          },
+          "vertexStart": 0,
+          "vertexCount": 1433,
+          "indexStart": 0,
+          "indexCount": 6282,
+          "positionSha256": "38904065be5268d0013da1dfe7445d7a5ec2834542610abea252a7859bcde290",
+          "indexSha256": "889087422648f4f680b4820e5750fb1c59599f9ca865c6a7c2d2425e00c2f707"
+        },
+        {
+          "id": "bone-fma12520",
+          "conceptId": "FMA12520",
+          "names": { "en": "Axis", "ro": "Axis (C2)" },
+          "latinName": "Axis",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.025961600244045258, 1.433169960975647, 0.036670900881290436
+            ],
+            "max": [
+              0.024574199691414833, 1.478350043296814, 0.08653909713029861
+            ]
+          },
+          "vertexStart": 1433,
+          "vertexCount": 1540,
+          "indexStart": 6282,
+          "indexCount": 6864,
+          "positionSha256": "a1b673b3e4e87928afa7610124f98bf8c059e33cbb8e87298ab04dc8115cb069",
+          "indexSha256": "bc7be2556392ecf5518af9ce6c4364be7496a64ea09c602a70ad9e9d70d6abbb"
+        },
+        {
+          "id": "bone-fma12521",
+          "conceptId": "FMA12521",
+          "names": { "en": "Third cervical vertebra", "ro": "Vertebra C3" },
+          "latinName": "Vertebra C3",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.02984279952943325, 1.4170000553131104, 0.03813309967517853
+            ],
+            "max": [
+              0.028539299964904785, 1.445739984512329, 0.08781319856643677
+            ]
+          },
+          "vertexStart": 2973,
+          "vertexCount": 1323,
+          "indexStart": 13146,
+          "indexCount": 6090,
+          "positionSha256": "e84e6de14080f19fcf0de07a06d06bf69d874a71c42db7ca0dfa9e3c5180d65d",
+          "indexSha256": "7600aa244d04d7a1b8d6dcb8e1e66b7ec38ce6031477cf5e33146e9d72d59190"
+        },
+        {
+          "id": "bone-fma12522",
+          "conceptId": "FMA12522",
+          "names": { "en": "Fourth cervical vertebra", "ro": "Vertebra C4" },
+          "latinName": "Vertebra C4",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.027753399685025215, 1.4046000242233276, 0.04069359973073006
+            ],
+            "max": [
+              0.026377499103546143, 1.4321399927139282, 0.08910810202360153
+            ]
+          },
+          "vertexStart": 4296,
+          "vertexCount": 1469,
+          "indexStart": 19236,
+          "indexCount": 7230,
+          "positionSha256": "aee2c232440ee5ac413b9a5ab99e2f0990ff44c7fef040c0db8818fd15cb356b",
+          "indexSha256": "558dd1c6bfed10915fb144c5614d2dfee0b083b25880c49bf7c07433f7acdcb1"
+        },
+        {
+          "id": "bone-fma12523",
+          "conceptId": "FMA12523",
+          "names": { "en": "Fifth cervical vertebra", "ro": "Vertebra C5" },
+          "latinName": "Vertebra C5",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.029697800055146217, 1.3937699794769287, 0.03608249872922897
+            ],
+            "max": [0.02833320014178753, 1.41798996925354, 0.0907725989818573]
+          },
+          "vertexStart": 5765,
+          "vertexCount": 1539,
+          "indexStart": 26466,
+          "indexCount": 6588,
+          "positionSha256": "7adc24d98a1b67af29b7cabc1dcfa979b248cc6d1e5266b82a91ae4cfb9367b9",
+          "indexSha256": "c70c60733750c7ba9d9f3192071e198b616b344cb42d8a68126066377f4c5708"
+        },
+        {
+          "id": "bone-fma12524",
+          "conceptId": "FMA12524",
+          "names": { "en": "Sixth cervical vertebra", "ro": "Vertebra C6" },
+          "latinName": "Vertebra C6",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.031265199184417725, 1.3815900087356567, 0.029179399833083153
+            ],
+            "max": [
+              0.02994769997894764, 1.4047399759292603, 0.09167099744081497
+            ]
+          },
+          "vertexStart": 7304,
+          "vertexCount": 1498,
+          "indexStart": 33054,
+          "indexCount": 7122,
+          "positionSha256": "0911c0d20b5a1c9828a8051ccf470fd40b49665401a1298df04c550a2fe6eb27",
+          "indexSha256": "fcc79d3e5dceec43648432abdd74868fc05d6268451d92d20536adf2c3ba1bb3"
+        },
+        {
+          "id": "bone-fma12525",
+          "conceptId": "FMA12525",
+          "names": { "en": "Seventh cervical vertebra", "ro": "Vertebra C7" },
+          "latinName": "Vertebra C7",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.03322929888963699, 1.3647099733352661, 0.021266400814056396
+            ],
+            "max": [
+              0.03193160146474838, 1.3918399810791016, 0.09003189951181412
+            ]
+          },
+          "vertexStart": 8802,
+          "vertexCount": 1324,
+          "indexStart": 40176,
+          "indexCount": 5460,
+          "positionSha256": "5963c5c8b477addd326cd5f4703a8afd9353503a6c2147540660d14531b4abe9",
+          "indexSha256": "5fc9318ce3845002fb1d6dc2da257c52f1175784359d3424754ec91774951459"
+        },
+        {
+          "id": "bone-fma9165",
+          "conceptId": "FMA9165",
+          "names": { "en": "First thoracic vertebra", "ro": "Vertebra T1" },
+          "latinName": "Vertebra T1",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.037383001297712326, 1.3472199440002441, 0.017086699604988098
+            ],
+            "max": [
+              0.035916201770305634, 1.3768999576568604, 0.08687189966440201
+            ]
+          },
+          "vertexStart": 10126,
+          "vertexCount": 1078,
+          "indexStart": 45636,
+          "indexCount": 5100,
+          "positionSha256": "643a2fe5aa80025c387ceab7403d6794702e87668975fbf2dbe660edc19924ee",
+          "indexSha256": "d48ab52e6ef1fd69a67b3f007b6500ed93224dfd56e55c0c7fe440b106f457da"
+        },
+        {
+          "id": "bone-fma9187",
+          "conceptId": "FMA9187",
+          "names": { "en": "Second thoracic vertebra", "ro": "Vertebra T2" },
+          "latinName": "Vertebra T2",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.0359220989048481, 1.3265899419784546, 0.012120500206947327
+            ],
+            "max": [0.03457840159535408, 1.360360026359558, 0.08267579972743988]
+          },
+          "vertexStart": 11204,
+          "vertexCount": 1161,
+          "indexStart": 50736,
+          "indexCount": 5814,
+          "positionSha256": "b559c8266e4f83eb2ef6249217cad27a9c64fd7c6c98026aa95c32277edd4f9f",
+          "indexSha256": "af3f033674186eca7cbe2b5cd91256177ab4c3710ebe1e5f1987af0539b2d47d"
+        },
+        {
+          "id": "bone-fma9209",
+          "conceptId": "FMA9209",
+          "names": { "en": "Third thoracic vertebra", "ro": "Vertebra T3" },
+          "latinName": "Vertebra T3",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.03296609967947006, 1.3022300004959106, 0.0013601100072264671
+            ],
+            "max": [
+              0.03184090182185173, 1.3418500423431396, 0.07673630118370056
+            ]
+          },
+          "vertexStart": 12365,
+          "vertexCount": 1175,
+          "indexStart": 56550,
+          "indexCount": 6114,
+          "positionSha256": "278ba7f2446b48d717766975479a2f096fb40997e291cb9447c2062d5276ac7b",
+          "indexSha256": "d761471c7ad27b583988108153540ea506cbc472eba03db795ab3ace19083fd8"
+        },
+        {
+          "id": "bone-fma9248",
+          "conceptId": "FMA9248",
+          "names": { "en": "Fourth thoracic vertebra", "ro": "Vertebra T4" },
+          "latinName": "Vertebra T4",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.035461701452732086, 1.2777400016784668, 0.0001978960062842816
+            ],
+            "max": [
+              0.03428199887275696, 1.3214099407196045, 0.06960490345954895
+            ]
+          },
+          "vertexStart": 13540,
+          "vertexCount": 1210,
+          "indexStart": 62664,
+          "indexCount": 6198,
+          "positionSha256": "f47b76ccf74cec0ccafed18c34205c0596af59d8e6adc4c846054626f0a30f7a",
+          "indexSha256": "06782f57defbe8ac769aa42383181ababe747d9e50c7267a06e7373bbc1b90b5"
+        },
+        {
+          "id": "bone-fma9922",
+          "conceptId": "FMA9922",
+          "names": { "en": "Fifth thoracic vertebra", "ro": "Vertebra T5" },
+          "latinName": "Vertebra T5",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.036151498556137085, 1.2397700548171997,
+              -0.000018549899323261343
+            ],
+            "max": [
+              0.03488970175385475, 1.2972700595855713, 0.06600899994373322
+            ]
+          },
+          "vertexStart": 14750,
+          "vertexCount": 1321,
+          "indexStart": 68862,
+          "indexCount": 6840,
+          "positionSha256": "9da1125fb4b807da8a6dfec0dc2c6a9f49927a6195ac746fd1997a6519f17b85",
+          "indexSha256": "6175cf6c2c5e69020d5b2dc0f60ba65e40b1acd86b581efe28120689c6f4bcc6"
+        },
+        {
+          "id": "bone-fma9945",
+          "conceptId": "FMA9945",
+          "names": { "en": "Sixth thoracic vertebra", "ro": "Vertebra T6" },
+          "latinName": "Vertebra T6",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.03642269968986511, 1.209380030632019, 0.0011924300342798233
+            ],
+            "max": [
+              0.035033900290727615, 1.2690800428390503, 0.0652208998799324
+            ]
+          },
+          "vertexStart": 16071,
+          "vertexCount": 1353,
+          "indexStart": 75702,
+          "indexCount": 6744,
+          "positionSha256": "fabae9439fe6b47bcea38a76991a493fb504534b2a2ca23e489bfe5c57fa0ae5",
+          "indexSha256": "e94e3692247161f72c4d972cdd90da10748941ec8f6bd91cb35b3c907574a924"
+        },
+        {
+          "id": "bone-fma9968",
+          "conceptId": "FMA9968",
+          "names": { "en": "Seventh thoracic vertebra", "ro": "Vertebra T7" },
+          "latinName": "Vertebra T7",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.037226300686597824, 1.1792999505996704, 0.000671493005938828
+            ],
+            "max": [
+              0.03632060065865517, 1.2417999505996704, 0.06697919964790344
+            ]
+          },
+          "vertexStart": 17424,
+          "vertexCount": 1478,
+          "indexStart": 82446,
+          "indexCount": 7722,
+          "positionSha256": "eb414048c8bfdef0c13978b0b84f4a441e11f982c053599ec9d1d36660c3348c",
+          "indexSha256": "2d6e9e50979aceaf5d6bddf3e7607e7617dd5c063a3e5bf34094141de51a3422"
+        },
+        {
+          "id": "bone-fma9991",
+          "conceptId": "FMA9991",
+          "names": { "en": "Eighth thoracic vertebra", "ro": "Vertebra T8" },
+          "latinName": "Vertebra T8",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.033659398555755615, 1.153749942779541, 0.0009317959775216877
+            ],
+            "max": [
+              0.032152701169252396, 1.2130500078201294, 0.07202760130167007
+            ]
+          },
+          "vertexStart": 18902,
+          "vertexCount": 1392,
+          "indexStart": 90168,
+          "indexCount": 7272,
+          "positionSha256": "a107bce7173e80128fbc6021e56a82523028eb4c8da52a26e97b1e2337d9f026",
+          "indexSha256": "c48d953644551021400d2eebfc7aab4d53c06d8c267829ca4aa02fc0ad268d68"
+        },
+        {
+          "id": "bone-fma10014",
+          "conceptId": "FMA10014",
+          "names": { "en": "Ninth thoracic vertebra", "ro": "Vertebra T9" },
+          "latinName": "Vertebra T9",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.034394800662994385, 1.1266299486160278, 0.006156059913337231
+            ],
+            "max": [
+              0.03299799934029579, 1.1848399639129639, 0.07765290141105652
+            ]
+          },
+          "vertexStart": 20294,
+          "vertexCount": 1443,
+          "indexStart": 97440,
+          "indexCount": 7758,
+          "positionSha256": "ce4757ba3faf235c62bb10b643eac1ded69d8daf03196031e9e63f771f5d4f16",
+          "indexSha256": "30c85dc6c645e5756d12149eb2f687a9553078244eb8d482120a3ae127f0f046"
+        },
+        {
+          "id": "bone-fma10037",
+          "conceptId": "FMA10037",
+          "names": { "en": "Tenth thoracic vertebra", "ro": "Vertebra T10" },
+          "latinName": "Vertebra T10",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.03365679830312729, 1.099769949913025, 0.007822499610483646
+            ],
+            "max": [
+              0.032245200127363205, 1.1571300029754639, 0.08405780047178268
+            ]
+          },
+          "vertexStart": 21737,
+          "vertexCount": 1584,
+          "indexStart": 105198,
+          "indexCount": 8370,
+          "positionSha256": "4e89f35271f54bb2a12ca498906ddddcf3b240918623746127801e69cb20e9bd",
+          "indexSha256": "1e8a1d943b753253e46f17bb9f7dcc57461eda4131a942ed93ecfe4cf3635fda"
+        },
+        {
+          "id": "bone-fma10059",
+          "conceptId": "FMA10059",
+          "names": { "en": "Eleventh thoracic vertebra", "ro": "Vertebra T11" },
+          "latinName": "Vertebra T11",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.026760999113321304, 1.075719952583313, 0.013008899986743927
+            ],
+            "max": [
+              0.025559300556778908, 1.1292699575424194, 0.09253239631652832
+            ]
+          },
+          "vertexStart": 23321,
+          "vertexCount": 1593,
+          "indexStart": 113568,
+          "indexCount": 8022,
+          "positionSha256": "0b2ed2c0e806c62ab618451e4e00034dd90618b77d9a397b4ef342dc800dad13",
+          "indexSha256": "92b1edcf51e2241ad05b1c13c9c2c85c87b1f94272dcf77aa551bb355abc450d"
+        },
+        {
+          "id": "bone-fma10081",
+          "conceptId": "FMA10081",
+          "names": { "en": "Twelfth thoracic vertebra", "ro": "Vertebra T12" },
+          "latinName": "Vertebra T12",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.022386400029063225, 1.0499600172042847, 0.022560900077223778
+            ],
+            "max": [
+              0.02105480059981346, 1.1015900373458862, 0.10138499736785889
+            ]
+          },
+          "vertexStart": 24914,
+          "vertexCount": 1593,
+          "indexStart": 121590,
+          "indexCount": 8316,
+          "positionSha256": "cf86d660ac4e25a347b5918ee1130c06d0b539da18c3dacf1034ae9ef9691da9",
+          "indexSha256": "010de2187d7217cd3ec0cb516876aee045128521fadae35f2ec20a26a6d641f3"
+        },
+        {
+          "id": "bone-fma13072",
+          "conceptId": "FMA13072",
+          "names": { "en": "First lumbar vertebra", "ro": "Vertebra L1" },
+          "latinName": "Vertebra L1",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.03577980026602745, 1.0152000188827515, 0.0292224008589983
+            ],
+            "max": [
+              0.03446140140295029, 1.0719799995422363, 0.10948000103235245
+            ]
+          },
+          "vertexStart": 26507,
+          "vertexCount": 1682,
+          "indexStart": 129906,
+          "indexCount": 8916,
+          "positionSha256": "9383d17102f852e881f0d431c1ade5dd0b43d28dc0e0effd44c7728239f92d69",
+          "indexSha256": "87fdb278d6a9ab6723160f287b3c2a08ba33450d9c42951ce6cebf30e1bdbe5e"
+        },
+        {
+          "id": "bone-fma13073",
+          "conceptId": "FMA13073",
+          "names": { "en": "Second lumbar vertebra", "ro": "Vertebra L2" },
+          "latinName": "Vertebra L2",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.04035089910030365, 0.9923160076141357, 0.03434880077838898
+            ],
+            "max": [0.0390608012676239, 1.0397599935531616, 0.11472000181674957]
+          },
+          "vertexStart": 28189,
+          "vertexCount": 1875,
+          "indexStart": 138822,
+          "indexCount": 9642,
+          "positionSha256": "81ba4f9af49ba4da7645de706cf6097391b6e586c5ecd61b90c535b45db9fe23",
+          "indexSha256": "03f5f1b7e4ebd8782ea999c2db6952186c457f251ddba49917cbbb21112fcf6c"
+        },
+        {
+          "id": "bone-fma13074",
+          "conceptId": "FMA13074",
+          "names": { "en": "Third lumbar vertebra", "ro": "Vertebra L3" },
+          "latinName": "Vertebra L3",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.040202900767326355, 0.9676929712295532, 0.029513999819755554
+            ],
+            "max": [
+              0.03884100168943405, 1.0097299814224243, 0.11535300314426422
+            ]
+          },
+          "vertexStart": 30064,
+          "vertexCount": 1849,
+          "indexStart": 148464,
+          "indexCount": 9816,
+          "positionSha256": "90ee100701544e9c7ad7986eac1c96d3fd04a3c900d09f0ab14692aa87df3dc2",
+          "indexSha256": "89ed342f91c9385db0d9faaa690addb1877f171a8136a88d649de442fbd113d6"
+        },
+        {
+          "id": "bone-fma13075",
+          "conceptId": "FMA13075",
+          "names": { "en": "Fourth lumbar vertebra", "ro": "Vertebra L4" },
+          "latinName": "Vertebra L4",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.04276610165834427, 0.9386640191078186, 0.026156200096011162
+            ],
+            "max": [
+              0.04141540080308914, 0.9834020137786865, 0.11040499806404114
+            ]
+          },
+          "vertexStart": 31913,
+          "vertexCount": 1968,
+          "indexStart": 158280,
+          "indexCount": 10536,
+          "positionSha256": "30dd5b0c6a6acbc33690cfaf6f307962fe04a1d32364735cb6b61dc756eec5d0",
+          "indexSha256": "1f85669d59224cb919e250124be184bc4526695717b509b68160b6f438146e67"
+        },
+        {
+          "id": "bone-fma13076",
+          "conceptId": "FMA13076",
+          "names": { "en": "Fifth lumbar vertebra", "ro": "Vertebra L5" },
+          "latinName": "Vertebra L5",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.051000699400901794, 0.9045950174331665, 0.018245000392198563
+            ],
+            "max": [
+              0.04957360029220581, 0.9548329710960388, 0.09907650202512741
+            ]
+          },
+          "vertexStart": 33881,
+          "vertexCount": 2115,
+          "indexStart": 168816,
+          "indexCount": 11676,
+          "positionSha256": "5f3a999b886320c715874c90f72215005e9221bdb5db515a5d721f8f9d210e70",
+          "indexSha256": "c8fcf0104fd31a54fb811edb037d362e096bceded20e1c5a5779d3047a9c0b2f"
+        }
+      ]
+    },
+    {
+      "id": "rib-cage",
+      "vertexCount": 91615,
+      "indexCount": 536628,
+      "normalSha256": "2d08349cea6069bda014e04b6f8d32f31df9e30558f10be7cbfa9ca29d75c1f1",
+      "parts": [
+        {
+          "id": "bone-fma7485",
+          "conceptId": "FMA7485",
+          "names": { "en": "Sternum", "ro": "Stern" },
+          "latinName": "Sternum",
+          "laterality": "midline",
+          "bounds": {
+            "min": [
+              -0.027449699118733406, 1.1640199422836304, 0.1308010071516037
+            ],
+            "max": [
+              0.027449699118733406, 1.3252500295639038, 0.21383200585842133
+            ]
+          },
+          "vertexStart": 0,
+          "vertexCount": 5632,
+          "indexStart": 0,
+          "indexCount": 24342,
+          "positionSha256": "9addebc1f9e0f844bd3c7669a460613333cc4df9896366017411c0e9708622ab",
+          "indexSha256": "cfb7815b7dcc9085e3adfd7ab8aafc232a9ccd5c65136d3756cd821d9fbb8212"
+        },
+        {
+          "id": "bone-fma7987",
+          "conceptId": "FMA7987",
+          "names": { "en": "Left first rib", "ro": "Coasta I — stânga" },
+          "latinName": "Costa I (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.01380040030926466, 1.3100700378417969, 0.06441699713468552
+            ],
+            "max": [0.06845460087060928, 1.370479941368103, 0.1304199993610382]
+          },
+          "vertexStart": 5632,
+          "vertexCount": 1641,
+          "indexStart": 24342,
+          "indexCount": 9828,
+          "positionSha256": "8f63f0929a2a0c1212f9fa08814afd183123c2609a2b8f7ce68fb38e5c94bb5a",
+          "indexSha256": "1f26f95d05efaed0a3b13ccc87abc7429cc003142ecc2aa172e537f8fb305504"
+        },
+        {
+          "id": "bone-fma8012",
+          "conceptId": "FMA8012",
+          "names": { "en": "Left second rib", "ro": "Coasta II — stânga" },
+          "latinName": "Costa II (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.014734899625182152, 1.2735099792480469, 0.05064680054783821
+            ],
+            "max": [0.09566099941730499, 1.35903000831604, 0.16712699830532074]
+          },
+          "vertexStart": 7273,
+          "vertexCount": 2862,
+          "indexStart": 34170,
+          "indexCount": 16782,
+          "positionSha256": "ee943a99d6c87b39194044efb713fa1bd2a46d27f412f65023b78ba73f1e2f95",
+          "indexSha256": "75a8412fc341c3c9424111f70aa3eec398253f5b84d66f4f854415dfcc6a7d3c"
+        },
+        {
+          "id": "bone-fma8039",
+          "conceptId": "FMA8039",
+          "names": { "en": "Left third rib", "ro": "Coasta III — stânga" },
+          "latinName": "Costa III (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.012724299915134907, 1.243839979171753, 0.03685789927840233
+            ],
+            "max": [
+              0.10763300210237503, 1.3359800577163696, 0.17925700545310974
+            ]
+          },
+          "vertexStart": 10135,
+          "vertexCount": 3637,
+          "indexStart": 50952,
+          "indexCount": 21762,
+          "positionSha256": "dbbf89c398ae3a63ecb8397333ec0d796b811d0c377c680bae93ff6513a8cb9f",
+          "indexSha256": "eee8a357862cca0c2abaea0b89bcc65a2263de722809dc758a4e4238ba1e5365"
+        },
+        {
+          "id": "bone-fma8148",
+          "conceptId": "FMA8148",
+          "names": { "en": "Left fourth rib", "ro": "Coasta IV — stânga" },
+          "latinName": "Costa IV (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.012905700132250786, 1.2110999822616577, 0.023191900923848152
+            ],
+            "max": [0.11628100275993347, 1.31535005569458, 0.19219499826431274]
+          },
+          "vertexStart": 13772,
+          "vertexCount": 4445,
+          "indexStart": 72714,
+          "indexCount": 26550,
+          "positionSha256": "9df0cd581255dac7762a41f093539422993f8aae8370edf231f9ae6f947709f7",
+          "indexSha256": "e15a0edfe385e7a89491f35daba70cda08c2f8699b0f95c3770663ba3de9406f"
+        },
+        {
+          "id": "bone-fma8093",
+          "conceptId": "FMA8093",
+          "names": { "en": "Left fifth rib", "ro": "Coasta V — stânga" },
+          "latinName": "Costa V (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.014004499651491642, 1.1721700429916382, 0.012722699902951717
+            ],
+            "max": [0.1257680058479309, 1.2913199663162231, 0.1976879984140396]
+          },
+          "vertexStart": 18217,
+          "vertexCount": 4912,
+          "indexStart": 99264,
+          "indexCount": 29130,
+          "positionSha256": "f74bea69e4da65f7fcae760bbd9fb6824aaec85da00a8948700f9e330ee70738",
+          "indexSha256": "5f4f7330f20e5f328440794643cc5dd4a346f327fe711f5b097378a8b6171431"
+        },
+        {
+          "id": "bone-fma8202",
+          "conceptId": "FMA8202",
+          "names": { "en": "Left sixth rib", "ro": "Coasta VI — stânga" },
+          "latinName": "Costa VI (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.012775399722158909, 1.1378999948501587, 0.003644400043413043
+            ],
+            "max": [0.1330540031194687, 1.2668299674987793, 0.1934950053691864]
+          },
+          "vertexStart": 23129,
+          "vertexCount": 5172,
+          "indexStart": 128394,
+          "indexCount": 30792,
+          "positionSha256": "03651d81f52e725bc47d117865f9ec731515810e5de8f1025cde538d90e294ca",
+          "indexSha256": "eb202634b46237ec23ab2ffbd88b9893cf81706c51ad446e9ffd5038ee3471da"
+        },
+        {
+          "id": "bone-fma8256",
+          "conceptId": "FMA8256",
+          "names": { "en": "Left seventh rib", "ro": "Coasta VII — stânga" },
+          "latinName": "Costa VII (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.012382499873638153, 1.1051900386810303, 0.004497949965298176
+            ],
+            "max": [0.13577799499034882, 1.2402499914169312, 0.1802079975605011]
+          },
+          "vertexStart": 28301,
+          "vertexCount": 5054,
+          "indexStart": 159186,
+          "indexCount": 30096,
+          "positionSha256": "5211d5882491135dec90c88672a20e5c9868f7cc17e4a0f98097a0371389c8d7",
+          "indexSha256": "b999e054fe4adf6a144c7504dcdd0c1bd949a56bf854a098cdce181fe80babec"
+        },
+        {
+          "id": "bone-fma8310",
+          "conceptId": "FMA8310",
+          "names": { "en": "Left eighth rib", "ro": "Coasta VIII — stânga" },
+          "latinName": "Costa VIII (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.012370400130748749, 1.0746500492095947, 0.004569570068269968
+            ],
+            "max": [
+              0.13163800537586212, 1.2113200426101685, 0.16267499327659607
+            ]
+          },
+          "vertexStart": 33355,
+          "vertexCount": 4211,
+          "indexStart": 189282,
+          "indexCount": 25008,
+          "positionSha256": "dfbab988125feb0457b09ac9c5c9ff1ab53a0080655ebdbe5fabbeb8946aba86",
+          "indexSha256": "5c59871e1e5fef748fc8b6ee54fa5c98bb35c90f8dff3cbde9f928697288065a"
+        },
+        {
+          "id": "bone-fma8391",
+          "conceptId": "FMA8391",
+          "names": { "en": "Left ninth rib", "ro": "Coasta IX — stânga" },
+          "latinName": "Costa IX (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.014558199793100357, 1.050089955329895, 0.007527660112828016
+            ],
+            "max": [
+              0.12778300046920776, 1.1853599548339844, 0.13560199737548828
+            ]
+          },
+          "vertexStart": 37566,
+          "vertexCount": 3805,
+          "indexStart": 214290,
+          "indexCount": 22728,
+          "positionSha256": "09ce7ec3743f934b611147cdae797fca31159ed5fb0b0b584269caa4a08589b9",
+          "indexSha256": "2bf3e2eb23ab1c6f06f0d36ed92fcacaf93289fb5851f47a9a0c698cf437b80c"
+        },
+        {
+          "id": "bone-fma8472",
+          "conceptId": "FMA8472",
+          "names": { "en": "Left tenth rib", "ro": "Coasta X — stânga" },
+          "latinName": "Costa X (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.015562299638986588, 1.0229599475860596, 0.01135450042784214
+            ],
+            "max": [
+              0.12234900146722794, 1.1589900255203247, 0.11771500110626221
+            ]
+          },
+          "vertexStart": 41371,
+          "vertexCount": 3419,
+          "indexStart": 237018,
+          "indexCount": 20478,
+          "positionSha256": "f98384ebbcd10f725239fe15a60f1ad36917dd18f9f872e41f64a64978ac7834",
+          "indexSha256": "ce6b8a5dec26ba042906b98aab4cfbbfa9fc1e36cab07865a74308514042e6eb"
+        },
+        {
+          "id": "bone-fma8532",
+          "conceptId": "FMA8532",
+          "names": { "en": "Left eleventh rib", "ro": "Coasta XI — stânga" },
+          "latinName": "Costa XI (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.016279000788927078, 1.0080599784851074, 0.017961399629712105
+            ],
+            "max": [0.11005400121212006, 1.1217399835586548, 0.0960116982460022]
+          },
+          "vertexStart": 44790,
+          "vertexCount": 2435,
+          "indexStart": 257496,
+          "indexCount": 14598,
+          "positionSha256": "7845ac4164043f6346c883b80051e0da53905c80a99ee5c8c6ec08b4a97b79e8",
+          "indexSha256": "9b0883894c533a1a98fcf8cdb8028f29052448cf8f0759636a5aea0facb8120f"
+        },
+        {
+          "id": "bone-fma8534",
+          "conceptId": "FMA8534",
+          "names": { "en": "Left twelfth rib", "ro": "Coasta XII — stânga" },
+          "latinName": "Costa XII (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.016890300437808037, 1.011330008506775, 0.028014900162816048
+            ],
+            "max": [
+              0.08522109687328339, 1.0891599655151367, 0.06606979668140411
+            ]
+          },
+          "vertexStart": 47225,
+          "vertexCount": 1411,
+          "indexStart": 272094,
+          "indexCount": 8454,
+          "positionSha256": "f2264ca2f32dd5dc14e82d870861a35b7d09e2922e03b9aab740033dd5b4a20c",
+          "indexSha256": "ab25c392a199739c04e371ced3d2ce2b33f41e1d6d4a2365c10a1c9376f9beb3"
+        },
+        {
+          "id": "bone-fma7857",
+          "conceptId": "FMA7857",
+          "names": { "en": "Right first rib", "ro": "Coasta I — dreapta" },
+          "latinName": "Costa I (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.06976410001516342, 1.3100700378417969, 0.0644145980477333
+            ],
+            "max": [
+              -0.015110899694263935, 1.370479941368103, 0.13042399287223816
+            ]
+          },
+          "vertexStart": 48636,
+          "vertexCount": 1642,
+          "indexStart": 280548,
+          "indexCount": 9828,
+          "positionSha256": "759d86b20435d7cfd7fca68ba4e9694501542b3e92421d1bec650234b88385a7",
+          "indexSha256": "c454c6650387ca363ff389d47c2ef3eda5345411322fd5c31bf7f28b63cc4ee6"
+        },
+        {
+          "id": "bone-fma7882",
+          "conceptId": "FMA7882",
+          "names": { "en": "Right second rib", "ro": "Coasta II — dreapta" },
+          "latinName": "Costa II (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.09697210043668747, 1.273550033569336, 0.05065289884805679
+            ],
+            "max": [
+              -0.016049500554800034, 1.35903000831604, 0.16715699434280396
+            ]
+          },
+          "vertexStart": 50278,
+          "vertexCount": 2861,
+          "indexStart": 290376,
+          "indexCount": 16782,
+          "positionSha256": "6f3211aa281553ce638101009aa6811de705e0f9669c7415b5325c61120d0ea7",
+          "indexSha256": "f9b461f2b527695a74f4a5233b2989809d205c6298d0398a8aa16b9e95369c6d"
+        },
+        {
+          "id": "bone-fma7909",
+          "conceptId": "FMA7909",
+          "names": { "en": "Right third rib", "ro": "Coasta III — dreapta" },
+          "latinName": "Costa III (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.10894700139760971, 1.2438199520111084, 0.03682899847626686
+            ],
+            "max": [
+              -0.014023999683558941, 1.3359700441360474, 0.1792680025100708
+            ]
+          },
+          "vertexStart": 53139,
+          "vertexCount": 3634,
+          "indexStart": 307158,
+          "indexCount": 21762,
+          "positionSha256": "4728917eaf05f8d934da23f34501060b50a672973c1857af3542d51a004d100a",
+          "indexSha256": "5db4d5b2f0a153fc23b740463f9294fa988ad8779856f0da1d54b7de0a2177f6"
+        },
+        {
+          "id": "bone-fma7957",
+          "conceptId": "FMA7957",
+          "names": { "en": "Right fourth rib", "ro": "Coasta IV — dreapta" },
+          "latinName": "Costa IV (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.11759299784898758, 1.2110999822616577, 0.02319449931383133
+            ],
+            "max": [-0.01501190010458231, 1.31535005569458, 0.19219200313091278]
+          },
+          "vertexStart": 56773,
+          "vertexCount": 4435,
+          "indexStart": 328920,
+          "indexCount": 26496,
+          "positionSha256": "1bd2bc8f55bad0c7963ca8b2d4baaa9331219fd43616cb9f249915e1dc8384ae",
+          "indexSha256": "6718335003c515b01a8902f6a5db716b5091398066900ab777f26e2d21665f17"
+        },
+        {
+          "id": "bone-fma8066",
+          "conceptId": "FMA8066",
+          "names": { "en": "Right fifth rib", "ro": "Coasta V — dreapta" },
+          "latinName": "Costa V (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.12707899510860443, 1.172160029411316, 0.01272759959101677
+            ],
+            "max": [
+              -0.015314199961721897, 1.2913199663162231, 0.1976509988307953
+            ]
+          },
+          "vertexStart": 61208,
+          "vertexCount": 4910,
+          "indexStart": 355416,
+          "indexCount": 29130,
+          "positionSha256": "a55951e33ab80c6285bf2815e75d6bfc78d63770cc81cdc965b4895fc17b2d79",
+          "indexSha256": "6af294110a506bccf35b8efc0380f062baaa6b4b59ea65dd2c85cc4b32668178"
+        },
+        {
+          "id": "bone-fma8175",
+          "conceptId": "FMA8175",
+          "names": { "en": "Right sixth rib", "ro": "Coasta VI — dreapta" },
+          "latinName": "Costa VI (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.1343490034341812, 1.137910008430481, 0.00364141003228724
+            ],
+            "max": [
+              -0.014837300404906273, 1.2656999826431274, 0.19350500404834747
+            ]
+          },
+          "vertexStart": 66118,
+          "vertexCount": 5168,
+          "indexStart": 384546,
+          "indexCount": 30738,
+          "positionSha256": "09487b0c982d5a6a16d0c6a371aec74d40a6695fa4778860ab5624b3de0992a0",
+          "indexSha256": "19a2fbb4c83f472c51dbaea9198891afeca3dac69ff816fa5a2dcf45ad85f291"
+        },
+        {
+          "id": "bone-fma8229",
+          "conceptId": "FMA8229",
+          "names": { "en": "Right seventh rib", "ro": "Coasta VII — dreapta" },
+          "latinName": "Costa VII (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.13708500564098358, 1.1051900386810303, 0.004486910067498684
+            ],
+            "max": [
+              -0.013689699582755566, 1.2402700185775757, 0.18020300567150116
+            ]
+          },
+          "vertexStart": 71286,
+          "vertexCount": 5058,
+          "indexStart": 415284,
+          "indexCount": 30096,
+          "positionSha256": "a8508f12025d0fe2badfdad4cd45e260fd991230a19518090cec8ae18500985e",
+          "indexSha256": "f6b28805043efd065dbe62b7cfdd996d88fcf07693132227f049061020acea6e"
+        },
+        {
+          "id": "bone-fma8283",
+          "conceptId": "FMA8283",
+          "names": { "en": "Right eighth rib", "ro": "Coasta VIII — dreapta" },
+          "latinName": "Costa VIII (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.1329679936170578, 1.0746599435806274, 0.004564490169286728
+            ],
+            "max": [
+              -0.01367649994790554, 1.2113300561904907, 0.16267800331115723
+            ]
+          },
+          "vertexStart": 76344,
+          "vertexCount": 4199,
+          "indexStart": 445380,
+          "indexCount": 25008,
+          "positionSha256": "8e81f7297984369bb266e5fccc1b43d6996b3d0e9050700f143295d67df0644c",
+          "indexSha256": "9bb3727a284fa5e85300deb7a454a78323c051d3c13be818770d921d2501f482"
+        },
+        {
+          "id": "bone-fma8364",
+          "conceptId": "FMA8364",
+          "names": { "en": "Right ninth rib", "ro": "Coasta IX — dreapta" },
+          "latinName": "Costa IX (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.12909799814224243, 1.050089955329895, 0.007529070135205984
+            ],
+            "max": [
+              -0.015864599496126175, 1.1853699684143066, 0.1356319934129715
+            ]
+          },
+          "vertexStart": 80543,
+          "vertexCount": 3808,
+          "indexStart": 470388,
+          "indexCount": 22728,
+          "positionSha256": "8043fc8fb9ab9f8ff6d35f7318b0182368d89992e7501a5337644e8337482239",
+          "indexSha256": "b4ceb1c04db8b720352fc52214ede1b3e3a1613804fe7e0a7ebdab0e19920f0a"
+        },
+        {
+          "id": "bone-fma8445",
+          "conceptId": "FMA8445",
+          "names": { "en": "Right tenth rib", "ro": "Coasta X — dreapta" },
+          "latinName": "Costa X (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.12364800274372101, 1.022979974746704, 0.011359300464391708
+            ],
+            "max": [
+              -0.01687289960682392, 1.1589800119400024, 0.11768700182437897
+            ]
+          },
+          "vertexStart": 84351,
+          "vertexCount": 3415,
+          "indexStart": 493116,
+          "indexCount": 20460,
+          "positionSha256": "e5e3bc1ec045564ae683dd58faf26d9a9acc92e4b00a52c079c6664fb3cac60d",
+          "indexSha256": "34098ef8bcb85e6969c5d9bc59a3cd9d25fe1712bb7537c489e72fcf294ce637"
+        },
+        {
+          "id": "bone-fma8531",
+          "conceptId": "FMA8531",
+          "names": { "en": "Right eleventh rib", "ro": "Coasta XI — dreapta" },
+          "latinName": "Costa XI (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.11135300248861313, 1.008080005645752, 0.017961999401450157
+            ],
+            "max": [
+              -0.017596300691366196, 1.1217299699783325, 0.09601829946041107
+            ]
+          },
+          "vertexStart": 87766,
+          "vertexCount": 2437,
+          "indexStart": 513576,
+          "indexCount": 14598,
+          "positionSha256": "5b86ac77c2f4aeac4e9da3a8ccb02755ca495df9eee2f6c6e71c0479d6cc1a93",
+          "indexSha256": "29f06575b9d5ec2d3c20ffc8fa66b0b0c6e914be3f3ff06a93ea8e6db5397565"
+        },
+        {
+          "id": "bone-fma8533",
+          "conceptId": "FMA8533",
+          "names": { "en": "Right twelfth rib", "ro": "Coasta XII — dreapta" },
+          "latinName": "Costa XII (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.08653320372104645, 1.0113400220870972, 0.02799220010638237
+            ],
+            "max": [
+              -0.01821249909698963, 1.089169979095459, 0.06609729677438736
+            ]
+          },
+          "vertexStart": 90203,
+          "vertexCount": 1412,
+          "indexStart": 528174,
+          "indexCount": 8454,
+          "positionSha256": "4f3585c5f5429952244adde594504f2e3481199ce9e68cf38a72fac41ba62137",
+          "indexSha256": "f3a37a90fc4889cf3d7523c11b0cd20ecba67437edb8a18e18b8831624961227"
+        }
+      ]
+    },
+    {
+      "id": "pelvic-girdle",
+      "vertexCount": 2539,
+      "indexCount": 14118,
+      "normalSha256": "4ef63861a772520c46559c5a1f57775ccace65938aac57bcef425f193da1d892",
+      "parts": [
+        {
+          "id": "bone-fma16587",
+          "conceptId": "FMA16587",
+          "names": { "en": "Left hip bone", "ro": "Os coxal — stânga" },
+          "latinName": "Os coxae (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.0027503101155161858, 0.7519509792327881, 0.0013149400474503636
+            ],
+            "max": [0.14475399255752563, 0.9580900073051453, 0.1390949934720993]
+          },
+          "vertexStart": 0,
+          "vertexCount": 1257,
+          "indexStart": 0,
+          "indexCount": 6996,
+          "positionSha256": "b75990b3949b7c82142a9457d49a625087f089da798a2cad7cabe568d21e7f73",
+          "indexSha256": "cac1c78dfb5682da9d51a78d750f7b321abd6c227d3f7609baa471485a068584"
+        },
+        {
+          "id": "bone-fma16586",
+          "conceptId": "FMA16586",
+          "names": { "en": "Right hip bone", "ro": "Os coxal — dreapta" },
+          "latinName": "Os coxae (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.14487199485301971, 0.7521529793739319, 0.0011187799973413348
+            ],
+            "max": [
+              -0.002790299942716956, 0.9578689932823181, 0.13901899755001068
+            ]
+          },
+          "vertexStart": 1257,
+          "vertexCount": 1282,
+          "indexStart": 6996,
+          "indexCount": 7122,
+          "positionSha256": "178068004abf70e1af5b4154b0ec00405c870a3a654a5a646f57ce536a419456",
+          "indexSha256": "b10aaab822fc987f2c20edad7e7a23053da062b13194038d7afb8665e60f4c3d"
+        }
+      ]
+    },
+    {
+      "id": "hand-bones-left",
+      "vertexCount": 6137,
+      "indexCount": 30678,
+      "normalSha256": "de7d8c5bc35f1fda7156ad86e81f9d1174301159bf54e1297f7566fde8e84f17",
+      "parts": [
+        {
+          "id": "bone-fma24436",
+          "conceptId": "FMA24436",
+          "names": { "en": "Left scaphoid", "ro": "Os scafoid — stânga" },
+          "latinName": "Os scaphoideum (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.24945199489593506, 0.7962200045585632, 0.11152700334787369
+            ],
+            "max": [0.27297699451446533, 0.8116819858551025, 0.1264439970254898]
+          },
+          "vertexStart": 0,
+          "vertexCount": 176,
+          "indexStart": 0,
+          "indexCount": 936,
+          "positionSha256": "18ca4459d58b030d7c998903dfcef54dda1337e98dd466e6b338fd6b744e8987",
+          "indexSha256": "25dfc62925f7d35cf83cb59fdc441a241cea34112cd8646168ec9fa4528d4622"
+        },
+        {
+          "id": "bone-fma24438",
+          "conceptId": "FMA24438",
+          "names": { "en": "Left lunate", "ro": "Os semilunar — stânga" },
+          "latinName": "Os lunatum (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.2363390028476715, 0.7972220182418823, 0.11062800139188766
+            ],
+            "max": [0.2528829872608185, 0.8098880052566528, 0.12713100016117096]
+          },
+          "vertexStart": 176,
+          "vertexCount": 187,
+          "indexStart": 936,
+          "indexCount": 942,
+          "positionSha256": "4deb960a627b66468549697072403758456c180f32cdb2785150a526a2a056be",
+          "indexSha256": "f32d7b283303c1e03442807e8dc04acc31ce2c92ae56ac743e9a3e6b81688929"
+        },
+        {
+          "id": "bone-fma24440",
+          "conceptId": "FMA24440",
+          "names": { "en": "Left triquetral", "ro": "Os piramidal — stânga" },
+          "latinName": "Os triquetrum (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.2318210005760193, 0.7889490127563477, 0.11442500352859497
+            ],
+            "max": [0.2427310049533844, 0.8025199770927429, 0.1298069953918457]
+          },
+          "vertexStart": 363,
+          "vertexCount": 180,
+          "indexStart": 1878,
+          "indexCount": 912,
+          "positionSha256": "d617c975ed9efaf65319c2276a078c2aff0f46e855a796e4f30899d2984d8b65",
+          "indexSha256": "e10686680b19059fdde5cec57f2c8decfc61b55897984452921b73883431d511"
+        },
+        {
+          "id": "bone-fma24442",
+          "conceptId": "FMA24442",
+          "names": { "en": "Left pisiform", "ro": "Os pisiform — stânga" },
+          "latinName": "Os pisiforme (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.23183800280094147, 0.7897250056266785, 0.12703099846839905
+            ],
+            "max": [0.24003000557422638, 0.8012769818305969, 0.1375889927148819]
+          },
+          "vertexStart": 543,
+          "vertexCount": 116,
+          "indexStart": 2790,
+          "indexCount": 630,
+          "positionSha256": "80841474311c5e16c863e31282ad84e32fb44c2c3a365d98c762c12debb61502",
+          "indexSha256": "ae61ffc7b11b5e666dd24ffc5282beb9e5fe338a3f3897a0eae889a2bb1723e3"
+        },
+        {
+          "id": "bone-fma24444",
+          "conceptId": "FMA24444",
+          "names": { "en": "Left trapezium", "ro": "Os trapez — stânga" },
+          "latinName": "Os trapezium (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.26478099822998047, 0.7857469916343689, 0.11771000176668167
+            ],
+            "max": [0.2817949950695038, 0.8057929873466492, 0.13455399870872498]
+          },
+          "vertexStart": 659,
+          "vertexCount": 226,
+          "indexStart": 3420,
+          "indexCount": 1068,
+          "positionSha256": "1b49ef2b6dd4d0a34ca27cdf2f3f6e217b5725717a4b89bee934b80107cd98c9",
+          "indexSha256": "29edb4539e26e95396bcb37a817aa91d600ce98d12e89deea37745748ed0ba79"
+        },
+        {
+          "id": "bone-fma24445",
+          "conceptId": "FMA24445",
+          "names": { "en": "Left trapezoid", "ro": "Os trapezoid — stânga" },
+          "latinName": "Os trapezoideum (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.2622529864311218, 0.782721996307373, 0.11364500224590302],
+            "max": [0.2732889950275421, 0.7952700257301331, 0.12845000624656677]
+          },
+          "vertexStart": 885,
+          "vertexCount": 279,
+          "indexStart": 4488,
+          "indexCount": 1194,
+          "positionSha256": "71427797b21fbebc2090271d33641802f60f38829b546d64a0956523af7405e5",
+          "indexSha256": "d717b5ad44a877ad801d9461f250a15983afd226eb45f08f06062ebfbca91ebd"
+        },
+        {
+          "id": "bone-fma24447",
+          "conceptId": "FMA24447",
+          "names": { "en": "Left capitate", "ro": "Os capitat — stânga" },
+          "latinName": "Os capitatum (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.2486100047826767, 0.7821639776229858, 0.11057300120592117
+            ],
+            "max": [0.2642880082130432, 0.8045880198478699, 0.12735100090503693]
+          },
+          "vertexStart": 1164,
+          "vertexCount": 237,
+          "indexStart": 5682,
+          "indexCount": 1206,
+          "positionSha256": "d188ef7fec16b6de067c3bfd2cd28907e8c01322b0a166859cb41c4f97a777a3",
+          "indexSha256": "ddfceb73bf4648b195f1486330e01fc4667a49deddeb772b6a981236b5310344"
+        },
+        {
+          "id": "bone-fma24449",
+          "conceptId": "FMA24449",
+          "names": { "en": "Left hamate", "ro": "Os cu cârlig — stânga" },
+          "latinName": "Os hamatum (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.2365970015525818, 0.7812560200691223, 0.11132200062274933
+            ],
+            "max": [0.2515699863433838, 0.8006309866905212, 0.13398200273513794]
+          },
+          "vertexStart": 1401,
+          "vertexCount": 280,
+          "indexStart": 6888,
+          "indexCount": 1356,
+          "positionSha256": "389e3b13e85cb4ef44b1ee69f5a59a00568c4ad9fa455bba2a81c79df6e82ea7",
+          "indexSha256": "c11deaaab28ba359354508c09849e7497192c9398e203338ee5ece9435d6f85f"
+        },
+        {
+          "id": "bone-fma24465",
+          "conceptId": "FMA24465",
+          "names": {
+            "en": "Left first metacarpal bone",
+            "ro": "Metacarpianul I — stânga"
+          },
+          "latinName": "Os metacarpale I (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.27235299348831177, 0.7602949738502502, 0.12340600043535233
+            ],
+            "max": [0.3096249997615814, 0.7974069714546204, 0.15378199517726898]
+          },
+          "vertexStart": 1681,
+          "vertexCount": 304,
+          "indexStart": 8244,
+          "indexCount": 1734,
+          "positionSha256": "122d54dffdd000e72228d2b282e76cc5053e0b1c472727ab3c74cfec2289fce4",
+          "indexSha256": "22a7ad0dd2d83d0d60248b5afba4cea0516dc0eae6cb50700e646dea8d62eabd"
+        },
+        {
+          "id": "bone-fma24467",
+          "conceptId": "FMA24467",
+          "names": {
+            "en": "Left second metacarpal bone",
+            "ro": "Metacarpianul II — stânga"
+          },
+          "latinName": "Os metacarpale II (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.2618409991264343, 0.7190420031547546, 0.1171170026063919],
+            "max": [0.2926129996776581, 0.7868689894676208, 0.14243300259113312]
+          },
+          "vertexStart": 1985,
+          "vertexCount": 420,
+          "indexStart": 9978,
+          "indexCount": 2322,
+          "positionSha256": "bc8d87c274947a00a05e4c4891b8ccfa9d76499faf58ed16f446ff14d8274d07",
+          "indexSha256": "d6fceb1d13c9f88abaa6bbc2d2e9f5df3c5dcbf96784a8282ac0de753eb8667a"
+        },
+        {
+          "id": "bone-fma24469",
+          "conceptId": "FMA24469",
+          "names": {
+            "en": "Left third metacarpal bone",
+            "ro": "Metacarpianul III — stânga"
+          },
+          "latinName": "Os metacarpale III (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.2523599863052368, 0.720649003982544, 0.11241000145673752],
+            "max": [
+              0.27225199341773987, 0.7850250005722046, 0.14281299710273743
+            ]
+          },
+          "vertexStart": 2405,
+          "vertexCount": 392,
+          "indexStart": 12300,
+          "indexCount": 2124,
+          "positionSha256": "3dd6f8e21b1c4235355bb1f09a07e0c290047a33e7e1927793ae0d53a5f060f4",
+          "indexSha256": "cf96e04982d6cfbe8e2c71d9dcd966bf1b3a7e17a0685ca79785bc3d4fe5e5f6"
+        },
+        {
+          "id": "bone-fma24471",
+          "conceptId": "FMA24471",
+          "names": {
+            "en": "Left fourth metacarpal bone",
+            "ro": "Metacarpianul IV — stânga"
+          },
+          "latinName": "Os metacarpale IV (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.2413560003042221, 0.7252529859542847, 0.115897998213768],
+            "max": [0.2537739872932434, 0.7852180004119873, 0.14191100001335144]
+          },
+          "vertexStart": 2797,
+          "vertexCount": 316,
+          "indexStart": 14424,
+          "indexCount": 1584,
+          "positionSha256": "a7f66bfb50e8d9b218097b641e84d34b543dc5caa059b0f3ab67e2d9ee289a1e",
+          "indexSha256": "55e6e54dc472633ff1c5ebcc39a1f817f30dc4b66082ff13bb9b32e1360300f4"
+        },
+        {
+          "id": "bone-fma24473",
+          "conceptId": "FMA24473",
+          "names": {
+            "en": "Left fifth metacarpal bone",
+            "ro": "Metacarpianul V — stânga"
+          },
+          "latinName": "Os metacarpale V (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.22527000308036804, 0.732030987739563, 0.1202239990234375],
+            "max": [0.2453940063714981, 0.7867590188980103, 0.14441999793052673]
+          },
+          "vertexStart": 3113,
+          "vertexCount": 282,
+          "indexStart": 16008,
+          "indexCount": 1500,
+          "positionSha256": "93a121cab2d03a84ab3af8b42b54a84412b66f201e9afbb0cf8b8fbdd2b31d1a",
+          "indexSha256": "83d53386b401b1e1008451c6e03511dbe5e620cfcae1d930da45cc056d693bfe"
+        },
+        {
+          "id": "bone-fma65470",
+          "conceptId": "FMA65470",
+          "names": {
+            "en": "Proximal phalanx of left thumb",
+            "ro": "Falanga proximală — degetul I al mâinii — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti I manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.29869401454925537, 0.7355290055274963, 0.1426289975643158
+            ],
+            "max": [0.3186190128326416, 0.7671679854393005, 0.1647530049085617]
+          },
+          "vertexStart": 3395,
+          "vertexCount": 202,
+          "indexStart": 17508,
+          "indexCount": 1038,
+          "positionSha256": "d03fa5d6b6faeb9cb8053f0bf44e81f5e74d935ff542e717c0a756bd263ca26f",
+          "indexSha256": "3ca02a775436b8d9a90bab133501a2d2173ccfe051c3a844df4cf823956d89f0"
+        },
+        {
+          "id": "bone-fma71915",
+          "conceptId": "FMA71915",
+          "names": {
+            "en": "Proximal phalanx of left index finger",
+            "ro": "Falanga proximală — degetul II al mâinii — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti II manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.280813992023468, 0.6857209801673889, 0.13408899307250977],
+            "max": [0.30281001329421997, 0.7233560085296631, 0.1570570021867752]
+          },
+          "vertexStart": 3597,
+          "vertexCount": 222,
+          "indexStart": 18546,
+          "indexCount": 1176,
+          "positionSha256": "1b41cc950e1f12c38cd3cca4997368f4d16dea2bc10994ba124d8578032f1124",
+          "indexSha256": "928c02de98f090d0f31fb31057821f42d531401db73e0c5a36eee447a89e0bc4"
+        },
+        {
+          "id": "bone-fma71908",
+          "conceptId": "FMA71908",
+          "names": {
+            "en": "Proximal phalanx of left middle finger",
+            "ro": "Falanga proximală — degetul III al mâinii — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti III manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.2592009902000427, 0.6842989921569824, 0.13519200682640076
+            ],
+            "max": [
+              0.27737998962402344, 0.7249659895896912, 0.16409599781036377
+            ]
+          },
+          "vertexStart": 3819,
+          "vertexCount": 264,
+          "indexStart": 19722,
+          "indexCount": 1380,
+          "positionSha256": "b7f6c0c6482ed877a7dc4294da0ff6bab2fa2fefd5e977cb30a7f13544f0f144",
+          "indexSha256": "63e311137827441d19d60ed31fb70fca7b915330b548b472cb31c982ab3162b8"
+        },
+        {
+          "id": "bone-fma71916",
+          "conceptId": "FMA71916",
+          "names": {
+            "en": "Proximal phalanx of left ring finger",
+            "ro": "Falanga proximală — degetul IV al mâinii — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti IV manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.24049200117588043, 0.6900519728660583, 0.1357090026140213
+            ],
+            "max": [0.25388601422309875, 0.728958010673523, 0.16192999482154846]
+          },
+          "vertexStart": 4083,
+          "vertexCount": 205,
+          "indexStart": 21102,
+          "indexCount": 1128,
+          "positionSha256": "0a42f2d6bfd9a0a2dd01869f2225bfdc88155f67b4c85cb49a5304195d0092c0",
+          "indexSha256": "c6b2fb360468055012d547fc43b0aaab6b67e108fc0225785446db52ec0010f1"
+        },
+        {
+          "id": "bone-fma66791",
+          "conceptId": "FMA66791",
+          "names": {
+            "en": "Proximal phalanx of left little finger",
+            "ro": "Falanga proximală — degetul V al mâinii — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti V manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.22222700715065002, 0.7033849954605103, 0.1386680006980896
+            ],
+            "max": [0.2362940013408661, 0.7357900142669678, 0.15946100652217865]
+          },
+          "vertexStart": 4288,
+          "vertexCount": 164,
+          "indexStart": 22230,
+          "indexCount": 822,
+          "positionSha256": "54052ceda4b1bd53e457544f93e280b37d70673ff528f2a148221ca65936646f",
+          "indexSha256": "c83b5ec1606483957ad4a614fe0b8c54523e347365ebe6dec7a75c75e0cdc28f"
+        },
+        {
+          "id": "bone-fma23938",
+          "conceptId": "FMA23938",
+          "names": {
+            "en": "Middle phalanx of left index finger",
+            "ro": "Falanga mijlocie — degetul II al mâinii — stânga"
+          },
+          "latinName": "Phalanx media digiti II manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.294389009475708, 0.6709750294685364, 0.1512559950351715],
+            "max": [
+              0.30900099873542786, 0.6914529800415039, 0.17205700278282166
+            ]
+          },
+          "vertexStart": 4452,
+          "vertexCount": 188,
+          "indexStart": 23052,
+          "indexCount": 918,
+          "positionSha256": "a0d51cc3dc7c0903f185a3cfded34ca94f2ba651d1ca094c6ef43925443fe89b",
+          "indexSha256": "f90c9206b6c3bd9a662ae82cf29f0cde5dbd998474d86f0aeaf5975e7da9eb3c"
+        },
+        {
+          "id": "bone-fma23940",
+          "conceptId": "FMA23940",
+          "names": {
+            "en": "Middle phalanx of left middle finger",
+            "ro": "Falanga mijlocie — degetul III al mâinii — stânga"
+          },
+          "latinName": "Phalanx media digiti III manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.2665170133113861, 0.6624090075492859, 0.1578579992055893],
+            "max": [0.28020501136779785, 0.6877670288085938, 0.1808760017156601]
+          },
+          "vertexStart": 4640,
+          "vertexCount": 229,
+          "indexStart": 23970,
+          "indexCount": 1152,
+          "positionSha256": "8ad4c15e7014d9da55a4c9c7694e4232183cbaee86e651daed1b8a76db96370f",
+          "indexSha256": "5db852d1a8f65c04c97653d4150884882ec8a01ad598c9303ba4f9858b8ae12e"
+        },
+        {
+          "id": "bone-fma23942",
+          "conceptId": "FMA23942",
+          "names": {
+            "en": "Middle phalanx of left ring finger",
+            "ro": "Falanga mijlocie — degetul IV al mâinii — stânga"
+          },
+          "latinName": "Phalanx media digiti IV manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.24278199672698975, 0.66982102394104, 0.1567939966917038],
+            "max": [
+              0.25453200936317444, 0.6936839818954468, 0.18054699897766113
+            ]
+          },
+          "vertexStart": 4869,
+          "vertexCount": 216,
+          "indexStart": 25122,
+          "indexCount": 1020,
+          "positionSha256": "2eca11def4df640dc645ed2bd56e8cfa225116396a9e68abf30e77e5fd1a7fe9",
+          "indexSha256": "48958c08c7979f1523dea57b2bda330a0170424c8809b4d2ef273636124366ea"
+        },
+        {
+          "id": "bone-fma23944",
+          "conceptId": "FMA23944",
+          "names": {
+            "en": "Middle phalanx of left little finger",
+            "ro": "Falanga mijlocie — degetul V al mâinii — stânga"
+          },
+          "latinName": "Phalanx media digiti V manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.2189210057258606, 0.687466025352478, 0.15491199493408203],
+            "max": [0.2302989959716797, 0.7070609927177429, 0.1714790016412735]
+          },
+          "vertexStart": 5085,
+          "vertexCount": 192,
+          "indexStart": 26142,
+          "indexCount": 762,
+          "positionSha256": "63151e61b297c6182df6ec7600e7c8efa08f80b996e7d5523405df4298f5f083",
+          "indexSha256": "e7501bb14def89d7d614b5a79955cd779190272909f1f530509622c2bae88a0c"
+        },
+        {
+          "id": "bone-fma23951",
+          "conceptId": "FMA23951",
+          "names": {
+            "en": "Distal phalanx of left thumb",
+            "ro": "Falanga distală — degetul I al mâinii — stânga"
+          },
+          "latinName": "Phalanx distalis digiti I manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.3108380138874054, 0.7192429900169373, 0.15724100172519684
+            ],
+            "max": [0.32393500208854675, 0.742231011390686, 0.1732729971408844]
+          },
+          "vertexStart": 5277,
+          "vertexCount": 189,
+          "indexStart": 26904,
+          "indexCount": 810,
+          "positionSha256": "58a3032f5659868b1ef0ac5e243e2d78ef52ec6db2f1ea731714da246fb9c009",
+          "indexSha256": "9b13862a819b7e3cd2a32dcd481643414ce0ce664549bff15c992746e99663fc"
+        },
+        {
+          "id": "bone-fma23953",
+          "conceptId": "FMA23953",
+          "names": {
+            "en": "Distal phalanx of left index finger",
+            "ro": "Falanga distală — degetul II al mâinii — stânga"
+          },
+          "latinName": "Phalanx distalis digiti II manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [0.3012610077857971, 0.6618509888648987, 0.1696140021085739],
+            "max": [
+              0.31125399470329285, 0.6755669713020325, 0.18671099841594696
+            ]
+          },
+          "vertexStart": 5466,
+          "vertexCount": 204,
+          "indexStart": 27714,
+          "indexCount": 984,
+          "positionSha256": "92159f611099f9120dfb334544f565c1d67d960a7c5d6c65e8d563c34c4bde67",
+          "indexSha256": "37a395b7b5db3f3bdedfd63a11a7556ca1f6b09d76975b8c52b6bb12e8f31104"
+        },
+        {
+          "id": "bone-fma23955",
+          "conceptId": "FMA23955",
+          "names": {
+            "en": "Distal phalanx of left middle finger",
+            "ro": "Falanga distală — degetul III al mâinii — stânga"
+          },
+          "latinName": "Phalanx distalis digiti III manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.27136099338531494, 0.6533669829368591, 0.17808400094509125
+            ],
+            "max": [0.2808539867401123, 0.6663709878921509, 0.19508899748325348]
+          },
+          "vertexStart": 5670,
+          "vertexCount": 173,
+          "indexStart": 28698,
+          "indexCount": 798,
+          "positionSha256": "bb2e466ce9c2118a6e2a2d1aea0a0672f1e7e53a1e2406b8e6ecbaadb11349d5",
+          "indexSha256": "184079ed0046f68d13d6a792b137f3260fe1dbde0b9c6a86c47868bbd6f9da9c"
+        },
+        {
+          "id": "bone-fma23957",
+          "conceptId": "FMA23957",
+          "names": {
+            "en": "Distal phalanx of left ring finger",
+            "ro": "Falanga distală — degetul IV al mâinii — stânga"
+          },
+          "latinName": "Phalanx distalis digiti IV manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.24529999494552612, 0.6648120284080505, 0.1787559986114502
+            ],
+            "max": [
+              0.25364598631858826, 0.6738989949226379, 0.19436000287532806
+            ]
+          },
+          "vertexStart": 5843,
+          "vertexCount": 140,
+          "indexStart": 29496,
+          "indexCount": 588,
+          "positionSha256": "fc1a8eee4b43368167939805ea77c74ce6116ff73343ee43ecf9c59975fb3c43",
+          "indexSha256": "e7a2cfd12908685bc1fffe69334f1967d79defb2f71fc32a412046b5316874df"
+        },
+        {
+          "id": "bone-fma23959",
+          "conceptId": "FMA23959",
+          "names": {
+            "en": "Distal phalanx of left little finger",
+            "ro": "Falanga distală — degetul V al mâinii — stânga"
+          },
+          "latinName": "Phalanx distalis digiti V manus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.21889400482177734, 0.6766279935836792, 0.1684200018644333
+            ],
+            "max": [
+              0.22715499997138977, 0.6893090009689331, 0.18228399753570557
+            ]
+          },
+          "vertexStart": 5983,
+          "vertexCount": 154,
+          "indexStart": 30084,
+          "indexCount": 594,
+          "positionSha256": "fb01ba26af2b95979f528045770eee1e6a9dac13ee1c18e296a709a8b988db23",
+          "indexSha256": "e2df5aea516ab49735db4266bc0e841d30443211fc727c3a3cb1846d6991cd56"
+        }
+      ]
+    },
+    {
+      "id": "foot-bones-left",
+      "vertexCount": 9066,
+      "indexCount": 46218,
+      "normalSha256": "a1b2aec4dcde61e033251a14f9899f4acc59ce1327defdb16599109eda6865dc",
+      "parts": [
+        {
+          "id": "bone-fma24483",
+          "conceptId": "FMA24483",
+          "names": { "en": "Left talus", "ro": "Talus — stânga" },
+          "latinName": "Talus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.049635399132966995, -0.031305599957704544, 0.04881399869918823
+            ],
+            "max": [
+              0.09017840027809143, 0.003098109969869256, 0.10567700117826462
+            ]
+          },
+          "vertexStart": 0,
+          "vertexCount": 776,
+          "indexStart": 0,
+          "indexCount": 4068,
+          "positionSha256": "8afbad0f01e5bf67e32255919932f55b5d68ca94ceea5ce493b4ea203cf6afef",
+          "indexSha256": "80550dee525d6187731114e98b2c0ed2ba29442f5df000de9be6361375993c02"
+        },
+        {
+          "id": "bone-fma24498",
+          "conceptId": "FMA24498",
+          "names": { "en": "Left calcaneus", "ro": "Calcaneu — stânga" },
+          "latinName": "Calcaneus (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.045010000467300415, -0.06841719895601273, 0.024206800386309624
+            ],
+            "max": [
+              0.10076799988746643, -0.019071200862526894, 0.09414180368185043
+            ]
+          },
+          "vertexStart": 776,
+          "vertexCount": 719,
+          "indexStart": 4068,
+          "indexCount": 3864,
+          "positionSha256": "6e7d8a135d7086999cd62648531ccc04c172f679c7ea34b13a8dafe8d2ebea79",
+          "indexSha256": "649d2db1fc5fc575bb5260036e443c35d709485566bc50cca4239ecc4d44ba2d"
+        },
+        {
+          "id": "bone-fma24522",
+          "conceptId": "FMA24522",
+          "names": {
+            "en": "Left medial cuneiform bone",
+            "ro": "Os cuneiform medial — stânga"
+          },
+          "latinName": "Os cuneiforme mediale (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.06604260206222534, -0.045144401490688324, 0.11206100136041641
+            ],
+            "max": [
+              0.09410940110683441, -0.014192099682986736, 0.14051899313926697
+            ]
+          },
+          "vertexStart": 1495,
+          "vertexCount": 582,
+          "indexStart": 7932,
+          "indexCount": 2988,
+          "positionSha256": "17d7d3774f0273e3219a49e8b760e90f32bff03a7690d2c16ea06c3b14be6670",
+          "indexSha256": "c0e00a592208ec69594ea5b3c5a0d79f658d129642888fd774e15a9104518707"
+        },
+        {
+          "id": "bone-fma24524",
+          "conceptId": "FMA24524",
+          "names": {
+            "en": "Left intermediate cuneiform bone",
+            "ro": "Os cuneiform intermediar — stânga"
+          },
+          "latinName": "Os cuneiforme intermedium (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.08201359957456589, -0.03442880138754845, 0.10963200032711029
+            ],
+            "max": [
+              0.10195499658584595, -0.011310400441288948, 0.13032999634742737
+            ]
+          },
+          "vertexStart": 2077,
+          "vertexCount": 305,
+          "indexStart": 10920,
+          "indexCount": 1398,
+          "positionSha256": "e72a0f63cad51d59f18024724546fd3f37541fca5864765805b09c86352100aa",
+          "indexSha256": "85c4804af6b3a667d467537417694f38a5dad442640e6f2f81897612cb75cc8c"
+        },
+        {
+          "id": "bone-fma24526",
+          "conceptId": "FMA24526",
+          "names": {
+            "en": "Left lateral cuneiform bone",
+            "ro": "Os cuneiform lateral — stânga"
+          },
+          "latinName": "Os cuneiforme laterale (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.087226003408432, -0.04062709957361221, 0.10089799761772156
+            ],
+            "max": [
+              0.1128849983215332, -0.01481540035456419, 0.12514600157737732
+            ]
+          },
+          "vertexStart": 2382,
+          "vertexCount": 405,
+          "indexStart": 12318,
+          "indexCount": 2040,
+          "positionSha256": "7137c9613384a35441f1b267557cf89a280acdaa3e1e303ebe1dc3c4e98e61ae",
+          "indexSha256": "05b40b4027413a8235ed01b7ecb789a44423ab872afb7c4e4e95679f51e2d910"
+        },
+        {
+          "id": "bone-fma24529",
+          "conceptId": "FMA24529",
+          "names": { "en": "Left cuboid bone", "ro": "Os cuboid — stânga" },
+          "latinName": "Os cuboideum (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.08196499943733215, -0.05152229964733124, 0.08316300064325333
+            ],
+            "max": [
+              0.11513400077819824, -0.021852999925613403, 0.11668500304222107
+            ]
+          },
+          "vertexStart": 2787,
+          "vertexCount": 494,
+          "indexStart": 14358,
+          "indexCount": 2658,
+          "positionSha256": "b355d37190301d876d96d9cfe38c8d93043a52d13427c3d4e927fcc5bc04f46b",
+          "indexSha256": "8dea87bb99aa26036c714a9f4345725bd800e3a8eb2bbb912d1e964abd0ffb6e"
+        },
+        {
+          "id": "bone-fma24501",
+          "conceptId": "FMA24501",
+          "names": {
+            "en": "Navicular bone of left foot",
+            "ro": "Os navicular al piciorului — stânga"
+          },
+          "latinName": "Os naviculare (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.05792960152029991, -0.03097419999539852, 0.09427600353956223
+            ],
+            "max": [
+              0.09664379805326462, -0.006297110114246607, 0.12109699845314026
+            ]
+          },
+          "vertexStart": 3281,
+          "vertexCount": 459,
+          "indexStart": 17016,
+          "indexCount": 2232,
+          "positionSha256": "c9e86df814cdd03a1f40368d9d6f3fc1b4abec679277edafeb2bc6a4fdb73d2e",
+          "indexSha256": "52d85e0306c48b236272c8dccff21e9033e96881a4ebccf8cb14aa89e0e7b931"
+        },
+        {
+          "id": "bone-fma24508",
+          "conceptId": "FMA24508",
+          "names": {
+            "en": "Left first metatarsal bone",
+            "ro": "Metatarsianul I — stânga"
+          },
+          "latinName": "Os metatarsale I (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.07483699917793274, -0.06537570059299469, 0.1299709975719452
+            ],
+            "max": [
+              0.10437799990177155, -0.02214059978723526, 0.19224099814891815
+            ]
+          },
+          "vertexStart": 3740,
+          "vertexCount": 614,
+          "indexStart": 19248,
+          "indexCount": 3516,
+          "positionSha256": "2ea2434daa0e572e0b41db65a6c76f2b16a1de86c92d1378a67f6f4115d13658",
+          "indexSha256": "abc44f4479df8ddd5c1a0d614f2b749fc19c0a62de41639565af105da2ab2a07"
+        },
+        {
+          "id": "bone-fma24510",
+          "conceptId": "FMA24510",
+          "names": {
+            "en": "Left second metatarsal bone",
+            "ro": "Metatarsianul II — stânga"
+          },
+          "latinName": "Os metatarsale II (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.09058939665555954, -0.06616369634866714, 0.12248899787664413
+            ],
+            "max": [
+              0.12134800106287003, -0.018306899815797806, 0.18737100064754486
+            ]
+          },
+          "vertexStart": 4354,
+          "vertexCount": 487,
+          "indexStart": 22764,
+          "indexCount": 2322,
+          "positionSha256": "647ad8ac61d0683ae254e9f7f24cce6944a42f217054be01c32627907be34497",
+          "indexSha256": "d979bef31688d95bb1ccdbab16b056adf1863f2535bf8074b7e3a8198b65db4a"
+        },
+        {
+          "id": "bone-fma24512",
+          "conceptId": "FMA24512",
+          "names": {
+            "en": "Left third metatarsal bone",
+            "ro": "Metatarsianul III — stânga"
+          },
+          "latinName": "Os metatarsale III (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.0983199030160904, -0.06650479882955551, 0.11814100295305252
+            ],
+            "max": [
+              0.13360999524593353, -0.02366809919476509, 0.18079499900341034
+            ]
+          },
+          "vertexStart": 4841,
+          "vertexCount": 429,
+          "indexStart": 25086,
+          "indexCount": 2226,
+          "positionSha256": "59bc8faa9c47a1a7abb81b3899bc49d49609fef9d8cb06219f36a56a88272a94",
+          "indexSha256": "dcd4af2323d0ce545c9c57be379fabbbef3fcacadb55030d39e193dd3d405ec8"
+        },
+        {
+          "id": "bone-fma24514",
+          "conceptId": "FMA24514",
+          "names": {
+            "en": "Left fourth metatarsal bone",
+            "ro": "Metatarsianul IV — stânga"
+          },
+          "latinName": "Os metatarsale IV (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.10177300125360489, -0.06739050149917603, 0.10696599632501602
+            ],
+            "max": [
+              0.14263799786567688, -0.03202110156416893, 0.16942499577999115
+            ]
+          },
+          "vertexStart": 5270,
+          "vertexCount": 437,
+          "indexStart": 27312,
+          "indexCount": 2316,
+          "positionSha256": "ddbe2f546b8782d56c73b1a671e4e6e6b4d8479ac5da9a706dd477a74712c423",
+          "indexSha256": "37e65c4c24a7815856085c273493d044d8f2ded86728769687b017feea0a91d7"
+        },
+        {
+          "id": "bone-fma24516",
+          "conceptId": "FMA24516",
+          "names": {
+            "en": "Left fifth metatarsal bone",
+            "ro": "Metatarsianul V — stânga"
+          },
+          "latinName": "Os metatarsale V (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.10643699765205383, -0.06981399655342102, 0.08929239958524704
+            ],
+            "max": [
+              0.1523749977350235, -0.039772700518369675, 0.1550859957933426
+            ]
+          },
+          "vertexStart": 5707,
+          "vertexCount": 447,
+          "indexStart": 29628,
+          "indexCount": 2592,
+          "positionSha256": "3de7d5389f1873170f835ca45295a72c0e354c9db96ba8e29a90af3e868dc526",
+          "indexSha256": "defea15a8cd36e659c4365dfa6404677bf7f3a57d6b84dd89b463c8599fa9f71"
+        },
+        {
+          "id": "bone-fma43254",
+          "conceptId": "FMA43254",
+          "names": {
+            "en": "Proximal phalanx of left big toe",
+            "ro": "Falanga proximală — degetul I al piciorului — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti I pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.08670330047607422, -0.06841520220041275, 0.18603600561618805
+            ],
+            "max": [
+              0.11708199977874756, -0.05155219882726669, 0.2192710041999817
+            ]
+          },
+          "vertexStart": 6154,
+          "vertexCount": 318,
+          "indexStart": 32220,
+          "indexCount": 1548,
+          "positionSha256": "de568620247ae39ae3af8269351fdb2d2a95dc3b22f9c28f1a549ce3766bec04",
+          "indexSha256": "144ba13c0615b2348141e9d1f51a44aedcd2d57536bd4ad9a0c538ac7c347bc8"
+        },
+        {
+          "id": "bone-fma32635",
+          "conceptId": "FMA32635",
+          "names": {
+            "en": "Proximal phalanx of left second toe",
+            "ro": "Falanga proximală — degetul II al piciorului — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti II pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.11144900321960449, -0.06684009730815887, 0.1834850013256073
+            ],
+            "max": [
+              0.13349300622940063, -0.05447009950876236, 0.21162399649620056
+            ]
+          },
+          "vertexStart": 6472,
+          "vertexCount": 233,
+          "indexStart": 33768,
+          "indexCount": 1140,
+          "positionSha256": "2031f0222d15b91282579d4fc193b8157408265721b07f1a779febcd24eeb41f",
+          "indexSha256": "b0d314bf7934ceb1abc2ef4136693d648f48ce65b15948d858f1242890e90488"
+        },
+        {
+          "id": "bone-fma32637",
+          "conceptId": "FMA32637",
+          "names": {
+            "en": "Proximal phalanx of left third toe",
+            "ro": "Falanga proximală — degetul III al piciorului — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti III pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.1251319944858551, -0.06769829988479614, 0.1746170073747635
+            ],
+            "max": [
+              0.14580799639225006, -0.055913399904966354, 0.20283399522304535
+            ]
+          },
+          "vertexStart": 6705,
+          "vertexCount": 248,
+          "indexStart": 34908,
+          "indexCount": 1224,
+          "positionSha256": "1f1db76a9ecdc0cae2f68b2c6ef05929b4385e963465c522038d55e73cf38137",
+          "indexSha256": "3103dac183612e97a28ace8f396ad94b33a1671d32329bc0858b20de307e2d9d"
+        },
+        {
+          "id": "bone-fma32639",
+          "conceptId": "FMA32639",
+          "names": {
+            "en": "Proximal phalanx of left fourth toe",
+            "ro": "Falanga proximală — degetul IV al piciorului — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti IV pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.13430899381637573, -0.0697053000330925, 0.1644279956817627
+            ],
+            "max": [0.1559000015258789, -0.0565251000225544, 0.1884250044822693]
+          },
+          "vertexStart": 6953,
+          "vertexCount": 255,
+          "indexStart": 36132,
+          "indexCount": 1314,
+          "positionSha256": "7fd57e9a8b6a0184bd13a8664332fa9dcd1b44f1e5a5f17195b6f23025728d54",
+          "indexSha256": "ef080bf12c1e62156288ef0b4de62161e0e807786bad5b1ced1840fb6ba91e8a"
+        },
+        {
+          "id": "bone-fma32641",
+          "conceptId": "FMA32641",
+          "names": {
+            "en": "Proximal phalanx of left little toe",
+            "ro": "Falanga proximală — degetul V al piciorului — stânga"
+          },
+          "latinName": "Phalanx proximalis digiti V pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.14293800294399261, -0.0698091983795166, 0.14877499639987946
+            ],
+            "max": [
+              0.16479000449180603, -0.05998710170388222, 0.174018993973732
+            ]
+          },
+          "vertexStart": 7208,
+          "vertexCount": 231,
+          "indexStart": 37446,
+          "indexCount": 1188,
+          "positionSha256": "ca7690adeeea46664414345c664584ef72e05a3ffdc439a927fb57d697210cbe",
+          "indexSha256": "335ab910570a398cc32dab05f03924d8fc52efd7d6d82fa44828985786d633a3"
+        },
+        {
+          "id": "bone-fma32643",
+          "conceptId": "FMA32643",
+          "names": {
+            "en": "Middle phalanx of left second toe",
+            "ro": "Falanga mijlocie — degetul II al piciorului — stânga"
+          },
+          "latinName": "Phalanx media digiti II pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.12512700259685516, -0.06795360147953033, 0.2075289934873581
+            ],
+            "max": [
+              0.1392119973897934, -0.059341300278902054, 0.2246289998292923
+            ]
+          },
+          "vertexStart": 7439,
+          "vertexCount": 197,
+          "indexStart": 38634,
+          "indexCount": 972,
+          "positionSha256": "8efb8e5df5dfdb4a9aed1228a717eb7636e028b27f646de8b0f7a7bbc75407d2",
+          "indexSha256": "82b9760a24753c8c30cc35b29b81eac6af2728f259966c01a21b0f8a5ee917f0"
+        },
+        {
+          "id": "bone-fma32645",
+          "conceptId": "FMA32645",
+          "names": {
+            "en": "Middle phalanx of left third toe",
+            "ro": "Falanga mijlocie — degetul III al piciorului — stânga"
+          },
+          "latinName": "Phalanx media digiti III pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.13891500234603882, -0.06898359954357147, 0.19891099631786346
+            ],
+            "max": [
+              0.15181100368499756, -0.061108898371458054, 0.21585200726985931
+            ]
+          },
+          "vertexStart": 7636,
+          "vertexCount": 185,
+          "indexStart": 39606,
+          "indexCount": 882,
+          "positionSha256": "72dfdd938a4a36f225fbacd89c7ce36f3e7f07c81da0c7ad2a5438a230076f5a",
+          "indexSha256": "467dc6e4394317804c3a4605496fa1c94002a3da52ddc20f1bde1e1a8e21531a"
+        },
+        {
+          "id": "bone-fma32647",
+          "conceptId": "FMA32647",
+          "names": {
+            "en": "Middle phalanx of left fourth toe",
+            "ro": "Falanga mijlocie — degetul IV al piciorului — stânga"
+          },
+          "latinName": "Phalanx media digiti IV pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.149044007062912, -0.06979189813137054, 0.18543300032615662
+            ],
+            "max": [
+              0.1613900065422058, -0.06196950003504753, 0.19877900183200836
+            ]
+          },
+          "vertexStart": 7821,
+          "vertexCount": 183,
+          "indexStart": 40488,
+          "indexCount": 852,
+          "positionSha256": "a1921986651cf5ba4116f6ff54cd5217136195ba018f8eea8fe7b32885fc8f3a",
+          "indexSha256": "4fe7e308458a42d79a1376f3cefe38b2e810877e9a7e0ac0c023684c73c79ec4"
+        },
+        {
+          "id": "bone-fma230988",
+          "conceptId": "FMA230988",
+          "names": {
+            "en": "Middle phalanx of left little toe",
+            "ro": "Falanga mijlocie — degetul V al piciorului — stânga"
+          },
+          "latinName": "Phalanx media digiti V pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.15809999406337738, -0.0700543001294136, 0.17155200242996216
+            ],
+            "max": [
+              0.16667400300502777, -0.06377959996461868, 0.17895400524139404
+            ]
+          },
+          "vertexStart": 8004,
+          "vertexCount": 143,
+          "indexStart": 41340,
+          "indexCount": 678,
+          "positionSha256": "8d6e5afed3f85d63f011a97a64e41e9aa2c9540ff93c818752132f4d3a3ff4b9",
+          "indexSha256": "f4474e7b9d26b693560543cc465fb98c996d1bc223e31ccb7669cbb83486faca"
+        },
+        {
+          "id": "bone-fma32651",
+          "conceptId": "FMA32651",
+          "names": {
+            "en": "Distal phalanx of left big toe",
+            "ro": "Falanga distală — degetul I al piciorului — stânga"
+          },
+          "latinName": "Phalanx distalis digiti I pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.10250400006771088, -0.07000649720430374, 0.21072499454021454
+            ],
+            "max": [
+              0.12505599856376648, -0.0590411014854908, 0.23591899871826172
+            ]
+          },
+          "vertexStart": 8147,
+          "vertexCount": 256,
+          "indexStart": 42018,
+          "indexCount": 1134,
+          "positionSha256": "c7204d526877da48f3db17c6fd61f85c9698244a894afde000af025fb610f25f",
+          "indexSha256": "96b5d6c15a7651266f6a3d4e88f14d365959d26292e722830d8af2dd770e8926"
+        },
+        {
+          "id": "bone-fma32653",
+          "conceptId": "FMA32653",
+          "names": {
+            "en": "Distal phalanx of left second toe",
+            "ro": "Falanga distală — degetul II al piciorului — stânga"
+          },
+          "latinName": "Phalanx distalis digiti II pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.1321530044078827, -0.07022680342197418, 0.22086399793624878
+            ],
+            "max": [
+              0.1433970034122467, -0.06302259862422943, 0.2340169996023178
+            ]
+          },
+          "vertexStart": 8403,
+          "vertexCount": 169,
+          "indexStart": 43152,
+          "indexCount": 720,
+          "positionSha256": "aca01eb0dd28044b9d5c7fcc6d5e5e0f243ac7e64b1047a3c32d9fa726a735cd",
+          "indexSha256": "19a326c88b4a74661bbcda1e640838b2ac4b2f1380a279dfbdc6f2545883e399"
+        },
+        {
+          "id": "bone-fma32655",
+          "conceptId": "FMA32655",
+          "names": {
+            "en": "Distal phalanx of left third toe",
+            "ro": "Falanga distală — degetul III al piciorului — stânga"
+          },
+          "latinName": "Phalanx distalis digiti III pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.14584200084209442, -0.07026129961013794, 0.21231399476528168
+            ],
+            "max": [
+              0.15484100580215454, -0.0643680989742279, 0.2236510068178177
+            ]
+          },
+          "vertexStart": 8572,
+          "vertexCount": 188,
+          "indexStart": 43872,
+          "indexCount": 1008,
+          "positionSha256": "ce9200d556f1150e87fc0a334fdf2e00ae4ca9c7708b77cbdb22355f6d2940d1",
+          "indexSha256": "22c73745839cf1a869edb73eea7977f0a75832a8c2988caead9ecec57c20047e"
+        },
+        {
+          "id": "bone-fma32657",
+          "conceptId": "FMA32657",
+          "names": {
+            "en": "Distal phalanx of left fourth toe",
+            "ro": "Falanga distală — degetul IV al piciorului — stânga"
+          },
+          "latinName": "Phalanx distalis digiti IV pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.15521200001239777, -0.07030930370092392, 0.19543099403381348
+            ],
+            "max": [
+              0.16407500207424164, -0.06345459818840027, 0.20655299723148346
+            ]
+          },
+          "vertexStart": 8760,
+          "vertexCount": 146,
+          "indexStart": 44880,
+          "indexCount": 678,
+          "positionSha256": "2fb6953b65c55ac6d0abc627e424790cfe67f0f76321cebdf8ed3375a62e592b",
+          "indexSha256": "1b7089f63067d12eb5e50c3ba7f100e1239c8963d1fd99a40c0f4d3a62b7a17f"
+        },
+        {
+          "id": "bone-fma32659",
+          "conceptId": "FMA32659",
+          "names": {
+            "en": "Distal phalanx of left little toe",
+            "ro": "Falanga distală — degetul V al piciorului — stânga"
+          },
+          "latinName": "Phalanx distalis digiti V pedis (sinister)",
+          "laterality": "left",
+          "bounds": {
+            "min": [
+              0.16126100718975067, -0.07047989964485168, 0.17615999281406403
+            ],
+            "max": [
+              0.1693580001592636, -0.06512899696826935, 0.1865449994802475
+            ]
+          },
+          "vertexStart": 8906,
+          "vertexCount": 160,
+          "indexStart": 45558,
+          "indexCount": 660,
+          "positionSha256": "33bcc916d7b3f994933ed24d182debc584f3133fb576b967a9e744633e910d47",
+          "indexSha256": "2c9d9a09d59766656430aacd9ccb857b6fdd3ccc2c2e27c1eb81a2f70ef3cff3"
+        }
+      ]
+    },
+    {
+      "id": "hand-bones-right",
+      "vertexCount": 6194,
+      "indexCount": 29166,
+      "normalSha256": "9f67c9e786a5abaf8e5c9bfdbdbf432f15a7f0b7702dd485b9cb4252fd2d9a6c",
+      "parts": [
+        {
+          "id": "bone-fma24435",
+          "conceptId": "FMA24435",
+          "names": { "en": "Right scaphoid", "ro": "Os scafoid — dreapta" },
+          "latinName": "Os scaphoideum (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.27305999398231506, 0.7963539958000183, 0.11157400161027908
+            ],
+            "max": [-0.249331995844841, 0.8117899894714355, 0.1266629993915558]
+          },
+          "vertexStart": 0,
+          "vertexCount": 195,
+          "indexStart": 0,
+          "indexCount": 966,
+          "positionSha256": "b0575a551ab2430b04f3baa5c95616113e76f01f53a3d1820d703e814d73d5dc",
+          "indexSha256": "59afd2391325137a4bcfdedf106b67a52f44e504525412a2bb32fcb9e495e1cb"
+        },
+        {
+          "id": "bone-fma24437",
+          "conceptId": "FMA24437",
+          "names": { "en": "Right lunate", "ro": "Os semilunar — dreapta" },
+          "latinName": "Os lunatum (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.2527239918708801, 0.7974609732627869, 0.11063499748706818
+            ],
+            "max": [
+              -0.23620200157165527, 0.8098199963569641, 0.12692399322986603
+            ]
+          },
+          "vertexStart": 195,
+          "vertexCount": 196,
+          "indexStart": 966,
+          "indexCount": 996,
+          "positionSha256": "66b2936f70c93a6c00abf8b63bb73372d1a811594ee8dc810db5fe0d50a2bb56",
+          "indexSha256": "a257881d1f5fc651bf8d4a57f97df7c00e695aea9c9b2deed5935534f408b022"
+        },
+        {
+          "id": "bone-fma24439",
+          "conceptId": "FMA24439",
+          "names": { "en": "Right triquetral", "ro": "Os piramidal — dreapta" },
+          "latinName": "Os triquetrum (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.24276599287986755, 0.788769006729126, 0.11463099718093872
+            ],
+            "max": [-0.23215700685977936, 0.802590012550354, 0.1297360062599182]
+          },
+          "vertexStart": 391,
+          "vertexCount": 139,
+          "indexStart": 1962,
+          "indexCount": 510,
+          "positionSha256": "9ead12eb500bcbabb520826adb0ce39819d3350b7dcc3bd946d5dd63e0aa5f20",
+          "indexSha256": "1a4457fdf2964de307e780547c4b3fb9fcc4685ab109fdebf29ad6bb732e2532"
+        },
+        {
+          "id": "bone-fma24441",
+          "conceptId": "FMA24441",
+          "names": { "en": "Right pisiform", "ro": "Os pisiform — dreapta" },
+          "latinName": "Os pisiforme (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.24021999537944794, 0.7896749973297119, 0.12724900245666504
+            ],
+            "max": [
+              -0.23195600509643555, 0.8013250231742859, 0.1376579999923706
+            ]
+          },
+          "vertexStart": 530,
+          "vertexCount": 110,
+          "indexStart": 2472,
+          "indexCount": 570,
+          "positionSha256": "9bd9d5ee6378077365c423b56bedbd49dc3cace88145a51f4af1daaad62afa1a",
+          "indexSha256": "dce400707a9c1f604339f8c45258d636360db88b58714759e4a9f08aab4656eb"
+        },
+        {
+          "id": "bone-fma24443",
+          "conceptId": "FMA24443",
+          "names": { "en": "Right trapezium", "ro": "Os trapez — dreapta" },
+          "latinName": "Os trapezium (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.2817220091819763, 0.7858049869537354, 0.11772999912500381
+            ],
+            "max": [
+              -0.26493799686431885, 0.8057330250740051, 0.1345759928226471
+            ]
+          },
+          "vertexStart": 640,
+          "vertexCount": 277,
+          "indexStart": 3042,
+          "indexCount": 1302,
+          "positionSha256": "5151379796cfbc809550e45c349cef96513a5a512bdaf8e63dc19f3dca68f995",
+          "indexSha256": "24693981f2e38d547c275f01f0fc8bde4c41a0fa3d93a892d35e55f0a50ff049"
+        },
+        {
+          "id": "bone-fma23725",
+          "conceptId": "FMA23725",
+          "names": { "en": "Right trapezoid", "ro": "Os trapezoid — dreapta" },
+          "latinName": "Os trapezoideum (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.27326101064682007, 0.7828649878501892, 0.11352699995040894
+            ],
+            "max": [
+              -0.2621400058269501, 0.7953109741210938, 0.12838800251483917
+            ]
+          },
+          "vertexStart": 917,
+          "vertexCount": 271,
+          "indexStart": 4344,
+          "indexCount": 1080,
+          "positionSha256": "c0814633f8871c225e3fec1e06f0ca01c8228259d177209f00d4822974b9a5c0",
+          "indexSha256": "1b921900ca888ba7fe0480a7011c6ab1f5ab6c065da902c39c9b3eb57aaf9df3"
+        },
+        {
+          "id": "bone-fma24446",
+          "conceptId": "FMA24446",
+          "names": { "en": "Right capitate", "ro": "Os capitat — dreapta" },
+          "latinName": "Os capitatum (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.2644819915294647, 0.7821909785270691, 0.11053399741649628
+            ],
+            "max": [-0.2484010010957718, 0.804597020149231, 0.1274919956922531]
+          },
+          "vertexStart": 1188,
+          "vertexCount": 256,
+          "indexStart": 5424,
+          "indexCount": 1284,
+          "positionSha256": "26e92fb468bdb13bc6325e06315d31a84d383ed2dd0e5562aef4aef4df31db7e",
+          "indexSha256": "7120e1da6e311c06d9258fb913de72f5b5828de3e0fce3204f2b54bca4609612"
+        },
+        {
+          "id": "bone-fma24448",
+          "conceptId": "FMA24448",
+          "names": { "en": "Right hamate", "ro": "Os cu cârlig — dreapta" },
+          "latinName": "Os hamatum (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.2519280016422272, 0.7812929749488831, 0.11140599846839905
+            ],
+            "max": [
+              -0.23659999668598175, 0.8006529808044434, 0.1339309960603714
+            ]
+          },
+          "vertexStart": 1444,
+          "vertexCount": 335,
+          "indexStart": 6708,
+          "indexCount": 1566,
+          "positionSha256": "72f89e793fe1b1b6fd3ce15bb294e7aa5064128817f0b4cb9277038feb920fb0",
+          "indexSha256": "40c9dea9790ae30f38a56516d2ddf78ed8c32f273d8a2e3ec2b0c8018dcc088d"
+        },
+        {
+          "id": "bone-fma24464",
+          "conceptId": "FMA24464",
+          "names": {
+            "en": "Right first metacarpal bone",
+            "ro": "Metacarpianul I — dreapta"
+          },
+          "latinName": "Os metacarpale I (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.30957698822021484, 0.7602810263633728, 0.12362699955701828
+            ],
+            "max": [
+              -0.2722359895706177, 0.7972379922866821, 0.15386100113391876
+            ]
+          },
+          "vertexStart": 1779,
+          "vertexCount": 307,
+          "indexStart": 8274,
+          "indexCount": 1698,
+          "positionSha256": "a4c110a3ddd3679728254f9e99480fc6352a58fbbbf6bd017b8c9c9a9c737847",
+          "indexSha256": "804f1ff48ebf4bc2f86324eb086492a0fd28379d2e724998d48649c893bfe0fb"
+        },
+        {
+          "id": "bone-fma24466",
+          "conceptId": "FMA24466",
+          "names": {
+            "en": "Right second metacarpal bone",
+            "ro": "Metacarpianul II — dreapta"
+          },
+          "latinName": "Os metacarpale II (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.29268699884414673, 0.718870997428894, 0.11705700308084488
+            ],
+            "max": [-0.261819988489151, 0.7868689894676208, 0.14278699457645416]
+          },
+          "vertexStart": 2086,
+          "vertexCount": 418,
+          "indexStart": 9972,
+          "indexCount": 2244,
+          "positionSha256": "dab73beb2a9eff30e56b0b9fb1ae0dc3e00304e4c0e32f2022605e5d84c7d3b1",
+          "indexSha256": "48028a7c695ecd640a689b35be5d5f0427b57f67ab05dd677f225be233ecd466"
+        },
+        {
+          "id": "bone-fma24468",
+          "conceptId": "FMA24468",
+          "names": {
+            "en": "Right third metacarpal bone",
+            "ro": "Metacarpianul III — dreapta"
+          },
+          "latinName": "Os metacarpale III (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.27234598994255066, 0.7208399772644043, 0.1123260036110878
+            ],
+            "max": [-0.252485990524292, 0.7852619886398315, 0.14273299276828766]
+          },
+          "vertexStart": 2504,
+          "vertexCount": 404,
+          "indexStart": 12216,
+          "indexCount": 2106,
+          "positionSha256": "9c5040411ebf4861f388e14a2a28b627551aa02b5bd11fbb675f098bd2ff8cb2",
+          "indexSha256": "3b17c4dfc3c065f06c937259b84e5027dd6428ee6c999e84fc138e4061aca878"
+        },
+        {
+          "id": "bone-fma24470",
+          "conceptId": "FMA24470",
+          "names": {
+            "en": "Right fourth metacarpal bone",
+            "ro": "Metacarpianul IV — dreapta"
+          },
+          "latinName": "Os metacarpale IV (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.25374099612236023, 0.7252789735794067, 0.11591699719429016
+            ],
+            "max": [
+              -0.2414260059595108, 0.7851579785346985, 0.14197100698947906
+            ]
+          },
+          "vertexStart": 2908,
+          "vertexCount": 340,
+          "indexStart": 14322,
+          "indexCount": 1608,
+          "positionSha256": "cb957d3baef633c3ef06fbfef0d552abbb481d6efc477beae9aa3b7010b8936e",
+          "indexSha256": "d403755bab4396b6f82d298219f365b55e8f74391c72eb9d25b4de3cc01d0aef"
+        },
+        {
+          "id": "bone-fma24472",
+          "conceptId": "FMA24472",
+          "names": {
+            "en": "Right fifth metacarpal bone",
+            "ro": "Metacarpianul V — dreapta"
+          },
+          "latinName": "Os metacarpale V (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.24531400203704834, 0.7320160269737244, 0.1200760006904602
+            ],
+            "max": [
+              -0.22520199418067932, 0.7869189977645874, 0.14451999962329865
+            ]
+          },
+          "vertexStart": 3248,
+          "vertexCount": 279,
+          "indexStart": 15930,
+          "indexCount": 1518,
+          "positionSha256": "4f6ebcae7b84675623fac3275bff2caa1f71c8ffe44e1bf492c352d9b3bd0956",
+          "indexSha256": "33a1c36c9d68d39792c3c804bba3315a46e093c766a34167bc44394bcd9613d4"
+        },
+        {
+          "id": "bone-fma24450",
+          "conceptId": "FMA24450",
+          "names": {
+            "en": "Proximal phalanx of right thumb",
+            "ro": "Falanga proximală — degetul I al mâinii — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti I manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.31880900263786316, 0.7356070280075073, 0.14265300333499908
+            ],
+            "max": [
+              -0.29864901304244995, 0.7671980261802673, 0.16488300263881683
+            ]
+          },
+          "vertexStart": 3527,
+          "vertexCount": 197,
+          "indexStart": 17448,
+          "indexCount": 954,
+          "positionSha256": "87cec0895f9012a774e51aac23d7f683c2a564c2ff83a31ab848db652222dfa0",
+          "indexSha256": "e2f8ace5952ccb0973d156bad1b3e1af3e2857fe3b873cb024df638608f880dd"
+        },
+        {
+          "id": "bone-fma24451",
+          "conceptId": "FMA24451",
+          "names": {
+            "en": "Proximal phalanx of right index finger",
+            "ro": "Falanga proximală — degetul II al mâinii — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti II manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.30276501178741455, 0.6858189702033997, 0.1340930014848709
+            ],
+            "max": [
+              -0.28095200657844543, 0.7231969833374023, 0.15675799548625946
+            ]
+          },
+          "vertexStart": 3724,
+          "vertexCount": 226,
+          "indexStart": 18402,
+          "indexCount": 1158,
+          "positionSha256": "e8cd4155c7ff6c922e52d78b990fc89ed679cbffa2d927d9e9939173c4e6f553",
+          "indexSha256": "879e352650b5b12e61920eb5830d6faa213710b84f7243dd3c51e19c721e7495"
+        },
+        {
+          "id": "bone-fma24452",
+          "conceptId": "FMA24452",
+          "names": {
+            "en": "Proximal phalanx of right middle finger",
+            "ro": "Falanga proximală — degetul III al mâinii — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti III manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [-0.2774139940738678, 0.6842809915542603, 0.135112002491951],
+            "max": [
+              -0.25920799374580383, 0.7248610258102417, 0.16420100629329681
+            ]
+          },
+          "vertexStart": 3950,
+          "vertexCount": 271,
+          "indexStart": 19560,
+          "indexCount": 1374,
+          "positionSha256": "97ba95b78e93d65194a91701d9197af46a7f0e3de019ba12b4e0fadc0953850f",
+          "indexSha256": "acc86634595e4eeed173653e41ad00870667cc33e25fec7291cd2d9f76ca4ae8"
+        },
+        {
+          "id": "bone-fma24453",
+          "conceptId": "FMA24453",
+          "names": {
+            "en": "Proximal phalanx of right ring finger",
+            "ro": "Falanga proximală — degetul IV al mâinii — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti IV manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.25382399559020996, 0.6899679899215698, 0.13565799593925476
+            ],
+            "max": [
+              -0.24059100449085236, 0.7289320230484009, 0.16197699308395386
+            ]
+          },
+          "vertexStart": 4221,
+          "vertexCount": 209,
+          "indexStart": 20934,
+          "indexCount": 1128,
+          "positionSha256": "83e8c2f4c3f0872a5bcbc45ff4d7cff950411f634f380bc4515df7bdef9a8fa0",
+          "indexSha256": "351975a2538f78b440aa8eee798f83d163bed452b1fa3d23dc9205a1baa1624d"
+        },
+        {
+          "id": "bone-fma24454",
+          "conceptId": "FMA24454",
+          "names": {
+            "en": "Proximal phalanx of right little finger",
+            "ro": "Falanga proximală — degetul V al mâinii — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti V manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.23632900416851044, 0.7033560276031494, 0.13872100412845612
+            ],
+            "max": [
+              -0.2221519947052002, 0.7359560132026672, 0.15952299535274506
+            ]
+          },
+          "vertexStart": 4430,
+          "vertexCount": 187,
+          "indexStart": 22062,
+          "indexCount": 942,
+          "positionSha256": "5d012903a93d2191b19a75111186839dddc288a8f879aedb6b9e959b33565cd6",
+          "indexSha256": "a39718b26d32f8ee0d9a145d5719fe0a4f217e5cb7b7d91f385be380d589f1f6"
+        },
+        {
+          "id": "bone-fma24455",
+          "conceptId": "FMA24455",
+          "names": {
+            "en": "Middle phalanx of right index finger",
+            "ro": "Falanga mijlocie — degetul II al mâinii — dreapta"
+          },
+          "latinName": "Phalanx media digiti II manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.3089999854564667, 0.6710060238838196, 0.15130899846553802
+            ],
+            "max": [
+              -0.29440000653266907, 0.6914759874343872, 0.17208300530910492
+            ]
+          },
+          "vertexStart": 4617,
+          "vertexCount": 190,
+          "indexStart": 23004,
+          "indexCount": 792,
+          "positionSha256": "8c2f93c790f297c688a9c269811678b1469b8efba81b0968dd9738b14fa3b9cb",
+          "indexSha256": "8d7f6fcddf5a8e8b0d500aec7fd2e24ee828455f290ea146e1d5a69901131fd2"
+        },
+        {
+          "id": "bone-fma24456",
+          "conceptId": "FMA24456",
+          "names": {
+            "en": "Middle phalanx of right middle finger",
+            "ro": "Falanga mijlocie — degetul III al mâinii — dreapta"
+          },
+          "latinName": "Phalanx media digiti III manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.2802020013332367, 0.6624569892883301, 0.15779900550842285
+            ],
+            "max": [-0.2665880024433136, 0.687807023525238, 0.18093399703502655]
+          },
+          "vertexStart": 4807,
+          "vertexCount": 227,
+          "indexStart": 23796,
+          "indexCount": 1026,
+          "positionSha256": "2f571df7b597a65a06cc2e904d077a9f7601d7a8fd92d68157e49d75375063b3",
+          "indexSha256": "66688b6ad62af36a580f9555fd80c9cbffc19ff577c32ef88c11ca63eace0791"
+        },
+        {
+          "id": "bone-fma24457",
+          "conceptId": "FMA24457",
+          "names": {
+            "en": "Middle phalanx of right ring finger",
+            "ro": "Falanga mijlocie — degetul IV al mâinii — dreapta"
+          },
+          "latinName": "Phalanx media digiti IV manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.2542929947376251, 0.669704020023346, 0.15653599798679352
+            ],
+            "max": [
+              -0.2427629977464676, 0.6936039924621582, 0.18056699633598328
+            ]
+          },
+          "vertexStart": 5034,
+          "vertexCount": 219,
+          "indexStart": 24822,
+          "indexCount": 948,
+          "positionSha256": "ea1708df1c78ab0c79ec17e33c007ceef6b624ec45958d716f02468776593919",
+          "indexSha256": "15638c880f112e6f1e4184e64da64a95524619555a18cc693ecfb22d8f426d37"
+        },
+        {
+          "id": "bone-fma24458",
+          "conceptId": "FMA24458",
+          "names": {
+            "en": "Middle phalanx of right little finger",
+            "ro": "Falanga mijlocie — degetul V al mâinii — dreapta"
+          },
+          "latinName": "Phalanx media digiti V manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.23054499924182892, 0.6875699758529663, 0.15482300519943237
+            ],
+            "max": [
+              -0.21893499791622162, 0.7071549892425537, 0.1714390069246292
+            ]
+          },
+          "vertexStart": 5253,
+          "vertexCount": 169,
+          "indexStart": 25770,
+          "indexCount": 624,
+          "positionSha256": "75ee2136749d11f1d5c700d9f8914ae21ea28247736e9ae635965a5f11add355",
+          "indexSha256": "952669ed4169737da6ab41c0ce254a89c15f37160deccceb811abe5b3bc2fbd0"
+        },
+        {
+          "id": "bone-fma24459",
+          "conceptId": "FMA24459",
+          "names": {
+            "en": "Distal phalanx of right thumb",
+            "ro": "Falanga distală — degetul I al mâinii — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti I manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.3239139914512634, 0.7191389799118042, 0.1571349948644638
+            ],
+            "max": [-0.3102630078792572, 0.7421659827232361, 0.1733579933643341]
+          },
+          "vertexStart": 5422,
+          "vertexCount": 187,
+          "indexStart": 26394,
+          "indexCount": 720,
+          "positionSha256": "2ed8191e0fa459015730093f77ae5bcefdbab5548e66d4c2edbefb9420e568a4",
+          "indexSha256": "1e1f873608998f1c6575f6e41f23ccbaa1f761bfb79197adffa43a3d0300d302"
+        },
+        {
+          "id": "bone-fma24460",
+          "conceptId": "FMA24460",
+          "names": {
+            "en": "Distal phalanx of right index finger",
+            "ro": "Falanga distală — degetul II al mâinii — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti II manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.3113679885864258, 0.6618459820747375, 0.1696469932794571
+            ],
+            "max": [
+              -0.3014250099658966, 0.6756889820098877, 0.18672999739646912
+            ]
+          },
+          "vertexStart": 5609,
+          "vertexCount": 188,
+          "indexStart": 27114,
+          "indexCount": 630,
+          "positionSha256": "237d58b0f33c342115b47aece5dd01d101276cc843555a35c38b5b03423813a2",
+          "indexSha256": "c1e512d36322467927d7402b8e222d0b879cc9a0e099417e15f72cbdd4fae844"
+        },
+        {
+          "id": "bone-fma24461",
+          "conceptId": "FMA24461",
+          "names": {
+            "en": "Distal phalanx of right middle finger",
+            "ro": "Falanga distală — degetul III al mâinii — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti III manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.28091201186180115, 0.6530669927597046, 0.1782049983739853
+            ],
+            "max": [-0.2713649868965149, 0.6665310263633728, 0.1954279989004135]
+          },
+          "vertexStart": 5797,
+          "vertexCount": 143,
+          "indexStart": 27744,
+          "indexCount": 522,
+          "positionSha256": "a6c38b893d2488eaca564b285e93e66415876c3e708ca1c9154c879af445116e",
+          "indexSha256": "9858df78a4ccba03e660ea9d2dc8a570e5b17d35c67bec2d1ed41ea3a4591ee8"
+        },
+        {
+          "id": "bone-fma24462",
+          "conceptId": "FMA24462",
+          "names": {
+            "en": "Distal phalanx of right ring finger",
+            "ro": "Falanga distală — degetul IV al mâinii — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti IV manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.25361400842666626, 0.6648690104484558, 0.1787170022726059
+            ],
+            "max": [
+              -0.24528099596500397, 0.6740080118179321, 0.1943800002336502
+            ]
+          },
+          "vertexStart": 5940,
+          "vertexCount": 114,
+          "indexStart": 28266,
+          "indexCount": 336,
+          "positionSha256": "1829b3333815e2e35419214a503539fde34bff0861916ee164f638401487a77b",
+          "indexSha256": "72736ceed256828483f274451901a2c82b62d0e5f58b0448631e3f07ff486d25"
+        },
+        {
+          "id": "bone-fma24463",
+          "conceptId": "FMA24463",
+          "names": {
+            "en": "Distal phalanx of right little finger",
+            "ro": "Falanga distală — degetul V al mâinii — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti V manus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.22720299661159515, 0.6767489910125732, 0.1681710034608841
+            ],
+            "max": [
+              -0.21889500319957733, 0.6892769932746887, 0.18187299370765686
+            ]
+          },
+          "vertexStart": 6054,
+          "vertexCount": 140,
+          "indexStart": 28602,
+          "indexCount": 564,
+          "positionSha256": "71a93b2a2e0c33d2bfc1280e7843a49e0e9139d9d4dac27267838dcc4c3b58ad",
+          "indexSha256": "4bcc90a062f978d868126da56a73ba7785e4406ab0ba5e6a94b4a1a9b08cc4cf"
+        }
+      ]
+    },
+    {
+      "id": "foot-bones-right",
+      "vertexCount": 9152,
+      "indexCount": 44766,
+      "normalSha256": "f51eda53d03d3192302f0da84990792ff17f42162341cc7a00d151491bfabcbd",
+      "parts": [
+        {
+          "id": "bone-fma24482",
+          "conceptId": "FMA24482",
+          "names": { "en": "Right talus", "ro": "Talus — dreapta" },
+          "latinName": "Talus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.09011360257863998, -0.03115610033273697, 0.048753999173641205
+            ],
+            "max": [
+              -0.04962730035185814, 0.0031109300907701254, 0.10556899756193161
+            ]
+          },
+          "vertexStart": 0,
+          "vertexCount": 812,
+          "indexStart": 0,
+          "indexCount": 4140,
+          "positionSha256": "365cc0204504602eeb33c5a05c3f42d37205cdf27a524eec1d3aa7e9bbe1faf8",
+          "indexSha256": "c20fa1f8022498ea010378a0a7bd16f9ac4a19182580c51e29d5f82f83dfbbdc"
+        },
+        {
+          "id": "bone-fma24497",
+          "conceptId": "FMA24497",
+          "names": { "en": "Right calcaneus", "ro": "Calcaneu — dreapta" },
+          "latinName": "Calcaneus (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.10078100115060806, -0.06849069893360138, 0.02400510013103485
+            ],
+            "max": [
+              -0.04487580060958862, -0.01915469951927662, 0.09414850175380707
+            ]
+          },
+          "vertexStart": 812,
+          "vertexCount": 739,
+          "indexStart": 4140,
+          "indexCount": 3786,
+          "positionSha256": "066425a84ad4076de4fabb6986d651c65ed191db57bada292aa0e0be142ded96",
+          "indexSha256": "12496dad0e34b43b273c12befc9cfdb51087f6dc71d6e67bc4e7ca2fcda7deb1"
+        },
+        {
+          "id": "bone-fma24521",
+          "conceptId": "FMA24521",
+          "names": {
+            "en": "Right medial cuneiform bone",
+            "ro": "Os cuneiform medial — dreapta"
+          },
+          "latinName": "Os cuneiforme mediale (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.0941276028752327, -0.045273199677467346, 0.11198200285434723
+            ],
+            "max": [
+              -0.06600440293550491, -0.014229600317776203, 0.14050699770450592
+            ]
+          },
+          "vertexStart": 1551,
+          "vertexCount": 615,
+          "indexStart": 7926,
+          "indexCount": 2856,
+          "positionSha256": "b8f00c4e2a1527eeb5fc7ef86ca079bc1c76f710f098bbae45b3c9794ea85724",
+          "indexSha256": "f202b21351c32f0bdf97abe08d7beb132f79c9b6090283b0de1fecf4ff106b46"
+        },
+        {
+          "id": "bone-fma24523",
+          "conceptId": "FMA24523",
+          "names": {
+            "en": "Right intermediate cuneiform bone",
+            "ro": "Os cuneiform intermediar — dreapta"
+          },
+          "latinName": "Os cuneiforme intermedium (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.10200700163841248, -0.03443659842014313, 0.1095850020647049
+            ],
+            "max": [
+              -0.08185949921607971, -0.011385399848222733, 0.13053399324417114
+            ]
+          },
+          "vertexStart": 2166,
+          "vertexCount": 288,
+          "indexStart": 10782,
+          "indexCount": 1350,
+          "positionSha256": "f4fc65205c99968d47c8566f369535c5937a7fe3219851cd04f894dd457b241a",
+          "indexSha256": "5c2b0bb66981755017589970d41b9d7d48a935dbeb01379176761603fcad2cc1"
+        },
+        {
+          "id": "bone-fma24525",
+          "conceptId": "FMA24525",
+          "names": {
+            "en": "Right lateral cuneiform bone",
+            "ro": "Os cuneiform lateral — dreapta"
+          },
+          "latinName": "Os cuneiforme laterale (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.11287499964237213, -0.0405643992125988, 0.10083799809217453
+            ],
+            "max": [
+              -0.08719830214977264, -0.014856199733912945, 0.12523199617862701
+            ]
+          },
+          "vertexStart": 2454,
+          "vertexCount": 395,
+          "indexStart": 12132,
+          "indexCount": 1878,
+          "positionSha256": "e70b7a27e4c883026fda459e10a5e28c0b8914d2f580384ea095d415116bcf2c",
+          "indexSha256": "ed1d7c2aac41e5f69bb4784ade7e82348d4371b6144c6b41ee074032888e02a5"
+        },
+        {
+          "id": "bone-fma24528",
+          "conceptId": "FMA24528",
+          "names": { "en": "Right cuboid bone", "ro": "Os cuboid — dreapta" },
+          "latinName": "Os cuboideum (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.11508499830961227, -0.05112159997224808, 0.08373270183801651
+            ],
+            "max": [
+              -0.08236649632453918, -0.022088300436735153, 0.1167680025100708
+            ]
+          },
+          "vertexStart": 2849,
+          "vertexCount": 543,
+          "indexStart": 14010,
+          "indexCount": 2796,
+          "positionSha256": "04f98988ea090794a00d5de1854de4562790dc2d32b2dd8ca98f3410780b115a",
+          "indexSha256": "f5627bb481fe7a84d9b401586eb25d4008122da63646145ff459daa160d67dc9"
+        },
+        {
+          "id": "bone-fma24500",
+          "conceptId": "FMA24500",
+          "names": {
+            "en": "Navicular bone of right foot",
+            "ro": "Os navicular al piciorului — dreapta"
+          },
+          "latinName": "Os naviculare (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.09675399959087372, -0.03077629953622818, 0.09432899951934814
+            ],
+            "max": [
+              -0.058189600706100464, -0.006155800074338913, 0.1209930032491684
+            ]
+          },
+          "vertexStart": 3392,
+          "vertexCount": 455,
+          "indexStart": 16806,
+          "indexCount": 2148,
+          "positionSha256": "37ad3f5513e46e3b8951d0b819c0b8502549aa7b31ce79a2398afdeea49604e5",
+          "indexSha256": "49faf8e826b0f4378b10e2ecb8462a9d6a41054491d51340ded000bff2ad321d"
+        },
+        {
+          "id": "bone-fma24507",
+          "conceptId": "FMA24507",
+          "names": {
+            "en": "Right first metatarsal bone",
+            "ro": "Metatarsianul I — dreapta"
+          },
+          "latinName": "Os metatarsale I (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.10436499863862991, -0.06532920151948929, 0.12994399666786194
+            ],
+            "max": [
+              -0.07481370121240616, -0.022120200097560883, 0.1921820044517517
+            ]
+          },
+          "vertexStart": 3847,
+          "vertexCount": 602,
+          "indexStart": 18954,
+          "indexCount": 3366,
+          "positionSha256": "5c07eee523e8ed373bf65d76988ba4db49fc622d91b37324cc7ed4708276f626",
+          "indexSha256": "77b8e2b64e0c3d02b05efc63340e98b836fa034c7724cb090e16d372c2b15d61"
+        },
+        {
+          "id": "bone-fma24509",
+          "conceptId": "FMA24509",
+          "names": {
+            "en": "Right second metatarsal bone",
+            "ro": "Metatarsianul II — dreapta"
+          },
+          "latinName": "Os metatarsale II (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.12127300351858139, -0.06631779670715332, 0.12244799733161926
+            ],
+            "max": [
+              -0.09065660089254379, -0.018324699252843857, 0.1874060034751892
+            ]
+          },
+          "vertexStart": 4449,
+          "vertexCount": 515,
+          "indexStart": 22320,
+          "indexCount": 2256,
+          "positionSha256": "5109eb988fec9ca79197eeb1c84f0d639598ab12ce2b06c29b1ecd001bb943e3",
+          "indexSha256": "eba3c88e3624c1c0fa01e947f2c75589373cd8a11a7dca771e1242af5a7a1f67"
+        },
+        {
+          "id": "bone-fma24511",
+          "conceptId": "FMA24511",
+          "names": {
+            "en": "Right third metatarsal bone",
+            "ro": "Metatarsianul III — dreapta"
+          },
+          "latinName": "Os metatarsale III (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.1335960030555725, -0.06637740135192871, 0.11836100369691849
+            ],
+            "max": [
+              -0.09832219779491425, -0.023672500625252724, 0.18085700273513794
+            ]
+          },
+          "vertexStart": 4964,
+          "vertexCount": 423,
+          "indexStart": 24576,
+          "indexCount": 2100,
+          "positionSha256": "dae1f26803dc74c1067e6a5f480d4a1533653e56c82c5444b986acb5bca30b09",
+          "indexSha256": "ba5dced034920de901b4d8efd3119eca645a1bc43476481e5c2e93abb775df08"
+        },
+        {
+          "id": "bone-fma24513",
+          "conceptId": "FMA24513",
+          "names": {
+            "en": "Right fourth metatarsal bone",
+            "ro": "Metatarsianul IV — dreapta"
+          },
+          "latinName": "Os metatarsale IV (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.14267000555992126, -0.06734389811754227, 0.10697600245475769
+            ],
+            "max": [
+              -0.10186699777841568, -0.031958501785993576, 0.16968399286270142
+            ]
+          },
+          "vertexStart": 5387,
+          "vertexCount": 397,
+          "indexStart": 26676,
+          "indexCount": 2022,
+          "positionSha256": "137c2f7c63d56890a8ed952ed442d043964891c1d3d8c2aa956a41166afb2d6d",
+          "indexSha256": "7d1c13fdef01219a3399c7c8a2c39c9a65acc03c7de411f0288a00bbdfaa315c"
+        },
+        {
+          "id": "bone-fma24515",
+          "conceptId": "FMA24515",
+          "names": {
+            "en": "Right fifth metatarsal bone",
+            "ro": "Metatarsianul V — dreapta"
+          },
+          "latinName": "Os metatarsale V (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.15233099460601807, -0.06981959939002991, 0.0893820971250534
+            ],
+            "max": [
+              -0.10645800083875656, -0.03987940028309822, 0.1550779938697815
+            ]
+          },
+          "vertexStart": 5784,
+          "vertexCount": 436,
+          "indexStart": 28698,
+          "indexCount": 2382,
+          "positionSha256": "b8232b9a0939644056e2ecbc6e06b1f9f03a9f3f56295217cfa7a76ff6225844",
+          "indexSha256": "6a9ec125c540a25a2150da71a43f28d609d843b0d632e1b583307fd3aef3ffe1"
+        },
+        {
+          "id": "bone-fma43253",
+          "conceptId": "FMA43253",
+          "names": {
+            "en": "Proximal phalanx of right big toe",
+            "ro": "Falanga proximală — degetul I al piciorului — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti I pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.11719600111246109, -0.06863909959793091, 0.18606999516487122
+            ],
+            "max": [
+              -0.08665960282087326, -0.05140870064496994, 0.21928900480270386
+            ]
+          },
+          "vertexStart": 6220,
+          "vertexCount": 281,
+          "indexStart": 31080,
+          "indexCount": 1458,
+          "positionSha256": "61dd25a54b0f7beb28aae65234a3a454af7bf61cb0f4e5a05a41cc33c44273a4",
+          "indexSha256": "deb227cd4a17f9430754875397b525073398bec849574f8d920c145157bdfd47"
+        },
+        {
+          "id": "bone-fma32634",
+          "conceptId": "FMA32634",
+          "names": {
+            "en": "Proximal phalanx of right second toe",
+            "ro": "Falanga proximală — degetul II al piciorului — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti II pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.1335649937391281, -0.06687360256910324, 0.183555006980896
+            ],
+            "max": [
+              -0.11134599894285202, -0.05454640090465546, 0.21167999505996704
+            ]
+          },
+          "vertexStart": 6501,
+          "vertexCount": 236,
+          "indexStart": 32538,
+          "indexCount": 1242,
+          "positionSha256": "98c492ed9bb551d04feb5596730f08d039deec938ac334b6880dd961cc732acb",
+          "indexSha256": "e5335da271964324430948af3a11c3328fa41d9de64f0f8d41de3d55c267d608"
+        },
+        {
+          "id": "bone-fma32636",
+          "conceptId": "FMA32636",
+          "names": {
+            "en": "Proximal phalanx of right third toe",
+            "ro": "Falanga proximală — degetul III al piciorului — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti III pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.14590199291706085, -0.06764499843120575, 0.17443600296974182
+            ],
+            "max": [
+              -0.12507599592208862, -0.05620440095663071, 0.20284099876880646
+            ]
+          },
+          "vertexStart": 6737,
+          "vertexCount": 276,
+          "indexStart": 33780,
+          "indexCount": 1266,
+          "positionSha256": "f06bd85bb8bb880e07f45d3c5db71bf07780f5fafbd5aa0e0dcc245d68468686",
+          "indexSha256": "5c4842a5abe05843b0d8007a53f024fe85180905a315cda064d0a953647d8ef7"
+        },
+        {
+          "id": "bone-fma32638",
+          "conceptId": "FMA32638",
+          "names": {
+            "en": "Proximal phalanx of right fourth toe",
+            "ro": "Falanga proximală — degetul IV al piciorului — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti IV pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.15592999756336212, -0.06974100321531296, 0.16437900066375732
+            ],
+            "max": [
+              -0.13433900475502014, -0.05649859830737114, 0.18842799961566925
+            ]
+          },
+          "vertexStart": 7013,
+          "vertexCount": 254,
+          "indexStart": 35046,
+          "indexCount": 1314,
+          "positionSha256": "2d4dc9391f8f23b1a1a483bb3476745e27fe924e1b3e90d6654e68e7d532977a",
+          "indexSha256": "0883de7a17340461bd491618bf2823ad099d8df17dd3a28ede9d8974df1f44f8"
+        },
+        {
+          "id": "bone-fma32640",
+          "conceptId": "FMA32640",
+          "names": {
+            "en": "Proximal phalanx of right little toe",
+            "ro": "Falanga proximală — degetul V al piciorului — dreapta"
+          },
+          "latinName": "Phalanx proximalis digiti V pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.16483700275421143, -0.06989320367574692, 0.14871099591255188
+            ],
+            "max": [
+              -0.1428849995136261, -0.060047298669815063, 0.17408399283885956
+            ]
+          },
+          "vertexStart": 7267,
+          "vertexCount": 238,
+          "indexStart": 36360,
+          "indexCount": 1218,
+          "positionSha256": "61144e5839ee4beede5b2c8fac109af764858e69520002ae911b3445f6c44bbd",
+          "indexSha256": "1ad2aec1f497b29f58c71529b4ee9fe3d5d47df5396aac7f352d251746b6bacf"
+        },
+        {
+          "id": "bone-fma32642",
+          "conceptId": "FMA32642",
+          "names": {
+            "en": "Middle phalanx of right second toe",
+            "ro": "Falanga mijlocie — degetul II al piciorului — dreapta"
+          },
+          "latinName": "Phalanx media digiti II pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.13935500383377075, -0.06801030039787292, 0.20764799416065216
+            ],
+            "max": [
+              -0.12523700296878815, -0.05940390005707741, 0.22468799352645874
+            ]
+          },
+          "vertexStart": 7505,
+          "vertexCount": 192,
+          "indexStart": 37578,
+          "indexCount": 792,
+          "positionSha256": "34c5bf04d00d4012d61daab806fde0d431605da2ffd3c2ae259ea7ccac8e3275",
+          "indexSha256": "9e2449281daea235921b43b2dd8d28d41200996f6a011c9fefbcda0ee7be62b9"
+        },
+        {
+          "id": "bone-fma32644",
+          "conceptId": "FMA32644",
+          "names": {
+            "en": "Middle phalanx of right third toe",
+            "ro": "Falanga mijlocie — degetul III al piciorului — dreapta"
+          },
+          "latinName": "Phalanx media digiti III pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.15172599256038666, -0.06883110105991364, 0.19886699318885803
+            ],
+            "max": [
+              -0.13888899981975555, -0.06091440096497536, 0.2157450020313263
+            ]
+          },
+          "vertexStart": 7697,
+          "vertexCount": 190,
+          "indexStart": 38370,
+          "indexCount": 876,
+          "positionSha256": "97c93fbec9d6086748af2770b4b49e50b4abeb13713981f1344bff1a3a528552",
+          "indexSha256": "4d368efddfed0871ad47c60e0558529e0498b9dcb898aaa73b027627e1e10806"
+        },
+        {
+          "id": "bone-fma32646",
+          "conceptId": "FMA32646",
+          "names": {
+            "en": "Middle phalanx of right fourth toe",
+            "ro": "Falanga mijlocie — degetul IV al piciorului — dreapta"
+          },
+          "latinName": "Phalanx media digiti IV pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.16134199500083923, -0.06988880038261414, 0.1854349970817566
+            ],
+            "max": [
+              -0.14907099306583405, -0.06193549931049347, 0.1988060027360916
+            ]
+          },
+          "vertexStart": 7887,
+          "vertexCount": 220,
+          "indexStart": 39246,
+          "indexCount": 1050,
+          "positionSha256": "283d6ed1cdd496fa9c1941bcdd0536367a025a32984074f6a821b2e5d70e74b9",
+          "indexSha256": "2264a400f7e9d42f8f8e2def4dfab28ff024a8b4a686012e9e749cc9055e93e6"
+        },
+        {
+          "id": "bone-fma230986",
+          "conceptId": "FMA230986",
+          "names": {
+            "en": "Middle phalanx of right little toe",
+            "ro": "Falanga mijlocie — degetul V al piciorului — dreapta"
+          },
+          "latinName": "Phalanx media digiti V pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.16669000685214996, -0.0700903981924057, 0.17145000398159027
+            ],
+            "max": [
+              -0.15807999670505524, -0.0637390986084938, 0.1788180023431778
+            ]
+          },
+          "vertexStart": 8107,
+          "vertexCount": 102,
+          "indexStart": 40296,
+          "indexCount": 408,
+          "positionSha256": "1fca83d3fbdf06fed4bacb8cabdb2ede4a5e3c7209a8b66869f64a1e6e46d9f9",
+          "indexSha256": "355a1b848b372d9445eba9b44d678ff40d109584368e2d71b518603fe9bbdaf9"
+        },
+        {
+          "id": "bone-fma32650",
+          "conceptId": "FMA32650",
+          "names": {
+            "en": "Distal phalanx of right big toe",
+            "ro": "Falanga distală — degetul I al piciorului — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti I pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.12511900067329407, -0.06989789754152298, 0.2107820063829422
+            ],
+            "max": [
+              -0.10239800065755844, -0.05900539830327034, 0.2360440045595169
+            ]
+          },
+          "vertexStart": 8209,
+          "vertexCount": 289,
+          "indexStart": 40704,
+          "indexCount": 1320,
+          "positionSha256": "85ac49431035819a79611d2f6c8f2273ba423f1ab286467155b3a0dd7ce84781",
+          "indexSha256": "f227ba77b88245cf89ad5658e54610c0a43d202b223e6a417ea49432fa56cd82"
+        },
+        {
+          "id": "bone-fma32652",
+          "conceptId": "FMA32652",
+          "names": {
+            "en": "Distal phalanx of right second toe",
+            "ro": "Falanga distală — degetul II al piciorului — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti II pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.14334599673748016, -0.07028850167989731, 0.22101199626922607
+            ],
+            "max": [
+              -0.13234800100326538, -0.06305339932441711, 0.2340960055589676
+            ]
+          },
+          "vertexStart": 8498,
+          "vertexCount": 170,
+          "indexStart": 42024,
+          "indexCount": 600,
+          "positionSha256": "9c63cd2a7e33c503c002446ceee0351c2e173a539ebba2627329f2fc06716c69",
+          "indexSha256": "b8ee6a2f93bfa7275b167b625c64f4b8c72e0bf3215dcfe89eaef5f4e6cda93f"
+        },
+        {
+          "id": "bone-fma32654",
+          "conceptId": "FMA32654",
+          "names": {
+            "en": "Distal phalanx of right third toe",
+            "ro": "Falanga distală — degetul III al piciorului — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti III pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.15482500195503235, -0.07019759714603424, 0.21225899457931519
+            ],
+            "max": [
+              -0.1458909958600998, -0.06438659876585007, 0.2236659973859787
+            ]
+          },
+          "vertexStart": 8668,
+          "vertexCount": 162,
+          "indexStart": 42624,
+          "indexCount": 780,
+          "positionSha256": "60793477ec7d37d13c66f5e185551ed9430e84f1239819b6b29f8acc7dea3023",
+          "indexSha256": "aefa03dd564820071a1884cf41451f8489883b80a7c43a6fba7abd71c74fe3ba"
+        },
+        {
+          "id": "bone-fma32656",
+          "conceptId": "FMA32656",
+          "names": {
+            "en": "Distal phalanx of right fourth toe",
+            "ro": "Falanga distală — degetul IV al piciorului — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti IV pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.16412700712680817, -0.07039230316877365, 0.19536800682544708
+            ],
+            "max": [
+              -0.15533499419689178, -0.06339599937200546, 0.2065349966287613
+            ]
+          },
+          "vertexStart": 8830,
+          "vertexCount": 144,
+          "indexStart": 43404,
+          "indexCount": 732,
+          "positionSha256": "abd7c9fcadd3e29ce3de653efb4880fd6019adff9a83e31bf8a0aa468daa469e",
+          "indexSha256": "4401b7ba0f841b69cd460206e01e7b1afe37aa817eec2d6bfeffac0b458a14ee"
+        },
+        {
+          "id": "bone-fma32658",
+          "conceptId": "FMA32658",
+          "names": {
+            "en": "Distal phalanx of right little toe",
+            "ro": "Falanga distală — degetul V al piciorului — dreapta"
+          },
+          "latinName": "Phalanx distalis digiti V pedis (dexter)",
+          "laterality": "right",
+          "bounds": {
+            "min": [
+              -0.1693270057439804, -0.07035379856824875, 0.1762000024318695
+            ],
+            "max": [
+              -0.16116900742053986, -0.06514190137386322, 0.18657900393009186
+            ]
+          },
+          "vertexStart": 8974,
+          "vertexCount": 178,
+          "indexStart": 44136,
+          "indexCount": 630,
+          "positionSha256": "d2ed3c2b857509a39b8c0c972a2d8556504c1146a5ec67b0e71d45f799186d42",
+          "indexSha256": "0a3a6af282dd54aba267bd18b0e81ed55ca84aca9891a75b6ec0d034cb4f796f"
+        }
+      ]
+    }
+  ]
+}

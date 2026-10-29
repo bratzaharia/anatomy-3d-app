@@ -17,6 +17,8 @@ import {
   muscleMetadataById,
   MUSCLE_STRUCTURES,
   SKULL_BONE_MAPPINGS,
+  SKELETAL_PART_MAPPINGS,
+  ANATOMY_COVERAGE,
   NERVOUS_GEOMETRY,
   NERVOUS_STRUCTURES,
   nervousMetadataById,
@@ -40,6 +42,7 @@ export function Inspector() {
   const hiddenIds = useViewerStore((state) => state.hiddenIds);
   const structure = selectedId ? structureById.get(selectedId) : undefined;
   const muscle = selectedId ? muscleMetadataById.get(selectedId) : undefined;
+  const coverage = ANATOMY_COVERAGE.find((e) => e.structure.id === selectedId);
   const skullContext =
     selectedId === "skull" ||
     selectedId === "mandible" ||
@@ -49,6 +52,7 @@ export function Inspector() {
   const assetStructure = [
     ...SKELETON_ASSET.structures,
     ...SKULL_BONE_MAPPINGS,
+    ...SKELETAL_PART_MAPPINGS,
     ...MUSCLE_ASSET.structures,
     ...NERVOUS_GEOMETRY,
   ].find((item) => item.id === selectedId);
@@ -211,6 +215,12 @@ export function Inspector() {
             </>
           )}
           {nervous && <NervousDetails id={structure.id} />}
+          {coverage?.reason &&
+            (!nervous || coverage.reason === "source-policy") && (
+              <p className="coverage-warning">
+                {t("coverage.reason." + coverage.reason)}
+              </p>
+            )}
           <div className="inspector-actions">
             <button
               className="primary-action"
@@ -315,20 +325,28 @@ export function Inspector() {
           <div className="source-note">
             <Icon name="info" />
             <p>
-              {registeredNeuralSource
-                ? "Z-Anatomy — Gauthier Kervyn / Lluís Vinent Juanico; BodyParts3D © DBCLS; Dundee CAHID"
-                : "BodyParts3D, © The Database Center for Life Science"}
+              {structure.status !== "available"
+                ? t("coverage.inventoryOnly")
+                : registeredNeuralSource
+                  ? "Z-Anatomy — Gauthier Kervyn / Lluís Vinent Juanico; BodyParts3D © DBCLS; Dundee CAHID"
+                  : "BodyParts3D, © The Database Center for Life Science"}
               <br />
               <a
                 href={
-                  registeredNeuralSource
-                    ? "https://creativecommons.org/licenses/by-sa/4.0/"
-                    : "https://creativecommons.org/licenses/by/4.0/"
+                  structure.status !== "available"
+                    ? structure.provenance[0]!.sourceUrl
+                    : registeredNeuralSource
+                      ? "https://creativecommons.org/licenses/by-sa/4.0/"
+                      : "https://creativecommons.org/licenses/by/4.0/"
                 }
                 target="_blank"
                 rel="noreferrer"
               >
-                {registeredNeuralSource ? "CC BY-SA 4.0" : "CC BY 4.0"}
+                {structure.status !== "available"
+                  ? t("nervous.references")
+                  : registeredNeuralSource
+                    ? "CC BY-SA 4.0"
+                    : "CC BY 4.0"}
               </a>{" "}
               · {t("inspector.sourceNote")}
               {muscle && (

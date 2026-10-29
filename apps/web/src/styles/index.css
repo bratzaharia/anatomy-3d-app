@@ -13,6 +13,50 @@
   --panel: rgba(9, 23, 37, 0.94);
 }
 
+.coverage-panel summary {
+  cursor: pointer;
+}
+.coverage-panel summary h2 {
+  display: inline;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.coverage-panel label {
+  display: block;
+  margin: 10px 0;
+  font-size: 11px;
+  color: var(--text-secondary, #abc2cc);
+}
+.coverage-panel select,
+.coverage-panel input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 5px;
+  padding: 7px;
+  color: inherit;
+  background: #0c1b28;
+  border: 1px solid #29414e;
+  border-radius: 6px;
+}
+.coverage-summary {
+  font-size: 11px;
+  margin: 12px 0;
+}
+.coverage-summary dt {
+  font-weight: 600;
+}
+.coverage-summary dd {
+  margin: 4px 0 12px;
+  line-height: 1.5;
+  color: #99b5c0;
+}
+.coverage-members {
+  max-height: 280px;
+  overflow: auto;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -10,6 +10,14 @@ import skeletonManifest from "./skeleton-manifest.json";
 import { MUSCLE_ASSET, MUSCLE_STRUCTURES, MUSCLE_GROUPS } from "./muscles";
 import { SKULL_BONE_STRUCTURES, SKULL_GROUP } from "./skull";
 import {
+  SKELETAL_PART_PARENTS,
+  SKELETAL_PART_STRUCTURES,
+  SKELETAL_PART_GROUPS,
+  SKELETAL_MISSING_STRUCTURES,
+  SKELETAL_MISSING_GROUP,
+} from "./skeletalParts";
+import { createCoverageInventory } from "./coverage";
+import {
   NERVOUS_ASSETS,
   NERVOUS_STRUCTURES,
   NERVOUS_GROUPS,
@@ -19,6 +27,8 @@ export * from "./nervous";
 export * from "./muscles";
 export * from "./skull";
 export * from "./skullVisualizationModes";
+export * from "./skeletalParts";
+export * from "./coverage";
 
 const boundsSchema = z.object({
   min: z.tuple([z.number(), z.number(), z.number()]),
@@ -194,10 +204,18 @@ export const STRUCTURES: readonly AnatomicalStructure[] =
     groupIds:
       item.id === "skull" || item.id === "mandible"
         ? ["skull-bones", "bodyparts3d-skeletal-set"]
-        : ["bodyparts3d-skeletal-set"],
+        : SKELETAL_PART_PARENTS.some((p) => p.id === item.id)
+          ? ["bones-" + item.id, "bodyparts3d-skeletal-set"]
+          : ["bodyparts3d-skeletal-set"],
     ...(item.id === "skull"
       ? { childIds: SKULL_BONE_STRUCTURES.map((bone) => bone.id) }
-      : {}),
+      : SKELETAL_PART_PARENTS.some((p) => p.id === item.id)
+        ? {
+            childIds: SKELETAL_PART_STRUCTURES.filter(
+              (p) => p.parentId === item.id,
+            ).map((p) => p.id),
+          }
+        : {}),
     assetIds: [SKELETON_ASSET.id],
     status: "available",
     provenance: [
@@ -212,23 +230,31 @@ export const STRUCTURES: readonly AnatomicalStructure[] =
 
 // STRUCTURES is deliberately the immutable skeletal compatibility boundary.
 // Source manifest stays intact; skull children use audited source-index ranges.
-export const SKELETAL_STRUCTURES = [...STRUCTURES, ...SKULL_BONE_STRUCTURES];
+export const SKELETAL_STRUCTURES = [
+  ...STRUCTURES,
+  ...SKULL_BONE_STRUCTURES,
+  ...SKELETAL_PART_STRUCTURES,
+  ...SKELETAL_MISSING_STRUCTURES,
+];
 export const ANATOMY_CATALOG: readonly AnatomicalStructure[] = [
   ...SKELETAL_STRUCTURES,
   ...MUSCLE_STRUCTURES,
   ...NERVOUS_STRUCTURES,
 ];
+export const ANATOMY_COVERAGE = createCoverageInventory(ANATOMY_CATALOG);
 export const GROUPS: readonly AnatomyGroup[] = [
   {
     id: "bodyparts3d-skeletal-set",
     names: { en: "Skeletal structures", ro: "Structuri osoase" },
     memberIds: STRUCTURES.map((item) => item.id),
     description: {
-      en: "Skeletal structures in this BodyParts3D view. Skull bones can also be selected individually; vertebrae, ribs, hands, and feet remain grouped.",
-      ro: "Structuri osoase din această vedere BodyParts3D. Oasele craniului se pot selecta și individual; vertebrele, coastele, mâinile și picioarele rămân grupate.",
+      en: "Sourced skeletal structures. Open each group to select its individual bones. Missing source bones remain unavailable.",
+      ro: "Structuri osoase din sursă. Deschide fiecare grup pentru selecția oaselor individuale. Oasele absente din sursă rămân indisponibile.",
     },
   },
   SKULL_GROUP,
+  ...SKELETAL_PART_GROUPS,
+  SKELETAL_MISSING_GROUP,
   ...MUSCLE_GROUPS,
   ...NERVOUS_GROUPS,
 ];
@@ -252,7 +278,9 @@ export const ASSET_MANIFEST = assetManifestSchema.parse({
       id: SKELETON_ASSET.id,
       kind: "anatomical-model",
       uri: SKELETON_ASSET.uri,
-      structureIds: SKELETAL_STRUCTURES.map((item) => item.id),
+      structureIds: SKELETAL_STRUCTURES.filter(
+        (item) => item.status === "available",
+      ).map((item) => item.id),
       licenseId: SKELETON_ASSET.licenseId,
     },
     {

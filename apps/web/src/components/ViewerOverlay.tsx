@@ -146,7 +146,11 @@ export function ViewerOverlay({
         <span>·</span>
         {t("viewer.selectable", {
           count:
-            (skeletal ? SKELETAL_STRUCTURES.length : 0) +
+            (skeletal
+              ? SKELETAL_STRUCTURES.filter(
+                  (item) => item.status === "available",
+                ).length
+              : 0) +
             (muscular ? MUSCLE_ASSET.structures.length : 0) +
             (nervous ? NERVOUS_GEOMETRY.length : 0),
         })}

@@ -1,5 +1,9 @@
 # Anatomical asset pipeline
 
+Current three-system inventory and explicit gaps: [coverage audit](SYSTEM_COVERAGE.md).
+Individual bone interaction uses a [byte-verified partition](SKELETAL_PARTITION_AUDIT.md)
+of the existing GLB, not regenerated skeletal anatomy.
+
 For the follow-up HRA cord registration and 31-pair source inventory, see the
 [quarantined spinal stage](HRA_SPINAL_REGISTRATION.md). Its candidate is a
 review artifact outside the runtime asset manifest, not approved viewer anatomy.

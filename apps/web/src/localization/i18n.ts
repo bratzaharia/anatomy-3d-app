@@ -9,6 +9,37 @@ const resources = {
       "panels.navigation": "Deschide sau închide navigarea",
       "panels.inspector": "Deschide sau închide inspectorul",
       "nav.regions": "Regiuni anatomice",
+      "coverage.title": "Acoperire și lipsuri",
+      "coverage.scope":
+        "Inventare cu domeniu definit, nu certificare de anatomie completă. Seturile nu se numără ca structuri individuale. Revizuirea medicală este în așteptare.",
+      "coverage.regional":
+        "Numerele și lista respectă regiunea selectată. La osos: inventar convențional adult; dinții și oasele accesorii/variabile nu sunt incluse.",
+      "coverage.counts":
+        "{{individual}} individuale · {{sets}} seturi · {{groupedOnly}} doar în grup · {{missing}} fără geometrie",
+      "coverage.system": "Sistem de verificat",
+      "coverage.filter": "Intrări afișate",
+      "coverage.gaps": "Lipsuri și selecții doar în grup",
+      "coverage.all": "Tot inventarul definit",
+      "coverage.search": "Caută în inventar",
+      "coverage.results": "{{count}} rezultate",
+      "coverage.status.individual":
+        "Geometrie individuală disponibilă · nerevizuită medical",
+      "coverage.status.set": "Set-sursă, nu membri individuali",
+      "coverage.status.grouped-only":
+        "Fără geometrie independentă; prezent doar în set",
+      "coverage.status.missing": "Fără geometrie acceptată",
+      "coverage.reason.source-gap":
+        "Sursa acceptată nu oferă o geometrie independentă pentru această intrare. Nu este desenată o aproximație.",
+      "coverage.reason.grouped-only":
+        "Membru reprezentat numai în setul-sursă; nu există o mapare independentă verificată.",
+      "coverage.reason.side-conflict":
+        "În carantină: lateralitatea sursei contrazice coordonatele geometriei. Nu am inversat etichetele automat.",
+      "coverage.reason.spinal-quarantine":
+        "Geometrie în carantină: măduva are o mapare ambiguă în sursa BodyParts3D; candidatul HRA are intersecții posibile și necesită validare anatomică. Segmentele de măduvă nu sunt cele 31 de perechi de nervi spinali.",
+      "coverage.reason.source-policy":
+        "Geometria vechii variante nu se combină automat cu sursa periferică activă; suprapunerile și alinierea ramurilor necesită revizuire.",
+      "coverage.inventoryOnly":
+        "Inventar terminologic; nu este distribuit un model pentru această intrare.",
       "nav.wholeBody": "Corp întreg",
       "nav.planned": "planificat",
       "filters.title": "Straturi anatomice",
@@ -170,6 +201,37 @@ const resources = {
       "panels.navigation": "Toggle navigation panel",
       "panels.inspector": "Toggle inspector panel",
       "nav.regions": "Anatomical regions",
+      "coverage.title": "Coverage and gaps",
+      "coverage.scope":
+        "Defined-scope inventories, not certification of complete anatomy. Source sets are not individual structures. Medical review is pending.",
+      "coverage.regional":
+        "Counts and entries follow the selected region. Bones: conventional adult inventory; teeth and variable/accessory bones are excluded.",
+      "coverage.counts":
+        "{{individual}} individual · {{sets}} sets · {{groupedOnly}} grouped only · {{missing}} without geometry",
+      "coverage.system": "System to inspect",
+      "coverage.filter": "Entries shown",
+      "coverage.gaps": "Gaps and grouped-only selection",
+      "coverage.all": "Entire defined inventory",
+      "coverage.search": "Search inventory",
+      "coverage.results": "{{count}} results",
+      "coverage.status.individual":
+        "Individual geometry available · medically unreviewed",
+      "coverage.status.set": "Source set, not independent members",
+      "coverage.status.grouped-only":
+        "No independent geometry; represented in source set only",
+      "coverage.status.missing": "No accepted geometry",
+      "coverage.reason.source-gap":
+        "The accepted source provides no independent geometry for this entry. No approximation is drawn.",
+      "coverage.reason.grouped-only":
+        "Member represented only in the source set; no independently verified mapping exists.",
+      "coverage.reason.side-conflict":
+        "Quarantined: source laterality conflicts with geometry coordinates. Labels were not automatically swapped.",
+      "coverage.reason.spinal-quarantine":
+        "Quarantined geometry: the cord has an ambiguous BodyParts3D mapping; the HRA candidate has possible intersections and needs anatomical validation. Cord segments are not the 31 spinal nerve pairs.",
+      "coverage.reason.source-policy":
+        "The older geometry variant is not automatically combined with the active peripheral source; branch overlap and alignment need review.",
+      "coverage.inventoryOnly":
+        "Terminology inventory; no model is distributed for this entry.",
       "nav.wholeBody": "Whole body",
       "nav.planned": "planned",
       "filters.title": "Anatomical layers",

@@ -1,5 +1,10 @@
 {
   "baseCommit": "7bcc4af",
+  "rendererUpdate": {
+    "baseCommit": "411c37c22f7e75e82735cb944b13c150ec8abf44",
+    "reason": "Intentional source-exact individual bone picking/hiding. No skeletal/muscular GLB, source manifest, skull mode or transform changed.",
+    "previousSkeletonModelSha256": "023e1c375538f376543f1ae48546e783c9ad8405309f1e4504ff9f5d70fc8f04"
+  },
   "files": {
     "apps/web/public/models/bodyparts3d-skeleton.glb": "126268604b056cdd8878c6297f6a8e90ae5cbf4cdce1cc7f952988d13bc68531",
     "apps/web/public/models/bodyparts3d-muscles.glb": "63b531f7c2734c794626d3e36ea3a57e440115fb6f5cf89d936a5876c629fef3",
@@ -8,7 +13,7 @@
     "packages/anatomy-data/src/skull-color-ranges.json": "70599e1029cae023c637900c8520c733b743a934ae878ca2aca39d83e6f88b1a",
     "packages/anatomy-data/src/skull.ts": "54d9f0db5bf4f70a77a7bb51c7ebccdd3ddd41d5521e49e353d17b65beef4190",
     "packages/anatomy-data/src/skullVisualizationModes.ts": "f2e9941f5aee3abe736f57dfa8def4d58dab28b2533feb044daac7dce432060e",
-    "apps/web/src/scene/SkeletonModel.tsx": "023e1c375538f376543f1ae48546e783c9ad8405309f1e4504ff9f5d70fc8f04",
+    "apps/web/src/scene/SkeletonModel.tsx": "9e77016d863a6e3e66b9a89ffb29195e2b2a30ba81c7f6d3b86c01fc3d7be226",
     "apps/web/src/scene/MuscleLayer.tsx": "6656a93a0777cbd75f2e89e9973e9e97e3bf3826b4a492e7f453daf204eda963",
     "apps/web/src/scene/muscleAsset.ts": "c41488a25f723b211b0cc7d258867a6c22bbbdf5d8d7fa55d59074c4e794b792",
     "apps/web/src/scene/skullMaterials.ts": "a1660b880daf77a855bc8248db864369a7b6594ae657d2c218fb02f3fefba912",

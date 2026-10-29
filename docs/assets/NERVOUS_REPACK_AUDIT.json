@@ -1,0 +1,30 @@
+{
+  "baseCommit": "411c37c22f7e75e82735cb944b13c150ec8abf44",
+  "sourceGeometryIdentical": true,
+  "entitiesCompared": 247,
+  "moved": [
+    {
+      "id": "nervous-maxillary-nerve-right",
+      "from": "upper-limbs",
+      "to": "cranial"
+    },
+    {
+      "id": "nervous-z-meningeal-branch-of-maxillary-nerve-right",
+      "from": "upper-limbs",
+      "to": "cranial"
+    },
+    {
+      "id": "nervous-maxillary-nerve-left",
+      "from": "upper-limbs",
+      "to": "cranial"
+    },
+    {
+      "id": "nervous-z-meningeal-branch-of-maxillary-nerve-left",
+      "from": "upper-limbs",
+      "to": "cranial"
+    }
+  ],
+  "method": "Bit-for-bit decoded POSITION, NORMAL and index buffer SHA-256/count comparison for every retained Z-Anatomy identity, plus original source name. No registration, anatomical shape, normal or topology changed.",
+  "sourceLicense": "CC-BY-SA-4.0",
+  "clinicalReview": "pending"
+}

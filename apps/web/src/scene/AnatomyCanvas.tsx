@@ -7,6 +7,7 @@ import {
   SKELETON_ASSET,
   MUSCLE_ASSET,
   SKULL_BONE_MAPPINGS,
+  SKELETAL_PART_MAPPINGS,
   NERVOUS_FOCUS_TARGETS,
   NERVOUS_REGION_BOUNDS,
 } from "@anatomy/data";
@@ -46,6 +47,7 @@ function CameraController() {
       const focusStructures = [
         ...SKELETON_ASSET.structures,
         ...SKULL_BONE_MAPPINGS,
+        ...SKELETAL_PART_MAPPINGS,
         ...MUSCLE_ASSET.structures,
         ...NERVOUS_FOCUS_TARGETS,
       ];

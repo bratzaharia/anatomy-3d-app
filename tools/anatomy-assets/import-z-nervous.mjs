@@ -249,7 +249,7 @@ scene.traverse((object) => {
     for (let k = 0; k < 3; k++) normals[i + k] /= length;
   }
   const upper =
-    /brachial|antebrachial|radial|ulnar|median|musculocutaneous|subscapular|thoracodorsal|subclavian|suprascapular|axillary|pectoral|long thoracic|dorsal scapular|interosseous.*forearm/i.test(
+    /\b(?:brachial|antebrachial|radial|ulnar|median|musculocutaneous|subscapular|thoracodorsal|subclavian|suprascapular|axillary|pectoral|long thoracic|dorsal scapular|interosseous.*forearm)\b/i.test(
       canonical,
     );
   const lower =

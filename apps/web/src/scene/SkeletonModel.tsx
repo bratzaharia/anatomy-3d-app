@@ -2,7 +2,13 @@ import { memo, useEffect, useMemo } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import { Mesh, MeshStandardMaterial, type BufferGeometry } from "three";
-import { SKELETON_ASSET, STRUCTURES, SKELETAL_STRUCTURES } from "@anatomy/data";
+import {
+  SKELETON_ASSET,
+  STRUCTURES,
+  SKELETAL_STRUCTURES,
+  SKELETAL_PART_PARENTS,
+} from "@anatomy/data";
+import { SegmentedBone } from "./SegmentedBone";
 import { resolveVisibleStructureIds } from "@anatomy/core";
 import { useViewerStore } from "../store/viewerStore";
 import { recordSkullShadowDraw, requestSkullShadowUpdate } from "./skullShadow";
@@ -179,15 +185,25 @@ export function SkeletonModel() {
     <group dispose={null}>
       {[...geometries]
         .filter(([id]) => id !== "skull" && id !== "mandible")
-        .map(([id, geometry]) => (
-          <Bone
-            key={id}
-            id={id}
-            geometry={geometry}
-            visible={visible.has(id)}
-            materials={materials}
-          />
-        ))}
+        .map(([id, geometry]) =>
+          SKELETAL_PART_PARENTS.some((p) => p.id === id) ? (
+            <SegmentedBone
+              key={id}
+              original={geometry}
+              partition={SKELETAL_PART_PARENTS.find((p) => p.id === id)!}
+              visible={visible}
+              materials={materials}
+            />
+          ) : (
+            <Bone
+              key={id}
+              id={id}
+              geometry={geometry}
+              visible={visible.has(id)}
+              materials={materials}
+            />
+          ),
+        )}
       <SkullBones
         views={skullViews}
         materials={skullMaterials}
