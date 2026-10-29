@@ -38,7 +38,18 @@ if (process.argv.includes("--hra")) {
   );
 }
 if (process.argv.includes("--sparc")) {
-  const xml = await readFile(new URL("sparc-307-list.xml", cache), "utf8");
+  const listingPath = new URL("sparc-307-list.xml", cache);
+  const xml = await readFile(listingPath, "utf8").catch(async (error) => {
+    if (error.code !== "ENOENT") throw error;
+    const [, url] = sources.find(
+      ([filename]) => filename === "sparc-307-list.xml",
+    );
+    const response = await fetch(url, { signal: AbortSignal.timeout(120000) });
+    if (!response.ok) throw Error(`${response.status}: ${url}`);
+    const bytes = Buffer.from(await response.arrayBuffer());
+    await writeFile(listingPath, bytes);
+    return bytes.toString("utf8");
+  });
   for (const match of xml.matchAll(/<Key>(.*?)<\/Key>/g)) {
     const key = match[1];
     if (
