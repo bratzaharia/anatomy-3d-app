@@ -8,6 +8,7 @@ import {
   MUSCLE_ASSET,
   SKULL_BONE_MAPPINGS,
   NERVOUS_FOCUS_TARGETS,
+  NERVOUS_REGION_BOUNDS,
 } from "@anatomy/data";
 import { SkeletonModel } from "./SkeletonModel";
 import { MuscleLayer } from "./MuscleLayer";
@@ -63,7 +64,10 @@ function CameraController() {
       if (selected) bounds = boundsBox(selected.bounds);
       else if (regionStructures.length)
         bounds = regionStructures.reduce(
-          (box, item) => box.union(boundsBox(item.bounds)),
+          (box, item) =>
+            box.union(
+              boundsBox(NERVOUS_REGION_BOUNDS.get(item.id) ?? item.bounds),
+            ),
           new Box3(),
         );
     }

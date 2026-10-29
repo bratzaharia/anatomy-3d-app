@@ -28,3 +28,48 @@ The curated inventory, RO names, contextual compartments, serial-set conventions
 The pipeline verifies lossless Meshopt round trips and writes canonical anatomy IDs into node extras. `pnpm validate:anatomy` decodes both assets, checks mappings/geometry/checksums, validates every inventory entry and group, and checks the three immutable skeletal baseline hashes. `pnpm validate:i18n` checks both catalogs and all UI keys. Run format, tests, source review and build before accepting a changed asset. The muscular GLB can be served from a configured static origin with `VITE_MUSCLE_ASSET_BASE_URL`; there is no R2-specific runtime API.
 
 Higher-detail regional sources are not present in this release. Do not invent a coarse model or treat generated shapes as medical LODs; audit and register a real additional asset before introducing progressive regional detail.
+
+## Independent nervous extension — reproducible source-only transfer
+
+The original BodyParts3D nervous importer remains available for its archived
+83-entity source asset. Do not invoke older skeletal or muscular importers to fit
+new nerves. All fixed references can be acquired without writing runtime anatomy:
+
+```sh
+node tools/anatomy-assets/acquire-fixed-references.mjs
+node tools/anatomy-assets/acquire-nervous-sources.mjs --hra --sparc --report
+node tools/anatomy-assets/inspect-nervous-sources.mjs --skeleton
+node tools/anatomy-assets/inspect-nervous-sources.mjs
+node tools/anatomy-assets/z-nervous-registration.mjs
+node tools/anatomy-assets/import-z-nervous.mjs
+node tools/anatomy-assets/audit-hra-spinal.mjs
+pnpm validate:anatomy
+```
+
+Acquisition downloads into ignored `.cache/` only, retaining exact source hashes.
+The reference acquirer verifies all 202 original OBJ hashes against the immutable
+skeletal manifest. The Z source skeleton is read only for 190 geometric proxy
+correspondences, never rendered or used to replace the fixed bones. Source-only
+registration records its coefficients/holdouts and is not clinical approval.
+The neural importer verifies the source FBX and license hashes and 14 protected
+reference files before writing only four new neural GLBs, attribution, its
+supplement manifest and registration report. Lossless Meshopt writer and decoded
+validator retain canonical ID ownership and actual source topology.
+
+HRA cord and SPARC scaffold acquisition does not approve their runtime use. The
+HRA audit measures 24 corresponding vertebrae and records its unresolved canal
+registration. SPARC source-estimated nerve paths must remain separate from any
+verified anatomical claim. The current regional GLBs all load on activation;
+progressive high/low-detail neural LOD is not implemented. See the current
+[source decisions and performance evidence](NERVOUS_AUDIT.md).
+
+To refresh all 20 viewer-generated regional QA artifacts after a build:
+
+```sh
+pnpm build
+NERVOUS_CAPTURE_QA=1 pnpm exec playwright test apps/web/e2e/nervous-distal.spec.ts --grep 'twenty source'
+```
+
+These are captured partial source views with explicit missing-region records,
+not human medical review. Distal tests pick actual rendered digital source
+pixels, then verify canonical selection and no hidden-mesh picking.

@@ -17,8 +17,9 @@ import {
   muscleMetadataById,
   MUSCLE_STRUCTURES,
   SKULL_BONE_MAPPINGS,
-  NERVOUS_ASSET,
+  NERVOUS_GEOMETRY,
   NERVOUS_STRUCTURES,
+  nervousMetadataById,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -49,13 +50,16 @@ export function Inspector() {
     ...SKELETON_ASSET.structures,
     ...SKULL_BONE_MAPPINGS,
     ...MUSCLE_ASSET.structures,
-    ...NERVOUS_ASSET.structures,
+    ...NERVOUS_GEOMETRY,
   ].find((item) => item.id === selectedId);
   const activeSystemIds = useViewerStore((state) => state.activeSystemIds);
   const nervousDivisions = useViewerStore((state) => state.nervousDivisions);
   const nervousFunctions = useViewerStore((state) => state.nervousFunctions);
   const nervousRegions = useViewerStore((state) => state.nervousRegions);
   const nervous = structure?.systemIds.includes("nervous");
+  const registeredNeuralSource =
+    selectedId &&
+    nervousMetadataById.get(selectedId)?.sourceDataset === "Z-Anatomy";
   const isHidden =
     structure &&
     !(
@@ -311,14 +315,20 @@ export function Inspector() {
           <div className="source-note">
             <Icon name="info" />
             <p>
-              BodyParts3D, © The Database Center for Life Science
+              {registeredNeuralSource
+                ? "Z-Anatomy — Gauthier Kervyn / Lluís Vinent Juanico; BodyParts3D © DBCLS; Dundee CAHID"
+                : "BodyParts3D, © The Database Center for Life Science"}
               <br />
               <a
-                href="https://creativecommons.org/licenses/by/4.0/"
+                href={
+                  registeredNeuralSource
+                    ? "https://creativecommons.org/licenses/by-sa/4.0/"
+                    : "https://creativecommons.org/licenses/by/4.0/"
+                }
                 target="_blank"
                 rel="noreferrer"
               >
-                CC BY 4.0
+                {registeredNeuralSource ? "CC BY-SA 4.0" : "CC BY 4.0"}
               </a>{" "}
               · {t("inspector.sourceNote")}
               {muscle && (

@@ -9,7 +9,12 @@ import type {
 import skeletonManifest from "./skeleton-manifest.json";
 import { MUSCLE_ASSET, MUSCLE_STRUCTURES, MUSCLE_GROUPS } from "./muscles";
 import { SKULL_BONE_STRUCTURES, SKULL_GROUP } from "./skull";
-import { NERVOUS_ASSET, NERVOUS_STRUCTURES, NERVOUS_GROUPS } from "./nervous";
+import {
+  NERVOUS_ASSETS,
+  NERVOUS_STRUCTURES,
+  NERVOUS_GROUPS,
+  nervousMetadataById,
+} from "./nervous";
 export * from "./nervous";
 export * from "./muscles";
 export * from "./skull";
@@ -257,13 +262,15 @@ export const ASSET_MANIFEST = assetManifestSchema.parse({
       structureIds: MUSCLE_ASSET.structures.map((item) => item.id),
       licenseId: MUSCLE_ASSET.licenseId,
     },
-    {
-      id: NERVOUS_ASSET.id,
+    ...NERVOUS_ASSETS.map((asset) => ({
+      id: asset.id,
       kind: "anatomical-model",
-      uri: NERVOUS_ASSET.uri,
-      structureIds: NERVOUS_ASSET.structures.map((item) => item.id),
-      licenseId: NERVOUS_ASSET.licenseId,
-    },
+      uri: asset.uri,
+      structureIds: asset.structureIds.filter(
+        (id) => nervousMetadataById.get(id)?.assetId === asset.id,
+      ),
+      licenseId: asset.licenseId,
+    })),
   ],
 });
 

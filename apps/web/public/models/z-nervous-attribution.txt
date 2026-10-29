@@ -1,0 +1,3 @@
+Z-Anatomy — Gauthier Kervyn, Lluís Vinent Juanico and contributors; based on BodyParts3D, © DBCLS (CC BY-SA 2.1 Japan). Peripheral adaptations CC BY-SA 4.0. Cranial source: University of Dundee, CAHID, CC BY 4.0. Source-pose landmark registration and GLB conversion by Human Anatomy 3D Atlas. No NC inner-ear or ambiguous Washington brain/white-matter content included.
+https://github.com/LluisV/Z-Anatomy/blob/4ef7d59f4a2cc002f65ebd2bbb395ae4df3a5faf/Resources/Models/FBX/NervousSystem100.fbx
+https://creativecommons.org/licenses/by-sa/4.0/

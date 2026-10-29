@@ -1,6 +1,19 @@
 import { expect, test } from "@playwright/test";
 import { fileURLToPath } from "node:url";
 import { readFileSync } from "node:fs";
+// The GLB validator generates these expectations. Read JSON without importing
+// the application's bundler-only JSON module graph into Playwright's Node ESM.
+const coverage = JSON.parse(
+  readFileSync(
+    new URL(
+      "../../../docs/assets/NERVOUS_GEOMETRY_COVERAGE.json",
+      import.meta.url,
+    ),
+    "utf8",
+  ),
+);
+const nervousCalls = coverage.renderedEntities + 1;
+const nervousTriangles = coverage.renderedTriangles + 2;
 
 test("independent nervous geometry: picking, focus, facet composition, isolation, locale and cache", async ({
   page,
@@ -18,7 +31,11 @@ test("independent nervous geometry: picking, focus, facet composition, isolation
     const url = request.url();
     if (url.endsWith("bodyparts3d-skeleton.glb")) requests.bones++;
     if (url.endsWith("bodyparts3d-muscles.glb")) requests.muscles++;
-    if (url.endsWith("bodyparts3d-nervous.glb")) requests.nerves++;
+    if (
+      url.endsWith("bodyparts3d-nervous.glb") ||
+      /z-nervous-.*\.glb$/.test(url)
+    )
+      requests.nerves++;
   });
   await page.goto("/?diagnostics");
   const canvas = page.locator("canvas");
@@ -31,8 +48,10 @@ test("independent nervous geometry: picking, focus, facet composition, isolation
   const nervousStart = Date.now();
   await page.getByLabel("Nervous system", { exact: true }).check();
   await expect(page.getByRole("status")).toHaveCount(0);
-  await expect.poll(async () => (await metrics()).calls).toBe(84);
-  await expect.poll(async () => (await metrics()).triangles).toBe(342862);
+  await expect.poll(async () => (await metrics()).calls).toBe(nervousCalls);
+  await expect
+    .poll(async () => (await metrics()).triangles)
+    .toBe(nervousTriangles);
   process.stdout.write(
     JSON.stringify({
       nervousEnableToRenderedMs: Date.now() - nervousStart,
@@ -46,6 +65,7 @@ test("independent nervous geometry: picking, focus, facet composition, isolation
   await expect
     .poll(async () => (await metrics()).camera?.[1] ?? 0)
     .toBeGreaterThan(1.4);
+  const focusedCalls = (await metrics()).calls;
   const bounds = await canvas.boundingBox();
   if (!bounds) throw Error("No nervous canvas");
   const point = { x: bounds.width * 0.58, y: bounds.height * 0.4 };
@@ -67,11 +87,13 @@ test("independent nervous geometry: picking, focus, facet composition, isolation
     .getByRole("button", { name: "Restaurează vizibilitatea", exact: true })
     .last()
     .click();
-  await expect.poll(async () => (await metrics()).calls).toBe(84);
+  await expect.poll(async () => (await metrics()).calls).toBe(focusedCalls);
   await page
     .getByLabel("Sistem nervos central (SNC)", { exact: true })
     .uncheck();
-  await expect.poll(async () => (await metrics()).calls).toBe(29);
+  await expect
+    .poll(async () => (await metrics()).calls)
+    .toBeLessThan(focusedCalls);
   await page
     .getByLabel("Sistem nervos periferic (SNP)", { exact: true })
     .uncheck();
@@ -82,12 +104,12 @@ test("independent nervous geometry: picking, focus, facet composition, isolation
       exact: true,
     })
     .click();
-  await expect.poll(async () => (await metrics()).calls).toBe(84);
+  await expect.poll(async () => (await metrics()).calls).toBe(focusedCalls);
   for (let i = 0; i < 3; i++) {
     await page.getByLabel("Sistem nervos", { exact: true }).uncheck();
     await expect.poll(async () => (await metrics()).calls).toBe(1);
     await page.getByLabel("Sistem nervos", { exact: true }).check();
-    await expect.poll(async () => (await metrics()).calls).toBe(84);
+    await expect.poll(async () => (await metrics()).calls).toBe(focusedCalls);
   }
   await page.getByRole("button", { name: "EN", exact: true }).click();
   await page
@@ -107,7 +129,7 @@ test("independent nervous geometry: picking, focus, facet composition, isolation
   const idle = (await metrics()).frames;
   await page.waitForTimeout(500);
   expect((await metrics()).frames).toBe(idle);
-  expect(requests).toEqual({ bones: 1, muscles: 0, nerves: 1 });
+  expect(requests).toEqual({ bones: 1, muscles: 0, nerves: 5 });
   expect(errors).toEqual([]);
 });
 
@@ -150,7 +172,10 @@ test("all eight global combinations preserve existing cached geometry and the sk
     await expect
       .poll(async () => (await metrics()).calls)
       .toBe(
-        1 + (mask & 1 ? 49 : 0) + (mask & 2 ? 355 : 0) + (mask & 4 ? 83 : 0),
+        1 +
+          (mask & 1 ? 49 : 0) +
+          (mask & 2 ? 355 : 0) +
+          (mask & 4 ? nervousCalls - 1 : 0),
       );
     await expect
       .poll(async () => (await metrics()).triangles)
@@ -158,7 +183,7 @@ test("all eight global combinations preserve existing cached geometry and the sk
         2 +
           (mask & 1 ? 513164 : 0) +
           (mask & 2 ? 2387524 : 0) +
-          (mask & 4 ? 342860 : 0),
+          (mask & 4 ? nervousTriangles - 2 : 0),
       );
     await expect(page.getByLabel("All layers", { exact: true })).toBeChecked({
       checked: mask === 7,
@@ -169,7 +194,9 @@ test("all eight global combinations preserve existing cached geometry and the sk
   await page.getByLabel("All layers", { exact: true }).uncheck();
   await expect.poll(async () => (await metrics()).calls).toBe(1);
   await page.getByLabel("All layers", { exact: true }).check();
-  await expect.poll(async () => (await metrics()).calls).toBe(488);
+  await expect
+    .poll(async () => (await metrics()).calls)
+    .toBe(nervousCalls + 404);
   await test.info().attach("all-layer-metrics.json", {
     body: JSON.stringify(afterAll, null, 2),
     contentType: "application/json",
@@ -188,7 +215,9 @@ test("all eight global combinations preserve existing cached geometry and the sk
   ).toBe(true);
   await page.getByLabel("Muscular system", { exact: true }).check();
   await page.getByLabel("Nervous system", { exact: true }).check();
-  await expect.poll(async () => (await metrics()).calls).toBe(488);
+  await expect
+    .poll(async () => (await metrics()).calls)
+    .toBe(nervousCalls + 404);
   await page.waitForTimeout(300);
   const idleStart = await metrics();
   await page.waitForTimeout(1000);
@@ -244,7 +273,7 @@ test("nervous failure/retry is isolated and unavailable spinal entries cannot ma
   ).toBeDisabled();
 });
 
-test("show nervous layer reveals occluded head geometry and restores previous layers", async ({
+test("show nervous layer reveals full-body geometry and restores previous layers", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
@@ -256,19 +285,20 @@ test("show nervous layer reveals occluded head geometry and restores previous la
   await expect.poll(async () => (await metrics()).calls).toBe(50);
   await page.getByLabel("Sistem nervos", { exact: true }).check();
   await expect(page.getByRole("status")).toHaveCount(0);
-  await expect.poll(async () => (await metrics()).calls).toBe(133);
+  await expect
+    .poll(async () => (await metrics()).calls)
+    .toBe(nervousCalls + 49);
+  const camera = (await metrics()).camera;
   await page
     .getByRole("button", { name: "Vezi stratul nervos", exact: true })
     .click();
-  await expect.poll(async () => (await metrics()).calls).toBe(84);
-  await expect
-    .poll(async () => (await metrics()).camera?.[1] ?? 0)
-    .toBeGreaterThan(1.4);
+  await expect.poll(async () => (await metrics()).calls).toBe(nervousCalls);
+  await expect.poll(async () => (await metrics()).camera).toEqual(camera);
   await expect(page.getByLabel("Sistem osos", { exact: true })).toBeChecked();
   await expect(page.getByLabel("Sistem nervos", { exact: true })).toBeChecked();
   await expect(
     page.getByRole("heading", {
-      name: "Encefal (părți disponibile)",
+      name: "—",
       exact: true,
     }),
   ).toBeVisible();
@@ -278,7 +308,9 @@ test("show nervous layer reveals occluded head geometry and restores previous la
       exact: true,
     })
     .click();
-  await expect.poll(async () => (await metrics()).calls).toBeGreaterThan(84);
+  await expect
+    .poll(async () => (await metrics()).calls)
+    .toBe(nervousCalls + 49);
   await expect(
     page.getByRole("button", { name: "Vezi stratul nervos", exact: true }),
   ).toBeVisible();

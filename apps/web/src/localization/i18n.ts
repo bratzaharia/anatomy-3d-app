@@ -20,9 +20,9 @@ const resources = {
       "nervous.explorer": "Explorator nervos",
       "nervous.viewerLabel":
         "Anatomie 3D interactivă — strat nervos BodyParts3D",
-      "nervous.incomplete": "Acoperire nervoasă parțială · inventar v1.0.0",
+      "nervous.incomplete": "Acoperire nervoasă parțială · inventar v1.1.0",
       "nervous.coverage":
-        "{{catalog}} intrări · {{individual}} mapări individuale · {{missing}} fără geometrie",
+        "{{catalog}} intrări · {{individual}} mapări individuale · {{grouped}} seturi sursă · {{missing}} fără geometrie",
       "nervous.structural": "Clasificare structurală",
       "nervous.functional": "Filtre funcționale",
       "nervous.regional": "Filtre regionale",
@@ -44,8 +44,16 @@ const resources = {
       "nervous.show": "Vezi stratul nervos",
       "nervous.restoreContext": "Revino la straturile anterioare",
       "nervous.visibilityHint":
-        "Geometrie disponibilă doar la cap. Craniul și mușchii o pot acoperi.",
+        "Geometrie regională pe întregul corp, încă incompletă. Alinierea și traseele necesită revizuire medicală.",
+      "nervous.registeredSource":
+        "Sursă Z-Anatomy · aliniere educațională pe 190 de centre geometrice osoase. Abatere RMS pe repere: 2,9 mm; maxim 17,1 mm în pelvis. Traseele nu sunt validate clinic.",
+      "nervous.sourceNameFallback":
+        "Denumire originală din sursă; traducerea medicală română și termenul latin sunt în așteptare. Nu am generat o traducere medicală neverificată.",
+      "nervous.sourceSet":
+        "Set-sursă selectabil împreună. Nu reprezintă mapări individuale ale fiecărei ramuri sau fiecărui segment.",
       "nervous.mapped": "mapate 3D",
+      "nervous.groupCoverage":
+        "{{individual}} individuale · {{grouped}} seturi · {{missing}} lipsă",
       "nervous.details": "Detalii despre structura nervoasă",
       "nervous.review":
         "Revizuirea medicală și a terminologiei românești este în așteptare.",
@@ -173,9 +181,9 @@ const resources = {
       "nervous.explorer": "Nervous explorer",
       "nervous.viewerLabel":
         "Interactive 3D anatomy — BodyParts3D nervous layer",
-      "nervous.incomplete": "Partial nervous coverage · inventory v1.0.0",
+      "nervous.incomplete": "Partial nervous coverage · inventory v1.1.0",
       "nervous.coverage":
-        "{{catalog}} entries · {{individual}} individual mappings · {{missing}} without geometry",
+        "{{catalog}} entries · {{individual}} individual mappings · {{grouped}} source sets · {{missing}} without geometry",
       "nervous.structural": "Structural classification",
       "nervous.functional": "Functional filters",
       "nervous.regional": "Regional filters",
@@ -198,8 +206,16 @@ const resources = {
       "nervous.show": "Show nervous layer",
       "nervous.restoreContext": "Restore previous layers",
       "nervous.visibilityHint":
-        "Geometry is currently available only in the head. Skull and muscles can cover it.",
+        "Regional geometry across the body, still incomplete. Alignment and courses require medical review.",
+      "nervous.registeredSource":
+        "Z-Anatomy source · educational registration to 190 bone bounding-box centers. Landmark RMS 2.9 mm; maximum 17.1 mm in the pelvis. Nerve courses are not clinically validated.",
+      "nervous.sourceNameFallback":
+        "Original source name; medically reviewed Romanian and Latin terminology pending. No unverified medical translation has been generated.",
+      "nervous.sourceSet":
+        "Source set selectable together. This is not an individual mapping of every branch or segment.",
       "nervous.mapped": "mapped in 3D",
+      "nervous.groupCoverage":
+        "{{individual}} individual · {{grouped}} sets · {{missing}} missing",
       "nervous.details": "Nervous structure details",
       "nervous.review":
         "Independent medical and Romanian terminology review is pending.",

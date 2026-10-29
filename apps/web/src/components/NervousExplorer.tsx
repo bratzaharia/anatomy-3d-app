@@ -106,14 +106,21 @@ export function NervousExplorer() {
         {NERVOUS_GROUPS.map((group) => {
           const mapped = group.memberIds.filter(
             (id) =>
-              nervousMetadataById.get(id)?.geometryStatus === "individual",
+              nervousMetadataById.get(id)?.geometryStatus !== "unavailable",
+          ).length;
+          const grouped = group.memberIds.filter(
+            (id) => nervousMetadataById.get(id)?.geometryStatus === "grouped",
           ).length;
           return (
             <details key={group.id}>
               <summary>
                 {getLocalizedName(group, locale)}{" "}
                 <small>
-                  {mapped}/{group.memberIds.length} {t("nervous.mapped")}
+                  {t("nervous.groupCoverage", {
+                    individual: mapped - grouped,
+                    grouped,
+                    missing: group.memberIds.length - mapped,
+                  })}
                 </small>
               </summary>
               <div className="explorer-members">

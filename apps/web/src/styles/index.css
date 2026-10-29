@@ -675,6 +675,13 @@ input:focus-visible {
   background: #10212aee;
   font-size: 11px;
 }
+.nervous-source-credit {
+  position: absolute;
+  bottom: 90px;
+  right: 20px;
+  color: var(--muted);
+  font-size: 9px;
+}
 .nervous-load-status.coverage-warning {
   top: 54px;
   left: auto;

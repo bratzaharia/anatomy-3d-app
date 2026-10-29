@@ -36,6 +36,15 @@ export function NervousDetails({ id }: { id: string }) {
         </p>
       ) : null}
       <p className="coverage-warning">{t("nervous.review")}</p>
+      {item?.sourceDataset && (
+        <p className="coverage-warning">{t("nervous.registeredSource")}</p>
+      )}
+      {item?.translationStatus === "source-name-fallback" && (
+        <p className="coverage-counts">{t("nervous.sourceNameFallback")}</p>
+      )}
+      {item?.geometryStatus === "grouped" && (
+        <p className="coverage-counts">{t("nervous.sourceSet")}</p>
+      )}
       <p className="coverage-counts">
         {t(
           item?.geometryStatus === "unavailable"

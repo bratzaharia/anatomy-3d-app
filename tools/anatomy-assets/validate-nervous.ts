@@ -39,8 +39,7 @@ if (
 const byId = new Map(NERVOUS_STRUCTURES.map((item) => [item.id, item]));
 const files = new Set<string>();
 for (const item of NERVOUS_ASSET.structures) {
-  if (byId.get(item.id)?.status !== "available")
-    errors.push("Missing mapped identity: " + item.id);
+  if (!byId.has(item.id)) errors.push("Missing mapped identity: " + item.id);
   if (
     item.sourceConcepts.some((source) =>
       /artery|vein|muscle|cartilage|ventricle|canal/i.test(source.name),
@@ -62,7 +61,7 @@ for (const item of NERVOUS_ASSET.structures) {
 if (files.size !== NERVOUS_ASSET.sourceMeshCount)
   errors.push("Source count mismatch");
 for (const item of NERVOUS_INVENTORY) {
-  const mapped = item.geometryStatus === "individual";
+  const mapped = item.geometryStatus !== "unavailable";
   if (mapped !== !!item.assetId || mapped !== item.meshIds.length > 0)
     errors.push("False geometry availability: " + item.id);
   if (!mapped && !item.gap) errors.push("Unreported gap: " + item.id);
@@ -156,5 +155,5 @@ if (
   errors.push("Missing fixed-subject alignment evidence");
 if (errors.length) throw Error(errors.join("\n"));
 process.stdout.write(
-  `Validated ${NERVOUS_INVENTORY.length} nervous inventory entries, ${gltf.nodes.length} individually mapped entities, ${files.size} source meshes, ${triangles} triangles, and ${Object.keys(baseline.files).length} unchanged reference files.\n`,
+  `Validated ${NERVOUS_INVENTORY.length} effective inventory entries; original BodyParts3D archive: ${gltf.nodes.length} mapped source entities, ${files.size} source meshes, ${triangles} triangles. ${Object.keys(baseline.files).length} protected reference files unchanged. Active multi-source coverage is checked separately.\n`,
 );

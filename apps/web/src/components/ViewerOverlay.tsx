@@ -7,7 +7,7 @@ import {
   SKELETON_ASSET,
   MUSCLE_ASSET,
   SKELETAL_STRUCTURES,
-  NERVOUS_ASSET,
+  NERVOUS_GEOMETRY,
 } from "@anatomy/data";
 import { useViewerStore, type CameraView } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -121,19 +121,34 @@ export function ViewerOverlay({
           </button>
         </div>
       )}
+      {nervous && (
+        <a
+          className="nervous-source-credit"
+          href="https://github.com/Z-Anatomy/Models-of-human-anatomy"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Z-Anatomy · CC BY-SA 4.0 · BodyParts3D / Dundee
+        </a>
+      )}
       <div className="model-summary">
         {t("viewer.sourceMeshes", {
           count:
             (skeletal ? SKELETON_ASSET.sourceMeshCount : 0) +
             (muscular ? MUSCLE_ASSET.sourceMeshCount : 0) +
-            (nervous ? NERVOUS_ASSET.sourceMeshCount : 0),
+            (nervous
+              ? NERVOUS_GEOMETRY.reduce(
+                  (count, item) => count + item.sourceFiles.length,
+                  0,
+                )
+              : 0),
         })}
         <span>·</span>
         {t("viewer.selectable", {
           count:
             (skeletal ? SKELETAL_STRUCTURES.length : 0) +
             (muscular ? MUSCLE_ASSET.structures.length : 0) +
-            (nervous ? NERVOUS_ASSET.structures.length : 0),
+            (nervous ? NERVOUS_GEOMETRY.length : 0),
         })}
       </div>
       <div

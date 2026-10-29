@@ -11,14 +11,17 @@ import { useThree } from "@react-three/fiber";
 import { Mesh, MeshStandardMaterial, type BufferGeometry } from "three";
 import { resolveNervousStructureIds } from "@anatomy/core";
 import {
-  NERVOUS_ASSET,
+  NERVOUS_ASSETS,
+  NERVOUS_GEOMETRY,
   NERVOUS_STRUCTURES,
   nervousMetadataById,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { nervousRaycast } from "./nervousPicking";
 
-export const nervousAssetUrl = `${import.meta.env.VITE_NERVOUS_ASSET_BASE_URL ?? ""}${NERVOUS_ASSET.uri}`;
+const nervousAssetUrls = NERVOUS_ASSETS.map(
+  (asset) => `${import.meta.env.VITE_NERVOUS_ASSET_BASE_URL ?? ""}${asset.uri}`,
+);
 const noRaycast: Mesh["raycast"] = () => undefined;
 type Materials = {
   cns: MeshStandardMaterial;
@@ -76,7 +79,7 @@ const Nerve = memo(function Nerve({
   );
 });
 function NervousModel() {
-  const { scene } = useGLTF(nervousAssetUrl);
+  const models = useGLTF(nervousAssetUrls);
   const invalidate = useThree((state) => state.invalidate);
   const systems = useViewerStore((state) => state.activeSystemIds);
   const hiddenIds = useViewerStore((state) => state.hiddenIds);
@@ -96,23 +99,30 @@ function NervousModel() {
   );
   const geometries = useMemo(() => {
     const result = new Map<string, BufferGeometry>();
-    scene.traverse((object) => {
-      if (
-        object instanceof Mesh &&
-        typeof object.userData.anatomyId === "string"
-      ) {
-        const id = object.userData.anatomyId;
-        if (result.has(id)) throw new Error("Duplicate nervous mapping: " + id);
-        result.set(id, object.geometry);
-      }
-    });
+    models.forEach(({ scene }, index) =>
+      scene.traverse((object) => {
+        if (
+          object instanceof Mesh &&
+          typeof object.userData.anatomyId === "string"
+        ) {
+          const id = object.userData.anatomyId;
+          if (
+            nervousMetadataById.get(id)?.assetId !== NERVOUS_ASSETS[index]!.id
+          )
+            return;
+          if (result.has(id))
+            throw new Error("Duplicate nervous mapping: " + id);
+          result.set(id, object.geometry);
+        }
+      }),
+    );
     if (
-      result.size !== NERVOUS_ASSET.structures.length ||
-      NERVOUS_ASSET.structures.some((item) => !result.has(item.id))
+      result.size !== NERVOUS_GEOMETRY.length ||
+      NERVOUS_GEOMETRY.some((item) => !result.has(item.id))
     )
       throw new Error("Incomplete nervous mapping");
     return result;
-  }, [scene]);
+  }, [models]);
   const materials = useMemo<Materials>(
     () => ({
       cns: new MeshStandardMaterial({
@@ -178,7 +188,8 @@ class NervousBoundary extends Component<
   }
   componentDidUpdate(previous: { retry: number }) {
     if (previous.retry !== this.props.retry) {
-      useGLTF.clear(nervousAssetUrl);
+      // useLoader caches an array request under the complete array key.
+      useGLTF.clear(nervousAssetUrls);
       this.setState({ failed: false });
     }
   }

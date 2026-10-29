@@ -24,7 +24,7 @@ describe("nervous explorer and shared inspector", () => {
     expect(document.querySelectorAll(".explorer-members button")).toHaveLength(
       NERVOUS_INVENTORY.length,
     );
-    expect(screen.getByText(/318 intrări/)).toBeVisible();
+    expect(screen.getByText(/465 intrări/)).toBeVisible();
     const before = useViewerStore.getState();
     fireEvent.click(screen.getByLabelText("Sistem nervos central (SNC)"));
     expect(useViewerStore.getState().activeSystemIds).toBe(

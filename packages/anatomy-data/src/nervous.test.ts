@@ -10,12 +10,23 @@ import {
   NERVOUS_ASSET,
   NERVOUS_INVENTORY,
   NERVOUS_STRUCTURES,
+  NERVOUS_GEOMETRY,
+  NERVOUS_SUPPLEMENT,
+  NERVOUS_FOCUS_TARGETS,
+  NERVOUS_REGION_BOUNDS,
   ANATOMY_CATALOG,
   AVAILABLE_SYSTEM_IDS,
   searchStructures,
 } from "./index";
 
 describe("additive, explicitly partial nervous anatomy", () => {
+  it("keeps regional camera bounds separate from complete cross-region nerve courses", () => {
+    const vagus = NERVOUS_FOCUS_TARGETS.find(
+      (item) => item.id === "nervous-vagus-nerve-right",
+    )!;
+    expect(vagus.bounds.min[1]).toBeLessThan(1.1);
+    expect(NERVOUS_REGION_BOUNDS.get(vagus.id)!.min[1]).toBeGreaterThan(1.4);
+  });
   it("registers only sourced geometry; missing metadata never becomes pickable", () => {
     expect(AVAILABLE_SYSTEM_IDS).toEqual(["skeletal", "muscular", "nervous"]);
     expect(NERVOUS_ASSET.anatomicallyComplete).toBe(false);
@@ -25,9 +36,9 @@ describe("additive, explicitly partial nervous anatomy", () => {
       new Set(["nervous"]),
     );
     for (const item of NERVOUS_INVENTORY)
-      expect(visible.has(item.id)).toBe(item.geometryStatus === "individual");
+      expect(visible.has(item.id)).toBe(item.geometryStatus !== "unavailable");
     expect(visible.has("nervous-spinal-cord")).toBe(false);
-    expect(visible.has("nervous-median-nerve-left")).toBe(false);
+    expect(visible.has("nervous-median-nerve-left")).toBe(true);
     expect(validateHierarchy(ANATOMY_CATALOG)).toEqual([]);
   });
   it.each([0, 1, 2, 3, 4, 5, 6, 7])(
@@ -75,12 +86,21 @@ describe("additive, explicitly partial nervous anatomy", () => {
       { hiddenIds: new Set(), isolatedIds: new Set() },
       filters,
     );
-    expect([...visible].sort()).toEqual([
-      "nervous-optic-nerve-left",
-      "nervous-optic-nerve-right",
-      "nervous-trochlear-nerve-left",
-      "nervous-trochlear-nerve-right",
-    ]);
+    expect([...visible].sort()).toEqual(
+      [
+        "abducens",
+        "accessory",
+        "hypoglossal",
+        "oculomotor",
+        "olfactory",
+        "optic",
+        "trochlear",
+      ]
+        .flatMap((name) =>
+          ["left", "right"].map((side) => `nervous-${name}-nerve-${side}`),
+        )
+        .sort(),
+    );
     expect(
       resolveNervousStructureIds(
         NERVOUS_STRUCTURES,
@@ -153,5 +173,30 @@ describe("additive, explicitly partial nervous anatomy", () => {
     expect(filum.regionIds).toEqual(["back", "pelvis"]);
     expect(filum.division).toBe("associated");
     expect(filum.geometryStatus).toBe("unavailable");
+  });
+  it("owns each rendered identity once, including real bilateral hand and foot source geometry", () => {
+    expect(NERVOUS_GEOMETRY).toHaveLength(302);
+    expect(new Set(NERVOUS_GEOMETRY.map((item) => item.id)).size).toBe(302);
+    expect(NERVOUS_SUPPLEMENT.assets).toHaveLength(4);
+    for (const side of ["left", "right"])
+      for (const region of ["hand", "foot"])
+        expect(
+          NERVOUS_SUPPLEMENT.inventory.some(
+            (item) =>
+              item.distalRegion === region &&
+              item.laterality === side &&
+              item.triangleCount > 0,
+          ),
+        ).toBe(true);
+    expect(
+      NERVOUS_SUPPLEMENT.inventory.every(
+        (item) =>
+          !/(?:cochlear|vestibular|white_matter|nucleus)/i.test(
+            item.sourceIdentifier,
+          ),
+      ),
+    ).toBe(true);
+    expect(NERVOUS_SUPPLEMENT.registration.clinicalReview).toBe("pending");
+    expect(NERVOUS_SUPPLEMENT.anatomicallyComplete).toBe(false);
   });
 });

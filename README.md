@@ -47,21 +47,24 @@ For muscles, use `node tools/anatomy-assets/import-muscles.mjs` (or `--offline`)
 
 ## Adding content
 
-The `HA3DA-1` branch adds a **partial independent nervous layer**: 83 mapped
-entities / 91 source meshes, loaded only when its checkbox is enabled. The
-318-entry inventory includes all twelve cranial and 31 spinal nerve pairs,
-but most complete nerves, the spinal cord and peripheral plexuses still lack
-approved compatible geometry. This is **not a complete full-body nervous atlas**.
+The `HA3DA-1` branch adds a **partial independent nervous layer**: 302 active
+source entities (249 individual identities and 53 source sets), including actual
+whole-body peripheral, hand and foot geometry. Five GLBs (19.08 MB total) load
+only on first nervous activation. The 465-entry inventory still has 163 gaps,
+including the cord and all 31 independently numbered spinal pairs. It is **not a
+complete or medically verified full-body nervous atlas**. New Z-Anatomy derived
+assets use CC BY-SA 4.0; their original names and unreviewed source-pose transfer
+are explicit. 147 new terms use a disclosed source-name fallback pending RO/Latin review.
 See [coverage](docs/assets/NERVOUS_COVERAGE.md), [asset audit](docs/assets/NERVOUS_AUDIT.md)
 and [architecture](docs/architecture/NERVOUS_LAYER.md). Existing skeletal,
 muscular and skull source/material files remain hash-protected. Runtime asset
 hosting remains Vercel; an optional `VITE_NERVOUS_ASSET_BASE_URL` can serve the
-same audited file from a CORS-enabled static origin without changing domain data.
+same audited files from a CORS-enabled static origin without changing domain data.
 
 To view the available nervous geometry, enable **Sistem nervos / Nervous system**
 and click **Vezi stratul nervos / Show nervous layer** in the viewport. This
-temporarily isolates and focuses the head-level source structures that would
-otherwise be occluded by the skull. **Restore previous layers** returns the
+temporarily isolates and frames the real whole-body neural source surfaces that
+would otherwise be occluded by bones or muscles. **Restore previous layers** returns the
 previous visibility context without changing global system checkboxes.
 
 1. Confirm terminology and relationships from a reputable cited source; add the stable entity to `packages/anatomy-data/src/index.ts`.

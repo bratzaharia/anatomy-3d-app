@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { useViewerStore } from "./viewerStore";
+import { NERVOUS_GEOMETRY } from "@anatomy/data";
 describe("independent muscular state", () => {
   beforeEach(() =>
     useViewerStore.setState({
@@ -129,7 +130,7 @@ describe("independent nervous state and reversible inspection", () => {
     expect(useViewerStore.getState().nervousDivisions.size).toBe(3);
     expect(useViewerStore.getState().nervousFunctions.size).toBe(0);
   });
-  it("reveals head geometry without toggling other layers and restores prior overrides and facets", () => {
+  it("reveals full-body source geometry without toggling other layers and restores prior overrides and facets", () => {
     useViewerStore.getState().toggleSystem("nervous");
     useViewerStore.setState({
       hiddenIds: new Set(["skull", "nervous-brain", "nervous-pons"]),
@@ -143,9 +144,9 @@ describe("independent nervous state and reversible inspection", () => {
     const shown = useViewerStore.getState();
     expect(shown.activeSystemIds).toBe(before.activeSystemIds);
     expect(shown.hiddenIds).toEqual(new Set(["skull"]));
-    expect(shown.isolatedIds.size).toBe(84);
-    expect(shown.selectedId).toBe("nervous-brain");
-    expect(shown.cameraCommand.view).toBe("focus");
+    expect(shown.isolatedIds.size).toBe(NERVOUS_GEOMETRY.length + 1);
+    expect(shown.selectedId).toBeNull();
+    expect(shown.cameraCommand.view).toBe("fit");
     expect(shown.nervousDivisions.size).toBe(3);
     expect(shown.nervousFunctions.size).toBe(0);
     expect(shown.nervousRegions.size).toBe(0);

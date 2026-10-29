@@ -2,7 +2,7 @@ import { create } from "zustand";
 import type { NervousDivision, NervousFunction } from "@anatomy/core";
 import {
   AVAILABLE_SYSTEM_IDS,
-  NERVOUS_ASSET,
+  NERVOUS_GEOMETRY,
   SKULL_VISUALIZATION_MODES,
   type SkullViewMode,
 } from "@anatomy/data";
@@ -82,7 +82,7 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
         ),
         isolatedIds: new Set([
           "nervous-brain",
-          ...NERVOUS_ASSET.structures.map((item) => item.id),
+          ...NERVOUS_GEOMETRY.map((item) => item.id),
         ]),
         nervousDivisions: new Set<NervousDivision>([
           "cns",
@@ -91,10 +91,10 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
         ]),
         nervousFunctions: new Set<NervousFunction>(),
         nervousRegions: new Set<string>(),
-        selectedId: "nervous-brain",
+        selectedId: null,
         hoveredId: null,
         rightPanelOpen: true,
-        cameraCommand: { view: "focus", nonce: state.cameraCommand.nonce + 1 },
+        cameraCommand: { view: "fit", nonce: state.cameraCommand.nonce + 1 },
       };
     }),
   retryNervous: () =>
