@@ -14,3 +14,15 @@ Source publication: Mitsuhashi et al., “BodyParts3D: 3D structure database for
 `bodyparts3d-muscles.glb`: BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International. Source: official BodyParts3D 4.0 IS-A OBJ 99 archive. Changes: curated muscular identities, named-subdivision assembly, coordinate/unit conversion, smooth normals and lossless Meshopt GLB compression. No additional decimation, invented placement or new mirroring. Source-supplied mirrored element meshes remain explicitly traceable. The source, license and every adapted element checksum are recorded in `muscle-manifest.json`; notices ship beside the asset.
 
 The Z-Anatomy candidate is not included in runtime assets. Its separate attribution/share-alike and third-party license conditions are recorded in the candidate audit. FIPAT TA2 is the terminology reference for the editorial inventory, not a claim of FIPAT endorsement or an official Romanian translation.
+
+# Nervous adaptation — partial
+
+`bodyparts3d-nervous.glb`: BodyParts3D, © The Database Center for Life Science
+licensed under CC Attribution 4.0 International. Official BodyParts3D 4.0 IS-A
+OBJ 99 archive; source version and per-element checksums are recorded in
+`nervous-manifest.json`. Adaptations: curated neural identities, coordinate/unit
+conversion, smooth normals and lossless Meshopt compression. No synthesized
+trajectories, mirroring, extra decimation or deformation. Notices ship beside the
+asset in `bodyparts3d-nervous-attribution.txt` and remain visible in the atlas.
+Independent medical and Romanian terminology review is pending. The inventory
+does not imply complete full-body geometry. See [audit](NERVOUS_AUDIT.md).

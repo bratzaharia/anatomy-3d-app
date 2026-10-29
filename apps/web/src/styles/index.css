@@ -639,6 +639,63 @@ input:focus-visible {
   border-top: 1px solid var(--line);
   text-align: left;
 }
+.nervous-facets {
+  margin: 12px 0;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font-size: 11px;
+}
+.nervous-facets label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+.nervous-facets input {
+  accent-color: #dfcf91;
+}
+.nervous-details {
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+  padding-top: 12px;
+}
+.nervous-details a {
+  color: var(--teal);
+}
+.nervous-load-status {
+  position: absolute;
+  top: 106px;
+  left: 20px;
+  right: 20px;
+  max-width: 440px;
+  padding: 10px;
+  border: 1px solid #776442;
+  border-radius: 7px;
+  background: #10212aee;
+  font-size: 11px;
+}
+.nervous-load-status.coverage-warning {
+  top: 54px;
+  left: auto;
+  max-width: 240px;
+  padding: 6px 8px;
+  font-size: 10px;
+}
+.nervous-load-status p {
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 6px 0;
+}
+.nervous-load-status button {
+  padding: 6px 8px;
+  border: 1px solid var(--teal);
+  border-radius: 5px;
+  color: var(--teal);
+  background: #102532;
+  font: inherit;
+  cursor: pointer;
+}
 .skull-modes h3 {
   margin: 7px 0;
   font-size: 14px;

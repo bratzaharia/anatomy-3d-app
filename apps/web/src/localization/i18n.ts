@@ -17,6 +17,54 @@ const resources = {
       "filters.bonesMuscles": "Oase + mușchi",
       "filters.bonesOnly": "Doar oase",
       "filters.neuro": "Neuro",
+      "nervous.explorer": "Explorator nervos",
+      "nervous.viewerLabel":
+        "Anatomie 3D interactivă — strat nervos BodyParts3D",
+      "nervous.incomplete": "Acoperire nervoasă parțială · inventar v1.0.0",
+      "nervous.coverage":
+        "{{catalog}} intrări · {{individual}} mapări individuale · {{missing}} fără geometrie",
+      "nervous.structural": "Clasificare structurală",
+      "nervous.functional": "Filtre funcționale",
+      "nervous.regional": "Filtre regionale",
+      "nervous.division.cns": "Sistem nervos central (SNC)",
+      "nervous.division.pns": "Sistem nervos periferic (SNP)",
+      "nervous.division.associated": "Structuri asociate — nu țesut nervos",
+      "nervous.function.somatic": "Somatic",
+      "nervous.function.autonomic": "Autonom",
+      "nervous.function.sympathetic": "Simpatic",
+      "nervous.function.parasympathetic": "Parasimpatic",
+      "nervous.function.enteric": "Enteric",
+      "nervous.function.sensory": "Senzitiv / aferent",
+      "nervous.function.motor": "Motor / eferent",
+      "nervous.function.mixed": "Mixt senzitiv și motor",
+      "nervous.filterHint":
+        "Fără selecție = fără restricție. Opțiunile din același filtru se reunesc; filtrele diferite se intersectează. Clasificările necunoscute nu sunt presupuse.",
+      "nervous.resetFilters": "Toate structurile nervoase disponibile",
+      "nervous.brainParts": "Selectează encefalul disponibil",
+      "nervous.show": "Vezi stratul nervos",
+      "nervous.restoreContext": "Revino la straturile anterioare",
+      "nervous.visibilityHint":
+        "Geometrie disponibilă doar la cap. Craniul și mușchii o pot acoperi.",
+      "nervous.mapped": "mapate 3D",
+      "nervous.details": "Detalii despre structura nervoasă",
+      "nervous.review":
+        "Revizuirea medicală și a terminologiei românești este în așteptare.",
+      "nervous.sourcePart":
+        "Geometrie-sursă cu detaliu redus; nu implică un traseu sau o acoperire anatomică completă.",
+      "nervous.unavailable":
+        "Intrare de inventar, fără geometrie 3D independentă. Nu este desenat un traseu aproximativ.",
+      "nervous.spinalQuarantine":
+        "Geometrie în carantină: sursa folosește FJ1737 atât pentru măduva spinală, cât și pentru canalul central. Identitatea trebuie clarificată înainte de activare.",
+      "nervous.opticCns":
+        "Nervul optic (II) este un tract al SNC, nu un nerv periferic obișnuit.",
+      "nervous.connections": "Relații anatomice",
+      "nervous.connectionHint":
+        "Relații de ramificare, nu conexiuni sinaptice sau trasee reconstruite.",
+      "nervous.references": "Referință anatomică / terminologică",
+      "nervous.connectionSource": "Sursa relației anatomice",
+      "nervous.loading": "Se încarcă stratul nervos…",
+      "nervous.error":
+        "Stratul nervos nu s-a încărcat. Oasele și mușchii rămân disponibili.",
       "filters.none": "Niciun strat activ",
       "viewer.front": "Față",
       "viewer.back": "Spate",
@@ -122,6 +170,55 @@ const resources = {
       "filters.bonesMuscles": "Bones + muscles",
       "filters.bonesOnly": "Bones only",
       "filters.neuro": "Neuro",
+      "nervous.explorer": "Nervous explorer",
+      "nervous.viewerLabel":
+        "Interactive 3D anatomy — BodyParts3D nervous layer",
+      "nervous.incomplete": "Partial nervous coverage · inventory v1.0.0",
+      "nervous.coverage":
+        "{{catalog}} entries · {{individual}} individual mappings · {{missing}} without geometry",
+      "nervous.structural": "Structural classification",
+      "nervous.functional": "Functional filters",
+      "nervous.regional": "Regional filters",
+      "nervous.division.cns": "Central nervous system (CNS)",
+      "nervous.division.pns": "Peripheral nervous system (PNS)",
+      "nervous.division.associated":
+        "Associated structures — not neural tissue",
+      "nervous.function.somatic": "Somatic",
+      "nervous.function.autonomic": "Autonomic",
+      "nervous.function.sympathetic": "Sympathetic",
+      "nervous.function.parasympathetic": "Parasympathetic",
+      "nervous.function.enteric": "Enteric",
+      "nervous.function.sensory": "Sensory / afferent",
+      "nervous.function.motor": "Motor / efferent",
+      "nervous.function.mixed": "Mixed sensory and motor",
+      "nervous.filterHint":
+        "No selection = unrestricted. Options within a facet are combined; different facets intersect. Unknown classifications are not assumed.",
+      "nervous.resetFilters": "All available nervous structures",
+      "nervous.brainParts": "Select available brain parts",
+      "nervous.show": "Show nervous layer",
+      "nervous.restoreContext": "Restore previous layers",
+      "nervous.visibilityHint":
+        "Geometry is currently available only in the head. Skull and muscles can cover it.",
+      "nervous.mapped": "mapped in 3D",
+      "nervous.details": "Nervous structure details",
+      "nervous.review":
+        "Independent medical and Romanian terminology review is pending.",
+      "nervous.sourcePart":
+        "Reduced-detail source geometry; does not imply complete anatomical course or coverage.",
+      "nervous.unavailable":
+        "Inventory entry without independent 3D geometry. No approximate trajectory is drawn.",
+      "nervous.spinalQuarantine":
+        "Quarantined geometry: the source uses FJ1737 for both the spinal cord and its central canal. Identity must be resolved before activation.",
+      "nervous.opticCns":
+        "The optic nerve (II) is a CNS tract, not an ordinary peripheral nerve.",
+      "nervous.connections": "Anatomical relationships",
+      "nervous.connectionHint":
+        "Branching relationships, not synaptic connections or reconstructed trajectories.",
+      "nervous.references": "Anatomical / terminology reference",
+      "nervous.connectionSource": "Anatomical relationship source",
+      "nervous.loading": "Loading the nervous layer…",
+      "nervous.error":
+        "The nervous layer could not load. Bones and muscles remain available.",
       "filters.none": "No active layer",
       "viewer.front": "Front",
       "viewer.back": "Back",

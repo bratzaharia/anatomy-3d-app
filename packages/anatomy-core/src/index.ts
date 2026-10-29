@@ -58,6 +58,89 @@ export interface AnatomyGroup {
   readonly parentId?: string;
 }
 
+export type NervousDivision = "cns" | "pns" | "associated";
+export type NervousFunction =
+  | "somatic"
+  | "autonomic"
+  | "sympathetic"
+  | "parasympathetic"
+  | "enteric"
+  | "sensory"
+  | "motor"
+  | "mixed";
+export interface NervousStructure extends AnatomicalStructure {
+  readonly division: NervousDivision;
+  readonly functions: readonly NervousFunction[];
+  readonly geometryStatus: "individual" | "grouped" | "unavailable";
+}
+export interface NervousFilters {
+  readonly divisions: ReadonlySet<NervousDivision>;
+  readonly functions: ReadonlySet<NervousFunction>;
+  readonly regions: ReadonlySet<string>;
+}
+export interface NervousConnection {
+  readonly from: string;
+  readonly to: string;
+  readonly relation: "branches_into" | "contributes_to" | "related_to";
+  readonly sourceUrl: string;
+}
+
+// OR within each facet, AND between facets. Empty function/region sets mean
+// unrestricted, whereas no structural divisions deliberately means no nerves.
+// Functional overlap never creates a second anatomical identity or mesh.
+export function resolveNervousStructureIds(
+  structures: readonly NervousStructure[],
+  systems: ReadonlySet<string>,
+  overrides: VisibilityOverrides,
+  filters: NervousFilters,
+): ReadonlySet<string> {
+  const eligible = resolveVisibleStructureIds(structures, systems, overrides);
+  return new Set(
+    structures
+      .filter(
+        (item) =>
+          eligible.has(item.id) &&
+          filters.divisions.has(item.division) &&
+          (!filters.functions.size ||
+            item.functions.some((id) => filters.functions.has(id))) &&
+          (!filters.regions.size ||
+            item.regionIds.some((id) => filters.regions.has(id))),
+      )
+      .map((item) => item.id),
+  );
+}
+
+export function validateNervousConnections(
+  ids: ReadonlySet<string>,
+  connections: readonly NervousConnection[],
+): readonly string[] {
+  const errors: string[] = [],
+    seen = new Set<string>();
+  for (const edge of connections) {
+    if (!ids.has(edge.from) || !ids.has(edge.to))
+      errors.push(`Unknown nervous connection: ${edge.from} → ${edge.to}`);
+    const key = `${edge.from}:${edge.relation}:${edge.to}`;
+    if (seen.has(key) || edge.from === edge.to)
+      errors.push(`Duplicate/self nervous connection: ${key}`);
+    if (!edge.sourceUrl.startsWith("https://"))
+      errors.push(`Missing nervous connection source: ${key}`);
+    seen.add(key);
+  }
+  return errors;
+}
+export function nervousRelatedIds(
+  id: string,
+  connections: readonly NervousConnection[],
+): readonly string[] {
+  return [
+    ...new Set(
+      connections.flatMap((edge) =>
+        edge.from === id ? [edge.to] : edge.to === id ? [edge.from] : [],
+      ),
+    ),
+  ];
+}
+
 export interface VisibilityOverrides {
   readonly hiddenIds: ReadonlySet<string>;
   readonly isolatedIds: ReadonlySet<string>;

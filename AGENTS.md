@@ -27,6 +27,7 @@ This repository is the foundation for a bilingual, medically responsible 3D anat
 - Layer filters remain composable; hidden geometry is not raycast-selectable.
 - Every asset requires verified source, license, and attribution metadata.
 - Avoid permanent frame loops, resource leaks, unnecessary rerenders, `console.log`, and broad unrelated changes.
+- Nervous integration is additive: never change skeletal/muscular geometry, skull modes or alignment to fit nerves. Preserve one shared scene/ID space; audit source trajectories, functional overlap and registration; report missing neural geometry explicitly. Do not rebuild older layers with the nervous importer.
 - Reviews must check anatomical integrity, visibility/raycast behavior, asset licenses, localization, and 3D performance.
 
 ## Definition of done

@@ -9,6 +9,8 @@ import type {
 import skeletonManifest from "./skeleton-manifest.json";
 import { MUSCLE_ASSET, MUSCLE_STRUCTURES, MUSCLE_GROUPS } from "./muscles";
 import { SKULL_BONE_STRUCTURES, SKULL_GROUP } from "./skull";
+import { NERVOUS_ASSET, NERVOUS_STRUCTURES, NERVOUS_GROUPS } from "./nervous";
+export * from "./nervous";
 export * from "./muscles";
 export * from "./skull";
 export * from "./skullVisualizationModes";
@@ -78,8 +80,14 @@ export const SYSTEMS: readonly AnatomySystem[] = [
     available: true,
     primary: true,
   },
+  {
+    id: "nervous",
+    names: { en: "Nervous system", ro: "Sistem nervos" },
+    color: "#dfcf91",
+    available: true,
+    primary: true,
+  },
   ...[
-    ["nervous", "Nervous system", "Sistem nervos", "#f4ca64"],
     ["arterial", "Arterial system", "Sistem arterial", "#ef4444"],
     ["venous", "Venous system", "Sistem venos", "#4777d9"],
     ["lymphatic", "Lymphatic system", "Sistem limfatic", "#72ba83"],
@@ -203,6 +211,7 @@ export const SKELETAL_STRUCTURES = [...STRUCTURES, ...SKULL_BONE_STRUCTURES];
 export const ANATOMY_CATALOG: readonly AnatomicalStructure[] = [
   ...SKELETAL_STRUCTURES,
   ...MUSCLE_STRUCTURES,
+  ...NERVOUS_STRUCTURES,
 ];
 export const GROUPS: readonly AnatomyGroup[] = [
   {
@@ -216,6 +225,7 @@ export const GROUPS: readonly AnatomyGroup[] = [
   },
   SKULL_GROUP,
   ...MUSCLE_GROUPS,
+  ...NERVOUS_GROUPS,
 ];
 
 export const assetManifestSchema = z.object({
@@ -247,6 +257,13 @@ export const ASSET_MANIFEST = assetManifestSchema.parse({
       structureIds: MUSCLE_ASSET.structures.map((item) => item.id),
       licenseId: MUSCLE_ASSET.licenseId,
     },
+    {
+      id: NERVOUS_ASSET.id,
+      kind: "anatomical-model",
+      uri: NERVOUS_ASSET.uri,
+      structureIds: NERVOUS_ASSET.structures.map((item) => item.id),
+      licenseId: NERVOUS_ASSET.licenseId,
+    },
   ],
 });
 
@@ -261,6 +278,10 @@ export function searchStructures(
 ): readonly AnatomicalStructure[] {
   const normalized = query.trim().toLocaleLowerCase(locale);
   if (!normalized) return ANATOMY_CATALOG;
+  const exactDesignation =
+    /^(?:(?:cn|cranial nerve)\s+(?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii)|(?:c|t|l|s)\d{1,2}|co1)$/i.test(
+      normalized,
+    );
   return ANATOMY_CATALOG.filter((structure) =>
     [
       structure.names.en,
@@ -268,6 +289,10 @@ export function searchStructures(
       structure.latinName,
       ...(structure.synonyms?.en ?? []),
       ...(structure.synonyms?.ro ?? []),
-    ].some((term) => term?.toLocaleLowerCase(locale).includes(normalized)),
+    ].some((term) =>
+      exactDesignation
+        ? term?.toLocaleLowerCase(locale) === normalized
+        : term?.toLocaleLowerCase(locale).includes(normalized),
+    ),
   );
 }

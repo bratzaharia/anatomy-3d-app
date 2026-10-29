@@ -1,0 +1,254 @@
+# Nervous coverage — inventory 1.0.0
+
+PARTIAL. No complete full-body nervous system claim. Medical and Romanian terminology review pending. Individual means independently identified source geometry, not complete nerve course.
+
+| Group                             | Catalog | Individual | Missing geometry |
+| --------------------------------- | ------: | ---------: | ---------------: |
+| Brain and central structures      |      54 |         53 |                1 |
+| Cranial nerves I–XII              |      52 |         28 |               24 |
+| Spinal nerves — 31 pairs          |      62 |          0 |               62 |
+| Cervical plexus                   |      12 |          0 |               12 |
+| Brachial plexus                   |      46 |          0 |               46 |
+| Thoracic nerves                   |      24 |          0 |               24 |
+| Lumbar plexus                     |      14 |          0 |               14 |
+| Sacral plexus and lower limb      |      24 |          0 |               24 |
+| Autonomic structures              |      26 |          2 |               24 |
+| Associated cavities and coverings |       4 |          0 |                4 |
+
+## Missing / quarantined
+
+- nervous-spinal-cord: spinal cord — Quarantined: PART-OF FMA7647 (spinal cord) and FMA78497 (central canal) both map to FJ1737. Tissue-versus-cavity identity requires independent source review.
+- nervous-olfactory-nerve-left: Left olfactory nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-olfactory-nerve-right: Right olfactory nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-oculomotor-nerve-left: Left oculomotor nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-oculomotor-nerve-right: Right oculomotor nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-trigeminal-nerve-left: Left trigeminal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-trigeminal-nerve-right: Right trigeminal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-abducens-nerve-left: Left abducens nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-abducens-nerve-right: Right abducens nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-facial-nerve-left: Left facial nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-facial-nerve-right: Right facial nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-vestibulocochlear-nerve-left: Left vestibulocochlear nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-vestibulocochlear-nerve-right: Right vestibulocochlear nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-glossopharyngeal-nerve-left: Left glossopharyngeal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-glossopharyngeal-nerve-right: Right glossopharyngeal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-vagus-nerve-left: Left vagus nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-vagus-nerve-right: Right vagus nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-accessory-nerve-left: Left accessory nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-accessory-nerve-right: Right accessory nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-hypoglossal-nerve-left: Left hypoglossal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-hypoglossal-nerve-right: Right hypoglossal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-maxillary-nerve-left: Left maxillary nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-maxillary-nerve-right: Right maxillary nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-mandibular-nerve-left: Left mandibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-mandibular-nerve-right: Right mandibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c1-left: Left spinal nerve C1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c1-right: Right spinal nerve C1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c2-left: Left spinal nerve C2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c2-right: Right spinal nerve C2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c3-left: Left spinal nerve C3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c3-right: Right spinal nerve C3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c4-left: Left spinal nerve C4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c4-right: Right spinal nerve C4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c5-left: Left spinal nerve C5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c5-right: Right spinal nerve C5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c6-left: Left spinal nerve C6 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c6-right: Right spinal nerve C6 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c7-left: Left spinal nerve C7 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c7-right: Right spinal nerve C7 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c8-left: Left spinal nerve C8 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-c8-right: Right spinal nerve C8 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t1-left: Left spinal nerve T1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t1-right: Right spinal nerve T1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t2-left: Left spinal nerve T2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t2-right: Right spinal nerve T2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t3-left: Left spinal nerve T3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t3-right: Right spinal nerve T3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t4-left: Left spinal nerve T4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t4-right: Right spinal nerve T4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t5-left: Left spinal nerve T5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t5-right: Right spinal nerve T5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t6-left: Left spinal nerve T6 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t6-right: Right spinal nerve T6 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t7-left: Left spinal nerve T7 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t7-right: Right spinal nerve T7 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t8-left: Left spinal nerve T8 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t8-right: Right spinal nerve T8 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t9-left: Left spinal nerve T9 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t9-right: Right spinal nerve T9 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t10-left: Left spinal nerve T10 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t10-right: Right spinal nerve T10 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t11-left: Left spinal nerve T11 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t11-right: Right spinal nerve T11 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t12-left: Left spinal nerve T12 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-t12-right: Right spinal nerve T12 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l1-left: Left spinal nerve L1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l1-right: Right spinal nerve L1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l2-left: Left spinal nerve L2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l2-right: Right spinal nerve L2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l3-left: Left spinal nerve L3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l3-right: Right spinal nerve L3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l4-left: Left spinal nerve L4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l4-right: Right spinal nerve L4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l5-left: Left spinal nerve L5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-l5-right: Right spinal nerve L5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s1-left: Left spinal nerve S1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s1-right: Right spinal nerve S1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s2-left: Left spinal nerve S2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s2-right: Right spinal nerve S2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s3-left: Left spinal nerve S3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s3-right: Right spinal nerve S3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s4-left: Left spinal nerve S4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s4-right: Right spinal nerve S4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s5-left: Left spinal nerve S5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-s5-right: Right spinal nerve S5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-co1-left: Left spinal nerve Co1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-spinal-nerve-co1-right: Right spinal nerve Co1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lesser-occipital-nerve-left: Left lesser occipital nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lesser-occipital-nerve-right: Right lesser occipital nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-great-auricular-nerve-left: Left great auricular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-great-auricular-nerve-right: Right great auricular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-transverse-cervical-nerve-left: Left transverse cervical nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-transverse-cervical-nerve-right: Right transverse cervical nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-supraclavicular-nerves-left: Left supraclavicular nerves — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-supraclavicular-nerves-right: Right supraclavicular nerves — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-phrenic-nerve-left: Left phrenic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-phrenic-nerve-right: Right phrenic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-musculocutaneous-nerve-left: Left musculocutaneous nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-musculocutaneous-nerve-right: Right musculocutaneous nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-median-nerve-left: Left median nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-median-nerve-right: Right median nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-ulnar-nerve-left: Left ulnar nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-ulnar-nerve-right: Right ulnar nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-axillary-nerve-left: Left axillary nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-axillary-nerve-right: Right axillary nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-radial-nerve-left: Left radial nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-radial-nerve-right: Right radial nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-dorsal-scapular-nerve-left: Left dorsal scapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-dorsal-scapular-nerve-right: Right dorsal scapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-long-thoracic-nerve-left: Left long thoracic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-long-thoracic-nerve-right: Right long thoracic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-suprascapular-nerve-left: Left suprascapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-suprascapular-nerve-right: Right suprascapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-nerve-to-subclavius-left: Left nerve to subclavius — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-nerve-to-subclavius-right: Right nerve to subclavius — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-pectoral-nerve-left: Left lateral pectoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-pectoral-nerve-right: Right lateral pectoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-pectoral-nerve-left: Left medial pectoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-pectoral-nerve-right: Right medial pectoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-upper-subscapular-nerve-left: Left upper subscapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-upper-subscapular-nerve-right: Right upper subscapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lower-subscapular-nerve-left: Left lower subscapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lower-subscapular-nerve-right: Right lower subscapular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-thoracodorsal-nerve-left: Left thoracodorsal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-thoracodorsal-nerve-right: Right thoracodorsal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-cutaneous-nerve-of-arm-left: Left medial cutaneous nerve of arm — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-cutaneous-nerve-of-arm-right: Right medial cutaneous nerve of arm — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-cutaneous-nerve-of-forearm-left: Left medial cutaneous nerve of forearm — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-cutaneous-nerve-of-forearm-right: Right medial cutaneous nerve of forearm — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-iliohypogastric-nerve-left: Left iliohypogastric nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-iliohypogastric-nerve-right: Right iliohypogastric nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-ilioinguinal-nerve-left: Left ilioinguinal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-ilioinguinal-nerve-right: Right ilioinguinal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-genitofemoral-nerve-left: Left genitofemoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-genitofemoral-nerve-right: Right genitofemoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-femoral-cutaneous-nerve-left: Left lateral femoral cutaneous nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-femoral-cutaneous-nerve-right: Right lateral femoral cutaneous nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-femoral-nerve-left: Left femoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-femoral-nerve-right: Right femoral nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-obturator-nerve-left: Left obturator nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-obturator-nerve-right: Right obturator nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sciatic-nerve-left: Left sciatic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sciatic-nerve-right: Right sciatic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-tibial-nerve-left: Left tibial nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-tibial-nerve-right: Right tibial nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-common-fibular-nerve-left: Left common fibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-common-fibular-nerve-right: Right common fibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superficial-fibular-nerve-left: Left superficial fibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superficial-fibular-nerve-right: Right superficial fibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-deep-fibular-nerve-left: Left deep fibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-deep-fibular-nerve-right: Right deep fibular nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superior-gluteal-nerve-left: Left superior gluteal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superior-gluteal-nerve-right: Right superior gluteal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-inferior-gluteal-nerve-left: Left inferior gluteal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-inferior-gluteal-nerve-right: Right inferior gluteal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-posterior-femoral-cutaneous-nerve-left: Left posterior femoral cutaneous nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-posterior-femoral-cutaneous-nerve-right: Right posterior femoral cutaneous nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-pudendal-nerve-left: Left pudendal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-pudendal-nerve-right: Right pudendal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-plantar-nerve-left: Left medial plantar nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-plantar-nerve-right: Right medial plantar nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-plantar-nerve-left: Left lateral plantar nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-plantar-nerve-right: Right lateral plantar nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t1-left: Left intercostal nerve T1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t1-right: Right intercostal nerve T1 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t2-left: Left intercostal nerve T2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t2-right: Right intercostal nerve T2 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t3-left: Left intercostal nerve T3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t3-right: Right intercostal nerve T3 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t4-left: Left intercostal nerve T4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t4-right: Right intercostal nerve T4 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t5-left: Left intercostal nerve T5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t5-right: Right intercostal nerve T5 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t6-left: Left intercostal nerve T6 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t6-right: Right intercostal nerve T6 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t7-left: Left intercostal nerve T7 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t7-right: Right intercostal nerve T7 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t8-left: Left intercostal nerve T8 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t8-right: Right intercostal nerve T8 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t9-left: Left intercostal nerve T9 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t9-right: Right intercostal nerve T9 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t10-left: Left intercostal nerve T10 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t10-right: Right intercostal nerve T10 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t11-left: Left intercostal nerve T11 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-intercostal-nerve-t11-right: Right intercostal nerve T11 — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-subcostal-nerve-left: Left subcostal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-subcostal-nerve-right: Right subcostal nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sympathetic-trunk-left: Left sympathetic trunk — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sympathetic-trunk-right: Right sympathetic trunk — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superior-cervical-ganglion-left: Left superior cervical ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superior-cervical-ganglion-right: Right superior cervical ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-middle-cervical-ganglion-left: Left middle cervical ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-middle-cervical-ganglion-right: Right middle cervical ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-cervicothoracic-ganglion-left: Left cervicothoracic ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-cervicothoracic-ganglion-right: Right cervicothoracic ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-greater-splanchnic-nerve-left: Left greater splanchnic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-greater-splanchnic-nerve-right: Right greater splanchnic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lesser-splanchnic-nerve-left: Left lesser splanchnic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lesser-splanchnic-nerve-right: Right lesser splanchnic nerve — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-pelvic-splanchnic-nerves-left: Left pelvic splanchnic nerves — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-pelvic-splanchnic-nerves-right: Right pelvic splanchnic nerves — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sacral-splanchnic-nerves-left: Left sacral splanchnic nerves — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sacral-splanchnic-nerves-right: Right sacral splanchnic nerves — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-pterygopalatine-ganglion-left: Left pterygopalatine ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-pterygopalatine-ganglion-right: Right pterygopalatine ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-submandibular-ganglion-left: Left submandibular ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-submandibular-ganglion-right: Right submandibular ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-otic-ganglion-left: Left otic ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-otic-ganglion-right: Right otic ganglion — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-myenteric-plexus: myenteric plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-submucosal-plexus: submucosal plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-ventricles: lateral ventricles — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-third-ventricle: third ventricle — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-fourth-ventricle: fourth ventricle — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-filum-terminale: filum terminale — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-cervical-plexus-left: Left cervical plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-cervical-plexus-right: Right cervical plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-brachial-plexus-left: Left brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-brachial-plexus-right: Right brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lumbar-plexus-left: Left lumbar plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lumbar-plexus-right: Right lumbar plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sacral-plexus-left: Left sacral plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-sacral-plexus-right: Right sacral plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superior-trunk-of-brachial-plexus-left: Left superior trunk of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-superior-trunk-of-brachial-plexus-right: Right superior trunk of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-middle-trunk-of-brachial-plexus-left: Left middle trunk of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-middle-trunk-of-brachial-plexus-right: Right middle trunk of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-inferior-trunk-of-brachial-plexus-left: Left inferior trunk of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-inferior-trunk-of-brachial-plexus-right: Right inferior trunk of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-cord-of-brachial-plexus-left: Left lateral cord of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-lateral-cord-of-brachial-plexus-right: Right lateral cord of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-cord-of-brachial-plexus-left: Left medial cord of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-medial-cord-of-brachial-plexus-right: Right medial cord of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-posterior-cord-of-brachial-plexus-left: Left posterior cord of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.
+- nervous-posterior-cord-of-brachial-plexus-right: Right posterior cord of brachial plexus — No independently mapped, anatomically compatible surface in the audited BodyParts3D release.

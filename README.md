@@ -1,6 +1,6 @@
 # Human Anatomy 3D Atlas
 
-A bilingual (Romanian/English) interactive anatomy atlas with sourced **BodyParts3D 4.0** skeletal and muscular layers. The unchanged skeleton maps 202 source meshes to 29 selectable bones/groups. The additive muscular layer maps 417 source meshes to 329 individual entities and 26 explicit sets across the body. **Muscular coverage is incomplete:** inventory v1.0.0 exposes grouped-only members and missing geometry. Nerves and organs remain planned. Independent medical and Romanian terminology review remains pending.
+A bilingual (Romanian/English) interactive anatomy atlas with sourced **BodyParts3D 4.0** skeletal and muscular layers, plus a partial independent nervous layer on `HA3DA-1`. The unchanged skeleton maps 202 source meshes to 29 selectable bones/groups. The additive muscular layer maps 417 source meshes to 329 individual entities and 26 explicit sets across the body. **Muscular and nervous coverage are incomplete:** their inventories expose missing geometry explicitly. Other organs remain planned. Independent medical and Romanian terminology review remains pending.
 
 ## Quick start
 
@@ -46,6 +46,23 @@ Rebuild from the official archive with `node tools/anatomy-assets/import-skeleto
 For muscles, use `node tools/anatomy-assets/import-muscles.mjs` (or `--offline`); do not rebuild the skeleton. The 41.17 MB muscular GLB loads on first enable and stays cached. Bones, muscles, both, and no layers are supported. The regional explorer/inspector offers full group lists, missing-member status, contextual hide/show/reveal, and muscle-only opacity. See [muscular architecture](docs/architecture/MUSCULAR_LAYER.md), [coverage](docs/assets/MUSCLE_COVERAGE.md), [audit and acquisition gaps](docs/assets/MUSCLE_AUDIT.md), and the machine-readable `packages/anatomy-data/src/muscle-manifest.json`.
 
 ## Adding content
+
+The `HA3DA-1` branch adds a **partial independent nervous layer**: 83 mapped
+entities / 91 source meshes, loaded only when its checkbox is enabled. The
+318-entry inventory includes all twelve cranial and 31 spinal nerve pairs,
+but most complete nerves, the spinal cord and peripheral plexuses still lack
+approved compatible geometry. This is **not a complete full-body nervous atlas**.
+See [coverage](docs/assets/NERVOUS_COVERAGE.md), [asset audit](docs/assets/NERVOUS_AUDIT.md)
+and [architecture](docs/architecture/NERVOUS_LAYER.md). Existing skeletal,
+muscular and skull source/material files remain hash-protected. Runtime asset
+hosting remains Vercel; an optional `VITE_NERVOUS_ASSET_BASE_URL` can serve the
+same audited file from a CORS-enabled static origin without changing domain data.
+
+To view the available nervous geometry, enable **Sistem nervos / Nervous system**
+and click **Vezi stratul nervos / Show nervous layer** in the viewport. This
+temporarily isolates and focuses the head-level source structures that would
+otherwise be occluded by the skull. **Restore previous layers** returns the
+previous visibility context without changing global system checkboxes.
 
 1. Confirm terminology and relationships from a reputable cited source; add the stable entity to `packages/anatomy-data/src/index.ts`.
 2. Supply curated RO/EN names and provenance. Run both validators.
