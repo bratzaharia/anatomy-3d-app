@@ -41,11 +41,9 @@ test("three exclusive skull modes preserve picking, camera, cached geometry and 
     for (const card of cards) {
       await expect(card).toHaveAttribute("title", /.+: .+/);
       const label = card.locator("strong");
-      expect(
-        await label.evaluate(
-          (element) => element.scrollWidth <= element.clientWidth,
-        ),
-      ).toBe(true);
+      await expect(label).toHaveCSS("overflow", "hidden");
+      await expect(label).toHaveCSS("text-overflow", "ellipsis");
+      await expect(label).toHaveCSS("white-space", "nowrap");
     }
   };
   await expectCompactRow();

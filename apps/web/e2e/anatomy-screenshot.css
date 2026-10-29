@@ -3,6 +3,8 @@
 .model-summary,
 .view-controls,
 .muscle-load-status,
+.nervous-load-status,
+.nervous-source-credit,
 .hover-label {
   visibility: hidden !important;
 }
