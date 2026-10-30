@@ -7,6 +7,7 @@ import {
   venousGraphNames,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
+import { CardiacVenousBridge } from "./CardiacVenousBridge";
 export function VenousDetails({ id }: { id: string }) {
   const { t, i18n } = useTranslation(),
     locale = i18n.language as Locale;
@@ -84,6 +85,7 @@ export function VenousDetails({ id }: { id: string }) {
         </>
       )}
       <p className="coverage-counts">{t("venous.traceNote")}</p>
+      <CardiacVenousBridge id={id} />
       <a href={metadata.medicalSource} target="_blank" rel="noreferrer">
         {t("nervous.references")}
       </a>

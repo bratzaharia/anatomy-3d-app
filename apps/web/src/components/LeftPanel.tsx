@@ -119,7 +119,7 @@ export function LeftPanel() {
             <span>{t("filters.all")}</span>
           </label>
           <div className="filter-list">
-            {SYSTEMS.map((system) => (
+            {SYSTEMS.filter((system) => system.primary).map((system) => (
               <label
                 key={system.id}
                 className={`filter-row ${system.available ? "" : "disabled"}`}

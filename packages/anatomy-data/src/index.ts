@@ -18,6 +18,8 @@ import {
 } from "./skeletalParts";
 import { createCoverageInventory } from "./coverage";
 import { VENOUS_ASSETS, VENOUS_STRUCTURES, VENOUS_GROUPS } from "./venous";
+import { CARDIAC_ASSETS, CARDIAC_CATALOG, CARDIAC_GROUPS } from "./heart";
+export * from "./heart";
 export * from "./venous";
 export * from "./brain";
 import {
@@ -85,6 +87,16 @@ export const SKELETON_ASSET = skeletonManifestSchema.parse(skeletonManifest);
 
 export const SYSTEMS: readonly AnatomySystem[] = [
   {
+    id: "cardiac",
+    names: {
+      en: "Cardiac anatomy (organ module)",
+      ro: "Anatomie cardiacă (modul de organ)",
+    },
+    color: "#bb6d73",
+    available: true,
+    primary: false,
+  },
+  {
     id: "skeletal",
     names: { en: "Skeletal system", ro: "Sistem osos" },
     color: "#e9dcc0",
@@ -130,7 +142,7 @@ export const SYSTEMS: readonly AnatomySystem[] = [
   })),
 ];
 export const AVAILABLE_SYSTEM_IDS = SYSTEMS.filter(
-  (system) => system.available,
+  (system) => system.available && system.primary,
 ).map((system) => system.id);
 
 export const REGIONS: readonly AnatomyRegion[] = [
@@ -250,6 +262,7 @@ export const ANATOMY_CATALOG: readonly AnatomicalStructure[] = [
   ...MUSCLE_STRUCTURES,
   ...NERVOUS_STRUCTURES,
   ...VENOUS_STRUCTURES,
+  ...CARDIAC_CATALOG,
 ];
 export const ANATOMY_COVERAGE = createCoverageInventory(ANATOMY_CATALOG);
 export const GROUPS: readonly AnatomyGroup[] = [
@@ -268,6 +281,7 @@ export const GROUPS: readonly AnatomyGroup[] = [
   ...MUSCLE_GROUPS,
   ...NERVOUS_GROUPS,
   ...VENOUS_GROUPS,
+  ...CARDIAC_GROUPS,
 ];
 
 export const assetManifestSchema = z.object({
@@ -310,12 +324,12 @@ export const ASSET_MANIFEST = assetManifestSchema.parse({
       ),
       licenseId: asset.licenseId,
     })),
-    ...VENOUS_ASSETS.map((asset) => ({
+    ...[...VENOUS_ASSETS, ...CARDIAC_ASSETS].map((asset) => ({
       id: asset.id,
       kind: "anatomical-model",
       uri: asset.uri,
       structureIds: asset.structureIds,
-      licenseId: asset.licenseId,
+      licenseId: "CC-BY-4.0",
     })),
   ],
 });

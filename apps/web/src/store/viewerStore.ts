@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { createBrainSlice, type BrainState } from "./brainState";
+import { createCardiacSlice, type CardiacState } from "./cardiacState";
 import {
   traceVenousDrainage,
   type VenousDepth,
@@ -17,11 +18,12 @@ import {
   venousMetadataById,
   BRAIN_IDS,
   brainRegionById,
+  cardiacMetadataById,
 } from "@anatomy/data";
 
 export type CameraView = "front" | "back" | "left" | "right" | "fit" | "focus";
 
-export interface ViewerState extends BrainState {
+export interface ViewerState extends BrainState, CardiacState {
   venousRequested: boolean;
   venousRetry: number;
   venousAssetStatus: Readonly<Record<string, "loading" | "ready" | "error">>;
@@ -108,6 +110,7 @@ export interface ViewerState extends BrainState {
 
 export const useViewerStore = create<ViewerState>((set, get, api) => ({
   ...createBrainSlice(set, get, api),
+  ...createCardiacSlice(set, get, api),
   venousRequested: false,
   venousRetry: 0,
   venousAssetStatus: {},
@@ -379,6 +382,9 @@ export const useViewerStore = create<ViewerState>((set, get, api) => ({
   select: (id) =>
     set({
       selectedId: id,
+      cardiacSelectedIds: new Set(
+        cardiacMetadataById.has(id ?? "") ? [id!] : [],
+      ),
       brainSelectedIds: new Set(
         id === "nervous-brain"
           ? BRAIN_IDS

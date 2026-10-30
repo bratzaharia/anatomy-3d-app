@@ -908,6 +908,82 @@ input:focus-visible {
   font-size: 11px;
   line-height: 1.65;
 }
+.cardiac-explorer {
+  flex: 0 1 auto;
+  max-height: 48%;
+  overflow: auto;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  scrollbar-width: thin;
+  font-size: 11px;
+  line-height: 1.65;
+}
+.cardiac-explorer h3 {
+  display: inline;
+  font-size: 12px;
+}
+.cardiac-explorer summary {
+  cursor: pointer;
+}
+.cardiac-explorer a {
+  color: var(--teal);
+}
+.cardiac-explorer select {
+  max-width: 100%;
+  color: var(--text);
+  background: #10232f;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 6px;
+}
+.cardiac-modes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin: 12px 0;
+}
+.cardiac-mode {
+  position: relative;
+  aspect-ratio: 1;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 5px;
+  min-width: 0;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 9px;
+  background: #0a1c2a;
+}
+.cardiac-mode input {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  accent-color: var(--teal);
+}
+.cardiac-mode.is-selected {
+  outline: 1px solid var(--teal);
+}
+.cardiac-mode-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #a4656d;
+}
+.cardiac-mode-swatch.colors {
+  background: linear-gradient(135deg, #b97079 50%, #73a2ca 50%);
+}
+.cardiac-mode-swatch.connections {
+  background: linear-gradient(
+    135deg,
+    #9c5663 40%,
+    #73a2ca 40% 60%,
+    #d18b7d 60%
+  );
+}
 .brain-explorer h3 {
   display: inline;
   font-size: 12px;
