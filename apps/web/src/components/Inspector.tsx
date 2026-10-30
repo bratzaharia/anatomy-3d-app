@@ -25,6 +25,8 @@ import {
   nervousMetadataById,
   VENOUS_GEOMETRY,
   VENOUS_STRUCTURES,
+  BRAIN_IDS,
+  brainRegionById,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -32,6 +34,8 @@ import { SkullVisualizationModes } from "./SkullVisualizationModes";
 import { NervousDetails } from "./NervousDetails";
 import { VenousExplorer } from "./VenousExplorer";
 import { VenousDetails } from "./VenousDetails";
+import { BrainExplorer } from "./BrainExplorer";
+import { BrainDetails } from "./BrainDetails";
 
 export function Inspector() {
   const { t, i18n } = useTranslation();
@@ -72,41 +76,49 @@ export function Inspector() {
   const venousDepths = useViewerStore((state) => state.venousDepths);
   const venousRegions = useViewerStore((state) => state.venousRegions);
   const venousOpacity = useViewerStore((state) => state.venousOpacity);
+  const brainOpacity = useViewerStore((state) => state.brainOpacity);
+  const brainStyles = useViewerStore((state) => state.brainStyles);
   const registeredNeuralSource =
     selectedId &&
     nervousMetadataById.get(selectedId)?.sourceDataset === "Z-Anatomy";
+  const resolvedVisible = venous
+    ? venousOpacity === 0
+      ? new Set<string>()
+      : resolveVenousStructureIds(
+          VENOUS_STRUCTURES,
+          activeSystemIds,
+          { hiddenIds, isolatedIds },
+          {
+            groups: venousGroups,
+            depths: venousDepths,
+            regions: venousRegions,
+          },
+        )
+    : nervous
+      ? resolveNervousStructureIds(
+          NERVOUS_STRUCTURES,
+          activeSystemIds,
+          { hiddenIds, isolatedIds },
+          {
+            divisions: nervousDivisions,
+            functions: nervousFunctions,
+            regions: nervousRegions,
+          },
+        )
+      : resolveVisibleStructureIds(ANATOMY_CATALOG, activeSystemIds, {
+          hiddenIds,
+          isolatedIds,
+        });
+  const brainPartVisible = (id: string) =>
+    resolvedVisible.has(id) &&
+    brainOpacity * (brainStyles[id]?.opacity ?? 1) > 0;
   const isHidden =
     structure &&
-    !(
-      venous
-        ? venousOpacity === 0
-          ? new Set<string>()
-          : resolveVenousStructureIds(
-              VENOUS_STRUCTURES,
-              activeSystemIds,
-              { hiddenIds, isolatedIds },
-              {
-                groups: venousGroups,
-                depths: venousDepths,
-                regions: venousRegions,
-              },
-            )
-        : nervous
-          ? resolveNervousStructureIds(
-              NERVOUS_STRUCTURES,
-              activeSystemIds,
-              { hiddenIds, isolatedIds },
-              {
-                divisions: nervousDivisions,
-                functions: nervousFunctions,
-                regions: nervousRegions,
-              },
-            )
-          : resolveVisibleStructureIds(ANATOMY_CATALOG, activeSystemIds, {
-              hiddenIds,
-              isolatedIds,
-            })
-    ).has(structure.id);
+    (structure.id === "nervous-brain"
+      ? !BRAIN_IDS.some(brainPartVisible)
+      : brainRegionById.has(structure.id)
+        ? !brainPartVisible(structure.id)
+        : !resolvedVisible.has(structure.id));
 
   return (
     <aside className="side-panel inspector" aria-label={t("inspector.title")}>
@@ -132,6 +144,7 @@ export function Inspector() {
         )}
       </div>
       <VenousExplorer />
+      <BrainExplorer />
       {!structure && skullContext ? (
         <div className="inspector-content">
           <SkullVisualizationModes />
@@ -240,6 +253,7 @@ export function Inspector() {
             </>
           )}
           {nervous && <NervousDetails id={structure.id} />}
+          {nervous && <BrainDetails id={structure.id} />}
           {venous && <VenousDetails id={structure.id} />}
           {coverage?.reason &&
             (!nervous || coverage.reason === "source-policy") && (

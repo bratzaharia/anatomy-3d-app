@@ -11,6 +11,7 @@ import {
   NERVOUS_FOCUS_TARGETS,
   NERVOUS_REGION_BOUNDS,
   VENOUS_GEOMETRY,
+  brainRegionById,
 } from "@anatomy/data";
 import { SkeletonModel } from "./SkeletonModel";
 import { MuscleLayer } from "./MuscleLayer";
@@ -76,6 +77,14 @@ function CameraController() {
           (box, item) => box.union(boundsBox(item.bounds)),
           new Box3(),
         );
+      else if (
+        state.brainSelectedIds.size &&
+        (state.selectedId === "nervous-brain" ||
+          brainRegionById.has(state.selectedId ?? ""))
+      )
+        bounds = focusStructures
+          .filter((item) => state.brainSelectedIds.has(item.id))
+          .reduce((box, item) => box.union(boundsBox(item.bounds)), new Box3());
       else if (selected) bounds = boundsBox(selected.bounds);
       else if (regionStructures.length)
         bounds = regionStructures.reduce(

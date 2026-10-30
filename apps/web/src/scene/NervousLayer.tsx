@@ -15,9 +15,11 @@ import {
   NERVOUS_GEOMETRY,
   NERVOUS_STRUCTURES,
   nervousMetadataById,
+  brainRegionById,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { nervousRaycast } from "./nervousPicking";
+import { BrainRegion } from "./BrainRegion";
 
 const nervousAssetUrls = NERVOUS_ASSETS.map(
   (asset) => `${import.meta.env.VITE_NERVOUS_ASSET_BASE_URL ?? ""}${asset.uri}`,
@@ -163,15 +165,25 @@ function NervousModel() {
   // Loader-owned buffers stay cached; only locally owned materials are disposed.
   return (
     <group name="nervous-layer" dispose={null}>
-      {[...geometries].map(([id, geometry]) => (
-        <Nerve
-          key={id}
-          id={id}
-          geometry={geometry}
-          visible={visible.has(id)}
-          materials={materials}
-        />
-      ))}
+      {[...geometries].map(([id, geometry]) =>
+        brainRegionById.has(id) ? (
+          <BrainRegion
+            key={id}
+            id={id}
+            geometry={geometry}
+            visible={visible.has(id)}
+            base={materials.cns}
+          />
+        ) : (
+          <Nerve
+            key={id}
+            id={id}
+            geometry={geometry}
+            visible={visible.has(id)}
+            materials={materials}
+          />
+        ),
+      )}
     </group>
   );
 }

@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { createBrainSlice, type BrainState } from "./brainState";
 import {
   traceVenousDrainage,
   type VenousDepth,
@@ -14,11 +15,13 @@ import {
   VENOUS_MANIFEST,
   VENOUS_CONNECTIONS,
   venousMetadataById,
+  BRAIN_IDS,
+  brainRegionById,
 } from "@anatomy/data";
 
 export type CameraView = "front" | "back" | "left" | "right" | "fit" | "focus";
 
-interface ViewerState {
+export interface ViewerState extends BrainState {
   venousRequested: boolean;
   venousRetry: number;
   venousAssetStatus: Readonly<Record<string, "loading" | "ready" | "error">>;
@@ -103,7 +106,8 @@ interface ViewerState {
   toggleRightPanel: () => void;
 }
 
-export const useViewerStore = create<ViewerState>((set, get) => ({
+export const useViewerStore = create<ViewerState>((set, get, api) => ({
+  ...createBrainSlice(set, get, api),
   venousRequested: false,
   venousRetry: 0,
   venousAssetStatus: {},
@@ -375,6 +379,13 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
   select: (id) =>
     set({
       selectedId: id,
+      brainSelectedIds: new Set(
+        id === "nervous-brain"
+          ? BRAIN_IDS
+          : brainRegionById.has(id ?? "")
+            ? [id!]
+            : [],
+      ),
       rightPanelOpen: id ? true : get().rightPanelOpen,
       venousSelectedIds: new Set(id?.startsWith("venous-") ? [id] : []),
     }),
@@ -436,7 +447,9 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
               ...state.nervousIsolationSnapshot,
               nervousIsolationSnapshot: null,
             }
-          : { hiddenIds: new Set(), isolatedIds: new Set() },
+          : state.brainSnapshot
+            ? { ...state.brainSnapshot, brainSnapshot: null }
+            : { hiddenIds: new Set(), isolatedIds: new Set() },
     ),
   setCameraView: (view) =>
     set((state) => ({

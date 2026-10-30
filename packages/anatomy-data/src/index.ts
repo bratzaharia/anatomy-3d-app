@@ -19,6 +19,7 @@ import {
 import { createCoverageInventory } from "./coverage";
 import { VENOUS_ASSETS, VENOUS_STRUCTURES, VENOUS_GROUPS } from "./venous";
 export * from "./venous";
+export * from "./brain";
 import {
   NERVOUS_ASSETS,
   NERVOUS_STRUCTURES,
