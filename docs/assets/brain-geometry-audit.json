@@ -1,0 +1,886 @@
+{
+  "version": 1,
+  "sourceSha256": "05da6e823b3157b1c61e66b5dde0e4ab6f41de5d7948ba9ebae5afa60e7c8d14",
+  "coordinateTransform": "[x/1000, z/1000, -y/1000]",
+  "geometryModified": false,
+  "regionCount": 53,
+  "triangleCount": 300026,
+  "textures": 0,
+  "hasCorticalAtlasLabels": false,
+  "hasSphericalCorrespondence": false,
+  "canColorSourceParts": true,
+  "canRenderRegisteredAdvancedAtlas": false,
+  "clinicalReview": "pending",
+  "regions": [
+    {
+      "id": "nervous-superior-frontal-gyrus-left",
+      "sourceConcepts": ["FMA72654"],
+      "laterality": "left",
+      "category": "frontal",
+      "vertices": 3625,
+      "triangles": 6452,
+      "positionSha256": "3e7eda774190f0facc375ffd56a99585d14f965b5690265c33d372d29a547be7",
+      "indexSha256": "6695a8454572b8020e922f30ee1fef359811fde1ecfea7c1f0a69b342148ff90",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          0.00019045900262426585, 1.5521800518035889, 0.05369940027594566
+        ],
+        "max": [0.0317067988216877, 1.6304600238800049, 0.1696770042181015]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-superior-frontal-gyrus-right",
+      "sourceConcepts": ["FMA72653"],
+      "laterality": "right",
+      "category": "frontal",
+      "vertices": 3671,
+      "triangles": 6450,
+      "positionSha256": "3b751474d4e5b103a80e38d23d364d7cbe56d66ab83924d5a14fca45a2d44527",
+      "indexSha256": "96b4db3618f8c4d2fe38c706531f7e8c8c14c4618500449eb8c9a8167b225ab6",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.03314429894089699, 1.5520100593566895, 0.053709398955106735],
+        "max": [-0.0015545099740847945, 1.6304199695587158, 0.1696690022945404]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-middle-frontal-gyrus-left",
+      "sourceConcepts": ["FMA72656"],
+      "laterality": "left",
+      "category": "frontal",
+      "vertices": 1973,
+      "triangles": 3416,
+      "positionSha256": "5b6ea8024b71582a4b5d51eeef9835e9064f1337e65799c70bcef8884d2064d4",
+      "indexSha256": "7202485fee0b1b4898c7179cbdd1f039b6e0b7ba0b1e76a54666b19ce6861859",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.014599899761378765, 1.560420036315918, 0.07419929653406143],
+        "max": [0.049143001437187195, 1.6223900318145752, 0.15917199850082397]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-middle-frontal-gyrus-right",
+      "sourceConcepts": ["FMA72655"],
+      "laterality": "right",
+      "category": "frontal",
+      "vertices": 1960,
+      "triangles": 3326,
+      "positionSha256": "688531ca9bca79d27610fd44e939d4e01b9e28e07013428b837409f7b8c29191",
+      "indexSha256": "cffb65c3b646390c26f004f2c12d1d0fb9c1ac67f516bab73dc89f83f050e76b",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.05051340162754059, 1.5604300498962402, 0.07383830100297928],
+        "max": [-0.01593329943716526, 1.6223000288009644, 0.15919999778270721]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-inferior-frontal-gyrus-left",
+      "sourceConcepts": ["FMA72658"],
+      "laterality": "left",
+      "category": "frontal",
+      "vertices": 1927,
+      "triangles": 3290,
+      "positionSha256": "45fd9403ab52053326333131f1ab382b08f062474669ee51a5f26f7c6984512d",
+      "indexSha256": "1d3ac1d9ece9d82d7d46de17bce882dd7c87124c12a3de392e7f90faa648123e",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.025942400097846985, 1.5469000339508057, 0.08967850357294083],
+        "max": [0.060916099697351456, 1.607069969177246, 0.15292799472808838]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-inferior-frontal-gyrus-right",
+      "sourceConcepts": ["FMA72657"],
+      "laterality": "right",
+      "category": "frontal",
+      "vertices": 1928,
+      "triangles": 3292,
+      "positionSha256": "4a6e24696659309b9e3404de1c973a4eeeae54f6ef8943b37661f6e39dfbc2e8",
+      "indexSha256": "6752263e71ef1aa8491be04d7b6bd96592f88fe891f5435be65b360c175081f0",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.06221169978380203, 1.5464799404144287, 0.08988580107688904],
+        "max": [-0.027258099988102913, 1.6070599555969238, 0.15297099947929382]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-precentral-gyrus-left",
+      "sourceConcepts": ["FMA72662"],
+      "laterality": "left",
+      "category": "frontal",
+      "vertices": 2336,
+      "triangles": 4042,
+      "positionSha256": "0b43f3d67f78a5f8f507210b758595e2c563b85bf4c91a7765bd1d2829b6633b",
+      "indexSha256": "d663abcee3f46d668960ee9c64f8044b035b24d5ff1f18d7427548a67a05f095",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          0.0005947190220467746, 1.5607000589370728, 0.039272598922252655
+        ],
+        "max": [0.06288540363311768, 1.6266900300979614, 0.10483899712562561]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-precentral-gyrus-right",
+      "sourceConcepts": ["FMA72661"],
+      "laterality": "right",
+      "category": "frontal",
+      "vertices": 2382,
+      "triangles": 4042,
+      "positionSha256": "9735d81c409766ab6a8295b35a0c9a7d97e9c25abf07f6a0e4311643272f2166",
+      "indexSha256": "0f2e8b74b79a592ecc90e5d59bd5c9e28de842bb7608c3ad9142c150231f1ec4",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.06415089964866638, 1.5605499744415283, 0.03934590145945549],
+        "max": [-0.0016214899951592088, 1.6265499591827393, 0.10465800017118454]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-postcentral-gyrus-left",
+      "sourceConcepts": ["FMA72666"],
+      "laterality": "left",
+      "category": "parietal",
+      "vertices": 2033,
+      "triangles": 3604,
+      "positionSha256": "09a15d36fc7a4c3d2be6435b21bc7968eab2c5e7380193ec522f5f2eaa15bb6b",
+      "indexSha256": "5e1cb379ac96a0b08ad6246efdc65f35599893627a9958fb55cb5b2b4be59aea",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          0.0006096489960327744, 1.5638999938964844, 0.024271000176668167
+        ],
+        "max": [0.06718370318412781, 1.6236799955368042, 0.08791670203208923]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-postcentral-gyrus-right",
+      "sourceConcepts": ["FMA72665"],
+      "laterality": "right",
+      "category": "parietal",
+      "vertices": 2045,
+      "triangles": 3604,
+      "positionSha256": "e48570c2520016d6d401c62cd5486dfa83bfff746b38201b696faadacb021310",
+      "indexSha256": "3ad2fef7a57533911e67d528f046495c8c956472dffacbcbd1241f207e1457ab",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.06839749962091446, 1.56413996219635, 0.024257300421595573],
+        "max": [-0.001748100039549172, 1.6236900091171265, 0.08776789903640747]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-supramarginal-gyrus-left",
+      "sourceConcepts": ["FMA72668"],
+      "laterality": "left",
+      "category": "parietal",
+      "vertices": 1323,
+      "triangles": 2344,
+      "positionSha256": "5ffe858aa0bea44af5976aa1df7f12c4f60cfffb9d3823ff0ad85eae14d71206",
+      "indexSha256": "f9ac27c36b104e5d511cb57357cef5fe537040f6e82669b0b264c702b5831cb7",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.02314949966967106, 1.5612399578094482, 0.03545989841222763],
+        "max": [0.06878630071878433, 1.6028200387954712, 0.07311680167913437]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-supramarginal-gyrus-right",
+      "sourceConcepts": ["FMA72667"],
+      "laterality": "right",
+      "category": "parietal",
+      "vertices": 1368,
+      "triangles": 2314,
+      "positionSha256": "eba536deea3e5ea6537c4dea06f4034442920770f63ac25e768310839f97d863",
+      "indexSha256": "c713d266ccefd95d20f7bff8670d0810cefa5f47fd68c70f01c522aee2e3e9b2",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.06970520317554474, 1.5613700151443481, 0.03542749956250191],
+        "max": [-0.02439190074801445, 1.6024500131607056, 0.07312589883804321]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-angular-gyrus-left",
+      "sourceConcepts": ["FMA72670"],
+      "laterality": "left",
+      "category": "parietal",
+      "vertices": 2048,
+      "triangles": 3588,
+      "positionSha256": "add3679b2fdf4f1963e410373eae1cf5781efcea7877e959fdfe84599e6370d6",
+      "indexSha256": "5dd6e90ca2919fff3c7512987542098fef057f458f997aeb8f986cecd428a7b7",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.02197209931910038, 1.539289951324463, -0.0010424599749967456],
+        "max": [0.06461139768362045, 1.6026599407196045, 0.04455399885773659]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-angular-gyrus-right",
+      "sourceConcepts": ["FMA72669"],
+      "laterality": "right",
+      "category": "parietal",
+      "vertices": 2084,
+      "triangles": 3554,
+      "positionSha256": "7d8ffc77c60325cd30791d14e77b6b0b154392617a6aa8d1e3b4b05684d3eaea",
+      "indexSha256": "b58e06802c9e9f0e7cdfa2a73fba7c8f016e23b14adcd99cc5ceda39afbb78c5",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          -0.06596130132675171, 1.539389967918396, -0.0011585999745875597
+        ],
+        "max": [-0.023165199905633926, 1.6027799844741821, 0.04475050047039986]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-superior-parietal-lobule-left",
+      "sourceConcepts": ["FMA72672"],
+      "laterality": "left",
+      "category": "parietal",
+      "vertices": 3181,
+      "triangles": 5364,
+      "positionSha256": "c9c4cb41110702a5a6111c0d9b587c4371220c363066f9f00cb49ed2cef20a93",
+      "indexSha256": "a80a6469bfe011980b450dbdcaa325ee256f8a740dba134cf12b522af229a8fb",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          0.0001833300048019737, 1.5496100187301636, -0.006304880138486624
+        ],
+        "max": [0.03607479855418205, 1.617110013961792, 0.050244398415088654]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-superior-parietal-lobule-right",
+      "sourceConcepts": ["FMA72671"],
+      "laterality": "right",
+      "category": "parietal",
+      "vertices": 3241,
+      "triangles": 5640,
+      "positionSha256": "574568276fa7ed61d7e474125729dd0de9f35e83dd7e3b834c48257127896599",
+      "indexSha256": "983e545cb0dfd302f1ccfece8838b152cfd1859269e8fc6e7b3cabb6b376e1ea",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          -0.03757710009813309, 1.5496100187301636, -0.006457699928432703
+        ],
+        "max": [-0.0014454700285568833, 1.6170799732208252, 0.0502328984439373]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-middle-temporal-gyrus-left",
+      "sourceConcepts": ["FMA72686"],
+      "laterality": "left",
+      "category": "temporal",
+      "vertices": 1528,
+      "triangles": 2710,
+      "positionSha256": "6507b3151c3330b71daae7ed0f353d22ccf59b7d01b1116498727a09ebc340ea",
+      "indexSha256": "9034502187a503f4cadd561f9bd9d903a9b6535cc410c20cc232ab221ef9f45c",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.03312100097537041, 1.5222599506378174, 0.013993299566209316],
+        "max": [0.06889340281486511, 1.5558500289916992, 0.12495400011539459]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-middle-temporal-gyrus-right",
+      "sourceConcepts": ["FMA72685"],
+      "laterality": "right",
+      "category": "temporal",
+      "vertices": 1563,
+      "triangles": 2754,
+      "positionSha256": "b13ff2841178b8c020987e15ae30d8c217ea3549dfa0de23a731f8127d690998",
+      "indexSha256": "0f92ddd26ba0e65e74c394ee319c324b09d734b51965c032572cec782e6af468",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.06994040310382843, 1.522439956665039, 0.014293599873781204],
+        "max": [-0.03439129889011383, 1.5556999444961548, 0.12495200335979462]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-inferior-temporal-gyrus-left",
+      "sourceConcepts": ["FMA72688"],
+      "laterality": "left",
+      "category": "temporal",
+      "vertices": 1573,
+      "triangles": 2732,
+      "positionSha256": "2db0446007c502ca6ce1cb7508a0eff17fe04a8ea2760fd68f14ec3f4111c171",
+      "indexSha256": "5acf052fc5a5d161def8de2fc54f443fc6efb1efa30e85c84810235bff7f886b",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.0169989001005888, 1.5134999752044678, 0.026460299268364906],
+        "max": [0.060646798461675644, 1.5428400039672852, 0.12220499664545059]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-inferior-temporal-gyrus-right",
+      "sourceConcepts": ["FMA72687"],
+      "laterality": "right",
+      "category": "temporal",
+      "vertices": 1610,
+      "triangles": 2768,
+      "positionSha256": "00c874656f9ac429a55389bacc7abb58d8a0e8fe858c1fc908693085a1a8d785",
+      "indexSha256": "a0176f4bcd1c3358c383e021a9dea8756067501f1ed80120ba2fd3eac45b8d59",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.06118939816951752, 1.513550043106079, 0.026508500799536705],
+        "max": [-0.018097899854183197, 1.5428199768066406, 0.12242700159549713]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-fusiform-gyrus-left",
+      "sourceConcepts": ["FMA72690"],
+      "laterality": "left",
+      "category": "cross-lobar",
+      "vertices": 869,
+      "triangles": 1550,
+      "positionSha256": "5bc91a19d6a885bc891f382a0093b1c1b68ec25658eec67d056f443c34d9c6af",
+      "indexSha256": "9152f8a7c723c47b90927d283b44da1a432438366918da1179c9c2ca7300567f",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.010537900030612946, 1.5157500505447388, 0.049675699323415756],
+        "max": [0.04218190163373947, 1.542240023612976, 0.11061300337314606]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-fusiform-gyrus-right",
+      "sourceConcepts": ["FMA72689"],
+      "laterality": "right",
+      "category": "cross-lobar",
+      "vertices": 909,
+      "triangles": 1626,
+      "positionSha256": "b9a72c79d33174729fb5708c39a6314ba7dab1849f4ca053a118809248c7418b",
+      "indexSha256": "f6146203d97ed78b77a382d9d5c5ceaa6ce3906782cea525dfe4429a077255ee",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.04342709854245186, 1.5156099796295166, 0.04970020055770874],
+        "max": [-0.011831499636173248, 1.5422699451446533, 0.11048399657011032]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-parahippocampal-gyrus-left",
+      "sourceConcepts": ["FMA72706"],
+      "laterality": "left",
+      "category": "cross-lobar",
+      "vertices": 435,
+      "triangles": 740,
+      "positionSha256": "fbb9487dc28fc8530fb2a4e7613660f4eb33ec4706b4f03cc09c73cca540daaa",
+      "indexSha256": "322a0f2f517bb629614a29b194c887723c466e1124480278531186189d52ea0b",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.008932179771363735, 1.5216399431228638, 0.05128239840269089],
+        "max": [0.029918599873781204, 1.5436899662017822, 0.1007080003619194]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-parahippocampal-gyrus-right",
+      "sourceConcepts": ["FMA72705"],
+      "laterality": "right",
+      "category": "cross-lobar",
+      "vertices": 482,
+      "triangles": 882,
+      "positionSha256": "f0685abd5f03e0e22c5c4e742adb92f736fcd1917a93f45bdebf1dde9e9c43e9",
+      "indexSha256": "480907e397902aeb3aa0d81f91ae7ac4fc2fe61408baebb57313d58fd96df0f3",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          -0.031272098422050476, 1.5217700004577637, 0.051266901195049286
+        ],
+        "max": [-0.010180200450122356, 1.5436899662017822, 0.10079699754714966]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-cingulate-gyrus-left",
+      "sourceConcepts": ["FMA72718"],
+      "laterality": "left",
+      "category": "cross-lobar",
+      "vertices": 1365,
+      "triangles": 2416,
+      "positionSha256": "ec24e1ca6afd804fabf09799dcd74d18f097fef804ad4be04b20ea0551f46f31",
+      "indexSha256": "4ca1bfaef937345aa562808128196713def7bc0ab27564cd985564a52b4561a7",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          0.000041231200157199055, 1.5305800437927246, 0.03072739951312542
+        ],
+        "max": [0.028330599889159203, 1.5972299575805664, 0.14207200706005096]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-cingulate-gyrus-right",
+      "sourceConcepts": ["FMA72717"],
+      "laterality": "right",
+      "category": "cross-lobar",
+      "vertices": 1330,
+      "triangles": 2346,
+      "positionSha256": "c08daf4a0a2da5c51b15c7867c55991eb3be68e74be0088c65f8cd9a511dbb00",
+      "indexSha256": "ccfbaefa65601c0e0ea50f3b83d83c7b062453d4dfd904ff56540b21c1ec7e92",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.029615700244903564, 1.5306099653244019, 0.03082899935543537],
+        "max": [-0.0014508400345221162, 1.5972199440002441, 0.14210599660873413]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-occipital-lobe-left",
+      "sourceConcepts": ["FMA72976"],
+      "laterality": "left",
+      "category": "occipital",
+      "vertices": 2538,
+      "triangles": 4390,
+      "positionSha256": "b30ebc634cd3af5e1f42626821a5c2065b4e2d10d81f28e4e6cff190ff9ce273",
+      "indexSha256": "7526ee8639aad9d737db5814af5d9662fa2b36639f73f8c844567aa6ff3e95ee",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          0.00011104699660791084, 1.5177799463272095, -0.010329299606382847
+        ],
+        "max": [0.04352699965238571, 1.5715299844741821, 0.05293229967355728]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-occipital-lobe-right",
+      "sourceConcepts": ["FMA72975"],
+      "laterality": "right",
+      "category": "occipital",
+      "vertices": 2625,
+      "triangles": 4564,
+      "positionSha256": "3d3ed431fdd4dbf230c2e2e8f7688067a3edcc8a32eb7d5ecb38fa005164a81d",
+      "indexSha256": "fabca05b49819b7a9ecb42b7c4254f67b6b21ea559bb1114007da2c4c18550db",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.044824399054050446, 1.51774001121521, -0.01026180014014244],
+        "max": [-0.0015561600448563695, 1.571560025215149, 0.052951499819755554]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-insula-left",
+      "sourceConcepts": ["FMA72978"],
+      "laterality": "left",
+      "category": "insula",
+      "vertices": 1250,
+      "triangles": 2448,
+      "positionSha256": "4180671536bf719149ef4d332a015f5cc7733d097f7974927104021979f0caa7",
+      "indexSha256": "6bdeff3a63d48720ceaaa3a787f50395ccebc564bc15bbe2730559840e1c6ae8",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.02501549944281578, 1.5455299615859985, 0.07064169645309448],
+        "max": [0.04427940025925636, 1.5801000595092773, 0.12227100133895874]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-insula-right",
+      "sourceConcepts": ["FMA72977"],
+      "laterality": "right",
+      "category": "insula",
+      "vertices": 1261,
+      "triangles": 2448,
+      "positionSha256": "e81d13c718cef4d52962c7175d01292a409467c842b976da53daa76c8d68f7b6",
+      "indexSha256": "68328854cbda4048dd74c14c438b5208d4da410b6fb9262527020d0e93c40f47",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.04559030011296272, 1.5455800294876099, 0.07067540287971497],
+        "max": [-0.026344599202275276, 1.5800600051879883, 0.12242300063371658]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-hippocampus-left",
+      "sourceConcepts": ["FMA72714"],
+      "laterality": "left",
+      "category": "deep-gray",
+      "vertices": 492,
+      "triangles": 980,
+      "positionSha256": "0fc25f031d7c008d433dd29507d396707e57b8ddc486b949c5d3f01842ef8df3",
+      "indexSha256": "cf80e4048c787cea1e1d735b112cbc0432a654de980f866a1d395d4fcfa3c46d",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.01663690060377121, 1.5292500257492065, 0.059446100145578384],
+        "max": [0.03660130128264427, 1.5512399673461914, 0.1023389995098114]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-hippocampus-right",
+      "sourceConcepts": ["FMA72713"],
+      "laterality": "right",
+      "category": "deep-gray",
+      "vertices": 515,
+      "triangles": 1020,
+      "positionSha256": "95f692c5ea9aff315211240de2eff5c4417624ed2876785ff2a904644dc839c5",
+      "indexSha256": "9695a1e44f98ff570c6da08f9ec60209ecc8df25ea3fd734737254e28ba0142f",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.03790609911084175, 1.529270052909851, 0.05952329933643341],
+        "max": [-0.017908800393342972, 1.5512399673461914, 0.10236799716949463]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-amygdala-left",
+      "sourceConcepts": ["FMA72833"],
+      "laterality": "left",
+      "category": "deep-gray",
+      "vertices": 202,
+      "triangles": 382,
+      "positionSha256": "8ff8521c48848f0a761ba870f8b0d728b80b1108706bf04df8d4c4099e2c30a9",
+      "indexSha256": "181d8c27d59a8c1a736cc16a41a97c8bb05a1ccef40b62d1e21f7fce6873582b",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.01624790020287037, 1.5319900512695312, 0.08924949914216995],
+        "max": [0.03338579833507538, 1.5447900295257568, 0.10759100317955017]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-amygdala-right",
+      "sourceConcepts": ["FMA72832"],
+      "laterality": "right",
+      "category": "deep-gray",
+      "vertices": 202,
+      "triangles": 384,
+      "positionSha256": "864259ca79be12c33f0c2d2428476d983d829c14e9ff72b977b2c74eb99ebfd0",
+      "indexSha256": "4729be2458a5b0f0fc8b549977b4c593da4ef599f2dc333cba52dbe9478809af",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.03462760150432587, 1.5319299697875977, 0.0891335979104042],
+        "max": [-0.0175819993019104, 1.5446900129318237, 0.10751199722290039]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-caudate-nucleus-left",
+      "sourceConcepts": ["FMA72827"],
+      "laterality": "left",
+      "category": "deep-gray",
+      "vertices": 1334,
+      "triangles": 2544,
+      "positionSha256": "381de62181c7af6a6348034cdef60fdc25371b5fadd2e4360ddc80a5b5aa370e",
+      "indexSha256": "da0987aca7100a7b79213d8915f2acd0ae7b52d303159ad97a2adb0d95dcc8a9",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.00190330995246768, 1.5402599573135376, 0.06035659834742546],
+        "max": [0.03368489816784859, 1.5773199796676636, 0.12394200265407562]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-caudate-nucleus-right",
+      "sourceConcepts": ["FMA72826"],
+      "laterality": "right",
+      "category": "deep-gray",
+      "vertices": 1334,
+      "triangles": 2570,
+      "positionSha256": "1e48d56b486289e7e5536b35b5f648a9155865a02174d68b7036d68353c6720e",
+      "indexSha256": "5bf53ed5a10e2e43df9f5bb494c28b397e8f81fdc7b1d710675bad3b10e93bbd",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.03500939905643463, 1.5402699708938599, 0.060371000319719315],
+        "max": [-0.0032008199486881495, 1.5773500204086304, 0.12393199652433395]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-putamen-left",
+      "sourceConcepts": ["FMA72829"],
+      "laterality": "left",
+      "category": "deep-gray",
+      "vertices": 3642,
+      "triangles": 7056,
+      "positionSha256": "872a0bf689c1ed75e81b73be951142cb3fd4b9e7093e351e5ab7e5dde565dd28",
+      "indexSha256": "04079e9a15047d9b96332a2c2a45150cadeb016d1ab154375fd49e6b57d8b62c",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.016188999637961388, 1.5454299449920654, 0.07552679628133774],
+        "max": [0.034444499760866165, 1.5715399980545044, 0.118367999792099]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-putamen-right",
+      "sourceConcepts": ["FMA72828"],
+      "laterality": "right",
+      "category": "deep-gray",
+      "vertices": 3690,
+      "triangles": 7064,
+      "positionSha256": "579dd2e3d9fa666a53f16877cbe9060fd05e19a6bca3f67c59b3276359c0c21a",
+      "indexSha256": "82da2a4d6e54be1ed2039450b98b9da8afe63d38f393ecfc8e55eb126194329a",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.03575250133872032, 1.5454299449920654, 0.07552749663591385],
+        "max": [-0.017474500462412834, 1.5715399980545044, 0.11836600303649902]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-globus-pallidus-left",
+      "sourceConcepts": ["FMA72831"],
+      "laterality": "left",
+      "category": "deep-gray",
+      "vertices": 3542,
+      "triangles": 7080,
+      "positionSha256": "a827e7185e8c8b1a8b35fd7e39b9bcf6bf05820ea7ed64fd1327c1520155925a",
+      "indexSha256": "85e57caf50c76a6b6f45bb4a5f432b5b8e6ff18eb5b689f2ee9b8a56b52bce84",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.012283300049602985, 1.5463099479675293, 0.08022280037403107],
+        "max": [0.029021600261330605, 1.5636099576950073, 0.10950200259685516]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-globus-pallidus-right",
+      "sourceConcepts": ["FMA72830"],
+      "laterality": "right",
+      "category": "deep-gray",
+      "vertices": 2674,
+      "triangles": 5344,
+      "positionSha256": "0b69ac4400f4ba3706b05444f4f2d0b70646f1771c0fcd03259b5844ffd9423c",
+      "indexSha256": "bd47d240663701402fb9785f844f4376e128df36c4b0b4517ed226ff6cbcfe14",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.03032740019261837, 1.5463099479675293, 0.08022479712963104],
+        "max": [-0.013593999668955803, 1.5636099576950073, 0.10949599742889404]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-internal-capsule-left",
+      "sourceConcepts": ["FMA72907"],
+      "laterality": "left",
+      "category": "white-matter",
+      "vertices": 5375,
+      "triangles": 10740,
+      "positionSha256": "75a0e3b0a971c2c987a943046c7d2374becf59b4a2d08960c7c43c217489f96f",
+      "indexSha256": "f998c2d6696200c0479bcb8fe44ee8c5eeff7070076cb6f33e9b6b94bc38c765",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [0.006816579960286617, 1.5438599586486816, 0.0645110011100769],
+        "max": [0.029714200645685196, 1.5771100521087646, 0.11868000030517578]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-internal-capsule-right",
+      "sourceConcepts": ["FMA72906"],
+      "laterality": "right",
+      "category": "white-matter",
+      "vertices": 5376,
+      "triangles": 10742,
+      "positionSha256": "cc69461134c39d850bc40b73aec5ee39c384c8814914ca040eafda8f9ff2fe81",
+      "indexSha256": "d5161fee47dc1797914ecbcd96f4d852dc6cffa49631ff4591de6f672d35ec42",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.03103809989988804, 1.5438499450683594, 0.06450030207633972],
+        "max": [-0.00813108030706644, 1.5771100521087646, 0.11869499832391739]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-thalamus-left",
+      "sourceConcepts": ["FMA258716"],
+      "laterality": "left",
+      "category": "diencephalon",
+      "vertices": 853,
+      "triangles": 1702,
+      "positionSha256": "1f0d16e4242621b4fa1d67760124897cc2efbd60d46c3c69103d48cd2aac262c",
+      "indexSha256": "94bf3f6beb49536d67769dc0bacd4756ec39b375e629af6863b5e154b507e0e7",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          -0.00009246879926649854, 1.5420700311660767, 0.061806801706552505
+        ],
+        "max": [0.023373600095510483, 1.565750002861023, 0.0983956977725029]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-thalamus-right",
+      "sourceConcepts": ["FMA258714"],
+      "laterality": "right",
+      "category": "diencephalon",
+      "vertices": 381,
+      "triangles": 758,
+      "positionSha256": "0312cd88022217efba8e0be32e9d3c952d2c57573f8ec0fc4bc84c118af8fadc",
+      "indexSha256": "7c1c8f77b278c7bd2b0ec8bb42982bba007f5e296de318f87f093d3631d2ce37",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.0246054008603096, 1.5421299934387207, 0.061870500445365906],
+        "max": [-0.0012477500131353736, 1.5657199621200562, 0.09836690127849579]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-fornix-of-forebrain-left",
+      "sourceConcepts": ["FMA72925"],
+      "laterality": "left",
+      "category": "white-matter",
+      "vertices": 3385,
+      "triangles": 6764,
+      "positionSha256": "2a55292d6a738d46bfd3418c3508cbfec7c326b4bd3270b3643ba06803aeae92",
+      "indexSha256": "fb991ba8d8a04c1e7820efa63ac50493934d61efb3139615eaa3896d22b65ad8",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.000657221011351794, 1.5353000164031982, 0.05825969949364662],
+        "max": [0.030813099816441536, 1.5673999786376953, 0.10275000333786011]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-fornix-of-forebrain-right",
+      "sourceConcepts": ["FMA72924"],
+      "laterality": "right",
+      "category": "white-matter",
+      "vertices": 3376,
+      "triangles": 6748,
+      "positionSha256": "aa973e47c3f647cb8facfbfda02ab09706e30f36ecb04250218dce00093d950c",
+      "indexSha256": "0eabf89058c0d5e1888e494bd88199a4e1fed7b5f2f629b9389e29ae5a8a2f6b",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.032122399657964706, 1.535290002822876, 0.05826279893517494],
+        "max": [-0.000659243029076606, 1.5673999786376953, 0.10274799913167953]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-corpus-callosum",
+      "sourceConcepts": ["FMA86464"],
+      "laterality": "midline",
+      "category": "white-matter",
+      "vertices": 16716,
+      "triangles": 30232,
+      "positionSha256": "bab05208300cca3fd94b562079abf2fbfb96b7683be5c9d4c8d91f71bb13a494",
+      "indexSha256": "1293cddd23cb21c39b4142eb0b6fbd53f652368aa9e7ff04252cef9259362204",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.026561500504612923, 1.544409990310669, 0.039433401077985764],
+        "max": [0.0252446997910738, 1.5832600593566895, 0.13105599582195282]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-hypothalamus",
+      "sourceConcepts": ["FMA62008"],
+      "laterality": "midline",
+      "category": "diencephalon",
+      "vertices": 2374,
+      "triangles": 4078,
+      "positionSha256": "b152c2a2472d108a07bfb10d26cd4a566195dfcc47a8b3131dc65e5b4ee80dce",
+      "indexSha256": "b6e9df41be55920a8c99760607e5afec5e06f91a7ae1323c118c94fd1e1e684a",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.008267680183053017, 1.532230019569397, 0.09223619848489761],
+        "max": [0.006959869991987944, 1.5520999431610107, 0.11017700284719467]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-midbrain",
+      "sourceConcepts": ["FMA61993"],
+      "laterality": "midline",
+      "category": "brainstem",
+      "vertices": 8207,
+      "triangles": 12908,
+      "positionSha256": "134f9b4e714ee44a0268ff9aa90b642a3732aa0474015617ad84ec67efb63b8b",
+      "indexSha256": "48e8438f8065125a2d6765675a5f20b87708db4023760474d2ae88bbf578352f",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.015322200022637844, 1.5284899473190308, 0.06658089905977249],
+        "max": [0.014011099934577942, 1.5455299615859985, 0.09595169872045517]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-pons",
+      "sourceConcepts": ["FMA67943"],
+      "laterality": "midline",
+      "category": "brainstem",
+      "vertices": 11943,
+      "triangles": 20650,
+      "positionSha256": "4c39b7663c7afc1ddd01324fb1a3460f36f5432c2af08fbbb767735134b8eac5",
+      "indexSha256": "13d89a702ec1d754684b70555bfe72f8d760eb60a710f340bcc10cdc397ea50d",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.021750500425696373, 1.5020699501037598, 0.06258060038089752],
+        "max": [0.020446600392460823, 1.5306899547576904, 0.09698659926652908]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-medulla-oblongata",
+      "sourceConcepts": ["FMA62004"],
+      "laterality": "midline",
+      "category": "brainstem",
+      "vertices": 6477,
+      "triangles": 12096,
+      "positionSha256": "db482440550ec29cc89046ac0762c23397e04dde52a4807d10829ee3c6b8bc14",
+      "indexSha256": "bcf1ded1b70974658cd76c040ca72f2e83e818cbd7b52629470c07781c33b933",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [
+          -0.014020400121808052, 1.4644999504089355, 0.051239099353551865
+        ],
+        "max": [0.012713099829852581, 1.5057799816131592, 0.08443950116634369]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-cerebellum",
+      "sourceConcepts": ["FMA67944"],
+      "laterality": "midline",
+      "category": "cerebellum",
+      "vertices": 24324,
+      "triangles": 47700,
+      "positionSha256": "79c2805df6c15611fc10371bc2aed465af0e108d7065b2eda6fabdeb5d16cf82",
+      "indexSha256": "d0e181c28f147461be75fa4eaafd1c85147e0c8dcf37e577e44cfd2a57e2e7fc",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.053929898887872696, 1.487239956855774, 0.012174299918115139],
+        "max": [0.052609898149967194, 1.5405100584030151, 0.06846609711647034]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    },
+    {
+      "id": "nervous-optic-chiasm",
+      "sourceConcepts": ["FMA62045"],
+      "laterality": "midline",
+      "category": "white-matter",
+      "vertices": 909,
+      "triangles": 1788,
+      "positionSha256": "ae84e06c2d4c7c80e6899b93c090adb42602997987673e9bafa346937806ff14",
+      "indexSha256": "e47d1adcd45380a164904cf44169118c1a7f93ecf27e62b1a042fb66018883ee",
+      "attributes": ["POSITION", "NORMAL"],
+      "bounds": {
+        "min": [-0.007978579960763454, 1.5359100103378296, 0.10011199861764908],
+        "max": [0.006642359774559736, 1.544010043144226, 0.1104310005903244]
+      },
+      "mappingStatus": "source-identified-not-medically-reviewed"
+    }
+  ]
+}

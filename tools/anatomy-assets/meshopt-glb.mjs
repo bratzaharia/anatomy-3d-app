@@ -1,7 +1,12 @@
 import { writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { MeshoptEncoder, MeshoptDecoder } from "meshoptimizer";
-export async function writeMeshoptGlb(path, entries, copyright) {
+export async function writeMeshoptGlb(
+  path,
+  entries,
+  copyright,
+  materialName = "Neural source surfaces",
+) {
   await Promise.all([MeshoptEncoder.ready, MeshoptDecoder.ready]);
   const views = [],
     accessors = [],
@@ -85,7 +90,7 @@ export async function writeMeshoptGlb(path, entries, copyright) {
     meshes,
     materials: [
       {
-        name: "Neural source surfaces",
+        name: materialName,
         pbrMetallicRoughness: {
           baseColorFactor: [0.75, 0.68, 0.48, 1],
           metallicFactor: 0,

@@ -133,7 +133,7 @@ test("independent nervous geometry: picking, focus, facet composition, isolation
   expect(errors).toEqual([]);
 });
 
-test("all eight global combinations preserve existing cached geometry and the skeleton image", async ({
+test("all eight skeletal/muscular/nervous combinations preserve cached geometry and the skeleton image", async ({
   page,
 }) => {
   test.setTimeout(120000);
@@ -185,15 +185,18 @@ test("all eight global combinations preserve existing cached geometry and the sk
           (mask & 2 ? 2387524 : 0) +
           (mask & 4 ? nervousTriangles - 2 : 0),
       );
-    await expect(page.getByLabel("All layers", { exact: true })).toBeChecked({
-      checked: mask === 7,
-    });
+    // Veins remain off: three enabled systems are no longer every layer.
+    await expect(
+      page.getByLabel("All layers", { exact: true }),
+    ).not.toBeChecked();
     expect((await metrics()).camera).toEqual(camera);
   }
   const afterAll = await metrics();
-  await page.getByLabel("All layers", { exact: true }).uncheck();
+  for (const label of ["Skeletal system", "Muscular system", "Nervous system"])
+    await page.getByLabel(label, { exact: true }).uncheck();
   await expect.poll(async () => (await metrics()).calls).toBe(1);
-  await page.getByLabel("All layers", { exact: true }).check();
+  for (const label of ["Skeletal system", "Muscular system", "Nervous system"])
+    await page.getByLabel(label, { exact: true }).check();
   await expect
     .poll(async () => (await metrics()).calls)
     .toBe(nervousCalls + 404);

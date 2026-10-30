@@ -2,6 +2,12 @@
 
 Decision: accepted for the sourced educational skeletal view; independent medical and terminology review remains pending. Audit date: 2026-10-27.
 
+Selection follow-up, 2026-10-29: [source-exact bone partition](SKELETAL_PARTITION_AUDIT.md)
+adds individual interaction inside the original groups without changing this
+GLB. The original grouped-selection findings below describe the initial release.
+The current [coverage audit](SYSTEM_COVERAGE.md) exposes seven missing bone
+identities rather than claiming complete skeletal geometry.
+
 ## Provenance and rights
 
 The model comes directly from the official BodyParts3D 4.0 PART-OF OBJ archive. The publisher's current license page and archive README specify CC BY 4.0 and required attribution. Those terms permit adaptation and redistribution, including commercial reuse, subject to attribution and the linked license. Historical OBJ headers retain an earlier license notice; this distinction is recorded in `ASSET_SOURCES.md`. No third-party Z-Anatomy material was included. Source links, FMA concepts, original FJ file IDs, and original OBJ SHA-256 hashes are retained per structure in `skeleton-manifest.json`.

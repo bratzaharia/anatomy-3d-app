@@ -1,0 +1,3 @@
+BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International
+https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip
+Adaptations: independently mapped vessels, regional packaging, source-preserving axis/unit conversion, regenerated normals and lossless Meshopt compression. Blue materials are educational conventions. Reduced surfaces are not medically reviewed, full vessel courses or a complete network. No invented connections.

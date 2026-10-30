@@ -53,7 +53,9 @@ export function NervousDetails({ id }: { id: string }) {
         )}
       </p>
       {id === "nervous-spinal-cord" && (
-        <p className="coverage-warning">{t("nervous.spinalQuarantine")}</p>
+        <p className="coverage-warning">
+          {t("coverage.reason.spinal-quarantine")}
+        </p>
       )}
       {item?.cranialNumber === "II" && (
         <p className="coverage-counts">{t("nervous.opticCns")}</p>

@@ -20,6 +20,20 @@ import {
 } from "./index";
 
 describe("additive, explicitly partial nervous anatomy", () => {
+  it("does not confuse maxillary branches with the axillary nerve or upper-limb anatomy", () => {
+    for (const side of ["left", "right"]) {
+      const branch = NERVOUS_INVENTORY.find(
+        (n) => n.id === `nervous-z-meningeal-branch-of-maxillary-nerve-${side}`,
+      )!;
+      expect(branch.regionIds).toEqual(["head"]);
+      expect(branch.group).toBe("cranial");
+      expect(branch.assetId).toBe("z-nervous-cranial");
+      expect(
+        NERVOUS_INVENTORY.find((n) => n.id === `nervous-axillary-nerve-${side}`)
+          ?.regionIds,
+      ).toContain(`upper-limb-${side}`);
+    }
+  });
   it("keeps regional camera bounds separate from complete cross-region nerve courses", () => {
     const vagus = NERVOUS_FOCUS_TARGETS.find(
       (item) => item.id === "nervous-vagus-nerve-right",
@@ -28,7 +42,12 @@ describe("additive, explicitly partial nervous anatomy", () => {
     expect(NERVOUS_REGION_BOUNDS.get(vagus.id)!.min[1]).toBeGreaterThan(1.4);
   });
   it("registers only sourced geometry; missing metadata never becomes pickable", () => {
-    expect(AVAILABLE_SYSTEM_IDS).toEqual(["skeletal", "muscular", "nervous"]);
+    expect(AVAILABLE_SYSTEM_IDS).toEqual([
+      "skeletal",
+      "muscular",
+      "nervous",
+      "venous",
+    ]);
     expect(NERVOUS_ASSET.anatomicallyComplete).toBe(false);
     expect(NERVOUS_ASSET.structures).toHaveLength(83);
     const visible = resolveVisibleStructureIds(

@@ -11,3 +11,4 @@ test-results
 .vercel/
 tools/anatomy-assets/.cache/
 .pnpm-store/
+.private-asset-evaluation/

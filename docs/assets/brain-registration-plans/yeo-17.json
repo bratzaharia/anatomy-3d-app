@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "atlasId": "yeo-17",
+  "source": {
+    "id": "yeo-17",
+    "name": "Yeo 17",
+    "version": "2011 / N1000",
+    "space": "fsaverage surface or nonlinear MNI152 volume (not interchangeable)",
+    "format": ".annot with matched surface OR volume + template",
+    "sourceUrl": "https://surfer.nmr.mgh.harvard.edu/fswiki/CorticalParcellation_Yeo2011",
+    "licenseUrl": "https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferSoftwareLicense",
+    "kind": "functional-network",
+    "integrated": false,
+    "correspondence": null,
+    "licenseStatus": "exact-file-review-required"
+  },
+  "target": {
+    "assetId": "bodyparts3d-nervous-v4",
+    "sha256": "05da6e823b3157b1c61e66b5dde0e4ab6f41de5d7948ba9ebae5afa60e7c8d14",
+    "sourceUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip",
+    "licenseId": "CC-BY-4.0",
+    "reviewStatus": "unreviewed"
+  },
+  "runtimeApproved": false,
+  "blockers": ["missing-correspondence"],
+  "requiredInputs": [
+    "Exact atlas release files, checksums and label lookup table",
+    "Asset-specific distribution/commercial license evidence",
+    "Native template and matched hemisphere surfaces with coordinate conventions",
+    "BodyParts3D same-subject reference MRI and/or verified pial/spherical surface correspondence, or an explicitly separate validated atlas reference mesh",
+    "Registration transform/correspondence with independent anatomical holdout landmarks",
+    "Target-topology-bound label map, unknown/medial-wall mask and boundary evidence",
+    "Signed hemisphere, topology, overlap and registration QA report"
+  ],
+  "stages": [
+    "Acquire permitted exact files outside runtime",
+    "Decode native NIfTI/GIFTI/annot/CIFTI with format-specific tools; preserve label identities and background",
+    "Establish surface correspondence or validated volume-to-surface registration; do not assume matching coordinate spaces",
+    "Measure registration, coverage, hemisphere consistency and boundaries against independent anatomical evidence",
+    "Pin target vertex/index hashes; split only along actual accepted labels without changing reference shape",
+    "Independent neuroanatomical and license review",
+    "Only then generate runtime GLB/label buffers and permit atlas rendering"
+  ],
+  "unavailableInCurrentRepository": [
+    "Same-subject cortical registration data",
+    "Accepted atlas files and target correspondence",
+    "Independent atlas-mapping review"
+  ]
+}

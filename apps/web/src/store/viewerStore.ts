@@ -1,15 +1,60 @@
 import { create } from "zustand";
-import type { NervousDivision, NervousFunction } from "@anatomy/core";
+import { createBrainSlice, type BrainState } from "./brainState";
+import {
+  traceVenousDrainage,
+  type VenousDepth,
+  type VenousViewMode,
+  type NervousDivision,
+  type NervousFunction,
+} from "@anatomy/core";
 import {
   AVAILABLE_SYSTEM_IDS,
   NERVOUS_GEOMETRY,
   SKULL_VISUALIZATION_MODES,
   type SkullViewMode,
+  VENOUS_MANIFEST,
+  VENOUS_CONNECTIONS,
+  venousMetadataById,
+  BRAIN_IDS,
+  brainRegionById,
 } from "@anatomy/data";
 
 export type CameraView = "front" | "back" | "left" | "right" | "fit" | "focus";
 
-interface ViewerState {
+export interface ViewerState extends BrainState {
+  venousRequested: boolean;
+  venousRetry: number;
+  venousAssetStatus: Readonly<Record<string, "loading" | "ready" | "error">>;
+  venousGroups: ReadonlySet<string>;
+  venousDepths: ReadonlySet<VenousDepth>;
+  venousRegions: ReadonlySet<string>;
+  venousOpacity: number;
+  venousMode: VenousViewMode;
+  venousSelectedIds: ReadonlySet<string>;
+  venousTraceIds: ReadonlySet<string>;
+  venousSnapshot: {
+    hiddenIds: ReadonlySet<string>;
+    isolatedIds: ReadonlySet<string>;
+    selectedId: string | null;
+    venousSelectedIds: ReadonlySet<string>;
+    venousGroups: ReadonlySet<string>;
+    venousDepths: ReadonlySet<VenousDepth>;
+    venousRegions: ReadonlySet<string>;
+  } | null;
+  setVenousAssetStatus: (
+    id: string,
+    status: "loading" | "ready" | "error",
+  ) => void;
+  retryVenous: () => void;
+  toggleVenousGroup: (id: string) => void;
+  setAllVenousGroups: (all: boolean) => void;
+  toggleVenousDepth: (id: VenousDepth) => void;
+  toggleVenousRegion: (id: string) => void;
+  setVenousOpacity: (value: number) => void;
+  setVenousMode: (mode: VenousViewMode) => void;
+  selectVein: (id: string, additive?: boolean) => void;
+  inspectVenous: (trace?: boolean) => void;
+  restoreVenous: () => void;
   nervousStatus: "idle" | "loading" | "ready" | "error";
   nervousRequested: boolean;
   nervousRetry: number;
@@ -61,7 +106,131 @@ interface ViewerState {
   toggleRightPanel: () => void;
 }
 
-export const useViewerStore = create<ViewerState>((set, get) => ({
+export const useViewerStore = create<ViewerState>((set, get, api) => ({
+  ...createBrainSlice(set, get, api),
+  venousRequested: false,
+  venousRetry: 0,
+  venousAssetStatus: {},
+  venousGroups: new Set(VENOUS_MANIFEST.groups.map((g) => g.key)),
+  venousDepths: new Set(),
+  venousRegions: new Set(),
+  venousOpacity: 1,
+  venousMode: "standard",
+  venousSelectedIds: new Set(),
+  venousTraceIds: new Set(),
+  venousSnapshot: null,
+  setVenousAssetStatus: (id, status) =>
+    set((state) => ({
+      venousAssetStatus: { ...state.venousAssetStatus, [id]: status },
+    })),
+  retryVenous: () =>
+    set((state) => ({
+      venousRetry: state.venousRetry + 1,
+      venousAssetStatus: Object.fromEntries(
+        Object.entries(state.venousAssetStatus).map(([id, status]) => [
+          id,
+          status === "error" ? "loading" : status,
+        ]),
+      ),
+    })),
+  toggleVenousGroup: (id) =>
+    set((state) => ({
+      venousGroups: toggled(state.venousGroups, id),
+      hoveredId: null,
+    })),
+  setAllVenousGroups: (all) =>
+    set({
+      venousGroups: new Set(
+        all ? VENOUS_MANIFEST.groups.map((g) => g.key) : [],
+      ),
+      venousDepths: new Set(),
+      venousRegions: new Set(),
+      hoveredId: null,
+    }),
+  toggleVenousDepth: (id) =>
+    set((state) => ({
+      venousDepths: toggled(state.venousDepths, id),
+      hoveredId: null,
+    })),
+  toggleVenousRegion: (id) =>
+    set((state) => ({
+      venousRegions: toggled(state.venousRegions, id),
+      hoveredId: null,
+    })),
+  setVenousOpacity: (value) => {
+    if (Number.isFinite(value))
+      set({ venousOpacity: Math.max(0, Math.min(1, value)), hoveredId: null });
+  },
+  setVenousMode: (mode) => {
+    if (["standard", "blue", "depth", "contrast"].includes(mode))
+      set({ venousMode: mode });
+  },
+  selectVein: (id, additive = false) => {
+    if (!venousMetadataById.has(id)) return;
+    set((state) => {
+      const next = additive
+        ? toggled(state.venousSelectedIds, id)
+        : new Set([id]);
+      return {
+        selectedId: next.has(id) ? id : ([...next].at(-1) ?? null),
+        rightPanelOpen: true,
+        venousSelectedIds: next,
+      };
+    });
+  },
+  inspectVenous: (trace = false) =>
+    set((state) => {
+      if (
+        !state.activeSystemIds.has("venous") ||
+        (trace && !venousMetadataById.has(state.selectedId ?? ""))
+      )
+        return {};
+      const path = trace
+        ? traceVenousDrainage(state.selectedId!, VENOUS_CONNECTIONS)
+        : [];
+      return {
+        venousSnapshot: state.venousSnapshot ?? {
+          hiddenIds: state.hiddenIds,
+          isolatedIds: state.isolatedIds,
+          selectedId: state.selectedId,
+          venousSelectedIds: state.venousSelectedIds,
+          venousGroups: state.venousGroups,
+          venousDepths: state.venousDepths,
+          venousRegions: state.venousRegions,
+        },
+        hiddenIds: new Set(
+          [...state.hiddenIds].filter((id) => !id.startsWith("venous-")),
+        ),
+        isolatedIds: new Set(
+          trace
+            ? path
+            : VENOUS_MANIFEST.inventory
+                .filter((v) => v.assetId)
+                .map((v) => v.id),
+        ),
+        venousGroups: new Set(VENOUS_MANIFEST.groups.map((g) => g.key)),
+        venousDepths: new Set<VenousDepth>(),
+        venousRegions: new Set<string>(),
+        venousTraceIds: new Set(path),
+        ...(trace
+          ? {
+              cameraCommand: {
+                view: "focus" as const,
+                nonce: state.cameraCommand.nonce + 1,
+              },
+            }
+          : {}),
+        hoveredId: null,
+        rightPanelOpen: true,
+      };
+    }),
+  restoreVenous: () =>
+    set((state) => ({
+      ...state.venousSnapshot,
+      venousSnapshot: null,
+      venousTraceIds: new Set(),
+      hoveredId: null,
+    })),
   nervousStatus: "idle",
   nervousRequested: false,
   nervousRetry: 0,
@@ -178,6 +347,7 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
         hoveredId: null,
         muscleRequested: state.muscleRequested || next.has("muscular"),
         nervousRequested: state.nervousRequested || next.has("nervous"),
+        venousRequested: state.venousRequested || next.has("venous"),
         nervousStatus:
           !state.nervousRequested && next.has("nervous")
             ? "loading"
@@ -196,6 +366,7 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
       hoveredId: null,
       muscleRequested: state.muscleRequested || ids.includes("muscular"),
       nervousRequested: state.nervousRequested || ids.includes("nervous"),
+      venousRequested: state.venousRequested || ids.includes("venous"),
       nervousStatus:
         !state.nervousRequested && ids.includes("nervous")
           ? "loading"
@@ -206,7 +377,18 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
           : state.muscleStatus,
     })),
   select: (id) =>
-    set({ selectedId: id, rightPanelOpen: id ? true : get().rightPanelOpen }),
+    set({
+      selectedId: id,
+      brainSelectedIds: new Set(
+        id === "nervous-brain"
+          ? BRAIN_IDS
+          : brainRegionById.has(id ?? "")
+            ? [id!]
+            : [],
+      ),
+      rightPanelOpen: id ? true : get().rightPanelOpen,
+      venousSelectedIds: new Set(id?.startsWith("venous-") ? [id] : []),
+    }),
   hover: (id) => {
     if (get().hoveredId !== id) set({ hoveredId: id });
   },
@@ -254,9 +436,20 @@ export const useViewerStore = create<ViewerState>((set, get) => ({
     ),
   restoreVisibility: () =>
     set((state) =>
-      state.nervousIsolationSnapshot
-        ? { ...state.nervousIsolationSnapshot, nervousIsolationSnapshot: null }
-        : { hiddenIds: new Set(), isolatedIds: new Set() },
+      state.venousSnapshot
+        ? {
+            ...state.venousSnapshot,
+            venousSnapshot: null,
+            venousTraceIds: new Set(),
+          }
+        : state.nervousIsolationSnapshot
+          ? {
+              ...state.nervousIsolationSnapshot,
+              nervousIsolationSnapshot: null,
+            }
+          : state.brainSnapshot
+            ? { ...state.brainSnapshot, brainSnapshot: null }
+            : { hiddenIds: new Set(), isolatedIds: new Set() },
     ),
   setCameraView: (view) =>
     set((state) => ({

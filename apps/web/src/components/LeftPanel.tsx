@@ -12,6 +12,7 @@ import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
 import { MuscleExplorer } from "./MuscleExplorer";
 import { NervousExplorer } from "./NervousExplorer";
+import { CoveragePanel } from "./CoveragePanel";
 
 export function LeftPanel() {
   const { t, i18n } = useTranslation();
@@ -142,6 +143,7 @@ export function LeftPanel() {
           </div>
         </section>
 
+        <CoveragePanel />
         <NervousExplorer />
         <MuscleExplorer />
         <section className="panel-section presets">

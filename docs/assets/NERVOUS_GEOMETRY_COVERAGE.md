@@ -7,14 +7,14 @@ Gate: **PARTIAL COVERAGE**. No medically verified complete claim. Counts below a
 | Total                 |    465 |        249 |          53 |     163 |                  0 |
 | Cranial parent nerves |     24 |         22 |           0 |       2 |                  0 |
 | 31 spinal nerve pairs |     62 |          0 |           0 |      62 |                  0 |
-| head                  |    134 |         99 |           0 |      35 |                  0 |
+| head                  |    136 |        101 |           0 |      35 |                  0 |
 | neck                  |     83 |         42 |           0 |      41 |                  0 |
 | thorax                |     56 |          2 |           2 |      52 |                  0 |
 | abdomen               |     30 |         14 |           0 |      16 |                  0 |
 | pelvis                |     41 |         20 |           0 |      21 |                  0 |
 | back                  |     15 |          2 |          11 |       2 |                  0 |
-| upper-limb-left       |     50 |         39 |          11 |       0 |                  0 |
-| upper-limb-right      |     50 |         39 |          11 |       0 |                  0 |
+| upper-limb-left       |     49 |         38 |          11 |       0 |                  0 |
+| upper-limb-right      |     49 |         38 |          11 |       0 |                  0 |
 | lower-limb-left       |     41 |         31 |           9 |       1 |                  0 |
 | lower-limb-right      |     41 |         31 |           9 |       1 |                  0 |
 | hand-left             |      9 |          3 |           6 |       0 |                  0 |

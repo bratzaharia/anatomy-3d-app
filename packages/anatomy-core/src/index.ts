@@ -1,4 +1,6 @@
 export type Locale = "ro" | "en";
+export * from "./venous";
+export * from "./brain";
 export type Laterality = "left" | "right" | "midline" | "bilateral" | "none";
 export type Availability = "available" | "planned" | "unavailable";
 export type ReviewStatus = "unreviewed" | "reviewed";

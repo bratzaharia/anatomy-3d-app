@@ -68,11 +68,37 @@ export default function App() {
     >
       <header className="topbar">
         <div className="brand">
-          <div className="brand-mark">
-            <span />
-            <span />
-            <span />
-          </div>
+          <svg
+            className="brand-mark"
+            viewBox="0 0 40 44"
+            fill="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M18 3.2a4 4 0 0 1 4 0l13 7.5a4 4 0 0 1 2 3.5v15.6a4 4 0 0 1-2 3.5l-13 7.5a4 4 0 0 1-4 0L5 33.3a4 4 0 0 1-2-3.5V14.2a4 4 0 0 1 2-3.5L18 3.2Z"
+              fill="currentColor"
+              fillOpacity="0.07"
+              stroke="currentColor"
+              strokeOpacity="0.65"
+              strokeWidth="1.3"
+            />
+            <circle cx="20" cy="11.5" r="2.7" fill="currentColor" />
+            <path
+              d="m12.5 25.5 2.3-7.2a2 2 0 0 1 1.9-1.4h6.6a2 2 0 0 1 1.9 1.4l2.3 7.2M17 19.5V27l-2 8m8-15.5V27l2 8M17 26h6"
+              stroke="currentColor"
+              strokeWidth="2.1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M20 19.5v3.8"
+              stroke="currentColor"
+              strokeOpacity="0.45"
+              strokeWidth="1.1"
+              strokeLinecap="round"
+            />
+          </svg>
           <div>
             <h1>{t("app.title")}</h1>
             <p>{t("app.subtitle")}</p>
