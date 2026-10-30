@@ -1,9 +1,11 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import { venousRo, venousEn } from "./venous";
 
 const resources = {
   ro: {
     translation: {
+      ...venousRo,
       "app.title": "Atlas anatomic 3D",
       "app.subtitle": "Explorează corpul uman pe straturi",
       "panels.navigation": "Deschide sau închide navigarea",
@@ -196,6 +198,7 @@ const resources = {
   },
   en: {
     translation: {
+      ...venousEn,
       "app.title": "3D Anatomy Atlas",
       "app.subtitle": "Explore the human body by layers",
       "panels.navigation": "Toggle navigation panel",

@@ -42,7 +42,12 @@ describe("additive, explicitly partial nervous anatomy", () => {
     expect(NERVOUS_REGION_BOUNDS.get(vagus.id)!.min[1]).toBeGreaterThan(1.4);
   });
   it("registers only sourced geometry; missing metadata never becomes pickable", () => {
-    expect(AVAILABLE_SYSTEM_IDS).toEqual(["skeletal", "muscular", "nervous"]);
+    expect(AVAILABLE_SYSTEM_IDS).toEqual([
+      "skeletal",
+      "muscular",
+      "nervous",
+      "venous",
+    ]);
     expect(NERVOUS_ASSET.anatomicallyComplete).toBe(false);
     expect(NERVOUS_ASSET.structures).toHaveLength(83);
     const visible = resolveVisibleStructureIds(

@@ -14,9 +14,11 @@
     "test:e2e": "playwright test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "validate:anatomy": "node --import tsx tools/anatomy-assets/validate-anatomy.ts && node --import tsx tools/anatomy-assets/validate-skeletal-parts.ts && node --import tsx tools/anatomy-assets/validate-muscles.ts && node --import tsx tools/anatomy-assets/validate-nervous.ts && node --import tsx tools/anatomy-assets/validate-nervous-coverage.ts && pnpm validate:spinal-candidates",
+    "validate:anatomy": "node --import tsx tools/anatomy-assets/validate-anatomy.ts && node --import tsx tools/anatomy-assets/validate-skeletal-parts.ts && node --import tsx tools/anatomy-assets/validate-muscles.ts && node --import tsx tools/anatomy-assets/validate-nervous.ts && node --import tsx tools/anatomy-assets/validate-nervous-coverage.ts && pnpm validate:spinal-candidates && pnpm validate:venous",
     "validate:spinal-candidates": "node --import tsx tools/anatomy-assets/validate-spinal-candidates.ts",
-    "validate:i18n": "node --import tsx tools/anatomy-assets/validate-i18n.ts"
+    "validate:i18n": "node --import tsx tools/anatomy-assets/validate-i18n.ts",
+    "import:venous": "node tools/anatomy-assets/import-venous.mjs",
+    "validate:venous": "node --import tsx tools/anatomy-assets/validate-venous.ts"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

@@ -5,6 +5,7 @@ import {
   resolveGroupMembers,
   resolveVisibleStructureIds,
   resolveNervousStructureIds,
+  resolveVenousStructureIds,
 } from "@anatomy/core";
 import {
   GROUPS,
@@ -22,11 +23,15 @@ import {
   NERVOUS_GEOMETRY,
   NERVOUS_STRUCTURES,
   nervousMetadataById,
+  VENOUS_GEOMETRY,
+  VENOUS_STRUCTURES,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
 import { SkullVisualizationModes } from "./SkullVisualizationModes";
 import { NervousDetails } from "./NervousDetails";
+import { VenousExplorer } from "./VenousExplorer";
+import { VenousDetails } from "./VenousDetails";
 
 export function Inspector() {
   const { t, i18n } = useTranslation();
@@ -55,33 +60,52 @@ export function Inspector() {
     ...SKELETAL_PART_MAPPINGS,
     ...MUSCLE_ASSET.structures,
     ...NERVOUS_GEOMETRY,
+    ...VENOUS_GEOMETRY,
   ].find((item) => item.id === selectedId);
   const activeSystemIds = useViewerStore((state) => state.activeSystemIds);
   const nervousDivisions = useViewerStore((state) => state.nervousDivisions);
   const nervousFunctions = useViewerStore((state) => state.nervousFunctions);
   const nervousRegions = useViewerStore((state) => state.nervousRegions);
   const nervous = structure?.systemIds.includes("nervous");
+  const venous = structure?.systemIds.includes("venous");
+  const venousGroups = useViewerStore((state) => state.venousGroups);
+  const venousDepths = useViewerStore((state) => state.venousDepths);
+  const venousRegions = useViewerStore((state) => state.venousRegions);
+  const venousOpacity = useViewerStore((state) => state.venousOpacity);
   const registeredNeuralSource =
     selectedId &&
     nervousMetadataById.get(selectedId)?.sourceDataset === "Z-Anatomy";
   const isHidden =
     structure &&
     !(
-      nervous
-        ? resolveNervousStructureIds(
-            NERVOUS_STRUCTURES,
-            activeSystemIds,
-            { hiddenIds, isolatedIds },
-            {
-              divisions: nervousDivisions,
-              functions: nervousFunctions,
-              regions: nervousRegions,
-            },
-          )
-        : resolveVisibleStructureIds(ANATOMY_CATALOG, activeSystemIds, {
-            hiddenIds,
-            isolatedIds,
-          })
+      venous
+        ? venousOpacity === 0
+          ? new Set<string>()
+          : resolveVenousStructureIds(
+              VENOUS_STRUCTURES,
+              activeSystemIds,
+              { hiddenIds, isolatedIds },
+              {
+                groups: venousGroups,
+                depths: venousDepths,
+                regions: venousRegions,
+              },
+            )
+        : nervous
+          ? resolveNervousStructureIds(
+              NERVOUS_STRUCTURES,
+              activeSystemIds,
+              { hiddenIds, isolatedIds },
+              {
+                divisions: nervousDivisions,
+                functions: nervousFunctions,
+                regions: nervousRegions,
+              },
+            )
+          : resolveVisibleStructureIds(ANATOMY_CATALOG, activeSystemIds, {
+              hiddenIds,
+              isolatedIds,
+            })
     ).has(structure.id);
 
   return (
@@ -107,6 +131,7 @@ export function Inspector() {
           </button>
         )}
       </div>
+      <VenousExplorer />
       {!structure && skullContext ? (
         <div className="inspector-content">
           <SkullVisualizationModes />
@@ -215,6 +240,7 @@ export function Inspector() {
             </>
           )}
           {nervous && <NervousDetails id={structure.id} />}
+          {venous && <VenousDetails id={structure.id} />}
           {coverage?.reason &&
             (!nervous || coverage.reason === "source-policy") && (
               <p className="coverage-warning">

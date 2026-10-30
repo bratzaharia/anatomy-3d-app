@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import type { Locale } from "@anatomy/core";
-import { getLocalizedName } from "@anatomy/core";
+import { getLocalizedName, resolveVenousStructureIds } from "@anatomy/core";
 import {
   regionById,
   structureById,
@@ -8,6 +8,9 @@ import {
   MUSCLE_ASSET,
   SKELETAL_STRUCTURES,
   NERVOUS_GEOMETRY,
+  VENOUS_ASSETS,
+  VENOUS_GEOMETRY,
+  VENOUS_STRUCTURES,
 } from "@anatomy/data";
 import { useViewerStore, type CameraView } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -36,6 +39,29 @@ export function ViewerOverlay({
     state.activeSystemIds.has("nervous"),
   );
   const nervousStatus = useViewerStore((state) => state.nervousStatus);
+  const venous = useViewerStore((state) => state.activeSystemIds.has("venous"));
+  const venousStatus = useViewerStore((state) => state.venousAssetStatus);
+  const systems = useViewerStore((state) => state.activeSystemIds);
+  const hiddenIds = useViewerStore((state) => state.hiddenIds);
+  const isolatedIds = useViewerStore((state) => state.isolatedIds);
+  const groups = useViewerStore((state) => state.venousGroups);
+  const depths = useViewerStore((state) => state.venousDepths);
+  const regions = useViewerStore((state) => state.venousRegions);
+  const eligible = resolveVenousStructureIds(
+    VENOUS_STRUCTURES,
+    systems,
+    { hiddenIds, isolatedIds },
+    { groups, depths, regions },
+  );
+  const needed = VENOUS_ASSETS.filter((asset) =>
+    asset.structureIds.some((id) => eligible.has(id)),
+  );
+  const venousError = needed.some(
+    (asset) => venousStatus[asset.id] === "error",
+  );
+  const venousLoading = needed.some(
+    (asset) => !venousStatus[asset.id] || venousStatus[asset.id] === "loading",
+  );
   const nervousInspection = useViewerStore(
     (state) => state.nervousIsolationSnapshot !== null,
   );
@@ -69,6 +95,19 @@ export function ViewerOverlay({
         <div className="model-loading" role="status">
           <div className="loader-ring" />
           <p>{t("viewer.loading")}</p>
+        </div>
+      )}
+      {supported && venous && (venousLoading || venousError) && (
+        <div
+          className="venous-load-status"
+          role={venousError ? "alert" : "status"}
+        >
+          {t(venousError ? "venous.error" : "venous.loading")}
+          {venousError && (
+            <button onClick={() => useViewerStore.getState().retryVenous()}>
+              {t("error.retry")}
+            </button>
+          )}
         </div>
       )}
       {supported && muscular && muscleStatus === "loading" && (
@@ -141,6 +180,12 @@ export function ViewerOverlay({
                   (count, item) => count + item.sourceFiles.length,
                   0,
                 )
+              : 0) +
+            (venous
+              ? VENOUS_GEOMETRY.reduce(
+                  (n, item) => n + item.sourceFiles.length,
+                  0,
+                )
               : 0),
         })}
         <span>·</span>
@@ -152,7 +197,8 @@ export function ViewerOverlay({
                 ).length
               : 0) +
             (muscular ? MUSCLE_ASSET.structures.length : 0) +
-            (nervous ? NERVOUS_GEOMETRY.length : 0),
+            (nervous ? NERVOUS_GEOMETRY.length : 0) +
+            (venous ? VENOUS_GEOMETRY.length : 0),
         })}
       </div>
       <div

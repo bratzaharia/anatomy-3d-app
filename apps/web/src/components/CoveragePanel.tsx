@@ -8,7 +8,12 @@ import {
   type CoverageSystem,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
-const systems: readonly CoverageSystem[] = ["skeletal", "muscular", "nervous"];
+const systems: readonly CoverageSystem[] = [
+  "skeletal",
+  "muscular",
+  "nervous",
+  "venous",
+];
 const normalize = (s: string) =>
   s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 export function CoveragePanel() {

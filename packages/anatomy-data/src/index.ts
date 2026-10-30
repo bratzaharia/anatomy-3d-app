@@ -17,6 +17,8 @@ import {
   SKELETAL_MISSING_GROUP,
 } from "./skeletalParts";
 import { createCoverageInventory } from "./coverage";
+import { VENOUS_ASSETS, VENOUS_STRUCTURES, VENOUS_GROUPS } from "./venous";
+export * from "./venous";
 import {
   NERVOUS_ASSETS,
   NERVOUS_STRUCTURES,
@@ -102,9 +104,15 @@ export const SYSTEMS: readonly AnatomySystem[] = [
     available: true,
     primary: true,
   },
+  {
+    id: "venous",
+    names: { en: "Venous system", ro: "Sistem venos" },
+    color: "#4777d9",
+    available: true,
+    primary: true,
+  },
   ...[
     ["arterial", "Arterial system", "Sistem arterial", "#ef4444"],
-    ["venous", "Venous system", "Sistem venos", "#4777d9"],
     ["lymphatic", "Lymphatic system", "Sistem limfatic", "#72ba83"],
     ["respiratory", "Respiratory system", "Sistem respirator", "#79b9c2"],
     ["digestive", "Digestive system", "Sistem digestiv", "#c9885e"],
@@ -240,6 +248,7 @@ export const ANATOMY_CATALOG: readonly AnatomicalStructure[] = [
   ...SKELETAL_STRUCTURES,
   ...MUSCLE_STRUCTURES,
   ...NERVOUS_STRUCTURES,
+  ...VENOUS_STRUCTURES,
 ];
 export const ANATOMY_COVERAGE = createCoverageInventory(ANATOMY_CATALOG);
 export const GROUPS: readonly AnatomyGroup[] = [
@@ -257,6 +266,7 @@ export const GROUPS: readonly AnatomyGroup[] = [
   SKELETAL_MISSING_GROUP,
   ...MUSCLE_GROUPS,
   ...NERVOUS_GROUPS,
+  ...VENOUS_GROUPS,
 ];
 
 export const assetManifestSchema = z.object({
@@ -297,6 +307,13 @@ export const ASSET_MANIFEST = assetManifestSchema.parse({
       structureIds: asset.structureIds.filter(
         (id) => nervousMetadataById.get(id)?.assetId === asset.id,
       ),
+      licenseId: asset.licenseId,
+    })),
+    ...VENOUS_ASSETS.map((asset) => ({
+      id: asset.id,
+      kind: "anatomical-model",
+      uri: asset.uri,
+      structureIds: asset.structureIds,
       licenseId: asset.licenseId,
     })),
   ],

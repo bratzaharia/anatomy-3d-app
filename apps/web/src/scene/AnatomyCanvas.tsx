@@ -10,10 +10,12 @@ import {
   SKELETAL_PART_MAPPINGS,
   NERVOUS_FOCUS_TARGETS,
   NERVOUS_REGION_BOUNDS,
+  VENOUS_GEOMETRY,
 } from "@anatomy/data";
 import { SkeletonModel } from "./SkeletonModel";
 import { MuscleLayer } from "./MuscleLayer";
 import { NervousLayer } from "./NervousLayer";
+import { VenousLayer } from "./VenousLayer";
 import { SceneDiagnostics } from "./SceneDiagnostics";
 import { useViewerStore } from "../store/viewerStore";
 import {
@@ -50,6 +52,7 @@ function CameraController() {
         ...SKELETAL_PART_MAPPINGS,
         ...MUSCLE_ASSET.structures,
         ...NERVOUS_FOCUS_TARGETS,
+        ...VENOUS_GEOMETRY,
       ];
       const selected = focusStructures.find(
         (item) => item.id === state.selectedId,
@@ -57,13 +60,23 @@ function CameraController() {
       const regionStructures = focusStructures.filter(
         (item) =>
           item.regionId === state.activeRegionId &&
-          (item.id.startsWith("nervous-")
-            ? state.activeSystemIds.has("nervous")
-            : item.id.startsWith("muscle-")
-              ? state.activeSystemIds.has("muscular")
-              : state.activeSystemIds.has("skeletal")),
+          (item.id.startsWith("venous-")
+            ? state.activeSystemIds.has("venous")
+            : item.id.startsWith("nervous-")
+              ? state.activeSystemIds.has("nervous")
+              : item.id.startsWith("muscle-")
+                ? state.activeSystemIds.has("muscular")
+                : state.activeSystemIds.has("skeletal")),
       );
-      if (selected) bounds = boundsBox(selected.bounds);
+      const traced = focusStructures.filter((item) =>
+        state.venousTraceIds.has(item.id),
+      );
+      if (state.venousTraceIds.has(state.selectedId ?? "") && traced.length)
+        bounds = traced.reduce(
+          (box, item) => box.union(boundsBox(item.bounds)),
+          new Box3(),
+        );
+      else if (selected) bounds = boundsBox(selected.bounds);
       else if (regionStructures.length)
         bounds = regionStructures.reduce(
           (box, item) =>
@@ -153,15 +166,18 @@ export function AnatomyCanvas() {
   const nervous = useViewerStore((state) =>
     state.activeSystemIds.has("nervous"),
   );
+  const venous = useViewerStore((state) => state.activeSystemIds.has("venous"));
   return (
     <Canvas
       role="img"
       aria-label={t(
-        nervous
-          ? "nervous.viewerLabel"
-          : muscular
-            ? "muscles.viewerLabel"
-            : "viewer.label",
+        venous
+          ? "venous.viewerLabel"
+          : nervous
+            ? "nervous.viewerLabel"
+            : muscular
+              ? "muscles.viewerLabel"
+              : "viewer.label",
       )}
       frameloop="demand"
       shadows={{ type: PCFShadowMap, autoUpdate: false }}
@@ -204,6 +220,7 @@ export function AnatomyCanvas() {
       </Suspense>
       <MuscleLayer />
       <NervousLayer />
+      <VenousLayer />
       <Grid
         position={[0, SKELETON_ASSET.bounds.min[1] - 0.008, 0]}
         args={[5, 5]}

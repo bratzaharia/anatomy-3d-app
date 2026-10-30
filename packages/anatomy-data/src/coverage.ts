@@ -1,6 +1,7 @@
 import type { AnatomicalStructure } from "@anatomy/core";
 import { MUSCLE_INVENTORY } from "./muscles";
 import { NERVOUS_INVENTORY, NERVOUS_ASSET } from "./nervous";
+import { VENOUS_INVENTORY } from "./venous";
 export type CoverageStatus = "individual" | "set" | "grouped-only" | "missing";
 export type CoverageReason =
   | "source-gap"
@@ -8,7 +9,7 @@ export type CoverageReason =
   | "side-conflict"
   | "spinal-quarantine"
   | "source-policy";
-export type CoverageSystem = "skeletal" | "muscular" | "nervous";
+export type CoverageSystem = "skeletal" | "muscular" | "nervous" | "venous";
 export interface CoverageEntry {
   readonly structure: AnatomicalStructure;
   readonly system: CoverageSystem;
@@ -81,6 +82,17 @@ export function createCoverageInventory(
             : originalSourceIds.has(n.id)
               ? ("source-policy" as const)
               : ("source-gap" as const),
+    })),
+    ...VENOUS_INVENTORY.map((v) => ({
+      structure: byId.get(v.id)!,
+      system: "venous" as const,
+      status:
+        v.geometryStatus === "individual"
+          ? ("individual" as const)
+          : v.geometryStatus === "grouped"
+            ? ("set" as const)
+            : ("missing" as const),
+      reason: v.assetId ? null : ("source-gap" as const),
     })),
   ];
 }

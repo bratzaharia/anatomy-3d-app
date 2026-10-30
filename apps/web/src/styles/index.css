@@ -916,6 +916,127 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
 }
+.venous-explorer {
+  flex: 0 1 auto;
+  max-height: 48%;
+  overflow: auto;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+  scrollbar-width: thin;
+}
+.venous-explorer h3 {
+  display: inline;
+  font-size: 12px;
+}
+.venous-explorer summary {
+  cursor: pointer;
+  line-height: 1.6;
+}
+.venous-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 9px 0;
+  font-size: 11px;
+}
+.venous-check input {
+  accent-color: var(--teal);
+}
+.venous-facets {
+  margin: 12px 0;
+  font-size: 11px;
+}
+.venous-modes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5px;
+}
+.venous-modes button {
+  min-width: 0;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 7px 2px;
+  color: var(--muted);
+  background: #0a1c2a;
+  font-size: 9px;
+}
+.venous-modes button[aria-checked="true"] {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.venous-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: linear-gradient(
+    135deg,
+    #172434 34%,
+    #74627b 35% 48%,
+    #172434 49% 60%,
+    #74627b 61% 70%,
+    #172434 71%
+  );
+}
+.venous-swatch.blue {
+  filter: hue-rotate(50deg) saturate(2);
+}
+.venous-swatch.depth {
+  background: linear-gradient(60deg, #59b9d3 25%, #6960ba 26% 60%, #dc9c58 61%);
+}
+.venous-swatch.contrast {
+  background: linear-gradient(60deg, #07111d 40%, #8dc7ff 41% 59%, #07111d 60%);
+}
+.venous-opacity {
+  display: block;
+  font-size: 11px;
+  margin: 12px 0;
+}
+.venous-opacity output {
+  float: right;
+  color: var(--teal);
+}
+.venous-opacity input {
+  width: 100%;
+  accent-color: var(--teal);
+  margin-top: 8px;
+}
+.venous-inventory {
+  margin-top: 12px;
+  font-size: 11px;
+}
+.venous-inventory details {
+  margin: 8px 0;
+}
+.venous-details {
+  font-size: 11px;
+  line-height: 1.6;
+}
+.venous-details a {
+  color: var(--teal);
+}
+.venous-details ul {
+  padding-left: 18px;
+}
+.venous-load-status {
+  position: absolute;
+  z-index: 5;
+  right: 18px;
+  top: 65px;
+  max-width: 280px;
+  padding: 10px;
+  font-size: 11px;
+  color: #e4bd72;
+  background: #101e29e8;
+  border: 1px solid #544427;
+  border-radius: 8px;
+}
+.venous-load-status button {
+  display: block;
+  margin-top: 8px;
+}
 .inspector-header {
   min-height: 76px;
   display: flex;
