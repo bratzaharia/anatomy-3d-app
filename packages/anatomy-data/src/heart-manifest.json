@@ -1,0 +1,1565 @@
+{
+  "version": "0.1.0",
+  "complete": false,
+  "sourceVersion": "BodyParts3D 4.0, 99% reduced archive",
+  "sourceUrl": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip",
+  "licenseId": "CC-BY-4.0",
+  "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International",
+  "checkedAt": "2026-10-30",
+  "metadata": [
+    {
+      "filename": "isa-parts.txt",
+      "sha256": "ab7796deedd49205e77f3609a1cb8c53e2bbee14ecb5c9a6ca05227469780513"
+    },
+    {
+      "filename": "isa-elements.txt",
+      "sha256": "a3de74423f943b0d724ae8f59b3a817f87c423a544f8db98113b1980817cbeaf"
+    },
+    {
+      "filename": "parts.txt",
+      "sha256": "9224080557053e6f1322f1e13ab27f0ecde0db19bb3b505f0631afad230eeebd"
+    },
+    {
+      "filename": "elements.txt",
+      "sha256": "3f5f6df1028eb122b30de77c711597b6bb8e5541658e5985859fd228adbf88ea"
+    },
+    {
+      "filename": "venous-bodyparts3d-license.html",
+      "sha256": "e0f88e3ab2d564b0172408cb7618d33be375933eab55c449015a8319a8ded99d"
+    },
+    {
+      "filename": "venous-zip-directory.bin",
+      "sha256": "edde15c7c5f34b2b9743935fb3c1873cce3a9789164427ddf8343c879bcde96b"
+    }
+  ],
+  "registration": {
+    "transform": "[x/1000,z/1000,-y/1000]",
+    "landmarks": 29,
+    "sourceDifferenceMm": 0,
+    "medicalReviewStatus": "pending"
+  },
+  "assets": [
+    {
+      "id": "bodyparts3d-heart-external-v4",
+      "uri": "/models/bodyparts3d-heart-external.glb",
+      "byteLength": 974592,
+      "sha256": "62d7f11d04afee510d4c609f13f4eaba3f8b73e78398cafe311d2dab41e5e7e1",
+      "decodedBytes": 1769160,
+      "structureIds": [
+        "cardiac-fma9457",
+        "cardiac-fma9531",
+        "cardiac-fma86212",
+        "cardiac-fma11359",
+        "cardiac-fma9465",
+        "cardiac-fma9291",
+        "cardiac-fma9466"
+      ],
+      "triangleCount": 69718
+    },
+    {
+      "id": "bodyparts3d-heart-internal-v4",
+      "uri": "/models/bodyparts3d-heart-internal.glb",
+      "byteLength": 582744,
+      "sha256": "6c91da0d77a5475d92e3f3c53cffb3a25cc570ca44b0867f166b80abf503118e",
+      "decodedBytes": 996744,
+      "structureIds": [
+        "cardiac-fma7238",
+        "cardiac-fma7239",
+        "cardiac-fma7240",
+        "cardiac-fma7242",
+        "cardiac-fma7243",
+        "cardiac-fma7247",
+        "cardiac-fma7249",
+        "cardiac-fma7250",
+        "cardiac-fma7252",
+        "cardiac-fma7253",
+        "cardiac-fma7254",
+        "cardiac-fma7260",
+        "cardiac-fma7261",
+        "cardiac-fma7262",
+        "cardiac-fma7264",
+        "cardiac-fma7265"
+      ],
+      "triangleCount": 38792
+    },
+    {
+      "id": "bodyparts3d-heart-arterial-v4",
+      "uri": "/models/bodyparts3d-heart-arterial.glb",
+      "byteLength": 235788,
+      "sha256": "8fe2e6c802106dc417bc835dfe6bf5d0e2768a73d601c9a99618f4f1b4c224c1",
+      "decodedBytes": 422016,
+      "structureIds": [
+        "cardiac-fma3802",
+        "cardiac-fma3855",
+        "cardiac-fma74912",
+        "cardiac-fma3895",
+        "cardiac-fma3840",
+        "cardiac-fma3736",
+        "cardiac-fma8612"
+      ],
+      "triangleCount": 15972
+    }
+  ],
+  "inventory": [
+    {
+      "id": "cardiac-fma9457",
+      "terminologyId": "FMA9457",
+      "names": {
+        "en": "Wall of right atrium",
+        "ro": "Peretele atriului drept"
+      },
+      "latinName": "Paries atrii dextri",
+      "category": "wall",
+      "group": "walls",
+      "sourceTable": "IS-A",
+      "sourceName": "wall of right atrium",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA9457",
+          "name": "wall of right atrium",
+          "fileIds": ["FJ2439"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2439",
+          "sha256": "6e87510c607541b53b124f8224b6be74cb9b7351e29102246053b30a7260d8dd",
+          "geometryHash": "46ce2c8856a4ce440d4ea1bc51a563ff6777a885ab9cefac5b2b0af838dda107"
+        }
+      ],
+      "bounds": {
+        "min": [-0.036303699016571045, 1.1830799579620361, 0.09634499996900558],
+        "max": [0.006777910050004721, 1.2795000076293945, 0.16264499723911285]
+      },
+      "triangleCount": 17784,
+      "assetId": "bodyparts3d-heart-external-v4",
+      "meshIds": ["cardiac-fma9457"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 1826,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma9531",
+      "terminologyId": "FMA9531",
+      "names": { "en": "Wall of left atrium", "ro": "Peretele atriului stâng" },
+      "latinName": "Paries atrii sinistri",
+      "category": "wall",
+      "group": "walls",
+      "sourceTable": "IS-A",
+      "sourceName": "wall of left atrium",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA9531",
+          "name": "wall of left atrium",
+          "fileIds": ["FJ2438"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2438",
+          "sha256": "ad28c5925374c6648bafb77ac9a89163316c101559cb730906208c96266ae078",
+          "geometryHash": "06da07024256a95748fa607f661170f9ccab9c2129f1d29c608d2c60bb9c3bc0"
+        }
+      ],
+      "bounds": {
+        "min": [-0.022880099713802338, 1.199429988861084, 0.07017040252685547],
+        "max": [0.0632392019033432, 1.2724000215530396, 0.15115100145339966]
+      },
+      "triangleCount": 7544,
+      "assetId": "bodyparts3d-heart-external-v4",
+      "meshIds": ["cardiac-fma9531"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 1102,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma86212",
+      "terminologyId": "FMA86212",
+      "names": {
+        "en": "Unsegmented region of heart wall (source subset)",
+        "ro": "Regiune nesegmentată a peretelui inimii (subset din sursă)"
+      },
+      "latinName": "Regio parietis cordis",
+      "category": "wall",
+      "group": "walls",
+      "onlyFiles": ["FJ2428"],
+      "sourceTable": "IS-A",
+      "sourceName": "region of wall of heart",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA86212",
+          "name": "region of wall of heart",
+          "fileIds": ["FJ2428"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2428",
+          "sha256": "ac3c7d6714bed8cf549c97b013546541cf67e189dad2107092a59758aa3ccc45",
+          "geometryHash": "9b92535d944ef3ff7b8f9532438ef87319a2aa90477afdd270f5a8b6acfde781"
+        }
+      ],
+      "bounds": {
+        "min": [-0.023017900064587593, 1.1741900444030762, 0.08311770111322403],
+        "max": [0.0791395977139473, 1.2659200429916382, 0.1766050010919571]
+      },
+      "triangleCount": 37442,
+      "assetId": "bodyparts3d-heart-external-v4",
+      "meshIds": ["cardiac-fma86212"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 3640,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 3
+      }
+    },
+    {
+      "id": "cardiac-fma11359",
+      "terminologyId": "FMA11359",
+      "names": {
+        "en": "Cavity of right atrium",
+        "ro": "Cavitatea atriului drept"
+      },
+      "latinName": "Cavitas atrii dextri",
+      "category": "cavity",
+      "group": "cavities",
+      "sourceTable": "IS-A",
+      "sourceName": "cavity of right atrium",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA11359",
+          "name": "cavity of right atrium",
+          "fileIds": ["FJ2424"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2424",
+          "sha256": "53739664c1d4a5bb635ca48c216b54deb16bb947d76a4ad75635adf69c8fa11c",
+          "geometryHash": "110721e4807e893cd01f129f59e21cb6d164db8aa6e19220f668f925a4a4a00b"
+        }
+      ],
+      "bounds": {
+        "min": [-0.034203000366687775, 1.1852600574493408, 0.09244149923324585],
+        "max": [0.003187050111591816, 1.277519941329956, 0.15356899797916412]
+      },
+      "triangleCount": 2244,
+      "assetId": "bodyparts3d-heart-external-v4",
+      "meshIds": ["cardiac-fma11359"],
+      "geometryRepresentation": "cavity-surface-not-wall",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 146,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma9465",
+      "terminologyId": "FMA9465",
+      "names": {
+        "en": "Cavity of left atrium",
+        "ro": "Cavitatea atriului stâng"
+      },
+      "latinName": "Cavitas atrii sinistri",
+      "category": "cavity",
+      "group": "cavities",
+      "sourceTable": "IS-A",
+      "sourceName": "cavity of left atrium",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA9465",
+          "name": "cavity of left atrium",
+          "fileIds": ["FJ2425"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2425",
+          "sha256": "d93197cc47f47d6d084de017917c88de039a4ab632b421893cede03264f43384",
+          "geometryHash": "c9437d35bd8c3e1ddb3a1b6920ff0ac2800ac6fda62c31144c48b4fc019e4ead"
+        }
+      ],
+      "bounds": {
+        "min": [-0.02038460038602352, 1.2064499855041504, 0.07099050283432007],
+        "max": [0.048323698341846466, 1.2682900428771973, 0.12676100432872772]
+      },
+      "triangleCount": 1064,
+      "assetId": "bodyparts3d-heart-external-v4",
+      "meshIds": ["cardiac-fma9465"],
+      "geometryRepresentation": "cavity-surface-not-wall",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 126,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma9291",
+      "terminologyId": "FMA9291",
+      "names": {
+        "en": "Cavity of right ventricle",
+        "ro": "Cavitatea ventriculului drept"
+      },
+      "latinName": "Cavitas ventriculi dextri",
+      "category": "cavity",
+      "group": "cavities",
+      "sourceTable": "IS-A",
+      "sourceName": "cavity of right ventricle",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA9291",
+          "name": "cavity of right ventricle",
+          "fileIds": ["FJ2423"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2423",
+          "sha256": "f0d7cbf9e10c0fcefe96741700605e7080d4a627fe214b4c8d5647d970e085f7",
+          "geometryHash": "edce536126ed254fd7a0d719b9a291d866188df8ecdcf74590db63a1b7b74f43"
+        }
+      ],
+      "bounds": {
+        "min": [-0.018845800310373306, 1.179479956626892, 0.11519499868154526],
+        "max": [0.052663400769233704, 1.2600300312042236, 0.17341800034046173]
+      },
+      "triangleCount": 1918,
+      "assetId": "bodyparts3d-heart-external-v4",
+      "meshIds": ["cardiac-fma9291"],
+      "geometryRepresentation": "cavity-surface-not-wall",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 34,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma9466",
+      "terminologyId": "FMA9466",
+      "names": {
+        "en": "Cavity of left ventricle",
+        "ro": "Cavitatea ventriculului stâng"
+      },
+      "latinName": "Cavitas ventriculi sinistri",
+      "category": "cavity",
+      "group": "cavities",
+      "sourceTable": "IS-A",
+      "sourceName": "cavity of left ventricle",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA9466",
+          "name": "cavity of left ventricle",
+          "fileIds": ["FJ2422"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2422",
+          "sha256": "8844c5fc464d23fdc785d1d254d666a4d3b70b14b73ec90ca0c77ba4aff3dd37",
+          "geometryHash": "516e63fe742f1e9b886a10c9f8813cdb540955fdee7b391ff42657c715344140"
+        }
+      ],
+      "bounds": {
+        "min": [0.0064674499444663525, 1.1840699911117554, 0.08640159666538239],
+        "max": [0.07024630159139633, 1.2515499591827393, 0.15852199494838715]
+      },
+      "triangleCount": 1722,
+      "assetId": "bodyparts3d-heart-external-v4",
+      "meshIds": ["cardiac-fma9466"],
+      "geometryRepresentation": "cavity-surface-not-wall",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 42,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7238",
+      "terminologyId": "FMA7238",
+      "names": {
+        "en": "Anterior leaflet of tricuspid valve",
+        "ro": "Foița anterioară a valvei tricuspide"
+      },
+      "latinName": "Cuspis anterior valvae tricuspidalis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "tricuspid",
+      "sourceTable": "IS-A",
+      "sourceName": "anterior leaflet of tricuspid valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7238",
+          "name": "anterior leaflet of tricuspid valve",
+          "fileIds": ["FJ2421"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2421",
+          "sha256": "7303c55e6d9c2e294759f7f7e01d23fc120eba74bce9ade0a01cc4bdb2bd4200",
+          "geometryHash": "7ed5e2b6c6d77402643405bc621f61295c076cc5e4dc9e8c2016007b22567335"
+        }
+      ],
+      "bounds": {
+        "min": [-0.021077200770378113, 1.1981099843978882, 0.12919799983501434],
+        "max": [0.023204699158668518, 1.2362099885940552, 0.1563130021095276]
+      },
+      "triangleCount": 8160,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7238"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 480,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7239",
+      "terminologyId": "FMA7239",
+      "names": {
+        "en": "Posterior leaflet of tricuspid valve",
+        "ro": "Foița posterioară a valvei tricuspide"
+      },
+      "latinName": "Cuspis posterior valvae tricuspidalis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "tricuspid",
+      "sourceTable": "IS-A",
+      "sourceName": "posterior leaflet of tricuspid valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7239",
+          "name": "posterior leaflet of tricuspid valve",
+          "fileIds": ["FJ2433"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2433",
+          "sha256": "6519afbf9aa2eb3c0dc25d8e332a0208fd2ad68956c1dfe1ef6b010f04984d55",
+          "geometryHash": "e1e57b72d07f75f2649cc0f9e655799f7b069705507c138ef69dc271ad0cf339"
+        }
+      ],
+      "bounds": {
+        "min": [-0.018957799300551414, 1.1886399984359741, 0.11371699720621109],
+        "max": [0.016470100730657578, 1.2161999940872192, 0.14525599777698517]
+      },
+      "triangleCount": 4926,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7239"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 664,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7240",
+      "terminologyId": "FMA7240",
+      "names": {
+        "en": "Septal leaflet of tricuspid valve",
+        "ro": "Foița septală a valvei tricuspide"
+      },
+      "latinName": "Cuspis septalis valvae tricuspidalis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "tricuspid",
+      "sourceTable": "IS-A",
+      "sourceName": "septal leaflet of tricuspid valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7240",
+          "name": "septal leaflet of tricuspid valve",
+          "fileIds": ["FJ2436"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2436",
+          "sha256": "f0572079c56ea2a00eff869b07c4910defd624c5bda3fddd2403e4f1831f6be1",
+          "geometryHash": "5f4bc4c3e7a1ac6643d9478b05b6935711655a6f895c90c27460ae8fe0f04772"
+        }
+      ],
+      "bounds": {
+        "min": [-0.006484000012278557, 1.2131400108337402, 0.11357299983501434],
+        "max": [0.029501400887966156, 1.2364799976348877, 0.1377449929714203]
+      },
+      "triangleCount": 4526,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7240"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 784,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7242",
+      "terminologyId": "FMA7242",
+      "names": {
+        "en": "Anterior leaflet of mitral valve",
+        "ro": "Foița anterioară a valvei mitrale"
+      },
+      "latinName": "Cuspis anterior valvae mitralis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "mitral",
+      "sourceTable": "IS-A",
+      "sourceName": "anterior leaflet of mitral valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7242",
+          "name": "anterior leaflet of mitral valve",
+          "fileIds": ["FJ2420"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2420",
+          "sha256": "f0294cbbd35096d1df5e8bdc92f17dbed5ebf981e62024a07e7ca18e31eb1a94",
+          "geometryHash": "d38e2cda9ce25a8c06ced1fe65d2a30546cf68f294efe5be054580771419be13"
+        }
+      ],
+      "bounds": {
+        "min": [0.011721700429916382, 1.2044600248336792, 0.09310220181941986],
+        "max": [0.04588789865374565, 1.2359199523925781, 0.14162500202655792]
+      },
+      "triangleCount": 7558,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7242"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 676,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7243",
+      "terminologyId": "FMA7243",
+      "names": {
+        "en": "Posterior leaflet of mitral valve",
+        "ro": "Foița posterioară a valvei mitrale"
+      },
+      "latinName": "Cuspis posterior valvae mitralis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "mitral",
+      "sourceTable": "IS-A",
+      "sourceName": "posterior leaflet of mitral valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7243",
+          "name": "posterior leaflet of mitral valve",
+          "fileIds": ["FJ2432"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2432",
+          "sha256": "0b296151ecceff395da5c435bcf65cf6dfca390e72eb0be71d778fee84bc216b",
+          "geometryHash": "96da780ae7d7fc4a9cfb4fdda7ece964364eb2ebf1d4109a2aba40a3510f0801"
+        }
+      ],
+      "bounds": {
+        "min": [0.013574499636888504, 1.1995999813079834, 0.08544459939002991],
+        "max": [0.06285429745912552, 1.2316499948501587, 0.12326700240373611]
+      },
+      "triangleCount": 3820,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7243"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 1382,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7247",
+      "terminologyId": "FMA7247",
+      "names": {
+        "en": "Left anterior cusp of pulmonary valve (source term)",
+        "ro": "Cuspa anterioară stângă a valvei pulmonare (termen din sursă)"
+      },
+      "latinName": "Cuspis anterior sinistra valvae pulmonalis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "pulmonary",
+      "sourceTable": "IS-A",
+      "sourceName": "left anterior cusp of pulmonary valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7247",
+          "name": "left anterior cusp of pulmonary valve",
+          "fileIds": ["FJ2417"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2417",
+          "sha256": "12d2dccc78efa7d21f6f4af53ae08603be473613ec4e04b0beb9c0239b96da56",
+          "geometryHash": "ac3e7d909714b6ec98504bff68f93f0f09113fcad5b6fff28e2524534e2379d7"
+        }
+      ],
+      "bounds": {
+        "min": [0.02314019948244095, 1.2448999881744385, 0.1395370066165924],
+        "max": [0.04092150181531906, 1.2614500522613525, 0.1595810055732727]
+      },
+      "triangleCount": 1272,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7247"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 126,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7249",
+      "terminologyId": "FMA7249",
+      "names": {
+        "en": "Right anterior cusp of pulmonary valve (source term)",
+        "ro": "Cuspa anterioară dreaptă a valvei pulmonare (termen din sursă)"
+      },
+      "latinName": "Cuspis anterior dextra valvae pulmonalis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "pulmonary",
+      "sourceTable": "IS-A",
+      "sourceName": "right anterior cusp of pulmonary valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7249",
+          "name": "right anterior cusp of pulmonary valve",
+          "fileIds": ["FJ2434"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2434",
+          "sha256": "ed432a90e8fbfe9742d524044c0bd20c165f2a9a820ee585f00635cc47c5b5c0",
+          "geometryHash": "f843bb90470dfdafcb0d3b13f7b90415385c6b11844efd3f841cda57456d231a"
+        }
+      ],
+      "bounds": {
+        "min": [0.0087679298594594, 1.2480700016021729, 0.13288000226020813],
+        "max": [0.027524499222636223, 1.2652699947357178, 0.15686899423599243]
+      },
+      "triangleCount": 1370,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7249"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 138,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7250",
+      "terminologyId": "FMA7250",
+      "names": {
+        "en": "Posterior cusp of pulmonary valve (source term)",
+        "ro": "Cuspa posterioară a valvei pulmonare (termen din sursă)"
+      },
+      "latinName": "Cuspis posterior valvae pulmonalis",
+      "category": "valve",
+      "group": "valves",
+      "valve": "pulmonary",
+      "sourceTable": "IS-A",
+      "sourceName": "posterior cusp of pulmonary valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7250",
+          "name": "posterior cusp of pulmonary valve",
+          "fileIds": ["FJ2427"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2427",
+          "sha256": "eb867fa648f3da04036d925e6a740d4e3a922b893d74a20dec40d8d763a18414",
+          "geometryHash": "8f8e56bf461f2ca7e597c2a390179be0c55b1c3021f1f425cf89f045a753cda4"
+        }
+      ],
+      "bounds": {
+        "min": [0.0235494002699852, 1.2451900243759155, 0.12760299444198608],
+        "max": [0.040595900267362595, 1.261620044708252, 0.142208993434906]
+      },
+      "triangleCount": 996,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7250"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 136,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7252",
+      "terminologyId": "FMA7252",
+      "names": {
+        "en": "Right posterior cusp of aortic valve (source term)",
+        "ro": "Cuspa posterioară dreaptă a valvei aortice (termen din sursă)"
+      },
+      "latinName": "Cuspis posterior dextra valvae aortae",
+      "category": "valve",
+      "group": "valves",
+      "valve": "aortic",
+      "sourceTable": "IS-A",
+      "sourceName": "right posterior cusp of aortic valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7252",
+          "name": "right posterior cusp of aortic valve",
+          "fileIds": ["FJ2431"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2431",
+          "sha256": "40ae6e23decbb5fe2ea3800d44d517302f219078266abd8dcbc7d86ebc246799",
+          "geometryHash": "bfd7443f2e4445d488e22fa451ff4239e190763f86c92dffb3d8041808aed30f"
+        }
+      ],
+      "bounds": {
+        "min": [0.005667740013450384, 1.2334100008010864, 0.10482600331306458],
+        "max": [0.02323959954082966, 1.2505199909210205, 0.12384700030088425]
+      },
+      "triangleCount": 316,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7252"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 106,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7253",
+      "terminologyId": "FMA7253",
+      "names": {
+        "en": "Anterior cusp of aortic valve (source term)",
+        "ro": "Cuspa anterioară a valvei aortice (termen din sursă)"
+      },
+      "latinName": "Cuspis anterior valvae aortae",
+      "category": "valve",
+      "group": "valves",
+      "valve": "aortic",
+      "sourceTable": "IS-A",
+      "sourceName": "anterior cusp of aortic valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7253",
+          "name": "anterior cusp of aortic valve",
+          "fileIds": ["FJ2435"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2435",
+          "sha256": "b498ef286aa1ba0bfeaf2114298f43078007beab66fc81f422ff6017c309bd7a",
+          "geometryHash": "ebb49630fb7d8b8fb49837d448b6401b89668cc355377aeee536ffadbbe2d65b"
+        }
+      ],
+      "bounds": {
+        "min": [0.006992239970713854, 1.2346999645233154, 0.11897099763154984],
+        "max": [0.026656199246644974, 1.2527300119400024, 0.13244099915027618]
+      },
+      "triangleCount": 920,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7253"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 92,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7254",
+      "terminologyId": "FMA7254",
+      "names": {
+        "en": "Left posterior cusp of aortic valve (source term)",
+        "ro": "Cuspa posterioară stângă a valvei aortice (termen din sursă)"
+      },
+      "latinName": "Cuspis posterior sinistra valvae aortae",
+      "category": "valve",
+      "group": "valves",
+      "valve": "aortic",
+      "sourceTable": "IS-A",
+      "sourceName": "left posterior cusp of aortic valve",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7254",
+          "name": "left posterior cusp of aortic valve",
+          "fileIds": ["FJ2426"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2426",
+          "sha256": "86fa5ef6decf47a91d33f826e1b5579bbecd94795c206b2d797f52c36c3e1020",
+          "geometryHash": "19d76d424efac000677b41ecf78977b3f83d94f285d28d59084e0483c37ec06a"
+        }
+      ],
+      "bounds": {
+        "min": [0.016596900299191475, 1.2407000064849854, 0.10640999674797058],
+        "max": [0.032388199120759964, 1.255079984664917, 0.12665599584579468]
+      },
+      "triangleCount": 914,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7254"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 122,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7260",
+      "terminologyId": "FMA7260",
+      "names": {
+        "en": "Anterior papillary muscle of right ventricle",
+        "ro": "Mușchiul papilar anterior al ventriculului drept"
+      },
+      "latinName": "Musculus papillaris anterior ventriculi dextri",
+      "category": "papillary",
+      "group": "papillary",
+      "sourceTable": "IS-A",
+      "sourceName": "anterior papillary muscle of right ventricle",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7260",
+          "name": "anterior papillary muscle of right ventricle",
+          "fileIds": ["FJ2419"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2419",
+          "sha256": "1169b9b927ff75aac2dc2406a700b962bb9f3c95b860c5271548414d9e1226da",
+          "geometryHash": "92d3ba8fa25e9c13dc9a3a36536f4280d0bac0378d83371df22f831909642dea"
+        }
+      ],
+      "bounds": {
+        "min": [0.012058299966156483, 1.179800033569336, 0.15113100409507751],
+        "max": [0.047142401337623596, 1.2090500593185425, 0.17271000146865845]
+      },
+      "triangleCount": 882,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7260"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 302,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7261",
+      "terminologyId": "FMA7261",
+      "names": {
+        "en": "Posterior papillary muscle of right ventricle",
+        "ro": "Mușchiul papilar posterior al ventriculului drept"
+      },
+      "latinName": "Musculus papillaris posterior ventriculi dextri",
+      "category": "papillary",
+      "group": "papillary",
+      "sourceTable": "IS-A",
+      "sourceName": "posterior papillary muscle of right ventricle",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7261",
+          "name": "posterior papillary muscle of right ventricle",
+          "fileIds": ["FJ2430"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2430",
+          "sha256": "971ab49fff2908862fc230653f5f0980424e2030ae7f29f7f96637e8b636c4e8",
+          "geometryHash": "fb448f69aa27cd1438c5eaec6ebece8651826678d29b9a899003e85a758bc342"
+        }
+      ],
+      "bounds": {
+        "min": [0.007164539769291878, 1.178439974784851, 0.13188600540161133],
+        "max": [0.036776598542928696, 1.1927900314331055, 0.16041800379753113]
+      },
+      "triangleCount": 692,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7261"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 286,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7262",
+      "terminologyId": "FMA7262",
+      "names": {
+        "en": "Septal papillary muscle of right ventricle",
+        "ro": "Mușchiul papilar septal al ventriculului drept"
+      },
+      "latinName": "Musculus papillaris septalis ventriculi dextri",
+      "category": "papillary",
+      "group": "papillary",
+      "sourceTable": "IS-A",
+      "sourceName": "septal papillary muscle of right ventricle",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7262",
+          "name": "septal papillary muscle of right ventricle",
+          "fileIds": ["FJ2437"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2437",
+          "sha256": "8ac0c0aa95adc3f41e82f51bbd8e8a74681f4e58af7f7edd4bc9c5aafffa97c7",
+          "geometryHash": "28e744d47d340d9344a5472f1799c3b41532acd1c5f3b5c72696f0e91936ff47"
+        }
+      ],
+      "bounds": {
+        "min": [0.012891200371086597, 1.2134599685668945, 0.12819500267505646],
+        "max": [0.03217409923672676, 1.2401700019836426, 0.1435990035533905]
+      },
+      "triangleCount": 844,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7262"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 240,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7264",
+      "terminologyId": "FMA7264",
+      "names": {
+        "en": "Lateral papillary muscle of left ventricle (source remainder)",
+        "ro": "Mușchiul papilar lateral al ventriculului stâng (restul din sursă)"
+      },
+      "latinName": "Musculus papillaris lateralis ventriculi sinistri",
+      "category": "papillary",
+      "group": "papillary",
+      "sourceTable": "IS-A",
+      "sourceName": "lateral papillary muscle of left ventricle",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7264",
+          "name": "lateral papillary muscle of left ventricle",
+          "fileIds": ["FJ2429"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2429",
+          "sha256": "2f02411a806eedacfcb662b2dee47ca60f8448eb5243f48fb32083df66541ca4",
+          "geometryHash": "fd80d099f2a0426244ffadaf8b356834f9673202aca0a80dfad15cdb12124aef"
+        }
+      ],
+      "bounds": {
+        "min": [0.04646480083465576, 1.188439965248108, 0.10476700216531754],
+        "max": [0.0745403990149498, 1.2182600498199463, 0.14691999554634094]
+      },
+      "triangleCount": 780,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7264"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 196,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma7265",
+      "terminologyId": "FMA7265",
+      "names": {
+        "en": "Anterolateral head of lateral papillary muscle of left ventricle",
+        "ro": "Capul anterolateral al mușchiului papilar lateral al ventriculului stâng"
+      },
+      "latinName": "Caput anterolaterale musculi papillaris lateralis ventriculi sinistri",
+      "category": "papillary",
+      "group": "papillary",
+      "sourceTable": "IS-A",
+      "sourceName": "anterolateral head of lateral papillary muscle of left ventricle",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA7265",
+          "name": "anterolateral head of lateral papillary muscle of left ventricle",
+          "fileIds": ["FJ2418"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2418",
+          "sha256": "ad6dbf98d5afb2dd5010c42df9d707bf172b0ecc4f6e22c70716d022660aadc8",
+          "geometryHash": "265cede019daa28e2a58ef02de901bff1b514974294f0cbbcc8b82c7039b5667"
+        }
+      ],
+      "bounds": {
+        "min": [0.031544700264930725, 1.1918100118637085, 0.12451200187206268],
+        "max": [0.05658920109272003, 1.2246500253677368, 0.1600320041179657]
+      },
+      "triangleCount": 816,
+      "assetId": "bodyparts3d-heart-internal-v4",
+      "meshIds": ["cardiac-fma7265"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 230,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma3802",
+      "terminologyId": "FMA3802",
+      "names": {
+        "en": "Trunk of right coronary artery",
+        "ro": "Trunchiul arterei coronare drepte"
+      },
+      "latinName": "Truncus arteriae coronariae dextrae",
+      "category": "artery",
+      "group": "coronary-arteries",
+      "sourceTable": "IS-A",
+      "sourceName": "trunk of right coronary artery",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA3802",
+          "name": "trunk of right coronary artery",
+          "fileIds": ["FJ2723"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2723",
+          "sha256": "cd008769cb9d565a75bf6b91b5ad3bd482932e37c4747837f6c9446cd23b73a2",
+          "geometryHash": "00bd05604284d3f0394b3fe871cbd4ba979a645f61a149c2f748215c0e8466d8"
+        }
+      ],
+      "bounds": {
+        "min": [-0.02174760028719902, 1.187940001487732, 0.09330420196056366],
+        "max": [0.020738499239087105, 1.2610700130462646, 0.1624940037727356]
+      },
+      "triangleCount": 4502,
+      "assetId": "bodyparts3d-heart-arterial-v4",
+      "meshIds": ["cardiac-fma3802"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 8,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma3855",
+      "terminologyId": "FMA3855",
+      "names": {
+        "en": "Trunk of left coronary artery",
+        "ro": "Trunchiul arterei coronare stângi"
+      },
+      "latinName": "Truncus arteriae coronariae sinistrae",
+      "category": "artery",
+      "group": "coronary-arteries",
+      "sourceTable": "IS-A",
+      "sourceName": "trunk of left coronary artery",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA3855",
+          "name": "trunk of left coronary artery",
+          "fileIds": ["FJ2737"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2737",
+          "sha256": "22aa075132e33f9a3d3be135515362b03ab84f12a0d641edde35e260fb2cd65b",
+          "geometryHash": "10b02bc6ce7c089c7a2d39b8956d9668b00423e223f1de0aa736b7ad0a543c89"
+        }
+      ],
+      "bounds": {
+        "min": [0.02338930033147335, 1.2539499998092651, 0.1173039972782135],
+        "max": [0.034405000507831573, 1.2608200311660767, 0.12342499941587448]
+      },
+      "triangleCount": 204,
+      "assetId": "bodyparts3d-heart-arterial-v4",
+      "meshIds": ["cardiac-fma3855"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 34,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma74912",
+      "terminologyId": "FMA74912",
+      "names": {
+        "en": "Trunk of anterior interventricular branch of left coronary artery",
+        "ro": "Trunchiul ramurii interventriculare anterioare a coronarei stângi"
+      },
+      "latinName": "Ramus interventricularis anterior arteriae coronariae sinistrae",
+      "category": "artery",
+      "group": "coronary-arteries",
+      "sourceTable": "IS-A",
+      "sourceName": "trunk of anterior interventricular branch of left coronary artery",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA74912",
+          "name": "trunk of anterior interventricular branch of left coronary artery",
+          "fileIds": ["FJ2631"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2631",
+          "sha256": "ca7d8c0c82982ef1c838cd2224650c810adc3e52aaf6b345f0cdb77d7b068c5e",
+          "geometryHash": "4a05c40b9b8d272ab1d652c0a0bd9de871d1bcd67f6279033123edd4c9225e99"
+        }
+      ],
+      "bounds": {
+        "min": [0.033292800188064575, 1.1795400381088257, 0.12007299810647964],
+        "max": [0.06384129822254181, 1.2576199769973755, 0.1680079996585846]
+      },
+      "triangleCount": 3032,
+      "assetId": "bodyparts3d-heart-arterial-v4",
+      "meshIds": ["cardiac-fma74912"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 64,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma3895",
+      "terminologyId": "FMA3895",
+      "names": {
+        "en": "Circumflex branch of left coronary artery",
+        "ro": "Ramura circumflexă a arterei coronare stângi"
+      },
+      "latinName": "Ramus circumflexus arteriae coronariae sinistrae",
+      "category": "artery",
+      "group": "coronary-arteries",
+      "sourceTable": "IS-A",
+      "sourceName": "circumflex branch of left coronary artery",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA3895",
+          "name": "circumflex branch of left coronary artery",
+          "fileIds": [
+            "FJ2649",
+            "FJ2650",
+            "FJ2651",
+            "FJ2652",
+            "FJ2653",
+            "FJ2654"
+          ]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2649",
+          "sha256": "d4833bb0b60ee79f526150ad7ba9124e326aba8cd48000711bf3a6b0997b0ce0",
+          "geometryHash": "2e7a9f4a7c3ac227ce156168508938fba9713a3d2deb06ccee28f979d39c5a4a"
+        },
+        {
+          "id": "FJ2650",
+          "sha256": "dd2c38fdc784311c955fb8b0420d70dfbdf16f0ce6e236a086dc5f350faae04c",
+          "geometryHash": "b067ef61ddfc46222039129392cc0d7213385a848e755c8fcc25757aa78ff23d"
+        },
+        {
+          "id": "FJ2651",
+          "sha256": "864567c4b15c3add5a8184edb142766538936e2ef17af4efa25acca67f4344d8",
+          "geometryHash": "1c092b17bcf0bbb413b72acfff82d549ab04d752a67a924d8f888c8071cac05c"
+        },
+        {
+          "id": "FJ2652",
+          "sha256": "fd5ee304558da1d1ffebb01ca7f59b374087667e71d473fe5401f355a2ff161f",
+          "geometryHash": "a9ecd06daee917d1872b968ca3ba9fcd5d83153fa754a1f66a0e9356a8d780a6"
+        },
+        {
+          "id": "FJ2653",
+          "sha256": "74fc42fbc783857619dccb5a753b06cbfce9abc6403f14e38f55bbb9fafdad80",
+          "geometryHash": "92eefc7eb04744ffa35aa25733bb52f12fec7b234224e1110587a551f3cf1763"
+        },
+        {
+          "id": "FJ2654",
+          "sha256": "4e8467b12ca3374d25807d5de058cfb8d147ad2decd99f6debe57847a83099a1",
+          "geometryHash": "1967615d98375dc55edd72a990cb69fdd1e25b24c8edda6e17bc42d0949f2550"
+        }
+      ],
+      "bounds": {
+        "min": [0.03435530140995979, 1.1878199577331543, 0.08698049932718277],
+        "max": [0.07683110237121582, 1.256309986114502, 0.1428450047969818]
+      },
+      "triangleCount": 3018,
+      "assetId": "bodyparts3d-heart-arterial-v4",
+      "meshIds": ["cardiac-fma3895"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 1062,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma3840",
+      "terminologyId": "FMA3840",
+      "names": {
+        "en": "Posterior interventricular branch of right coronary artery (source variant)",
+        "ro": "Ramura interventriculară posterioară a coronarei drepte (varianta sursei)"
+      },
+      "latinName": "Ramus interventricularis posterior arteriae coronariae dextrae",
+      "category": "artery",
+      "group": "coronary-arteries",
+      "sourceTable": "IS-A",
+      "sourceName": "posterior interventricular branch of right coronary artery",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA3840",
+          "name": "posterior interventricular branch of right coronary artery",
+          "fileIds": [
+            "FJ2692",
+            "FJ2693",
+            "FJ2694",
+            "FJ2695",
+            "FJ2696",
+            "FJ2697",
+            "FJ2698",
+            "FJ2699",
+            "FJ2700"
+          ]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2692",
+          "sha256": "c38882cfb2a4ff493aece22ced1f23c9e044bf9cc091f14d40c7256179d34ccf",
+          "geometryHash": "4410449f52b0ab19f203f14b4a13e8675da01af30232f9e162fb5f4e4375e4bf"
+        },
+        {
+          "id": "FJ2693",
+          "sha256": "2f089666f8301e52400250614677a5c824bfa37fee55bfeb545904c8acffc063",
+          "geometryHash": "f6d8bbdd6d4d1932c6d4cfd45025a47c382b35bed7cd86cccf38bf5695812924"
+        },
+        {
+          "id": "FJ2694",
+          "sha256": "8579bbf2af9aa03a93604db0f05283334baf131b26ca17d9bbd9c1ff281ee048",
+          "geometryHash": "fb3c9c04981f044baf11c6ceb3aad24018fb889f3d541268c48730d5b40445b2"
+        },
+        {
+          "id": "FJ2695",
+          "sha256": "8a50ff9ad16191e3fd6cadb480943d212796d9cba391659c186be731b8f68d6a",
+          "geometryHash": "69ce2c171f78840ea51e6d0e2f4647213101691c15e2b4d3fa34e44a1f29343b"
+        },
+        {
+          "id": "FJ2696",
+          "sha256": "0d90aa40e3ac1a0d4423d19da7c8a9f4446063bdae1b7246f97669c6db3720df",
+          "geometryHash": "7282a6a7abf55eee8967dfbef140306d8b12aa9469ee72418d33c27860a30cc1"
+        },
+        {
+          "id": "FJ2697",
+          "sha256": "da528958c3c9784dc6ed9c04cd0a8d1fe6678c66e3792e0c258b1b51c9a07874",
+          "geometryHash": "bca8d06525487f360dc07fb7c7f1b64567be48eee09a403bf8bf342186399381"
+        },
+        {
+          "id": "FJ2698",
+          "sha256": "d253c0270030d4f2845f99ec3658e0e0ac9a79bda8e6d2e3ec1cae9d1942c9bd",
+          "geometryHash": "c5a9e48ec2b80d022eb00c0bf63fc2d4fc4eefed7de56c977e8314706e9837c1"
+        },
+        {
+          "id": "FJ2699",
+          "sha256": "4434305060b28d0b294b33cc18cdeb62f7a525f1282500c24dfb558205ec54a5",
+          "geometryHash": "ded962a96b8a3bfd130751c3c040f82af2a5858ceb72283e80859d461e69c7d7"
+        },
+        {
+          "id": "FJ2700",
+          "sha256": "2c4dacf7f7029de9075b4671085accefcf96200b4dbaba8a130ac1c3b177ebc6",
+          "geometryHash": "1440125b41cb5d50c69a8d0ee87cc311b2e703963098a335221cd957beb8fe81"
+        }
+      ],
+      "bounds": {
+        "min": [-0.000896807003300637, 1.1749199628829956, 0.11758700013160706],
+        "max": [0.06687849760055542, 1.1914000511169434, 0.1558700054883957]
+      },
+      "triangleCount": 3518,
+      "assetId": "bodyparts3d-heart-arterial-v4",
+      "meshIds": ["cardiac-fma3840"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 1680,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma3736",
+      "terminologyId": "FMA3736",
+      "names": { "en": "Ascending aorta", "ro": "Aorta ascendentă" },
+      "latinName": "Aorta ascendens",
+      "category": "artery",
+      "group": "great-arteries",
+      "sourceTable": "IS-A",
+      "sourceName": "ascending aorta",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA3736",
+          "name": "ascending aorta",
+          "fileIds": ["FJ3413"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ3413",
+          "sha256": "764f23e432a9308e0780c586f9d1638db1fbcc52a5019ae61817b4b1de323870",
+          "geometryHash": "d37deb4ff23826ccfb2fbe9b8c78b64d862192a7dd50ad1105d0d47b97a52e6d"
+        }
+      ],
+      "bounds": {
+        "min": [-0.00682218000292778, 1.2340600490570068, 0.10666199773550034],
+        "max": [0.028943000361323357, 1.2819000482559204, 0.13743899762630463]
+      },
+      "triangleCount": 396,
+      "assetId": "bodyparts3d-heart-arterial-v4",
+      "meshIds": ["cardiac-fma3736"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 56,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    },
+    {
+      "id": "cardiac-fma8612",
+      "terminologyId": "FMA8612",
+      "names": { "en": "Pulmonary trunk", "ro": "Trunchi pulmonar" },
+      "latinName": "Truncus pulmonalis",
+      "category": "artery",
+      "group": "great-arteries",
+      "sourceTable": "IS-A",
+      "sourceName": "pulmonary trunk",
+      "sourceConcepts": [
+        {
+          "conceptId": "FMA8612",
+          "name": "pulmonary trunk",
+          "fileIds": ["FJ2966"]
+        }
+      ],
+      "sourceFiles": [
+        {
+          "id": "FJ2966",
+          "sha256": "7d4fbfbeebdb541b4053e62e6ba9e55bdbc8d1354de8192f94d7c6008812ab3f",
+          "geometryHash": "2cfcf8891673200f5376026c2035d854a047836e063b609ce670138464060b1f"
+        }
+      ],
+      "bounds": {
+        "min": [0.011274700053036213, 1.256500005722046, 0.11651600152254105],
+        "max": [0.04207500070333481, 1.2936099767684937, 0.15886400640010834]
+      },
+      "triangleCount": 1302,
+      "assetId": "bodyparts3d-heart-arterial-v4",
+      "meshIds": ["cardiac-fma8612"],
+      "geometryRepresentation": "source-surface",
+      "geometryValidationStatus": "source-mapped-unverified",
+      "medicalReviewStatus": "pending",
+      "translationStatus": "pending-medical-review",
+      "quality": {
+        "boundaryEdges": 390,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0
+      }
+    }
+  ],
+  "missing": [
+    {
+      "id": "cardiac-missing-endocardium",
+      "names": { "en": "Endocardium", "ro": "Endocard" },
+      "latinName": "Endocardium"
+    },
+    {
+      "id": "cardiac-missing-epicardium",
+      "names": { "en": "Epicardium", "ro": "Epicard" },
+      "latinName": "Epicardium"
+    },
+    {
+      "id": "cardiac-missing-pericardium",
+      "names": { "en": "Pericardium", "ro": "Pericard" },
+      "latinName": "Pericardium"
+    },
+    {
+      "id": "cardiac-missing-interatrial-septum",
+      "names": { "en": "Interatrial septum", "ro": "Sept interatrial" },
+      "latinName": "Septum interatriale"
+    },
+    {
+      "id": "cardiac-missing-interventricular-septum",
+      "names": {
+        "en": "Interventricular septum",
+        "ro": "Sept interventricular"
+      },
+      "latinName": "Septum interventriculare"
+    },
+    {
+      "id": "cardiac-missing-chordae",
+      "names": { "en": "Chordae tendineae", "ro": "Cordaje tendinoase" },
+      "latinName": "Chordae tendineae"
+    },
+    {
+      "id": "cardiac-missing-moderator-band",
+      "names": { "en": "Moderator band", "ro": "Trabeculă septomarginală" },
+      "latinName": "Trabecula septomarginalis"
+    },
+    {
+      "id": "cardiac-missing-coronary-sinus-ostium",
+      "names": {
+        "en": "Coronary sinus ostium and valve",
+        "ro": "Ostiul și valvula sinusului coronar"
+      },
+      "latinName": "Ostium sinus coronarii"
+    },
+    {
+      "id": "cardiac-missing-smallest-cardiac-veins",
+      "names": { "en": "Smallest cardiac veins", "ro": "Vene cardiace minime" },
+      "latinName": "Venae cordis minimae"
+    },
+    {
+      "id": "cardiac-missing-sinoatrial-node",
+      "names": { "en": "Sinoatrial node", "ro": "Nod sinoatrial" },
+      "latinName": "Nodus sinuatrialis"
+    },
+    {
+      "id": "cardiac-missing-atrioventricular-node",
+      "names": { "en": "Atrioventricular node", "ro": "Nod atrioventricular" },
+      "latinName": "Nodus atrioventricularis"
+    },
+    {
+      "id": "cardiac-missing-av-bundle",
+      "names": {
+        "en": "Atrioventricular bundle",
+        "ro": "Fascicul atrioventricular"
+      },
+      "latinName": "Fasciculus atrioventricularis"
+    },
+    {
+      "id": "cardiac-missing-bundle-branches",
+      "names": {
+        "en": "Right and left bundle branches",
+        "ro": "Ramurile dreaptă și stângă ale fasciculului"
+      },
+      "latinName": "Crura fasciculi atrioventricularis"
+    },
+    {
+      "id": "cardiac-missing-purkinje",
+      "names": { "en": "Purkinje network", "ro": "Rețeaua Purkinje" },
+      "latinName": "Rami subendocardiales"
+    }
+  ]
+}

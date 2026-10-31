@@ -168,7 +168,7 @@ test("venous source layer: lazy regions, picking, filters, trace restoration, op
   );
 });
 
-test("all 16 global layer combinations preserve existing geometry", async ({
+test("all 16 legacy layer combinations preserve geometry alongside the new arterial toggle", async ({
   page,
 }) => {
   test.setTimeout(240000);
@@ -203,18 +203,20 @@ test("all 16 global layer combinations preserve existing geometry", async ({
       })
       .toBe(expected);
     await expect(page.getByLabel("All layers", { exact: true })).toBeChecked({
-      checked: mask === 15,
+      checked: false,
     });
   }
+  await page.getByLabel("All layers", { exact: true }).check();
   await page.getByLabel("All layers", { exact: true }).uncheck();
   await expect.poll(async () => (await metrics()).calls).toBe(1);
   await page.getByLabel("All layers", { exact: true }).check();
   await expect
     .poll(async () => (await metrics()).triangles, { timeout: 30000 })
-    .toBe(triangles.reduce((total, count) => total + count, 2));
+    .toBe(triangles.reduce((total, count) => total + count, 2) + 177590);
   await page.getByLabel("Muscular system", { exact: true }).uncheck();
   await page.getByLabel("Nervous system", { exact: true }).uncheck();
   await page.getByLabel("Venous system", { exact: true }).uncheck();
+  await page.getByLabel("Arterial system", { exact: true }).uncheck();
   await expect.poll(async () => (await metrics()).calls).toBe(50);
 });
 

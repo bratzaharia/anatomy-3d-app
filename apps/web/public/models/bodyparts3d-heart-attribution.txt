@@ -1,0 +1,2 @@
+BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International
+Source-preserving subset; normals regenerated; proper rotation/mm-to-m conversion; lossless Meshopt. No medical certification.

@@ -6,6 +6,8 @@ import {
   resolveVisibleStructureIds,
   resolveNervousStructureIds,
   resolveVenousStructureIds,
+  resolveCardiacStructureIds,
+  resolveArterialStructureIds,
 } from "@anatomy/core";
 import {
   GROUPS,
@@ -27,6 +29,12 @@ import {
   VENOUS_STRUCTURES,
   BRAIN_IDS,
   brainRegionById,
+  CARDIAC_GEOMETRY,
+  CARDIAC_STRUCTURES,
+  CARDIAC_SELECTORS,
+  ARTERIAL_GEOMETRY,
+  ARTERIAL_STRUCTURES,
+  arterialMetadataById,
 } from "@anatomy/data";
 import { useViewerStore } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -36,11 +44,19 @@ import { VenousExplorer } from "./VenousExplorer";
 import { VenousDetails } from "./VenousDetails";
 import { BrainExplorer } from "./BrainExplorer";
 import { BrainDetails } from "./BrainDetails";
+import { CardiacExplorer, CardiacDetails } from "./CardiacExplorer";
+import { ArterialExplorer, ArterialDetails } from "./ArterialExplorer";
 
 export function Inspector() {
   const { t, i18n } = useTranslation();
   const locale = i18n.language as Locale;
   const selectedId = useViewerStore((state) => state.selectedId);
+  const cardiacEnabled = useViewerStore((state) => state.cardiacEnabled);
+  const cardiacGroups = useViewerStore((state) => state.cardiacGroups);
+  const cardiacOpacity = useViewerStore((state) => state.cardiacOpacity);
+  const cardiacWallOpacity = useViewerStore(
+    (state) => state.cardiacWallOpacity,
+  );
   const activeRegionId = useViewerStore((state) => state.activeRegionId);
   const select = useViewerStore((state) => state.select);
   const hideSelected = useViewerStore((state) => state.hideSelected);
@@ -65,6 +81,8 @@ export function Inspector() {
     ...MUSCLE_ASSET.structures,
     ...NERVOUS_GEOMETRY,
     ...VENOUS_GEOMETRY,
+    ...CARDIAC_GEOMETRY,
+    ...ARTERIAL_GEOMETRY,
   ].find((item) => item.id === selectedId);
   const activeSystemIds = useViewerStore((state) => state.activeSystemIds);
   const nervousDivisions = useViewerStore((state) => state.nervousDivisions);
@@ -78,6 +96,13 @@ export function Inspector() {
   const venousOpacity = useViewerStore((state) => state.venousOpacity);
   const brainOpacity = useViewerStore((state) => state.brainOpacity);
   const brainStyles = useViewerStore((state) => state.brainStyles);
+  const arterialGroups = useViewerStore((s) => s.arterialGroups),
+    arterialLevels = useViewerStore((s) => s.arterialLevels),
+    arterialSides = useViewerStore((s) => s.arterialSides),
+    arterialOpacity = useViewerStore((s) => s.arterialOpacity);
+  const arterialOwned =
+    activeSystemIds.has("arterial") &&
+    arterialMetadataById.has(selectedId ?? "");
   const registeredNeuralSource =
     selectedId &&
     nervousMetadataById.get(selectedId)?.sourceDataset === "Z-Anatomy";
@@ -114,11 +139,47 @@ export function Inspector() {
     brainOpacity * (brainStyles[id]?.opacity ?? 1) > 0;
   const isHidden =
     structure &&
-    (structure.id === "nervous-brain"
-      ? !BRAIN_IDS.some(brainPartVisible)
-      : brainRegionById.has(structure.id)
-        ? !brainPartVisible(structure.id)
-        : !resolvedVisible.has(structure.id));
+    (arterialOwned
+      ? arterialOpacity === 0 ||
+        !resolveArterialStructureIds(
+          ARTERIAL_STRUCTURES,
+          activeSystemIds,
+          { hiddenIds, isolatedIds },
+          {
+            groups: arterialGroups,
+            levels: arterialLevels,
+            sides: arterialSides,
+          },
+        ).has(structure.id)
+      : structure.id.startsWith("arterial-")
+        ? true
+        : structure.id.startsWith("cardiac-")
+          ? cardiacOpacity === 0 ||
+            ![
+              ...resolveCardiacStructureIds(
+                CARDIAC_STRUCTURES,
+                cardiacEnabled,
+                cardiacGroups,
+                { hiddenIds, isolatedIds },
+                CARDIAC_SELECTORS,
+              ),
+            ].some(
+              (id) =>
+                (cardiacWallOpacity > 0 ||
+                  CARDIAC_GEOMETRY.find((p) => p.id === id)?.category !==
+                    "wall") &&
+                (id === structure.id ||
+                  (structure.id === "cardiac-heart" &&
+                    CARDIAC_STRUCTURES.find((p) => p.id === id)
+                      ?.structureType !== "artery") ||
+                  CARDIAC_STRUCTURES.find((p) => p.id === id)?.parentId ===
+                    structure.id),
+            )
+          : structure.id === "nervous-brain"
+            ? !BRAIN_IDS.some(brainPartVisible)
+            : brainRegionById.has(structure.id)
+              ? !brainPartVisible(structure.id)
+              : !resolvedVisible.has(structure.id));
 
   return (
     <aside className="side-panel inspector" aria-label={t("inspector.title")}>
@@ -144,6 +205,8 @@ export function Inspector() {
         )}
       </div>
       <VenousExplorer />
+      <ArterialExplorer />
+      <CardiacExplorer />
       <BrainExplorer />
       {!structure && skullContext ? (
         <div className="inspector-content">
@@ -255,6 +318,8 @@ export function Inspector() {
           {nervous && <NervousDetails id={structure.id} />}
           {nervous && <BrainDetails id={structure.id} />}
           {venous && <VenousDetails id={structure.id} />}
+          <CardiacDetails id={structure.id} />
+          <ArterialDetails id={structure.id} />
           {coverage?.reason &&
             (!nervous || coverage.reason === "source-policy") && (
               <p className="coverage-warning">

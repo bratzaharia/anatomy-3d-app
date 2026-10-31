@@ -21,7 +21,8 @@ describe("layer filters", () => {
     expect(
       screen.getByLabelText("Sistem nervos", { exact: true }),
     ).toBeEnabled();
-    expect(screen.getByLabelText(/Sistem arterial/)).toBeDisabled();
+    expect(screen.getByLabelText(/Sistem arterial/)).toBeEnabled();
+    expect(screen.getByLabelText(/Sistem limfatic/)).toBeDisabled();
   });
 
   it("clears all filters from the derived All control", () => {

@@ -47,6 +47,7 @@ describe("additive, explicitly partial nervous anatomy", () => {
       "muscular",
       "nervous",
       "venous",
+      "arterial",
     ]);
     expect(NERVOUS_ASSET.anatomicallyComplete).toBe(false);
     expect(NERVOUS_ASSET.structures).toHaveLength(83);

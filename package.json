@@ -14,14 +14,19 @@
     "test:e2e": "playwright test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "validate:anatomy": "node --import tsx tools/anatomy-assets/validate-anatomy.ts && node --import tsx tools/anatomy-assets/validate-skeletal-parts.ts && node --import tsx tools/anatomy-assets/validate-muscles.ts && node --import tsx tools/anatomy-assets/validate-nervous.ts && node --import tsx tools/anatomy-assets/validate-nervous-coverage.ts && pnpm validate:spinal-candidates && pnpm validate:venous && pnpm validate:brain",
+    "validate:anatomy": "node --import tsx tools/anatomy-assets/validate-anatomy.ts && node --import tsx tools/anatomy-assets/validate-skeletal-parts.ts && node --import tsx tools/anatomy-assets/validate-muscles.ts && node --import tsx tools/anatomy-assets/validate-nervous.ts && node --import tsx tools/anatomy-assets/validate-nervous-coverage.ts && pnpm validate:spinal-candidates && pnpm validate:venous && pnpm validate:brain && pnpm validate:heart && pnpm validate:arterial",
     "validate:spinal-candidates": "node --import tsx tools/anatomy-assets/validate-spinal-candidates.ts",
     "validate:i18n": "node --import tsx tools/anatomy-assets/validate-i18n.ts",
     "import:venous": "node tools/anatomy-assets/import-venous.mjs",
     "validate:venous": "node --import tsx tools/anatomy-assets/validate-venous.ts",
     "validate:brain": "node --import tsx tools/anatomy-assets/audit-brain.ts",
     "brain:audit": "node --import tsx tools/anatomy-assets/audit-brain.ts --write",
-    "brain:prepare-atlas": "node --import tsx tools/anatomy-assets/prepare-brain-atlas.ts"
+    "brain:prepare-atlas": "node --import tsx tools/anatomy-assets/prepare-brain-atlas.ts",
+    "import:heart": "node tools/anatomy-assets/import-heart.mjs",
+    "validate:heart": "node --import tsx tools/anatomy-assets/validate-heart.ts",
+    "import:arterial": "node tools/anatomy-assets/import-arterial.mjs",
+    "validate:arterial": "node --import tsx tools/anatomy-assets/validate-arterial.ts",
+    "arterial:coverage": "node --import tsx tools/anatomy-assets/report-arterial.ts"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

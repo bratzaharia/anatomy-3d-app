@@ -12,11 +12,19 @@ import {
   NERVOUS_REGION_BOUNDS,
   VENOUS_GEOMETRY,
   brainRegionById,
+  CARDIAC_GEOMETRY,
+  cardiacMetadataById,
+  ARTERIAL_GEOMETRY,
+  arterialMetadataById,
 } from "@anatomy/data";
 import { SkeletonModel } from "./SkeletonModel";
 import { MuscleLayer } from "./MuscleLayer";
 import { NervousLayer } from "./NervousLayer";
 import { VenousLayer } from "./VenousLayer";
+import { CardiacAnatomyModule } from "./CardiacAnatomyModule";
+import { ArterialSystemLayer } from "./ArterialSystemLayer";
+import { heartEn, heartRo } from "../localization/heart";
+import { arterialEn, arterialRo } from "../localization/arterial";
 import { SceneDiagnostics } from "./SceneDiagnostics";
 import { useViewerStore } from "../store/viewerStore";
 import {
@@ -54,6 +62,8 @@ function CameraController() {
         ...MUSCLE_ASSET.structures,
         ...NERVOUS_FOCUS_TARGETS,
         ...VENOUS_GEOMETRY,
+        ...CARDIAC_GEOMETRY,
+        ...ARTERIAL_GEOMETRY,
       ];
       const selected = focusStructures.find(
         (item) => item.id === state.selectedId,
@@ -61,18 +71,42 @@ function CameraController() {
       const regionStructures = focusStructures.filter(
         (item) =>
           item.regionId === state.activeRegionId &&
-          (item.id.startsWith("venous-")
-            ? state.activeSystemIds.has("venous")
-            : item.id.startsWith("nervous-")
-              ? state.activeSystemIds.has("nervous")
-              : item.id.startsWith("muscle-")
-                ? state.activeSystemIds.has("muscular")
-                : state.activeSystemIds.has("skeletal")),
+          (arterialMetadataById.has(item.id) &&
+          state.activeSystemIds.has("arterial")
+            ? true
+            : item.id.startsWith("arterial-")
+              ? false
+              : item.id.startsWith("cardiac-")
+                ? state.cardiacEnabled
+                : item.id.startsWith("venous-")
+                  ? state.activeSystemIds.has("venous")
+                  : item.id.startsWith("nervous-")
+                    ? state.activeSystemIds.has("nervous")
+                    : item.id.startsWith("muscle-")
+                      ? state.activeSystemIds.has("muscular")
+                      : state.activeSystemIds.has("skeletal")),
       );
       const traced = focusStructures.filter((item) =>
         state.venousTraceIds.has(item.id),
       );
-      if (state.venousTraceIds.has(state.selectedId ?? "") && traced.length)
+      if (
+        state.arterialSelectedIds.size &&
+        arterialMetadataById.has(state.selectedId ?? "")
+      )
+        bounds = ARTERIAL_GEOMETRY.filter((p) =>
+          state.arterialSelectedIds.has(p.id),
+        ).reduce((box, p) => box.union(boundsBox(p.bounds)), new Box3());
+      else if (
+        state.cardiacSelectedIds.size &&
+        cardiacMetadataById.has(state.selectedId ?? "")
+      )
+        bounds = CARDIAC_GEOMETRY.filter((p) =>
+          state.cardiacSelectedIds.has(p.id),
+        ).reduce((box, p) => box.union(boundsBox(p.bounds)), new Box3());
+      else if (
+        state.venousTraceIds.has(state.selectedId ?? "") &&
+        traced.length
+      )
         bounds = traced.reduce(
           (box, item) => box.union(boundsBox(item.bounds)),
           new Box3(),
@@ -85,7 +119,21 @@ function CameraController() {
         bounds = focusStructures
           .filter((item) => state.brainSelectedIds.has(item.id))
           .reduce((box, item) => box.union(boundsBox(item.bounds)), new Box3());
-      else if (selected) bounds = boundsBox(selected.bounds);
+      else if (
+        state.selectedId === "cardiac-heart" ||
+        state.selectedId?.startsWith("cardiac-valve-")
+      ) {
+        const parts = CARDIAC_GEOMETRY.filter((p) =>
+          state.selectedId === "cardiac-heart"
+            ? p.category !== "artery"
+            : `cardiac-valve-${p.valve}` === state.selectedId,
+        );
+        if (parts.length)
+          bounds = parts.reduce(
+            (box, p) => box.union(boundsBox(p.bounds)),
+            new Box3(),
+          );
+      } else if (selected) bounds = boundsBox(selected.bounds);
       else if (regionStructures.length)
         bounds = regionStructures.reduce(
           (box, item) =>
@@ -168,7 +216,8 @@ function CameraController() {
 }
 
 export function AnatomyCanvas() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cardiac = useViewerStore((state) => state.cardiacEnabled);
   const muscular = useViewerStore((state) =>
     state.activeSystemIds.has("muscular"),
   );
@@ -176,18 +225,29 @@ export function AnatomyCanvas() {
     state.activeSystemIds.has("nervous"),
   );
   const venous = useViewerStore((state) => state.activeSystemIds.has("venous"));
+  const arterial = useViewerStore((s) => s.activeSystemIds.has("arterial"));
   return (
     <Canvas
       role="img"
-      aria-label={t(
-        venous
-          ? "venous.viewerLabel"
-          : nervous
-            ? "nervous.viewerLabel"
-            : muscular
-              ? "muscles.viewerLabel"
-              : "viewer.label",
-      )}
+      aria-label={
+        arterial
+          ? i18n.language === "ro"
+            ? arterialRo.title
+            : arterialEn.title
+          : cardiac
+            ? i18n.language === "ro"
+              ? heartRo.viewerLabel
+              : heartEn.viewerLabel
+            : t(
+                venous
+                  ? "venous.viewerLabel"
+                  : nervous
+                    ? "nervous.viewerLabel"
+                    : muscular
+                      ? "muscles.viewerLabel"
+                      : "viewer.label",
+              )
+      }
       frameloop="demand"
       shadows={{ type: PCFShadowMap, autoUpdate: false }}
       dpr={[1, 1.75]}
@@ -198,6 +258,9 @@ export function AnatomyCanvas() {
         far: 30,
       }}
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+      onCreated={({ gl }) => {
+        gl.localClippingEnabled = true;
+      }}
       onPointerMissed={() => useViewerStore.getState().select(null)}
     >
       <color attach="background" args={["#07111d"]} />
@@ -230,6 +293,8 @@ export function AnatomyCanvas() {
       <MuscleLayer />
       <NervousLayer />
       <VenousLayer />
+      <CardiacAnatomyModule />
+      <ArterialSystemLayer />
       <Grid
         position={[0, SKELETON_ASSET.bounds.min[1] - 0.008, 0]}
         args={[5, 5]}

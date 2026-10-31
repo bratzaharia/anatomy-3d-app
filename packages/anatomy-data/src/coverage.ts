@@ -2,6 +2,7 @@ import type { AnatomicalStructure } from "@anatomy/core";
 import { MUSCLE_INVENTORY } from "./muscles";
 import { NERVOUS_INVENTORY, NERVOUS_ASSET } from "./nervous";
 import { VENOUS_INVENTORY } from "./venous";
+import { ARTERIAL_COVERAGE } from "./arterial";
 export type CoverageStatus = "individual" | "set" | "grouped-only" | "missing";
 export type CoverageReason =
   | "source-gap"
@@ -9,7 +10,8 @@ export type CoverageReason =
   | "side-conflict"
   | "spinal-quarantine"
   | "source-policy";
-export type CoverageSystem = "skeletal" | "muscular" | "nervous" | "venous";
+export type CoverageSystem =
+  "skeletal" | "muscular" | "nervous" | "venous" | "arterial";
 export interface CoverageEntry {
   readonly structure: AnatomicalStructure;
   readonly system: CoverageSystem;
@@ -30,6 +32,12 @@ export function createCoverageInventory(
 ): readonly CoverageEntry[] {
   const byId = new Map(catalog.map((s) => [s.id, s]));
   return [
+    ...ARTERIAL_COVERAGE.map((s) => ({
+      structure: byId.get(s.id)!,
+      system: "arterial" as const,
+      status: s.geometry,
+      reason: s.selectable ? null : ("source-gap" as const),
+    })),
     ...catalog
       .filter(
         (s) => s.systemIds.includes("skeletal") && s.structureType === "bone",

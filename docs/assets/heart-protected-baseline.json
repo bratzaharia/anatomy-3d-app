@@ -1,0 +1,30 @@
+{
+  "baseCommit": "8f10a2dbf3659a7ba4732e2162fe5218141fa33b",
+  "files": {
+    "apps/web/public/models/bodyparts3d-attribution.txt": "6ac22b614101edbad8611c98fd10b550a4c6efdb5652699b7ef13d045a20fc87",
+    "apps/web/public/models/bodyparts3d-muscles-attribution.txt": "31f0ae43948dee8aceab9608f970a390cc00b790b0773bb8d97281d80bc61eff",
+    "apps/web/public/models/bodyparts3d-muscles.glb": "63b531f7c2734c794626d3e36ea3a57e440115fb6f5cf89d936a5876c629fef3",
+    "apps/web/public/models/bodyparts3d-nervous-attribution.txt": "955c4da8c4c6372ef290fa310d4770b7339c7e597de7289e0ef01aace1185859",
+    "apps/web/public/models/bodyparts3d-nervous.glb": "05da6e823b3157b1c61e66b5dde0e4ab6f41de5d7948ba9ebae5afa60e7c8d14",
+    "apps/web/public/models/bodyparts3d-skeleton.glb": "126268604b056cdd8878c6297f6a8e90ae5cbf4cdce1cc7f952988d13bc68531",
+    "apps/web/public/models/bodyparts3d-venous-abdomen.glb": "4e8777e2f0725ef3cc1e228e1709dcb50a8319b3d0f2e5d9e385ab2cd3b23c62",
+    "apps/web/public/models/bodyparts3d-venous-attribution.txt": "f5f8fe033f3a693c381a0df4cd7c865800be868a4d8df1233c9912df4e3c3779",
+    "apps/web/public/models/bodyparts3d-venous-head-neck.glb": "801e07241c308e65ddf6ace7d4d2ce77d7f5543c89d6a3445625e1d1f5a4b8e8",
+    "apps/web/public/models/bodyparts3d-venous-lower-limb.glb": "c4d146aacf26bca68d99da72b79b5b0921a012dd43ce0301cb4f566fb5988f15",
+    "apps/web/public/models/bodyparts3d-venous-pelvis.glb": "cb31af20c3285b7eb4766f5fe291f0bd83cc0ded5c4b6eed063747d2a7357e39",
+    "apps/web/public/models/bodyparts3d-venous-thorax.glb": "b42a80477b851dd24bcb27a8b396302e7e134175ead3ad1ffcff312dfefef468",
+    "apps/web/public/models/bodyparts3d-venous-upper-limb.glb": "2980d88bf259f14dcd3707f6469e979ece2375d40c4899c22565235c1c6a535c",
+    "apps/web/public/models/z-nervous-attribution.txt": "540bf91965f87ed64d49dc7218e37880594da0b88fc20daa1c7d3eed5b873fbe",
+    "apps/web/public/models/z-nervous-cranial.glb": "2ca0f415e08c7abb0bddb74956e97f4ed3e49ce540757d2de1d2dd961dc9e813",
+    "apps/web/public/models/z-nervous-lower-limbs.glb": "264dc6a1c50dd063eea8c45ff73a736d6181d5f5e59a261cc8c588035770f8f0",
+    "apps/web/public/models/z-nervous-trunk.glb": "205b3b7d8803cf8ca2cf2ef73dfe5c1c5970eb77753ce7b415bf7dca6e0566e8",
+    "apps/web/public/models/z-nervous-upper-limbs.glb": "ae01cea35e5001f23136ba956dcabf3b7db25bc63269f498136678b45c77af3d",
+    "packages/anatomy-data/src/muscle-manifest.json": "b057953436317a3227f20eb93a3a6f274984e7ce7177cbdd83ed7f3330104c43",
+    "packages/anatomy-data/src/nervous-manifest.json": "f41f8043f5e8c41d75eac28b9603d85f5022e493586a7ffa1633c5b25c870700",
+    "packages/anatomy-data/src/nervous-supplement.json": "aeb45628fe1a4bc6243c4e9ab5e5a2fea89d51ee40fc6d5237101ce5f5da26a3",
+    "packages/anatomy-data/src/skeletal-parts.json": "875ef57261ebd74a1fd09f017c21e8359f946771abca7e866c09c0d1613050f0",
+    "packages/anatomy-data/src/skeleton-manifest.json": "cd1be45dcbf22e7bb091951213129c1bce92f65e41c442f18b0e49f5344aa8f4",
+    "packages/anatomy-data/src/skull-color-ranges.json": "70599e1029cae023c637900c8520c733b743a934ae878ca2aca39d83e6f88b1a",
+    "packages/anatomy-data/src/venous-manifest.json": "6b85c6a7fabdb40199ba7ae4857ce1115731abc02c69e9edb874c66562ba7b43"
+  }
+}

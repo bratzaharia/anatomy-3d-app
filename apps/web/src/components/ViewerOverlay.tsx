@@ -11,6 +11,9 @@ import {
   VENOUS_ASSETS,
   VENOUS_GEOMETRY,
   VENOUS_STRUCTURES,
+  CARDIAC_GEOMETRY,
+  ARTERIAL_GEOMETRY,
+  ARTERIAL_SHARED_IDS,
 } from "@anatomy/data";
 import { useViewerStore, type CameraView } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -24,7 +27,14 @@ export function ViewerOverlay({
   const locale = i18n.language as Locale;
   const activeRegionId = useViewerStore((state) => state.activeRegionId);
   const hoveredId = useViewerStore((state) => state.hoveredId);
-  const activeCount = useViewerStore((state) => state.activeSystemIds.size);
+  const cardiac = useViewerStore((state) => state.cardiacEnabled);
+  const arterial = useViewerStore((s) => s.activeSystemIds.has("arterial"));
+  const cardiacOnly = CARDIAC_GEOMETRY.filter(
+    (p) => !arterial || !ARTERIAL_SHARED_IDS.has(p.id),
+  );
+  const activeCount = useViewerStore(
+    (state) => state.activeSystemIds.size + (state.cardiacEnabled ? 1 : 0),
+  );
   const setCameraView = useViewerStore((state) => state.setCameraView);
   const assetStatus = useViewerStore((state) => state.assetStatus);
   const muscleStatus = useViewerStore((state) => state.muscleStatus);
@@ -173,6 +183,12 @@ export function ViewerOverlay({
       <div className="model-summary">
         {t("viewer.sourceMeshes", {
           count:
+            (cardiac
+              ? cardiacOnly.reduce((n, p) => n + p.sourceFiles.length, 0)
+              : 0) +
+            (arterial
+              ? ARTERIAL_GEOMETRY.reduce((n, p) => n + p.sourceFiles.length, 0)
+              : 0) +
             (skeletal ? SKELETON_ASSET.sourceMeshCount : 0) +
             (muscular ? MUSCLE_ASSET.sourceMeshCount : 0) +
             (nervous
@@ -191,6 +207,8 @@ export function ViewerOverlay({
         <span>·</span>
         {t("viewer.selectable", {
           count:
+            (cardiac ? cardiacOnly.length : 0) +
+            (arterial ? ARTERIAL_GEOMETRY.length : 0) +
             (skeletal
               ? SKELETAL_STRUCTURES.filter(
                   (item) => item.status === "available",
