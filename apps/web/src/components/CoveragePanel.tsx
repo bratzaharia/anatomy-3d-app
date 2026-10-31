@@ -13,6 +13,7 @@ const systems: readonly CoverageSystem[] = [
   "muscular",
   "nervous",
   "venous",
+  "arterial",
 ];
 const normalize = (s: string) =>
   s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();

@@ -3,6 +3,7 @@ import { addAfterEffect, useThree, useFrame } from "@react-three/fiber";
 import { musclePickingStatistics } from "./musclePicking";
 import { skullShadowStatistics, resetSkullShadowFrame } from "./skullShadow";
 import { nervousPickingStatistics } from "./nervousPicking";
+import { arterialPickingStatistics } from "./arterialPicking";
 
 // Explicit opt-in test instrumentation; no frame requests, React updates, or
 // production telemetry. The attribute is local to the existing canvas.
@@ -41,6 +42,7 @@ export function SceneDiagnostics() {
         dpr: gl.getPixelRatio(),
         musclePicking: musclePickingStatistics(),
         nervousPicking: nervousPickingStatistics(),
+        arterialPicking: arterialPickingStatistics(),
       });
       previous = now;
     });

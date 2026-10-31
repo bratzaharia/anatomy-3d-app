@@ -15,6 +15,7 @@ describe("sourced skeleton catalog", () => {
       "muscular",
       "nervous",
       "venous",
+      "arterial",
     ]);
     for (const structure of STRUCTURES) {
       expect(structure.assetIds).toEqual([SKELETON_ASSET.id]);

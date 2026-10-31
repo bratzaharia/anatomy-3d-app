@@ -15,6 +15,7 @@ import {
   cardiacMetadataById,
 } from "@anatomy/data";
 import { heartEn, heartRo } from "../localization/heart";
+import { arterialEn, arterialRo } from "../localization/arterial";
 import { useViewerStore } from "../store/viewerStore";
 function SelectionCheck({
   ids,
@@ -47,6 +48,7 @@ export function CardiacExplorer() {
     locale = i18n.language === "ro" ? "ro" : "en",
     t = locale === "ro" ? heartRo : heartEn;
   const enabled = useViewerStore((s) => s.cardiacEnabled),
+    arterial = useViewerStore((s) => s.activeSystemIds.has("arterial")),
     requested = useViewerStore((s) => s.cardiacRequested),
     venous = useViewerStore((s) => s.activeSystemIds.has("venous")),
     selectedId = useViewerStore((s) => s.selectedId),
@@ -63,7 +65,9 @@ export function CardiacExplorer() {
   if (!enabled && !requested && !venous && !selectedId?.startsWith("cardiac-"))
     return null;
   const s = useViewerStore.getState(),
-    needed = CARDIAC_ASSETS.filter((a) =>
+    needed = CARDIAC_ASSETS.filter(
+      (a) => !arterial || !a.id.includes("heart-arterial"),
+    ).filter((a) =>
       a.structureIds.some((id) =>
         groups.has(cardiacMetadataById.get(id)!.group),
       ),
@@ -79,6 +83,9 @@ export function CardiacExplorer() {
           <h3>{t.title}</h3>
         </summary>
         <p className="coverage-warning">{t.scope}</p>
+        {arterial && (
+          <p>{locale === "ro" ? arterialRo.shared : arterialEn.shared}</p>
+        )}
         <label className="brain-check">
           <input
             type="checkbox"

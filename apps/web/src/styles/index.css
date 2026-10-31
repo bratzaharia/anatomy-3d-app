@@ -1661,3 +1661,169 @@ button:disabled {
   cursor: not-allowed;
   opacity: 0.45;
 }
+/* Arterial controls share the atlas panel typography and interaction tokens. */
+.arterial-explorer {
+  padding: 18px;
+  border-bottom: 1px solid var(--border, #24404b);
+  max-height: 56%;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+.arterial-explorer p,
+.arterial-details p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #9ab4bf;
+}
+.arterial-explorer h3 {
+  display: inline;
+  font-size: 13px;
+}
+.arterial-explorer details {
+  margin-block: 10px;
+}
+.arterial-explorer summary {
+  cursor: pointer;
+  font-size: 12px;
+}
+.arterial-explorer fieldset {
+  border: 1px solid #25414e;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 8px;
+}
+.arterial-explorer legend {
+  font-size: 11px;
+  color: #aac3ca;
+}
+.arterial-modes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 12px;
+}
+.arterial-mode {
+  position: relative;
+  border: 1px solid #27414e;
+  border-radius: 8px;
+  padding: 6px 3px;
+  text-align: center;
+  cursor: pointer;
+  min-width: 0;
+  font-size: 10px;
+}
+.arterial-mode.is-selected {
+  border-color: #70d9cf;
+  background: #102936;
+}
+.arterial-mode input {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+}
+.arterial-mode:focus-within {
+  outline: 2px solid #70d9cf;
+  outline-offset: 2px;
+}
+.arterial-preview {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin: 3px auto;
+  background: #081923;
+  border-radius: 6px;
+}
+.arterial-preview path {
+  fill: none;
+  stroke: #b98184;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.arterial-preview.colors path {
+  stroke: #c4af6a;
+}
+.arterial-preview.colors .arterial-preview-branch {
+  stroke: #789fc8;
+}
+.arterial-preview.pathways path {
+  stroke: #efbc79;
+}
+.arterial-preview.pathways .arterial-preview-branch {
+  stroke: #67505d;
+}
+.arterial-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-block: 10px;
+  font-size: 11px;
+}
+.arterial-actions label {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.arterial-explorer button {
+  border: 1px solid #294653;
+  background: #102532;
+  color: #b4dfdf;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.arterial-explorer button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.arterial-search {
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  background: #0a1d28;
+  border: 1px solid #294653;
+  border-radius: 6px;
+  color: #d2e1e6;
+  font-size: 11px;
+}
+.arterial-tree {
+  max-height: 320px;
+  overflow-y: auto;
+}
+.arterial-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-block: 4px;
+}
+.arterial-row button {
+  text-align: left;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.arterial-swatch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.arterial-pathways ol {
+  font-size: 11px;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+.arterial-explorer ul {
+  font-size: 11px;
+  padding-left: 16px;
+}
+.arterial-explorer a,
+.arterial-details a {
+  font-size: 11px;
+  color: #73d4ca;
+}

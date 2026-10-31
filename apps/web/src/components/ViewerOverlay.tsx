@@ -12,6 +12,8 @@ import {
   VENOUS_GEOMETRY,
   VENOUS_STRUCTURES,
   CARDIAC_GEOMETRY,
+  ARTERIAL_GEOMETRY,
+  ARTERIAL_SHARED_IDS,
 } from "@anatomy/data";
 import { useViewerStore, type CameraView } from "../store/viewerStore";
 import { Icon } from "./Icon";
@@ -26,6 +28,10 @@ export function ViewerOverlay({
   const activeRegionId = useViewerStore((state) => state.activeRegionId);
   const hoveredId = useViewerStore((state) => state.hoveredId);
   const cardiac = useViewerStore((state) => state.cardiacEnabled);
+  const arterial = useViewerStore((s) => s.activeSystemIds.has("arterial"));
+  const cardiacOnly = CARDIAC_GEOMETRY.filter(
+    (p) => !arterial || !ARTERIAL_SHARED_IDS.has(p.id),
+  );
   const activeCount = useViewerStore(
     (state) => state.activeSystemIds.size + (state.cardiacEnabled ? 1 : 0),
   );
@@ -178,7 +184,10 @@ export function ViewerOverlay({
         {t("viewer.sourceMeshes", {
           count:
             (cardiac
-              ? CARDIAC_GEOMETRY.reduce((n, p) => n + p.sourceFiles.length, 0)
+              ? cardiacOnly.reduce((n, p) => n + p.sourceFiles.length, 0)
+              : 0) +
+            (arterial
+              ? ARTERIAL_GEOMETRY.reduce((n, p) => n + p.sourceFiles.length, 0)
               : 0) +
             (skeletal ? SKELETON_ASSET.sourceMeshCount : 0) +
             (muscular ? MUSCLE_ASSET.sourceMeshCount : 0) +
@@ -198,7 +207,8 @@ export function ViewerOverlay({
         <span>·</span>
         {t("viewer.selectable", {
           count:
-            (cardiac ? CARDIAC_GEOMETRY.length : 0) +
+            (cardiac ? cardiacOnly.length : 0) +
+            (arterial ? ARTERIAL_GEOMETRY.length : 0) +
             (skeletal
               ? SKELETAL_STRUCTURES.filter(
                   (item) => item.status === "available",

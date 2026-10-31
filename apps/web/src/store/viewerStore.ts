@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { createBrainSlice, type BrainState } from "./brainState";
 import { createCardiacSlice, type CardiacState } from "./cardiacState";
+import { createArterialSlice, type ArterialState } from "./arterialState";
 import {
   traceVenousDrainage,
   type VenousDepth,
@@ -19,11 +20,12 @@ import {
   BRAIN_IDS,
   brainRegionById,
   cardiacMetadataById,
+  arterialMetadataById,
 } from "@anatomy/data";
 
 export type CameraView = "front" | "back" | "left" | "right" | "fit" | "focus";
 
-export interface ViewerState extends BrainState, CardiacState {
+export interface ViewerState extends BrainState, CardiacState, ArterialState {
   venousRequested: boolean;
   venousRetry: number;
   venousAssetStatus: Readonly<Record<string, "loading" | "ready" | "error">>;
@@ -111,6 +113,7 @@ export interface ViewerState extends BrainState, CardiacState {
 export const useViewerStore = create<ViewerState>((set, get, api) => ({
   ...createBrainSlice(set, get, api),
   ...createCardiacSlice(set, get, api),
+  ...createArterialSlice(set, get, api),
   venousRequested: false,
   venousRetry: 0,
   venousAssetStatus: {},
@@ -351,6 +354,7 @@ export const useViewerStore = create<ViewerState>((set, get, api) => ({
         muscleRequested: state.muscleRequested || next.has("muscular"),
         nervousRequested: state.nervousRequested || next.has("nervous"),
         venousRequested: state.venousRequested || next.has("venous"),
+        arterialRequested: state.arterialRequested || next.has("arterial"),
         nervousStatus:
           !state.nervousRequested && next.has("nervous")
             ? "loading"
@@ -370,6 +374,7 @@ export const useViewerStore = create<ViewerState>((set, get, api) => ({
       muscleRequested: state.muscleRequested || ids.includes("muscular"),
       nervousRequested: state.nervousRequested || ids.includes("nervous"),
       venousRequested: state.venousRequested || ids.includes("venous"),
+      arterialRequested: state.arterialRequested || ids.includes("arterial"),
       nervousStatus:
         !state.nervousRequested && ids.includes("nervous")
           ? "loading"
@@ -382,6 +387,9 @@ export const useViewerStore = create<ViewerState>((set, get, api) => ({
   select: (id) =>
     set({
       selectedId: id,
+      arterialSelectedIds: new Set(
+        arterialMetadataById.has(id ?? "") ? [id!] : [],
+      ),
       cardiacSelectedIds: new Set(
         cardiacMetadataById.has(id ?? "") ? [id!] : [],
       ),

@@ -201,6 +201,9 @@ class CardiacBoundary extends Component<
   }
 }
 export function CardiacAnatomyModule() {
+  // One render owner for the seven canonical shared arteries. When the whole
+  // arterial layer is enabled its filters/styles own these exact same IDs.
+  const arterial = useViewerStore((s) => s.activeSystemIds.has("arterial"));
   const enabled = useViewerStore((s) => s.cardiacEnabled),
     groups = useViewerStore((s) => s.cardiacGroups),
     hiddenIds = useViewerStore((s) => s.hiddenIds),
@@ -210,14 +213,21 @@ export function CardiacAnatomyModule() {
   const invalidate = useThree((s) => s.invalidate);
   const visible = useMemo(
     () =>
-      resolveCardiacStructureIds(
-        CARDIAC_STRUCTURES,
-        enabled,
-        groups,
-        { hiddenIds, isolatedIds },
-        CARDIAC_SELECTORS,
+      new Set(
+        [
+          ...resolveCardiacStructureIds(
+            CARDIAC_STRUCTURES,
+            enabled,
+            groups,
+            { hiddenIds, isolatedIds },
+            CARDIAC_SELECTORS,
+          ),
+        ].filter(
+          (id) =>
+            !arterial || cardiacMetadataById.get(id)?.category !== "artery",
+        ),
       ),
-    [enabled, groups, hiddenIds, isolatedIds],
+    [enabled, groups, hiddenIds, isolatedIds, arterial],
   );
   useEffect(() => {
     const id = useViewerStore.getState().hoveredId;
